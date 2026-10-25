@@ -1,0 +1,64 @@
+seed: 20260812
+output_dir: experiments/tcn
+
+data:
+  root: data/organized_data/reconstruction_velocity_temperature/7000rpm
+  raw_root: data/runs
+  train_runs:
+    - 20260722/*.h5
+    - 20260723/*.h5
+    - 20260724/*.h5
+    - 20260726/*.h5
+  validation_runs:
+    - 20260725/*.h5
+  test_runs: []
+  sample_rate_hz: 2048
+  input_length: 2048
+  target_speed_rpm: 7000
+  speed_tolerance_rpm: 10
+  stable_wait_s: 600
+  minimum_valid_telemetry_fraction: 0.95
+  # null reads all windows; a positive value limits each run for a short check.
+  max_windows_per_run: null
+
+model:
+  # Switch this one value: custom (original) or standard (standard TCN autoencoder).
+  implementation: custom
+  # Shared: encoder/decoder settings, every block's input/output width,
+  # and block count (= length of dilations).
+  channels: 32
+  kernel_size: 32
+  stride: 16
+  # Encoder and decoder derive padding=(kernel_size-stride)/2=8.
+  # The dilation values and gated hidden width are specific to custom.
+  hidden_channels: 32
+  dilations: [1, 2, 4, 8, 16]
+  # Custom gated blocks use their existing kernel=3 and elementwise dropout.
+  dropout: 0.05
+  # Standard block internals; its dilation follows 1, 2, 4, ... .
+  standard:
+    kernel_size: 3
+    dropout: 0.05
+    spatial_dropout: true
+
+training:
+  device: cuda
+  # Existing loop: fresh initialization, identical input/target, no augmentation,
+  # normalized-space MSE and AdamW; fixed training-set channel Z-score.
+  batch_size: 256
+  num_workers: 4
+  epochs: 100
+  learning_rate: 0.001
+  minimum_learning_rate: 0.0
+  lr_factor: 0.5
+  lr_patience: 5
+  early_stopping_patience: 15
+  weight_decay: 0.0001
+  gradient_clip_norm: 1.0
+  amp: true
+
+visualization:
+  enabled: true
+  interval_epochs: 5
+  sample_count: 3
+  zoom_time_s: [0.2, 0.3]

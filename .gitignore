@@ -1,0 +1,50 @@
+# GitHub 只提交源码、运行配置、README 和环境依赖。
+# data、experiments、reports、docs、references、AGENTS.md、编辑器设置等留在本地。
+# 新增根目录或文件类型需明确放行。
+/*
+!/.gitignore
+!/README.md
+!/environment.yml
+!/requirements.txt
+!/pyproject.toml
+!/model/
+!/src/
+!/test/
+!/utils/
+!/config/
+
+# 实现和入口目录只允许 Python 源码，排除报告、数据、图表和模型权重。
+/model/**
+!/model/**/
+!/model/**/*.py
+/src/**
+!/src/**/
+!/src/**/*.py
+/test/**
+!/test/**/
+!/test/**/*.py
+/utils/**
+!/utils/**/
+!/utils/**/*.py
+
+# 配置目录只允许运行参数文件。
+/config/**
+!/config/**/
+!/config/**/*.yaml
+!/config/**/*.yml
+!/config/**/*.json
+
+# 放行目录内的环境、缓存和构建产物也不提交。
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+.env
+.env.*

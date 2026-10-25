@@ -1,0 +1,37 @@
+test_data:
+  root: data/organized_data/reconstruction_velocity_temperature/7000rpm
+  run_patterns:
+  - 20260726/*.h5
+  sample_rate_hz: 2048
+  input_length: 2048
+models:
+  custom_baseline: experiments/robustness_date_split_20261014/formal/custom/clean/20261014-194756-154457/best.pt
+  custom_augmented: experiments/robustness_date_split_20261014/formal/custom/augmented/20261014-200220-713649/best.pt
+  standard_baseline: experiments/robustness_date_split_20261014/formal/standard/clean/20261014-194756-145439/best.pt
+  standard_augmented: experiments/robustness_date_split_20261014/formal/standard/augmented/20261014-200220-784896/best.pt
+noise_types:
+- white
+- pink
+- white+pink
+- narrowband
+- impulse
+- white+narrowband
+- pink+impulse
+snr_dbs:
+- 30
+- 20
+- 10
+- 0
+seeds:
+- 2026101441
+- 2026101442
+- 2026101443
+device: cuda
+amp: true
+batch_size: 256
+num_workers: 4
+output_dir: experiments/robustness_date_split_20261014/test
+training_description: 本轮无增强对照与增强模型均随机从头训练，仅使用 7 月 22—24 日训练和 25 日验证；两者采用同一初始化种子、优化及验证选模规则。增强方案仅在
+  25 日选择，自定义 TCN 为白/粉/混合，Standard 为粉红噪声。
+test_history_description: 7 月 26 日完整 run 按日期留出，未参与本轮权重训练、归一化或增强选型。但这些 run 已参与历史 TCN
+  训练，属于本轮隔离、历史已用数据，不能称为全新盲测。
