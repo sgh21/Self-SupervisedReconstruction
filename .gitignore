@@ -1,0 +1,44 @@
+# GitHub 只提交代码、配置、项目说明和依赖；新增根目录需明确放行。
+# data、experiments（含 legacy_prototype）、deliverables、docs、GPTOrder、tmp、
+# AGENTS.md、交接文档和执行计划全部留在本地，不进入提交。
+/*
+!/.gitignore
+!/README.md
+!/pyproject.toml
+!/requirements.txt
+!/src/
+!/scripts/
+!/utils/
+!/config/
+
+# 代码目录只接收 Python 源码，防止输出的数据、报告或图表混入。
+/src/**
+!/src/**/
+!/src/**/*.py
+/scripts/**
+!/scripts/**/
+!/scripts/**/*.py
+/utils/**
+!/utils/**/
+!/utils/**/*.py
+
+# 配置目录只接收 JSON 参数文件。
+/config/**
+!/config/**/
+!/config/**/*.json
+
+# 即使位于上述放行目录内，运行环境、缓存和构建产物也不提交。
+__pycache__/
+*.py[cod]
+*.nb[ci]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+.env
+.env.*

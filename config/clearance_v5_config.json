@@ -1,0 +1,286 @@
+{
+  "schema_version": 4,
+  "scenario_id": "JD130_front_group_assumed_demo_V5_excitation",
+  "parameters": {
+    "ms": 2.5,
+    "mt": 0.604,
+    "mh": 41.27074,
+    "kh": 10912950.92679859,
+    "ch": 467.63119090668664,
+    "kbend": 17168343.034367695,
+    "kappa": 1090000000000.0,
+    "contact_diameter": 0.03,
+    "contact_length": 0.02,
+    "cl": 133.35494523216204,
+    "ki": 10000000000.0,
+    "ko": 10000000000.0,
+    "normal_overlap": 9.981862506244314e-06,
+    "cb_total": 1218.473723870652,
+    "balls": 20,
+    "ball_diameter": 0.011906,
+    "pitch_diameter": 0.09,
+    "contact_angle": 0.2617993877991494,
+    "rpm": -7000.0,
+    "cage_phase": 0.0,
+    "radial_load_y": 0.0,
+    "t_section_from_face": 0.015,
+    "machine_model": "JD130S-24-HA40; 12-DOF front-group clearance demonstration",
+    "healthy_error_reported_um": 3.0,
+    "healthy_error_definition": "user: synchronous peak-to-peak, approximate scale; not imposed on model",
+    "parameter_status": "Inherited conditional masses and coefficients; grounded H demonstration, not a calibrated machine model",
+    "outer_pit_area_m2": 0.0,
+    "inner_pit_area_m2": 0.0,
+    "ball_deformation_amplitude_m": 0.0,
+    "mO": 0.42113,
+    "fit_clearance_um": 0.0,
+    "Kf": 156325553.62545305,
+    "N": 256,
+    "Kother": [
+      [
+        78164077.81917797,
+        -1.8470163138958127e-05
+      ],
+      [
+        -1.8470163138958127e-05,
+        78161475.81108733
+      ]
+    ],
+    "Cother": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "Df": 324.5510878694744,
+    "fit_parameter_status": "Demonstration: outer-ring mass split from housing; Kf from old frozen bearing tangent; fixed Kother from series/parallel allocation; Df from assumed zeta=0.02; Cother=0. None identified on the machine.",
+    "model_dof": 12,
+    "Jt": 0.02006870333454608,
+    "Jp": 0.0026374066690921603,
+    "z_f": 0.12,
+    "z_T": 0.165,
+    "z_u": 0.1,
+    "z_m": 0.165,
+    "L_ref": 0.24,
+    "gravity_radial_m_s2": [
+      0.0,
+      -9.80665
+    ],
+    "healthy_supports": [
+      {
+        "name": "healthy_rear_R1",
+        "z_m": -0.12,
+        "K": [
+          [
+            39082038.909588985,
+            -9.235081569479063e-06
+          ],
+          [
+            -9.235081569479063e-06,
+            39080737.90554366
+          ]
+        ],
+        "C": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "fit_state": "assumed_closed_linear",
+        "healthy_clearance_um": null,
+        "parameter_status": "assumed_demo",
+        "applicability_excursion_from_baseline_m": 1e-06,
+        "domain_basis": "Demo local tangent: excursion <=10% of inherited 9.98um normal overlap; not proof of actual healthy assembly contact",
+        "linear_origin": "P0=0 N, r0=0 m, fixed for all gaps"
+      }
+    ],
+    "probe_reference": "ground",
+    "measurement_kind": "rotor_section",
+    "model_status": "assumed_demo",
+    "mO2": 0.42113,
+    "z_f2": 0.09,
+    "Kb2": [
+      [
+        52109674.33174642,
+        -1.6417922791027336e-05
+      ],
+      [
+        -1.6417922791027336e-05,
+        52107361.435665734
+      ]
+    ],
+    "Cb2": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "Kf2": 156325553.62545305,
+    "Df2": 324.5510878694744,
+    "front_group_clearance_um": 0.0,
+    "fit2_clearance_um": 0.0,
+    "rhs_backend": "numba"
+  },
+  "excitation": {
+    "U_kg_m": 1.1731253947353348e-06,
+    "phase_rad": -0.3661687497264663,
+    "peak_force_N": 0.6303732159850757,
+    "formula": "U*Omega**2*[cos(Omega*t+phase),sin(Omega*t+phase)]",
+    "source": "Inherited common equivalent 1X excitation; negative rpm and negative old phase preserve original circular force exactly"
+  },
+  "simulation": {
+    "method": "DOP853",
+    "rtol": 2e-07,
+    "atol_translation_m": 1e-12,
+    "atol_velocity_m_s": 1e-08,
+    "atol_angle_rad": 1e-11,
+    "atol_angle_rate_rad_s": 1e-07,
+    "fs_raw_hz": 65536,
+    "fs_out_hz": 8192,
+    "max_step_s": 1.1260832739219432e-05,
+    "warmup_s": 2.5,
+    "retained_turns": 120,
+    "subwindows": 4,
+    "guard_s": 0.28125,
+    "maximum_warmup_s": 10.0,
+    "extension_s": 1.0,
+    "workers": 2
+  },
+  "clearances_um": [
+    0,
+    1,
+    2,
+    5,
+    10
+  ],
+  "parameter_provenance": {
+    "status": "assumed_demo",
+    "contract": "docs/reports/clearance_v4_parameter_audit.md",
+    "inherited_config": "config/clearance_v3_config.json",
+    "geometry": {
+      "rotor_proxy_length_m": 0.3,
+      "outer_radius_m": 0.035,
+      "inner_radius_m": 0.02974769462115893,
+      "density_kg_m3": 7800.0,
+      "front_face_z_m": 0.15
+    },
+    "healthy_allocation": "F2 removed from direct support list; its original whole-support stiffness matched once by Kb2 in series with Kfit2; R1 unchanged",
+    "observation": "M at z=.165m relative fixed ground/table demo; independently mounted probe evidence; housing-relative and S-H auxiliary outputs",
+    "excitation_status": "inherited_demo, no new independent justification to change U"
+  },
+  "numerical_thresholds": {
+    "position_um": 0.0001,
+    "velocity_mm_s": 1e-05,
+    "acceleration_m_s2": 0.0001,
+    "contact_peak_N": 0.0001,
+    "contact_impulse_N_s": 1e-07,
+    "contact_rate": 0.01,
+    "relative_main": 0.01,
+    "relative_residual_steady": 0.05,
+    "relative_contact_peak": 0.05,
+    "relative_contact_impulse": 0.02,
+    "residual_band_energy_floor_mm2_s2": 1e-10,
+    "relative_residual_convergence": 0.05
+  },
+  "accepted_gap_range_um": [
+    0,
+    10
+  ],
+  "physical_parameter_support": "not_validated",
+  "real_machine_validation": "not_validated",
+  "constitutive_domains": {
+    "f2_internal_excursion_from_baseline_m": 1e-06,
+    "rear_excursion_from_baseline_m": 1e-06,
+    "maximum_tilt_rad": 0.001,
+    "f1_min_normal_approach_m": 0.0,
+    "f1_max_normal_approach_m": 1.996372501248863e-05,
+    "status": "assumed local domains, not validated machine limits",
+    "basis": "retain V3 1um local tangent excursion scale for F2 internal and R1; small tilt <=1mrad; F1 approaches between zero and twice inherited nominal overlap"
+  },
+  "processing": {
+    "fs_hz": 8192,
+    "fir_taps": 4097,
+    "kaiser_beta": 8.6,
+    "passband_hz": [
+      10,
+      2048
+    ],
+    "contribution_bands_hz": [
+      [
+        10,
+        900
+      ],
+      [
+        900,
+        2048
+      ]
+    ],
+    "method": "centered FIR convolution once on whole guarded signal after resample_poly; -6dB nominal cutoff",
+    "half_support_s": 0.25,
+    "resample_poly_half_support_s": 0.001220703125,
+    "required_guard_s": 0.251220703125
+  },
+  "allocation_v4": {
+    "old_F2_K": [
+      [
+        39082038.909588985,
+        -9.235081569479063e-06
+      ],
+      [
+        -9.235081569479063e-06,
+        39080737.90554366
+      ]
+    ],
+    "new_Kb2": [
+      [
+        52109674.33174642,
+        -1.6417922791027336e-05
+      ],
+      [
+        -1.6417922791027336e-05,
+        52107361.435665734
+      ]
+    ],
+    "Kfit2": [
+      [
+        156325553.62545305,
+        0.0
+      ],
+      [
+        0.0,
+        156325553.62545305
+      ]
+    ],
+    "old_mh_kg": 41.69187,
+    "mO2_from_housing_kg": 0.42113,
+    "old_total_mass_kg": 45.217,
+    "static_elastic_match_only": true,
+    "C_b2_source": "V3 F2 zero damping",
+    "fit2_source": "assumed equal to F1 fit, not an identified second bearing"
+  },
+  "trial_design": {
+    "primary_force_levels_N": [
+      2,
+      5,
+      10,
+      20
+    ],
+    "conditional_force_N": 30,
+    "gap_range_um": [
+      0,
+      10
+    ],
+    "status": "execution_configuration_not_results"
+  }
+}

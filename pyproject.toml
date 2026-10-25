@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spindle-data-generation"
+version = "0.1.0"
+description = "Spindle dynamics and fault-data generation"
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+packages = ["spindle", "utils", "scripts"]
+
+[tool.setuptools.package-dir]
+spindle = "src/spindle"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
