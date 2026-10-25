@@ -1,0 +1,52 @@
+{
+  "reference": "data_A_long/N3/gap_2um",
+  "scope": "Full parameter dictionary after applying only the common front radial clearance. calibration_status is descriptive metadata excluded from physical comparison. No root/discretization changes allowed for main B.",
+  "passed": true,
+  "B": [
+    {
+      "gap_um": 2.0,
+      "case": "data_A_long/N3/gap_2um",
+      "passed": true,
+      "physical_differences": [],
+      "excitation_differences": [],
+      "processing_differences": [],
+      "integration_differences": []
+    },
+    {
+      "gap_um": 3.0,
+      "case": "data_B/N3/gap_3um",
+      "passed": true,
+      "physical_differences": [],
+      "excitation_differences": [],
+      "processing_differences": [],
+      "integration_differences": []
+    },
+    {
+      "gap_um": 5.0,
+      "case": "data_A_long/N3/gap_5um",
+      "passed": true,
+      "physical_differences": [],
+      "excitation_differences": [],
+      "processing_differences": [],
+      "integration_differences": []
+    },
+    {
+      "gap_um": 7.5,
+      "case": "data_B/N3/gap_7.5um",
+      "passed": true,
+      "physical_differences": [],
+      "excitation_differences": [],
+      "processing_differences": [],
+      "integration_differences": []
+    },
+    {
+      "gap_um": 10.0,
+      "case": "data_A/N3/gap_10um",
+      "passed": true,
+      "physical_differences": [],
+      "excitation_differences": [],
+      "processing_differences": [],
+      "integration_differences": []
+    }
+  ]
+}

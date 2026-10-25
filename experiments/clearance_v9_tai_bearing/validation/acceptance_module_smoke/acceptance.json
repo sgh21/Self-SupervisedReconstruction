@@ -1,0 +1,921 @@
+{
+  "schema": "spindle_v9_acceptance_summary_v1",
+  "generated_utc": "2026-10-25T10:23:39.770321+00:00",
+  "selection_file": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\validation\\acceptance_module_smoke\\case_selection.json",
+  "selection_path_policy": "A prefers data_A_long same-variant/gap case with >=480 complete turns, then data_A with >=480; otherwise selected pilot is retained and marked pending. B and refinement paths are explicit.",
+  "scope": "Offline aggregation only; no simulation, native trajectory loading, or source analysis edits.",
+  "acceptance_criteria": {
+    "final_positive_gap_turns": 480,
+    "pilot_turns_not_final": true,
+    "subwindows": 4,
+    "minimum_turns_per_subwindow": 120,
+    "steady_relative_limits": {
+      "E_dir": 0.01,
+      "H_velocity_RMS": 0.01,
+      "non_1x_residual_RMS": 0.05,
+      "contact_impulse": 0.05
+    },
+    "convergence_limits": {
+      "E_dir_abs_um": 0.01,
+      "E_dir_relative": 0.01,
+      "H_velocity_RMS_abs_mm_s": 0.005,
+      "H_velocity_RMS_relative": 0.01,
+      "H_non_1x_residual_abs_mm_s": 0.002,
+      "H_non_1x_residual_relative": 0.05,
+      "wrench_RMS_relative": 0.02,
+      "wrench_peak_relative": 0.05,
+      "contact_fraction_absolute": 0.02
+    },
+    "old_B0_convergence_components": [
+      "output_sampling",
+      "h_half",
+      "n1024"
+    ],
+    "local_root_limits": {
+      "normalized_geometry_residual": 1e-09,
+      "force_residual_tolerance_ratio": 1.0,
+      "failed_status_count": 0
+    },
+    "N1_control_criterion": "not_applicable",
+    "N3_conditional_gates": [
+      "outer-control self-consistency",
+      "phase-speed warning"
+    ],
+    "N3_inner_control_candidate_evidence": "Reported from the independent T08 local branch sweep; it is not a per-RHS trajectory gate.",
+    "epsilon_definition": "For N3 cases, epsilon_num is the maximum absolute independent difference across output sampling, h/2, root tolerance/10, and N1024. For old B0 cases, the comparison set is output sampling, h/2, and N1024 because local root tolerance is not applicable. Each is an engineering error estimate, not a statistical confidence interval.",
+    "epsilon_num_definition": "epsilon_num contains only measured independent differences; convergence acceptance tolerances are not inserted into it.",
+    "significance_epsilon_floor_um": 0.0001,
+    "significance_epsilon_floor_source": "Inherited predeclared V8 precision baseline: config/clearance_v8_config.json health_result.epsilon_E_um=0.0001 um, retained in GPTOrder/spindle_v9_tai_bearing_plan/baseline_snapshot/parameters_v8_calibrated.json.",
+    "significance_definition": "Primary S_E=abs(E_N3-E_B0)/(epsilon_num_N3+epsilon_num_B0+0.0001 um); report only when same-U comparison and both complete independent error budgets are available. S_E>5 means the difference exceeds this numerical error estimate. Optional conservative sensitivity uses an additional 0.01 um absolute floor."
+  },
+  "single_bearing_tests": {
+    "status": "numerical_pass",
+    "schema": "spindle_v9_bearing_and_system_validation_v2",
+    "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\validation\\local_bearing_validation.json",
+    "scope": "independent bearing algebra/local sensitivity plus 12-DOF force assembly and short integration; excludes long experiment matrix and machine validation",
+    "local_check_count": 263,
+    "local_check_status_counts": {
+      "passed": 263,
+      "conditional": 0,
+      "failed": 0,
+      "pending": 0
+    },
+    "per_test_id_status_counts": {
+      "T01_COORDINATE_ROTATION": {
+        "passed": 1
+      },
+      "T04_FIXED_POSITION_PRELOAD": {
+        "passed": 2
+      },
+      "T03_T05_LOCAL_ROOT": {
+        "passed": 54
+      },
+      "T03_T04_ZERO_SPEED_PRELOAD": {
+        "passed": 2
+      },
+      "T02_HERTZ_AND_ELLIPSE": {
+        "passed": 4
+      },
+      "T02_ZERO_LOAD_ELLIPSE": {
+        "passed": 4
+      },
+      "T02_EXACT_CIRCULAR_HERTZ_LIMIT": {
+        "passed": 2
+      },
+      "T08_ZERO_ANGLE_KINEMATICS": {
+        "passed": 8
+      },
+      "T08_CONTROL_SELF_CONSISTENCY": {
+        "passed": 48
+      },
+      "T08_CAGE_PHASE_SPEED_DIAGNOSTIC": {
+        "passed": 48
+      },
+      "T08_CONTROL_CLASSIFICATION": {
+        "passed": 24
+      },
+      "T05_INERTIA_ABLATION": {
+        "passed": 12
+      },
+      "T06_INNER_CONTACT_LOSS": {
+        "passed": 4
+      },
+      "T06_SIGNED_SPEED_MIRROR": {
+        "passed": 2
+      },
+      "T05_REFERENCE_SOLVER_CROSSCHECK": {
+        "passed": 6
+      },
+      "T01_T11_PYTHON_NUMBA_WRENCH": {
+        "passed": 4
+      },
+      "T01_ORIENTATION_WRENCH_MIRROR": {
+        "passed": 2
+      },
+      "T05_SIGNED_TILT_LOCAL_ROOT": {
+        "passed": 16
+      },
+      "T04_CURVATURE_PRELOAD_ORACLE": {
+        "passed": 4
+      },
+      "T02_T05_CURVATURE_SPEED_SENSITIVITY": {
+        "passed": 16
+      }
+    },
+    "test_ids": [
+      "T01_COORDINATE_ROTATION",
+      "T01_ORIENTATION_WRENCH_MIRROR",
+      "T01_T11_PYTHON_NUMBA_WRENCH",
+      "T02_EXACT_CIRCULAR_HERTZ_LIMIT",
+      "T02_HERTZ_AND_ELLIPSE",
+      "T02_T05_CURVATURE_SPEED_SENSITIVITY",
+      "T02_ZERO_LOAD_ELLIPSE",
+      "T03_T04_ZERO_SPEED_PRELOAD",
+      "T03_T05_LOCAL_ROOT",
+      "T04_CURVATURE_PRELOAD_ORACLE",
+      "T04_FIXED_POSITION_PRELOAD",
+      "T05_INERTIA_ABLATION",
+      "T05_REFERENCE_SOLVER_CROSSCHECK",
+      "T05_SIGNED_TILT_LOCAL_ROOT",
+      "T06_INNER_CONTACT_LOSS",
+      "T06_SIGNED_SPEED_MIRROR",
+      "T08_CAGE_PHASE_SPEED_DIAGNOSTIC",
+      "T08_CONTROL_CLASSIFICATION",
+      "T08_CONTROL_SELF_CONSISTENCY",
+      "T08_ZERO_ANGLE_KINEMATICS"
+    ],
+    "original_suite_check_count": 281,
+    "original_suite_status_counts": {
+      "passed": 281,
+      "conditional": 0,
+      "failed": 0
+    },
+    "system_integration_status": "numerical_pass",
+    "system_integration_check_count": 10,
+    "machine_validated": false,
+    "note": "Counts describe the completed test cases recorded in this file; they do not mean every T01–T12 requirement is complete."
+  },
+  "local_control_branch_audit": {
+    "status": "numerical_pass",
+    "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\validation\\local_bearing_validation.json",
+    "scope": "Independent local candidate-control and cage-phase sweep; this evidence is not re-solved at each long-trajectory RHS state.",
+    "check_count": 120,
+    "check_status_counts": {
+      "passed": 120,
+      "conditional": 0,
+      "failed": 0,
+      "pending": 0
+    },
+    "evaluated_branches": [
+      "inner",
+      "outer"
+    ],
+    "classification_counts": {
+      "inner": 36,
+      "outer": 36
+    },
+    "candidate_branch_counts": {
+      "outer": {
+        "cases": 24,
+        "self_consistent": 12
+      },
+      "inner": {
+        "cases": 24,
+        "self_consistent": 12
+      }
+    },
+    "phase_speed_relative_difference_max": 0.003196972486892873,
+    "note": "Production N3 outer-control and phase-speed gates remain separate per-case checks; alternate inner candidates are supported by this local sweep and are not a required per-RHS trajectory artifact."
+  },
+  "system_integration_tests": {
+    "status": "numerical_pass",
+    "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\validation\\local_bearing_validation.json",
+    "scope": "12-DOF static equilibrium, force assembly and two-turn backend replay; no long experiment matrix",
+    "check_count": 10,
+    "check_status_counts": {
+      "passed": 10,
+      "conditional": 0,
+      "failed": 0,
+      "pending": 0
+    },
+    "static_equilibrium_passed": true,
+    "trajectory_revolutions": 2,
+    "machine_validated": false,
+    "note": "Previously completed static and short-trajectory integration checks; does not cover the long experiment matrix or contact-loss continuity."
+  },
+  "contact_boundary": {
+    "status": "failed",
+    "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\validation\\contact_boundary.json",
+    "schema": null,
+    "scope": "Local boundary audit only; no new spindle trajectory and no change to production physics or parameters.",
+    "summary": {
+      "case_count": 16,
+      "independent_traces_all_pass": true,
+      "zero_speed_cases_pass": true,
+      "finite_speed_boundary_continuity_pass": false,
+      "root_failure_samples": 87,
+      "verdict": "The already-detached F10 branch can pass algebra tests; the general finite-speed transition-continuity requirement does not pass. Always-dual trajectories require separate domain assessment."
+    },
+    "cases": [
+      {
+        "family": "front",
+        "A_label": "zero_axial_distance",
+        "rpm_magnitude": 0,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": 0.0,
+          "Fc_N": 0.0,
+          "Mg_Nm": 0.0,
+          "B_m": 0.0
+        },
+        "boundary_continuity_pass": true,
+        "trace_all_pass": true,
+        "root_failure_count": 0,
+        "verdict": "zero_speed_geometric_open_set_continuous"
+      },
+      {
+        "family": "front",
+        "A_label": "zero_axial_distance",
+        "rpm_magnitude": 3000,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": -0.007015061220056795,
+          "Fc_N": -0.007015061220056795,
+          "Mg_Nm": 0.0,
+          "B_m": -6.16674471361732e-10
+        },
+        "boundary_continuity_pass": false,
+        "trace_all_pass": true,
+        "root_failure_count": 0,
+        "verdict": "incompatible_loaded_and_prescribed_cage_limits"
+      },
+      {
+        "family": "front",
+        "A_label": "zero_axial_distance",
+        "rpm_magnitude": 7000,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": -0.038193111086976206,
+          "Fc_N": -0.038193111086976206,
+          "Mg_Nm": 0.0,
+          "B_m": -1.9084978890217957e-09
+        },
+        "boundary_continuity_pass": false,
+        "trace_all_pass": true,
+        "root_failure_count": 0,
+        "verdict": "incompatible_loaded_and_prescribed_cage_limits"
+      },
+      {
+        "family": "front",
+        "A_label": "zero_axial_distance",
+        "rpm_magnitude": 10000,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": -0.0779451246672993,
+          "Fc_N": -0.0779451246672993,
+          "Mg_Nm": 0.0,
+          "B_m": -3.0706310032635117e-09
+        },
+        "boundary_continuity_pass": false,
+        "trace_all_pass": true,
+        "root_failure_count": 0,
+        "verdict": "incompatible_loaded_and_prescribed_cage_limits"
+      },
+      {
+        "family": "front",
+        "A_label": "nominal_preloaded_axial_distance",
+        "rpm_magnitude": 0,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": 0.0,
+          "Fc_N": 0.0,
+          "Mg_Nm": 0.0,
+          "B_m": 2.873318914397595e-05
+        },
+        "boundary_continuity_pass": true,
+        "trace_all_pass": true,
+        "root_failure_count": 0,
+        "verdict": "zero_speed_geometric_open_set_continuous"
+      },
+      {
+        "family": "front",
+        "A_label": "nominal_preloaded_axial_distance",
+        "rpm_magnitude": 3000,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": 0.13656469122384107,
+          "Fc_N": 0.13656469122384107,
+          "Mg_Nm": 0.0,
+          "B_m": 1.1574102969005157e-08
+        },
+        "boundary_continuity_pass": false,
+        "trace_all_pass": true,
+        "root_failure_count": 14,
+        "verdict": "incompatible_loaded_and_prescribed_cage_limits"
+      },
+      {
+        "family": "front",
+        "A_label": "nominal_preloaded_axial_distance",
+        "rpm_magnitude": 7000,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": 0.7435188744409134,
+          "Fc_N": 0.7435188744409134,
+          "Mg_Nm": 0.0,
+          "B_m": 3.581979165622612e-08
+        },
+        "boundary_continuity_pass": false,
+        "trace_all_pass": true,
+        "root_failure_count": 15,
+        "verdict": "incompatible_loaded_and_prescribed_cage_limits"
+      },
+      {
+        "family": "front",
+        "A_label": "nominal_preloaded_axial_distance",
+        "rpm_magnitude": 10000,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": 1.5173854580426793,
+          "Fc_N": 1.5173854580426793,
+          "Mg_Nm": 0.0,
+          "B_m": 5.763137775837389e-08
+        },
+        "boundary_continuity_pass": false,
+        "trace_all_pass": true,
+        "root_failure_count": 15,
+        "verdict": "incompatible_loaded_and_prescribed_cage_limits"
+      },
+      {
+        "family": "rear",
+        "A_label": "zero_axial_distance",
+        "rpm_magnitude": 0,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": 0.0,
+          "Fc_N": 0.0,
+          "Mg_Nm": 0.0,
+          "B_m": 0.0
+        },
+        "boundary_continuity_pass": true,
+        "trace_all_pass": true,
+        "root_failure_count": 0,
+        "verdict": "zero_speed_geometric_open_set_continuous"
+      },
+      {
+        "family": "rear",
+        "A_label": "zero_axial_distance",
+        "rpm_magnitude": 3000,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": -0.004693332132929051,
+          "Fc_N": -0.004693332132929051,
+          "Mg_Nm": 0.0,
+          "B_m": -5.091661298313455e-10
+        },
+        "boundary_continuity_pass": false,
+        "trace_all_pass": true,
+        "root_failure_count": 0,
+        "verdict": "incompatible_loaded_and_prescribed_cage_limits"
+      },
+      {
+        "family": "rear",
+        "A_label": "zero_axial_distance",
+        "rpm_magnitude": 7000,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": -0.025552586057058013,
+          "Fc_N": -0.025552586057058013,
+          "Mg_Nm": 0.0,
+          "B_m": -1.5757786789825923e-09
+        },
+        "boundary_continuity_pass": false,
+        "trace_all_pass": true,
+        "root_failure_count": 0,
+        "verdict": "incompatible_loaded_and_prescribed_cage_limits"
+      },
+      {
+        "family": "rear",
+        "A_label": "zero_axial_distance",
+        "rpm_magnitude": 10000,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": -0.052148134810322766,
+          "Fc_N": -0.052148134810322766,
+          "Mg_Nm": 0.0,
+          "B_m": -2.5353105674976242e-09
+        },
+        "boundary_continuity_pass": false,
+        "trace_all_pass": true,
+        "root_failure_count": 0,
+        "verdict": "incompatible_loaded_and_prescribed_cage_limits"
+      },
+      {
+        "family": "rear",
+        "A_label": "nominal_preloaded_axial_distance",
+        "rpm_magnitude": 0,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": 0.0,
+          "Fc_N": 0.0,
+          "Mg_Nm": 0.0,
+          "B_m": 2.619716984273953e-05
+        },
+        "boundary_continuity_pass": true,
+        "trace_all_pass": true,
+        "root_failure_count": 0,
+        "verdict": "zero_speed_geometric_open_set_continuous"
+      },
+      {
+        "family": "rear",
+        "A_label": "nominal_preloaded_axial_distance",
+        "rpm_magnitude": 3000,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": 0.08246854896603373,
+          "Fc_N": 0.08246854896603373,
+          "Mg_Nm": 0.0,
+          "B_m": 8.613224152247308e-09
+        },
+        "boundary_continuity_pass": false,
+        "trace_all_pass": true,
+        "root_failure_count": 14,
+        "verdict": "incompatible_loaded_and_prescribed_cage_limits"
+      },
+      {
+        "family": "rear",
+        "A_label": "nominal_preloaded_axial_distance",
+        "rpm_magnitude": 7000,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": 0.4489954332595165,
+          "Fc_N": 0.4489954332595165,
+          "Mg_Nm": 0.0,
+          "B_m": 2.6656397946931386e-08
+        },
+        "boundary_continuity_pass": false,
+        "trace_all_pass": true,
+        "root_failure_count": 14,
+        "verdict": "incompatible_loaded_and_prescribed_cage_limits"
+      },
+      {
+        "family": "rear",
+        "A_label": "nominal_preloaded_axial_distance",
+        "rpm_magnitude": 10000,
+        "F07_minus_F10_boundary_difference": {
+          "Qi_N": 0.0,
+          "Qo_N": 0.916317210733709,
+          "Fc_N": 0.916317210733709,
+          "Mg_Nm": 0.0,
+          "B_m": 4.288815955426784e-08
+        },
+        "boundary_continuity_pass": false,
+        "trace_all_pass": true,
+        "root_failure_count": 15,
+        "verdict": "incompatible_loaded_and_prescribed_cage_limits"
+      }
+    ],
+    "note": "A failure here blocks generic contact-loss capability; it does not invalidate a separately passing dual-contact N3 trajectory."
+  },
+  "convergence_acceptance": {
+    "status": "pending",
+    "comparison_groups": 1,
+    "failed_refinement_count": 0,
+    "complete_error_budget_groups": 0,
+    "note": "Independent output-sampling, h/2, root-tolerance/10, and N1024 comparisons are required for a complete E_dir error budget; absent comparisons remain pending."
+  },
+  "old_B0_convergence_acceptance": {
+    "status": "pending",
+    "comparison_groups": 0,
+    "failed_refinement_count": 0,
+    "complete_error_budget_groups": 0,
+    "required_components": [
+      "output_sampling",
+      "h_half",
+      "n1024"
+    ],
+    "local_root_criterion": "not_applicable",
+    "note": "Old V8 B0 error budgets require same-window sampling, h/2, and N1024 evidence. A local root-tolerance comparison is not applicable; missing full 480-turn refinements remain pending."
+  },
+  "generic_contact_loss_capability": {
+    "status": "failed",
+    "blocked_by": "contact_boundary",
+    "note": "This independent generic capability status does not gate numerical acceptance of a selected N3 run that remains in dual contact."
+  },
+  "selected_cases": {
+    "count": 5,
+    "numerical_core_status_counts": {
+      "numerical_pass": 5,
+      "pending": 0,
+      "failed": 0
+    },
+    "conditional_count": 0,
+    "cases": [
+      {
+        "case_id": "A.B0.2",
+        "group": "A",
+        "variant": "B0",
+        "gap_um": 2.0,
+        "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\data_A_long\\B0\\gap_2um",
+        "path_resolution": "data_A_long_480_turn_priority",
+        "force_N": 14.449937482999612,
+        "U_kg_m": 2.689135290615865e-05,
+        "rpm_signed": -7000.0,
+        "complete_turns": 480,
+        "configured_turns": 480,
+        "E_x_um": 1.3349364222633644,
+        "E_y_um": 2.0035504453207373,
+        "E_dir_um": 2.0035504453207373,
+        "H_v_rms_x_mm_s": 0.6252856247888988,
+        "H_v_rms_y_mm_s": 0.5710057115796799,
+        "status": "numerical_pass",
+        "numerical_core_status": "numerical_pass",
+        "gates": {
+          "turns": "passed",
+          "steady": "passed",
+          "sampling": "passed",
+          "local_root": "not_applicable",
+          "domain": "passed"
+        },
+        "conditional_gates": {
+          "outer_control": "not_applicable",
+          "phase_speed": "not_applicable"
+        },
+        "control_diagnostics": {
+          "outer_control_self_consistent_fraction": {},
+          "phase_speed_relative_difference": {},
+          "phase_speed_warning_fraction": 0.02,
+          "inner_control_candidate": "not_applicable"
+        },
+        "domain": {
+          "passed": true,
+          "physical_applicability": "conditional_fixed_angle_equivalent_Hertz",
+          "contact_pressure_strength": "not_validated_missing_groove_curvature_and_running_preload",
+          "checks": {
+            "finite_state": true,
+            "small_angle": true,
+            "four_bearings_reported": true,
+            "F1_no_tensile_contact": true,
+            "F1_finite_contact": true,
+            "F2_no_tensile_contact": true,
+            "F2_finite_contact": true,
+            "R1_no_tensile_contact": true,
+            "R1_finite_contact": true,
+            "R2_no_tensile_contact": true,
+            "R2_finite_contact": true
+          }
+        },
+        "stationarity": {
+          "passed": true,
+          "window_count": 4,
+          "subwindow_complete_turns": [
+            120,
+            120,
+            120,
+            120
+          ],
+          "main_metric_pass": true,
+          "contact_pass": true,
+          "feature_pass": true
+        },
+        "sampling": {
+          "passed": true,
+          "same_window": true,
+          "main_metric_pass": true,
+          "contact_pass": true,
+          "feature_pass": true,
+          "bearing_wrench_pass": null,
+          "base_fs_hz": 65536,
+          "fine_fs_hz": 131072
+        }
+      },
+      {
+        "case_id": "A.B0d.2",
+        "group": "A",
+        "variant": "B0d",
+        "gap_um": 2.0,
+        "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\data_A_long\\B0d\\gap_2um",
+        "path_resolution": "data_A_long_480_turn_priority",
+        "force_N": 14.449937482999612,
+        "U_kg_m": 2.689135290615865e-05,
+        "rpm_signed": -7000.0,
+        "complete_turns": 480,
+        "configured_turns": 480,
+        "E_x_um": 1.3349368520062854,
+        "E_y_um": 2.0035498029342254,
+        "E_dir_um": 2.0035498029342254,
+        "H_v_rms_x_mm_s": 0.6252856290630002,
+        "H_v_rms_y_mm_s": 0.5710057171897839,
+        "status": "numerical_pass",
+        "numerical_core_status": "numerical_pass",
+        "gates": {
+          "turns": "passed",
+          "steady": "passed",
+          "sampling": "passed",
+          "local_root": "not_applicable",
+          "domain": "passed"
+        },
+        "conditional_gates": {
+          "outer_control": "not_applicable",
+          "phase_speed": "not_applicable"
+        },
+        "control_diagnostics": {
+          "outer_control_self_consistent_fraction": {},
+          "phase_speed_relative_difference": {},
+          "phase_speed_warning_fraction": 0.02,
+          "inner_control_candidate": "not_applicable"
+        },
+        "domain": {
+          "passed": true,
+          "physical_applicability": null,
+          "contact_pressure_strength": "not_validated_missing_running_groove_curvature_limit",
+          "checks": {
+            "finite_state": true,
+            "small_angle": true,
+            "local_root_residuals": true
+          }
+        },
+        "stationarity": {
+          "passed": true,
+          "window_count": 4,
+          "subwindow_complete_turns": [
+            120,
+            120,
+            120,
+            120
+          ],
+          "main_metric_pass": true,
+          "contact_pass": true,
+          "feature_pass": true
+        },
+        "sampling": {
+          "passed": true,
+          "same_window": true,
+          "main_metric_pass": true,
+          "contact_pass": true,
+          "feature_pass": true,
+          "bearing_wrench_pass": true,
+          "base_fs_hz": 65536,
+          "fine_fs_hz": null
+        }
+      },
+      {
+        "case_id": "A.N1.2",
+        "group": "A",
+        "variant": "N1",
+        "gap_um": 2.0,
+        "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\data_A_long\\N1\\gap_2um",
+        "path_resolution": "data_A_long_480_turn_priority",
+        "force_N": 14.449937482999612,
+        "U_kg_m": 2.689135290615865e-05,
+        "rpm_signed": -7000.0,
+        "complete_turns": 480,
+        "configured_turns": 480,
+        "E_x_um": 1.3352263799922803,
+        "E_y_um": 2.0005251188866304,
+        "E_dir_um": 2.0005251188866304,
+        "H_v_rms_x_mm_s": 0.6250954351251262,
+        "H_v_rms_y_mm_s": 0.5711070034546987,
+        "status": "numerical_pass",
+        "numerical_core_status": "numerical_pass",
+        "gates": {
+          "turns": "passed",
+          "steady": "passed",
+          "sampling": "passed",
+          "local_root": "passed",
+          "domain": "passed"
+        },
+        "conditional_gates": {
+          "outer_control": "not_applicable",
+          "phase_speed": "not_applicable"
+        },
+        "control_diagnostics": {
+          "outer_control_self_consistent_fraction": {
+            "bearing_F1_outer_control_self_consistent_fraction": 0.0,
+            "bearing_R1_outer_control_self_consistent_fraction": 0.0,
+            "bearing_F2_outer_control_self_consistent_fraction": 0.0,
+            "bearing_R2_outer_control_self_consistent_fraction": 0.0
+          },
+          "phase_speed_relative_difference": {
+            "bearing_F2_max_phase_speed_relative_difference": 0.0003957593517318203,
+            "bearing_R2_max_phase_speed_relative_difference": 0.0004615030074405734,
+            "bearing_R1_max_phase_speed_relative_difference": 0.0004656599642442064,
+            "bearing_F1_max_phase_speed_relative_difference": 0.0003902784324102499
+          },
+          "phase_speed_warning_fraction": 0.02,
+          "inner_control_candidate": "not_applicable"
+        },
+        "domain": {
+          "passed": true,
+          "physical_applicability": null,
+          "contact_pressure_strength": "not_validated_missing_running_groove_curvature_limit",
+          "checks": {
+            "finite_state": true,
+            "small_angle": true,
+            "local_root_residuals": true
+          }
+        },
+        "stationarity": {
+          "passed": true,
+          "window_count": 4,
+          "subwindow_complete_turns": [
+            120,
+            120,
+            120,
+            120
+          ],
+          "main_metric_pass": true,
+          "contact_pass": true,
+          "feature_pass": true
+        },
+        "sampling": {
+          "passed": true,
+          "same_window": true,
+          "main_metric_pass": true,
+          "contact_pass": true,
+          "feature_pass": true,
+          "bearing_wrench_pass": true,
+          "base_fs_hz": 65536,
+          "fine_fs_hz": null
+        }
+      },
+      {
+        "case_id": "A.N3.2",
+        "group": "A",
+        "variant": "N3",
+        "gap_um": 2.0,
+        "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\data_A_long\\N3\\gap_2um",
+        "path_resolution": "data_A_long_480_turn_priority",
+        "force_N": 14.449937482999612,
+        "U_kg_m": 2.689135290615865e-05,
+        "rpm_signed": -7000.0,
+        "complete_turns": 480,
+        "configured_turns": 480,
+        "E_x_um": 1.2418346008638186,
+        "E_y_um": 1.990036472849796,
+        "E_dir_um": 1.990036472849796,
+        "H_v_rms_x_mm_s": 0.6256934558184026,
+        "H_v_rms_y_mm_s": 0.5715762980714644,
+        "status": "numerical_pass",
+        "numerical_core_status": "numerical_pass",
+        "gates": {
+          "turns": "passed",
+          "steady": "passed",
+          "sampling": "passed",
+          "local_root": "passed",
+          "domain": "passed"
+        },
+        "conditional_gates": {
+          "outer_control": "passed",
+          "phase_speed": "passed"
+        },
+        "control_diagnostics": {
+          "outer_control_self_consistent_fraction": {
+            "bearing_F1_outer_control_self_consistent_fraction": 1.0,
+            "bearing_F2_outer_control_self_consistent_fraction": 1.0,
+            "bearing_R1_outer_control_self_consistent_fraction": 1.0,
+            "bearing_R2_outer_control_self_consistent_fraction": 1.0
+          },
+          "phase_speed_relative_difference": {
+            "bearing_R2_max_phase_speed_relative_difference": 0.0017442724165310799,
+            "bearing_F2_max_phase_speed_relative_difference": 0.0019108520774085826,
+            "bearing_R1_max_phase_speed_relative_difference": 0.0015300688866494347,
+            "bearing_F1_max_phase_speed_relative_difference": 0.002203522009910609
+          },
+          "phase_speed_warning_fraction": 0.02,
+          "inner_control_candidate": "covered_by_local_sweep",
+          "inner_control_candidate_local_sweep_status": "numerical_pass"
+        },
+        "domain": {
+          "passed": true,
+          "physical_applicability": null,
+          "contact_pressure_strength": "not_validated_missing_running_groove_curvature_limit",
+          "checks": {
+            "finite_state": true,
+            "small_angle": true,
+            "local_root_residuals": true
+          }
+        },
+        "stationarity": {
+          "passed": true,
+          "window_count": 4,
+          "subwindow_complete_turns": [
+            120,
+            120,
+            120,
+            120
+          ],
+          "main_metric_pass": true,
+          "contact_pass": true,
+          "feature_pass": true
+        },
+        "sampling": {
+          "passed": true,
+          "same_window": true,
+          "main_metric_pass": true,
+          "contact_pass": true,
+          "feature_pass": true,
+          "bearing_wrench_pass": true,
+          "base_fs_hz": 65536,
+          "fine_fs_hz": null
+        }
+      },
+      {
+        "case_id": "B.B0d.2",
+        "group": "B",
+        "variant": "B0d",
+        "gap_um": 2.0,
+        "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\data_A_long\\B0d\\gap_2um",
+        "path_resolution": "explicit_case_selection_path",
+        "force_N": 14.449937482999612,
+        "U_kg_m": 2.689135290615865e-05,
+        "rpm_signed": -7000.0,
+        "complete_turns": 480,
+        "configured_turns": 480,
+        "E_x_um": 1.3349368520062854,
+        "E_y_um": 2.0035498029342254,
+        "E_dir_um": 2.0035498029342254,
+        "H_v_rms_x_mm_s": 0.6252856290630002,
+        "H_v_rms_y_mm_s": 0.5710057171897839,
+        "status": "numerical_pass",
+        "numerical_core_status": "numerical_pass",
+        "gates": {
+          "turns": "passed",
+          "steady": "passed",
+          "sampling": "passed",
+          "local_root": "not_applicable",
+          "domain": "passed"
+        },
+        "conditional_gates": {
+          "outer_control": "not_applicable",
+          "phase_speed": "not_applicable"
+        },
+        "control_diagnostics": {
+          "outer_control_self_consistent_fraction": {},
+          "phase_speed_relative_difference": {},
+          "phase_speed_warning_fraction": 0.02,
+          "inner_control_candidate": "not_applicable"
+        },
+        "domain": {
+          "passed": true,
+          "physical_applicability": null,
+          "contact_pressure_strength": "not_validated_missing_running_groove_curvature_limit",
+          "checks": {
+            "finite_state": true,
+            "small_angle": true,
+            "local_root_residuals": true
+          }
+        },
+        "stationarity": {
+          "passed": true,
+          "window_count": 4,
+          "subwindow_complete_turns": [
+            120,
+            120,
+            120,
+            120
+          ],
+          "main_metric_pass": true,
+          "contact_pass": true,
+          "feature_pass": true
+        },
+        "sampling": {
+          "passed": true,
+          "same_window": true,
+          "main_metric_pass": true,
+          "contact_pass": true,
+          "feature_pass": true,
+          "bearing_wrench_pass": true,
+          "base_fs_hz": 65536,
+          "fine_fs_hz": null
+        }
+      }
+    ]
+  },
+  "same_U_old_new_significance": [
+    {
+      "gap_um": 2.0,
+      "old_case": "A.B0.2",
+      "new_case": "A.N3.2",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "E_old_um": 2.0035504453207373,
+      "E_new_um": 1.990036472849796,
+      "absolute_difference_um": 0.013513972470941438,
+      "relative_change_percent": -0.6745012336726096,
+      "epsilon_old_um": null,
+      "epsilon_new_um": 7.567242207717761e-05,
+      "epsilon_floor_um": 0.0001,
+      "epsilon_floor_source": "Inherited predeclared V8 precision floor: config/clearance_v8_config.json health_result.epsilon_E_um=0.0001 um; same value is retained in GPTOrder/spindle_v9_tai_bearing_plan/baseline_snapshot/parameters_v8_calibrated.json. This is not the V9 E_dir convergence acceptance tolerance.",
+      "epsilon_num_definition": "Each epsilon_num is only the maximum measured independent E_dir difference for that case; no acceptance threshold is inserted into epsilon_num.",
+      "epsilon_definition": "S_E=|E_new-E_old|/(epsilon_num_old+epsilon_num_new+0.0001 um). The fixed 0.0001 um floor is predeclared from the inherited V8 precision baseline.",
+      "error_budgets_complete": false,
+      "S_E": null,
+      "S_E_conservative_floor_0p01um": null,
+      "conservative_floor_um": 0.01,
+      "status": "pending_error_budget"
+    }
+  ],
+  "aggregate_status": "numerical_pass",
+  "aggregate_scope_note": "aggregate_status reports selected-case numerical core gates only. Independent convergence and generic contact-loss capability have separate statuses; this does not claim full T01–T12 completion or real-machine validation."
+}

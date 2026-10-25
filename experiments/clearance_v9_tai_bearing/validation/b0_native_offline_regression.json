@@ -1,0 +1,93 @@
+{
+  "schema": "v9_b0_native_offline_regression_v1",
+  "status": "passed",
+  "scope": "Offline replay of existing B0 native results. No dynamics integration, no physical parameter change; V9 analysis metadata was added only in memory.",
+  "metadata_only_replay": {
+    "added_nonphysical_config_metadata": {
+      "analysis_version": "v9",
+      "mechanism_variant": "B0"
+    },
+    "physical_config_fields_compared": [
+      "parameters",
+      "excitation",
+      "processing",
+      "simulation"
+    ],
+    "physical_config_fields_unchanged": true,
+    "measurement_definition": "main M signal is saved r_m_raw_m: rotor measurement section relative to ground; M_relative_H_m remains a separate diagnostic.",
+    "cases": [
+      {
+        "case": "B0/gap_2um",
+        "probe_reference": "ground",
+        "native_main_metric_source": "r_m_raw_m",
+        "separate_M_relative_H_diagnostic_saved": true,
+        "retained_turns": 480,
+        "stored_E_dir_um": 2.003550538972833,
+        "replayed_E_dir_um": 2.003550538972833,
+        "absolute_difference_um": 0.0,
+        "replay_steady_pass": true
+      },
+      {
+        "case": "B0/gap_10um",
+        "probe_reference": "ground",
+        "native_main_metric_source": "r_m_raw_m",
+        "separate_M_relative_H_diagnostic_saved": true,
+        "retained_turns": 480,
+        "stored_E_dir_um": 12.093407682302486,
+        "replayed_E_dir_um": 12.093407682302486,
+        "absolute_difference_um": 0.0,
+        "replay_steady_pass": true
+      }
+    ]
+  },
+  "B0d_diagnostic_routing_probe": {
+    "status": "passed",
+    "scope": "Three saved B0 samples were passed through the in-memory B0d API routing only; this is a schema/source check, not a B0d dynamics or response validation.",
+    "mechanism_variant": "B0d",
+    "bearing_contact_model": "relative_tilt_v8",
+    "damping_policy": "common_structural_ring",
+    "legacy_diagnostics_source": "V8 bearing_wrench_at with cb_total=0, preserving legacy per-ball geometry/load diagnostics independently of common ring damping.",
+    "new_tai_diagnostics_shape_by_bearing": {
+      "F1": [
+        3,
+        0,
+        32
+      ],
+      "F2": [
+        3,
+        0,
+        32
+      ],
+      "R1": [
+        3,
+        0,
+        32
+      ],
+      "R2": [
+        3,
+        0,
+        32
+      ]
+    },
+    "legacy_delta_shape_by_bearing": {
+      "F1": [
+        3,
+        18
+      ],
+      "F2": [
+        3,
+        18
+      ],
+      "R1": [
+        3,
+        16
+      ],
+      "R2": [
+        3,
+        16
+      ]
+    },
+    "legacy_normal_force_present_for_all_bearings": true,
+    "routing_conclusion": "B0d collection consumes legacy_diagnostics for legacy summaries/per-ball statistics; the empty Tai diagnostic matrix is not used as a new ball solution."
+  }
+}

@@ -1,0 +1,427 @@
+{
+  "rows": [
+    {
+      "gap_um": 2,
+      "variant": "B0",
+      "calls_per_repetition": 1000,
+      "repetitions": 5,
+      "measurements": [
+        {
+          "wall_s": 0.005531800008611754,
+          "cpu_s": 0.0,
+          "checksum": -1.517044827841877,
+          "repetition": 0
+        },
+        {
+          "wall_s": 0.0047682999866083264,
+          "cpu_s": 0.015625,
+          "checksum": -1.517044827841877,
+          "repetition": 1
+        },
+        {
+          "wall_s": 0.008232499996665865,
+          "cpu_s": 0.015625,
+          "checksum": -1.517044827841877,
+          "repetition": 2
+        },
+        {
+          "wall_s": 0.005957400018814951,
+          "cpu_s": 0.0,
+          "checksum": -1.517044827841877,
+          "repetition": 3
+        },
+        {
+          "wall_s": 0.004872699995758012,
+          "cpu_s": 0.0,
+          "checksum": -1.517044827841877,
+          "repetition": 4
+        }
+      ],
+      "median_wall_us_per_rhs": 5.531800008611754,
+      "median_cpu_us_per_rhs": 0.0,
+      "ratio_to_v8_wall": 1.0,
+      "state_source": "experiments\\clearance_v9_tai_bearing\\data_A\\B0\\gap_2um\\native.npz"
+    },
+    {
+      "gap_um": 2,
+      "variant": "B0d",
+      "calls_per_repetition": 1000,
+      "repetitions": 5,
+      "measurements": [
+        {
+          "wall_s": 0.00824199998169206,
+          "cpu_s": 0.015625,
+          "checksum": -1.5170448278497457,
+          "repetition": 0
+        },
+        {
+          "wall_s": 0.010181899997405708,
+          "cpu_s": 0.0,
+          "checksum": -1.5170448278497457,
+          "repetition": 1
+        },
+        {
+          "wall_s": 0.011793000012403354,
+          "cpu_s": 0.015625,
+          "checksum": -1.5170448278497457,
+          "repetition": 2
+        },
+        {
+          "wall_s": 0.008268700010376051,
+          "cpu_s": 0.015625,
+          "checksum": -1.5170448278497457,
+          "repetition": 3
+        },
+        {
+          "wall_s": 0.011675999994622543,
+          "cpu_s": 0.0,
+          "checksum": -1.5170448278497457,
+          "repetition": 4
+        }
+      ],
+      "median_wall_us_per_rhs": 10.181899997405708,
+      "median_cpu_us_per_rhs": 15.625,
+      "ratio_to_v8_wall": 1.8406124555397532,
+      "state_source": "experiments\\clearance_v9_tai_bearing\\data_A\\B0\\gap_2um\\native.npz"
+    },
+    {
+      "gap_um": 2,
+      "variant": "N1",
+      "calls_per_repetition": 1000,
+      "repetitions": 5,
+      "measurements": [
+        {
+          "wall_s": 0.0503716999955941,
+          "cpu_s": 0.046875,
+          "checksum": 4314.142857938722,
+          "repetition": 0
+        },
+        {
+          "wall_s": 0.04811170001630671,
+          "cpu_s": 0.046875,
+          "checksum": 4314.142857938722,
+          "repetition": 1
+        },
+        {
+          "wall_s": 0.04772390000289306,
+          "cpu_s": 0.03125,
+          "checksum": 4314.142857938722,
+          "repetition": 2
+        },
+        {
+          "wall_s": 0.05174759999499656,
+          "cpu_s": 0.046875,
+          "checksum": 4314.142857938722,
+          "repetition": 3
+        },
+        {
+          "wall_s": 0.05665340000996366,
+          "cpu_s": 0.0625,
+          "checksum": 4314.142857938722,
+          "repetition": 4
+        }
+      ],
+      "median_wall_us_per_rhs": 50.3716999955941,
+      "median_cpu_us_per_rhs": 46.875,
+      "ratio_to_v8_wall": 9.105842567912221,
+      "state_source": "experiments\\clearance_v9_tai_bearing\\data_A\\B0\\gap_2um\\native.npz"
+    },
+    {
+      "gap_um": 2,
+      "variant": "N2",
+      "calls_per_repetition": 1000,
+      "repetitions": 5,
+      "measurements": [
+        {
+          "wall_s": 0.11074979999102652,
+          "cpu_s": 0.109375,
+          "checksum": 7332.310815058829,
+          "repetition": 0
+        },
+        {
+          "wall_s": 0.10235120001016185,
+          "cpu_s": 0.109375,
+          "checksum": 7332.310815058829,
+          "repetition": 1
+        },
+        {
+          "wall_s": 0.11041550000663847,
+          "cpu_s": 0.109375,
+          "checksum": 7332.310815058829,
+          "repetition": 2
+        },
+        {
+          "wall_s": 0.10426819999702275,
+          "cpu_s": 0.109375,
+          "checksum": 7332.310815058829,
+          "repetition": 3
+        },
+        {
+          "wall_s": 0.11178120001568459,
+          "cpu_s": 0.109375,
+          "checksum": 7332.310815058829,
+          "repetition": 4
+        }
+      ],
+      "median_wall_us_per_rhs": 110.41550000663847,
+      "median_cpu_us_per_rhs": 109.375,
+      "ratio_to_v8_wall": 19.960139526871302,
+      "state_source": "experiments\\clearance_v9_tai_bearing\\data_A\\B0\\gap_2um\\native.npz"
+    },
+    {
+      "gap_um": 2,
+      "variant": "N3",
+      "calls_per_repetition": 1000,
+      "repetitions": 5,
+      "measurements": [
+        {
+          "wall_s": 0.11396469999453984,
+          "cpu_s": 0.109375,
+          "checksum": 7342.624830923697,
+          "repetition": 0
+        },
+        {
+          "wall_s": 0.10358339999220334,
+          "cpu_s": 0.09375,
+          "checksum": 7342.624830923697,
+          "repetition": 1
+        },
+        {
+          "wall_s": 0.10929619998205453,
+          "cpu_s": 0.109375,
+          "checksum": 7342.624830923697,
+          "repetition": 2
+        },
+        {
+          "wall_s": 0.12031800000113435,
+          "cpu_s": 0.125,
+          "checksum": 7342.624830923697,
+          "repetition": 3
+        },
+        {
+          "wall_s": 0.1236190999916289,
+          "cpu_s": 0.125,
+          "checksum": 7342.624830923697,
+          "repetition": 4
+        }
+      ],
+      "median_wall_us_per_rhs": 113.96469999453984,
+      "median_cpu_us_per_rhs": 109.375,
+      "ratio_to_v8_wall": 20.601739003059176,
+      "state_source": "experiments\\clearance_v9_tai_bearing\\data_A\\B0\\gap_2um\\native.npz"
+    },
+    {
+      "gap_um": 10,
+      "variant": "B0",
+      "calls_per_repetition": 1000,
+      "repetitions": 5,
+      "measurements": [
+        {
+          "wall_s": 0.005025899998145178,
+          "cpu_s": 0.0,
+          "checksum": 6.0919558000007035,
+          "repetition": 0
+        },
+        {
+          "wall_s": 0.0046722000115551054,
+          "cpu_s": 0.015625,
+          "checksum": 6.0919558000007035,
+          "repetition": 1
+        },
+        {
+          "wall_s": 0.0071604000113438815,
+          "cpu_s": 0.0,
+          "checksum": 6.0919558000007035,
+          "repetition": 2
+        },
+        {
+          "wall_s": 0.007933699991554022,
+          "cpu_s": 0.0,
+          "checksum": 6.0919558000007035,
+          "repetition": 3
+        },
+        {
+          "wall_s": 0.00858439999865368,
+          "cpu_s": 0.0,
+          "checksum": 6.0919558000007035,
+          "repetition": 4
+        }
+      ],
+      "median_wall_us_per_rhs": 7.1604000113438815,
+      "median_cpu_us_per_rhs": 0.0,
+      "ratio_to_v8_wall": 1.0,
+      "state_source": "experiments\\clearance_v9_tai_bearing\\data_A\\B0\\gap_10um\\native.npz"
+    },
+    {
+      "gap_um": 10,
+      "variant": "B0d",
+      "calls_per_repetition": 1000,
+      "repetitions": 5,
+      "measurements": [
+        {
+          "wall_s": 0.009329900000011548,
+          "cpu_s": 0.015625,
+          "checksum": 6.091955800001225,
+          "repetition": 0
+        },
+        {
+          "wall_s": 0.009848499990766868,
+          "cpu_s": 0.0,
+          "checksum": 6.091955800001225,
+          "repetition": 1
+        },
+        {
+          "wall_s": 0.013046799984294921,
+          "cpu_s": 0.015625,
+          "checksum": 6.091955800001225,
+          "repetition": 2
+        },
+        {
+          "wall_s": 0.008361599990166724,
+          "cpu_s": 0.015625,
+          "checksum": 6.091955800001225,
+          "repetition": 3
+        },
+        {
+          "wall_s": 0.011170799989486113,
+          "cpu_s": 0.015625,
+          "checksum": 6.091955800001225,
+          "repetition": 4
+        }
+      ],
+      "median_wall_us_per_rhs": 9.848499990766868,
+      "median_cpu_us_per_rhs": 15.625,
+      "ratio_to_v8_wall": 1.3754119846886148,
+      "state_source": "experiments\\clearance_v9_tai_bearing\\data_A\\B0\\gap_10um\\native.npz"
+    },
+    {
+      "gap_um": 10,
+      "variant": "N1",
+      "calls_per_repetition": 1000,
+      "repetitions": 5,
+      "measurements": [
+        {
+          "wall_s": 0.05799569998634979,
+          "cpu_s": 0.0625,
+          "checksum": 19832.815041510108,
+          "repetition": 0
+        },
+        {
+          "wall_s": 0.05274640000425279,
+          "cpu_s": 0.0625,
+          "checksum": 19832.815041510108,
+          "repetition": 1
+        },
+        {
+          "wall_s": 0.056966900010593235,
+          "cpu_s": 0.046875,
+          "checksum": 19832.815041510108,
+          "repetition": 2
+        },
+        {
+          "wall_s": 0.05018910000217147,
+          "cpu_s": 0.046875,
+          "checksum": 19832.815041510108,
+          "repetition": 3
+        },
+        {
+          "wall_s": 0.03812879999168217,
+          "cpu_s": 0.03125,
+          "checksum": 19832.815041510108,
+          "repetition": 4
+        }
+      ],
+      "median_wall_us_per_rhs": 52.74640000425279,
+      "median_cpu_us_per_rhs": 46.875,
+      "ratio_to_v8_wall": 7.3664041004258385,
+      "state_source": "experiments\\clearance_v9_tai_bearing\\data_A\\B0\\gap_10um\\native.npz"
+    },
+    {
+      "gap_um": 10,
+      "variant": "N2",
+      "calls_per_repetition": 1000,
+      "repetitions": 5,
+      "measurements": [
+        {
+          "wall_s": 0.11803789998521097,
+          "cpu_s": 0.109375,
+          "checksum": 17015.87634688796,
+          "repetition": 0
+        },
+        {
+          "wall_s": 0.10686329999589361,
+          "cpu_s": 0.109375,
+          "checksum": 17015.87634688796,
+          "repetition": 1
+        },
+        {
+          "wall_s": 0.12342759998864494,
+          "cpu_s": 0.109375,
+          "checksum": 17015.87634688796,
+          "repetition": 2
+        },
+        {
+          "wall_s": 0.11621880001621321,
+          "cpu_s": 0.109375,
+          "checksum": 17015.87634688796,
+          "repetition": 3
+        },
+        {
+          "wall_s": 0.13092019999749027,
+          "cpu_s": 0.140625,
+          "checksum": 17015.87634688796,
+          "repetition": 4
+        }
+      ],
+      "median_wall_us_per_rhs": 118.03789998521097,
+      "median_cpu_us_per_rhs": 109.375,
+      "ratio_to_v8_wall": 16.484819255657385,
+      "state_source": "experiments\\clearance_v9_tai_bearing\\data_A\\B0\\gap_10um\\native.npz"
+    },
+    {
+      "gap_um": 10,
+      "variant": "N3",
+      "calls_per_repetition": 1000,
+      "repetitions": 5,
+      "measurements": [
+        {
+          "wall_s": 0.11344970000209287,
+          "cpu_s": 0.109375,
+          "checksum": 17069.862878117892,
+          "repetition": 0
+        },
+        {
+          "wall_s": 0.14027760000317357,
+          "cpu_s": 0.125,
+          "checksum": 17069.862878117892,
+          "repetition": 1
+        },
+        {
+          "wall_s": 0.12885890001780353,
+          "cpu_s": 0.140625,
+          "checksum": 17069.862878117892,
+          "repetition": 2
+        },
+        {
+          "wall_s": 0.11186400000588037,
+          "cpu_s": 0.125,
+          "checksum": 17069.862878117892,
+          "repetition": 3
+        },
+        {
+          "wall_s": 0.10962889998336323,
+          "cpu_s": 0.109375,
+          "checksum": 17069.862878117892,
+          "repetition": 4
+        }
+      ],
+      "median_wall_us_per_rhs": 113.44970000209287,
+      "median_cpu_us_per_rhs": 125.0,
+      "ratio_to_v8_wall": 15.84404500060889,
+      "state_source": "experiments\\clearance_v9_tai_bearing\\data_A\\B0\\gap_10um\\native.npz"
+    }
+  ],
+  "platform": "Windows-11-10.0.26300-SP0",
+  "scope": "Warmed complete RHS on identical saved V8 states at each gap; no new trajectory.",
+  "concurrency_note": "Other campaign workers may run concurrently; wall and process CPU times are both retained. Whole-case costs are recorded separately in metrics.json."
+}

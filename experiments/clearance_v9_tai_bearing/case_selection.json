@@ -1,0 +1,69 @@
+{
+  "A": {
+    "B0": {
+      "2": "data_A_long/B0/gap_2um",
+      "5": "data_A_long/B0/gap_5um",
+      "10": "data_A/B0/gap_10um"
+    },
+    "B0d": {
+      "2": "data_A_long/B0d/gap_2um",
+      "10": "data_A/B0d/gap_10um"
+    },
+    "N1": {
+      "2": "data_A_long/N1/gap_2um",
+      "10": "data_A/N1/gap_10um"
+    },
+    "N2": {
+      "2": "data_A_long/N2/gap_2um",
+      "10": "data_A/N2/gap_10um"
+    },
+    "N3": {
+      "2": "data_A_long/N3/gap_2um",
+      "5": "data_A_long/N3/gap_5um",
+      "10": "data_A/N3/gap_10um"
+    }
+  },
+  "B": {
+    "2": "data_A_long/N3/gap_2um",
+    "3": "data_B/N3/gap_3um",
+    "5": "data_A_long/N3/gap_5um",
+    "7.5": "data_B/N3/gap_7.5um",
+    "10": "data_A/N3/gap_10um"
+  },
+  "refinements": {
+    "2": {
+      "h_half": "convergence/old_U_long/h_half/N3/gap_2um",
+      "root_tenth": "convergence/old_U_long/root_tenth/N3/gap_2um",
+      "n1024": "convergence/old_U_long/n1024/N3/gap_2um"
+    },
+    "10": {
+      "h_half": "convergence/old_U/h_half/N3/gap_10um",
+      "root_tenth": "convergence/old_U/root_tenth/N3/gap_10um",
+      "n1024": "convergence/old_U/n1024/N3/gap_10um"
+    },
+    "5": {
+      "h_half": "convergence/middle_old_U/h_half/N3/gap_5um",
+      "root_tenth": "convergence/middle_old_U/root_tenth/N3/gap_5um",
+      "n1024": "convergence/middle_old_U/n1024/N3/gap_5um"
+    }
+  },
+  "old_refinements": {
+    "10": {
+      "h_half": "validation/v8_inherited/h_half/gap_10um",
+      "n1024": "validation/v8_inherited/n1024/gap_10um"
+    },
+    "2": {
+      "h_half": "convergence/B0_long/h_half/gap_2um",
+      "n1024": "convergence/B0_long/n1024/gap_2um"
+    },
+    "5": {
+      "h_half": "convergence/B0_middle_long/h_half/gap_5um",
+      "n1024": "convergence/B0_middle_long/n1024/gap_5um"
+    }
+  },
+  "notes": [
+    "All final positive-gap cases use 480 complete turns. A prefers the retained extended cold-start history over its 120-turn pilot.",
+    "U_new equals U_old after V9 healthy convergence and actual neighboring-U checks; B c2/c5/c10 explicitly reuse A N3 raw trajectories. B c3/c7.5 are new integrations after freezing U. Reuse is not another independent run.",
+    "The failed original c10-to-c5 continuation and its separately saved repaired retry are retained; general finite-speed contact-loss continuity is failed."
+  ]
+}

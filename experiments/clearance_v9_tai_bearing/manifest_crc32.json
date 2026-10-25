@@ -1,0 +1,5366 @@
+{
+  "algorithm": "CRC32",
+  "reason": "User explicitly prohibits SHA256; CRC32 is a transfer-integrity check, not a security signature.",
+  "source": [
+    {
+      "path": "src/spindle/__init__.py",
+      "bytes": 32,
+      "crc32": "9743a8c3"
+    },
+    {
+      "path": "src/spindle/dynamics_model.py",
+      "bytes": 65342,
+      "crc32": "87d62963"
+    },
+    {
+      "path": "src/spindle/fast_rhs.py",
+      "bytes": 7284,
+      "crc32": "8988d9d1"
+    },
+    {
+      "path": "src/spindle/tai_bearing.py",
+      "bytes": 32664,
+      "crc32": "d1e84d20"
+    },
+    {
+      "path": "src/spindle/tai_system.py",
+      "bytes": 14059,
+      "crc32": "d74c8587"
+    },
+    {
+      "path": "scripts/__init__.py",
+      "bytes": 56,
+      "crc32": "faf6d9f9"
+    },
+    {
+      "path": "scripts/analyze_outer_race_pitting.py",
+      "bytes": 16286,
+      "crc32": "69bded4e"
+    },
+    {
+      "path": "scripts/analyze_platform_faults.py",
+      "bytes": 30769,
+      "crc32": "14104611"
+    },
+    {
+      "path": "scripts/analyze_severity.py",
+      "bytes": 10793,
+      "crc32": "7750250d"
+    },
+    {
+      "path": "scripts/calibrate_clearance_v6.py",
+      "bytes": 3792,
+      "crc32": "b013f06c"
+    },
+    {
+      "path": "scripts/calibrate_clearance_v8.py",
+      "bytes": 5029,
+      "crc32": "ac083446"
+    },
+    {
+      "path": "scripts/certify_clearance_v6.py",
+      "bytes": 1497,
+      "crc32": "bbf8a764"
+    },
+    {
+      "path": "scripts/certify_clearance_v8.py",
+      "bytes": 3712,
+      "crc32": "ad6a17e4"
+    },
+    {
+      "path": "scripts/check_bearing_faults_ideal.py",
+      "bytes": 8949,
+      "crc32": "49937b33"
+    },
+    {
+      "path": "scripts/check_outer_race_pitting.py",
+      "bytes": 6438,
+      "crc32": "008033be"
+    },
+    {
+      "path": "scripts/check_runout_labels.py",
+      "bytes": 3299,
+      "crc32": "8f9eba1b"
+    },
+    {
+      "path": "scripts/check_spindle_sources.py",
+      "bytes": 9876,
+      "crc32": "af1ff027"
+    },
+    {
+      "path": "scripts/check_velocity_data.py",
+      "bytes": 6760,
+      "crc32": "4c703c2d"
+    },
+    {
+      "path": "scripts/compare_bearing_motion.py",
+      "bytes": 10662,
+      "crc32": "9a811034"
+    },
+    {
+      "path": "scripts/continue_clearance_v8.py",
+      "bytes": 12318,
+      "crc32": "f01d15ec"
+    },
+    {
+      "path": "scripts/enrich_clearance_v4.py",
+      "bytes": 5026,
+      "crc32": "a04c2ee7"
+    },
+    {
+      "path": "scripts/finalize_clearance_v3.py",
+      "bytes": 13416,
+      "crc32": "3669e558"
+    },
+    {
+      "path": "scripts/fit_platform_1x.py",
+      "bytes": 17190,
+      "crc32": "923e5689"
+    },
+    {
+      "path": "scripts/freeze_clearance_v6.py",
+      "bytes": 2229,
+      "crc32": "647ad7f9"
+    },
+    {
+      "path": "scripts/generate_bearing_faults_ideal.py",
+      "bytes": 10945,
+      "crc32": "b8a82303"
+    },
+    {
+      "path": "scripts/generate_outer_race_pitting.py",
+      "bytes": 7103,
+      "crc32": "6c320ead"
+    },
+    {
+      "path": "scripts/generate_platform_faults.py",
+      "bytes": 19859,
+      "crc32": "054bd488"
+    },
+    {
+      "path": "scripts/generate_severity.py",
+      "bytes": 5159,
+      "crc32": "8530c346"
+    },
+    {
+      "path": "scripts/generate_spindle_sources.py",
+      "bytes": 16559,
+      "crc32": "e4cdfe61"
+    },
+    {
+      "path": "scripts/package_clearance_v5.py",
+      "bytes": 13113,
+      "crc32": "0d447c7a"
+    },
+    {
+      "path": "scripts/package_clearance_v6.py",
+      "bytes": 18752,
+      "crc32": "da03aa4d"
+    },
+    {
+      "path": "scripts/package_clearance_v8.py",
+      "bytes": 28377,
+      "crc32": "00d8b54f"
+    },
+    {
+      "path": "scripts/plot_clearance_v4.py",
+      "bytes": 4944,
+      "crc32": "7152f8b5"
+    },
+    {
+      "path": "scripts/plot_clearance_v5.py",
+      "bytes": 9905,
+      "crc32": "800de266"
+    },
+    {
+      "path": "scripts/plot_clearance_v6.py",
+      "bytes": 11284,
+      "crc32": "0771e488"
+    },
+    {
+      "path": "scripts/plot_clearance_v8.py",
+      "bytes": 4142,
+      "crc32": "0319d714"
+    },
+    {
+      "path": "scripts/prepare_platform_references.py",
+      "bytes": 8184,
+      "crc32": "d4b78949"
+    },
+    {
+      "path": "scripts/prepare_velocity_data.py",
+      "bytes": 2933,
+      "crc32": "8fa0c4a1"
+    },
+    {
+      "path": "scripts/recompute_clearance_v4.py",
+      "bytes": 9092,
+      "crc32": "b887541e"
+    },
+    {
+      "path": "scripts/report_clearance_v6.py",
+      "bytes": 32436,
+      "crc32": "fef83b16"
+    },
+    {
+      "path": "scripts/report_clearance_v8.py",
+      "bytes": 43837,
+      "crc32": "f123f0dc"
+    },
+    {
+      "path": "scripts/review_v5_representatives.py",
+      "bytes": 2351,
+      "crc32": "0d11190b"
+    },
+    {
+      "path": "scripts/run_clearance_sweep.py",
+      "bytes": 24413,
+      "crc32": "64ab8af8"
+    },
+    {
+      "path": "scripts/run_clearance_v3.py",
+      "bytes": 8049,
+      "crc32": "7d1482bb"
+    },
+    {
+      "path": "scripts/run_clearance_v4.py",
+      "bytes": 7833,
+      "crc32": "fa6c3025"
+    },
+    {
+      "path": "scripts/run_clearance_v5.py",
+      "bytes": 5153,
+      "crc32": "1ac73f6a"
+    },
+    {
+      "path": "scripts/run_clearance_v6.py",
+      "bytes": 13869,
+      "crc32": "fa8f217c"
+    },
+    {
+      "path": "scripts/run_clearance_v6_sensitivity.py",
+      "bytes": 10184,
+      "crc32": "27dd0886"
+    },
+    {
+      "path": "scripts/run_clearance_v8.py",
+      "bytes": 3077,
+      "crc32": "d8957bb6"
+    },
+    {
+      "path": "scripts/run_clearance_v9.py",
+      "bytes": 22243,
+      "crc32": "d59c77f5"
+    },
+    {
+      "path": "scripts/run_prototype.py",
+      "bytes": 10519,
+      "crc32": "14cb4763"
+    },
+    {
+      "path": "scripts/validate_other_runs.py",
+      "bytes": 11833,
+      "crc32": "568ae1bb"
+    },
+    {
+      "path": "utils/__init__.py",
+      "bytes": 130,
+      "crc32": "66a3de85"
+    },
+    {
+      "path": "utils/clearance_v3_acceptance.py",
+      "bytes": 18144,
+      "crc32": "c0842621"
+    },
+    {
+      "path": "utils/clearance_v3_analysis.py",
+      "bytes": 10071,
+      "crc32": "67d40a46"
+    },
+    {
+      "path": "utils/clearance_v3_plots.py",
+      "bytes": 11320,
+      "crc32": "7eea27e1"
+    },
+    {
+      "path": "utils/clearance_v3_validation.py",
+      "bytes": 23102,
+      "crc32": "3f763096"
+    },
+    {
+      "path": "utils/clearance_v4_analysis.py",
+      "bytes": 6037,
+      "crc32": "d72abeef"
+    },
+    {
+      "path": "utils/clearance_v4_validation.py",
+      "bytes": 12937,
+      "crc32": "5196af81"
+    },
+    {
+      "path": "utils/clearance_v5_analysis.py",
+      "bytes": 29372,
+      "crc32": "a389191f"
+    },
+    {
+      "path": "utils/clearance_v5_input_audit.py",
+      "bytes": 15731,
+      "crc32": "57ef073e"
+    },
+    {
+      "path": "utils/clearance_v6_analysis.py",
+      "bytes": 24216,
+      "crc32": "25fa415b"
+    },
+    {
+      "path": "utils/clearance_v6_force_audit.py",
+      "bytes": 13088,
+      "crc32": "3d04ef9b"
+    },
+    {
+      "path": "utils/clearance_v6_parameters.py",
+      "bytes": 6930,
+      "crc32": "acc729a1"
+    },
+    {
+      "path": "utils/clearance_v6_response.py",
+      "bytes": 5533,
+      "crc32": "5a53ec14"
+    },
+    {
+      "path": "utils/clearance_v6_sensitivity.py",
+      "bytes": 7856,
+      "crc32": "6678c00c"
+    },
+    {
+      "path": "utils/clearance_v6_validation.py",
+      "bytes": 15214,
+      "crc32": "cf60183b"
+    },
+    {
+      "path": "utils/clearance_v8_acceptance.py",
+      "bytes": 55495,
+      "crc32": "c17b40e1"
+    },
+    {
+      "path": "utils/clearance_v8_analysis.py",
+      "bytes": 6394,
+      "crc32": "13c12e1f"
+    },
+    {
+      "path": "utils/clearance_v8_branches.py",
+      "bytes": 22701,
+      "crc32": "2a9ab5be"
+    },
+    {
+      "path": "utils/clearance_v8_parameters.py",
+      "bytes": 9871,
+      "crc32": "9ffc2e5e"
+    },
+    {
+      "path": "utils/clearance_v8_validation.py",
+      "bytes": 47639,
+      "crc32": "bdf21984"
+    },
+    {
+      "path": "utils/clearance_v9_acceptance.py",
+      "bytes": 91484,
+      "crc32": "542154f7"
+    },
+    {
+      "path": "utils/clearance_v9_analysis.py",
+      "bytes": 38007,
+      "crc32": "56498ea4"
+    },
+    {
+      "path": "utils/clearance_v9_contact_boundary.py",
+      "bytes": 15242,
+      "crc32": "432ca09f"
+    },
+    {
+      "path": "utils/clearance_v9_delivery.py",
+      "bytes": 9358,
+      "crc32": "b22ca4b0"
+    },
+    {
+      "path": "utils/clearance_v9_figures.py",
+      "bytes": 71523,
+      "crc32": "22b9172a"
+    },
+    {
+      "path": "utils/clearance_v9_parameters.py",
+      "bytes": 10453,
+      "crc32": "92a8ba96"
+    },
+    {
+      "path": "utils/clearance_v9_performance.py",
+      "bytes": 8555,
+      "crc32": "05bab4ad"
+    },
+    {
+      "path": "utils/clearance_v9_solver_retry_validation.py",
+      "bytes": 12641,
+      "crc32": "a7f914a0"
+    },
+    {
+      "path": "utils/clearance_v9_validation.py",
+      "bytes": 94664,
+      "crc32": "4778f5ee"
+    },
+    {
+      "path": "utils/clearance_validation.py",
+      "bytes": 8986,
+      "crc32": "5521e439"
+    },
+    {
+      "path": "utils/data_io.py",
+      "bytes": 5153,
+      "crc32": "1166136f"
+    },
+    {
+      "path": "utils/healthy_reference.py",
+      "bytes": 2260,
+      "crc32": "84afad30"
+    },
+    {
+      "path": "utils/metrics.py",
+      "bytes": 1281,
+      "crc32": "4963e7e3"
+    },
+    {
+      "path": "utils/pitting_analysis.py",
+      "bytes": 10489,
+      "crc32": "047173d0"
+    },
+    {
+      "path": "utils/plot_report.py",
+      "bytes": 13306,
+      "crc32": "9df117c6"
+    },
+    {
+      "path": "utils/runout_labels.py",
+      "bytes": 3611,
+      "crc32": "5933d96c"
+    },
+    {
+      "path": "utils/velocity_data.py",
+      "bytes": 16728,
+      "crc32": "95120192"
+    },
+    {
+      "path": "config/bearing_faults_ideal.json",
+      "bytes": 698,
+      "crc32": "bb23c719"
+    },
+    {
+      "path": "config/bearing_motion_250hz.json",
+      "bytes": 805,
+      "crc32": "dab85698"
+    },
+    {
+      "path": "config/clearance_config.json",
+      "bytes": 8095,
+      "crc32": "2ccc315d"
+    },
+    {
+      "path": "config/clearance_v3_config.json",
+      "bytes": 6068,
+      "crc32": "8549b45e"
+    },
+    {
+      "path": "config/clearance_v4_config.json",
+      "bytes": 7667,
+      "crc32": "0d362f35"
+    },
+    {
+      "path": "config/clearance_v5_config.json",
+      "bytes": 7953,
+      "crc32": "471b15e3"
+    },
+    {
+      "path": "config/clearance_v6_config.json",
+      "bytes": 12282,
+      "crc32": "8b4020f0"
+    },
+    {
+      "path": "config/clearance_v8_config.json",
+      "bytes": 16424,
+      "crc32": "69bea1b6"
+    },
+    {
+      "path": "config/clearance_v9_calibrated.json",
+      "bytes": 23188,
+      "crc32": "8ec04437"
+    },
+    {
+      "path": "config/clearance_v9_config.json",
+      "bytes": 22150,
+      "crc32": "269e8741"
+    },
+    {
+      "path": "config/outer_race_pitting.json",
+      "bytes": 804,
+      "crc32": "9f43b5cb"
+    },
+    {
+      "path": "config/platform_faults_20261022.json",
+      "bytes": 8658,
+      "crc32": "5c13be0d"
+    },
+    {
+      "path": "config/platform_faults_hsk40_a63k_sensitivity_20261023.json",
+      "bytes": 9813,
+      "crc32": "78914d86"
+    },
+    {
+      "path": "config/platform_faults_hsk40_nominal20_20261023.json",
+      "bytes": 9404,
+      "crc32": "5e74c3ca"
+    },
+    {
+      "path": "config/platform_healthy_background_20261023.json",
+      "bytes": 4827,
+      "crc32": "8b9ff3b3"
+    },
+    {
+      "path": "config/severity_sweep.json",
+      "bytes": 1127,
+      "crc32": "d4935fb6"
+    },
+    {
+      "path": "config/spindle_healthy_sources_20261023.json",
+      "bytes": 5298,
+      "crc32": "9c86c19c"
+    },
+    {
+      "path": "config/spindle_sources_20261022.json",
+      "bytes": 2438,
+      "crc32": "80737e8d"
+    },
+    {
+      "path": "config/spindle_sources_hsk40_nominal20_20261023.json",
+      "bytes": 2441,
+      "crc32": "27913384"
+    },
+    {
+      "path": "config/velocity_data_20261022.json",
+      "bytes": 1791,
+      "crc32": "2a32120b"
+    },
+    {
+      "path": "config/velocity_data_round2_20261022.json",
+      "bytes": 1860,
+      "crc32": "d15ecea4"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 41,
+      "crc32": "a26f3f92"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 442,
+      "crc32": "c3c139d1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10935,
+      "crc32": "2a23fcbe"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "acceptance.json",
+      "bytes": 321781,
+      "crc32": "ee5dc9ae"
+    },
+    {
+      "path": "calibration/health_confirmation.json",
+      "bytes": 3414,
+      "crc32": "d6eda342"
+    },
+    {
+      "path": "calibration/history.csv",
+      "bytes": 739,
+      "crc32": "6c470c69"
+    },
+    {
+      "path": "calibration/trial_U_0.9.json",
+      "bytes": 22299,
+      "crc32": "1eeae007"
+    },
+    {
+      "path": "calibration/trial_U_1.1.json",
+      "bytes": 22299,
+      "crc32": "0e02ca83"
+    },
+    {
+      "path": "calibration/U_0p9/N3/actual_command.json",
+      "bytes": 632,
+      "crc32": "8ae10dc5"
+    },
+    {
+      "path": "calibration/U_0p9/N3/gap_2um/actual_config.json",
+      "bytes": 22299,
+      "crc32": "1eeae007"
+    },
+    {
+      "path": "calibration/U_0p9/N3/gap_2um/actual_solver_settings.json",
+      "bytes": 912,
+      "crc32": "1ea2cc23"
+    },
+    {
+      "path": "calibration/U_0p9/N3/gap_2um/domain.json",
+      "bytes": 3601,
+      "crc32": "86bc6a8e"
+    },
+    {
+      "path": "calibration/U_0p9/N3/gap_2um/implementation_at_start.json",
+      "bytes": 975,
+      "crc32": "767be05f"
+    },
+    {
+      "path": "calibration/U_0p9/N3/gap_2um/input_check.json",
+      "bytes": 450,
+      "crc32": "150f90ac"
+    },
+    {
+      "path": "calibration/U_0p9/N3/gap_2um/metrics.json",
+      "bytes": 20828,
+      "crc32": "f84dadaf"
+    },
+    {
+      "path": "calibration/U_0p9/N3/gap_2um/per_ball_statistics.csv",
+      "bytes": 202216,
+      "crc32": "239b4f53"
+    },
+    {
+      "path": "calibration/U_0p9/N3/gap_2um/progress.json",
+      "bytes": 272,
+      "crc32": "65302c7e"
+    },
+    {
+      "path": "calibration/U_0p9/N3/gap_2um/sampling_convergence.json",
+      "bytes": 65551,
+      "crc32": "56232615"
+    },
+    {
+      "path": "calibration/U_0p9/N3/gap_2um/stationarity.json",
+      "bytes": 183054,
+      "crc32": "a9ff60e8"
+    },
+    {
+      "path": "calibration/U_0p9/N3/gap_2um/turns.csv",
+      "bytes": 37779,
+      "crc32": "28dd383f"
+    },
+    {
+      "path": "calibration/U_0p9/N3/gap_2um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "calibration/U_0p9/N3/gap_2um/wrench_diagnostics.json",
+      "bytes": 68447,
+      "crc32": "8df43ee0"
+    },
+    {
+      "path": "calibration/U_0p9/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "calibration/U_0p9/N3/run_settings.json",
+      "bytes": 23843,
+      "crc32": "00e117c8"
+    },
+    {
+      "path": "calibration/U_1p1/N3/actual_command.json",
+      "bytes": 632,
+      "crc32": "e0b02f90"
+    },
+    {
+      "path": "calibration/U_1p1/N3/gap_2um/actual_config.json",
+      "bytes": 22299,
+      "crc32": "0e02ca83"
+    },
+    {
+      "path": "calibration/U_1p1/N3/gap_2um/actual_solver_settings.json",
+      "bytes": 913,
+      "crc32": "6d6f2047"
+    },
+    {
+      "path": "calibration/U_1p1/N3/gap_2um/domain.json",
+      "bytes": 3607,
+      "crc32": "49b39a1e"
+    },
+    {
+      "path": "calibration/U_1p1/N3/gap_2um/implementation_at_start.json",
+      "bytes": 975,
+      "crc32": "767be05f"
+    },
+    {
+      "path": "calibration/U_1p1/N3/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "1c7efcc7"
+    },
+    {
+      "path": "calibration/U_1p1/N3/gap_2um/metrics.json",
+      "bytes": 20815,
+      "crc32": "75491cc9"
+    },
+    {
+      "path": "calibration/U_1p1/N3/gap_2um/per_ball_statistics.csv",
+      "bytes": 202162,
+      "crc32": "b998f7a0"
+    },
+    {
+      "path": "calibration/U_1p1/N3/gap_2um/progress.json",
+      "bytes": 272,
+      "crc32": "235f32cb"
+    },
+    {
+      "path": "calibration/U_1p1/N3/gap_2um/sampling_convergence.json",
+      "bytes": 65407,
+      "crc32": "441c5160"
+    },
+    {
+      "path": "calibration/U_1p1/N3/gap_2um/stationarity.json",
+      "bytes": 182987,
+      "crc32": "7875ae28"
+    },
+    {
+      "path": "calibration/U_1p1/N3/gap_2um/turns.csv",
+      "bytes": 37701,
+      "crc32": "946fb69a"
+    },
+    {
+      "path": "calibration/U_1p1/N3/gap_2um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "calibration/U_1p1/N3/gap_2um/wrench_diagnostics.json",
+      "bytes": 68422,
+      "crc32": "cdffd41b"
+    },
+    {
+      "path": "calibration/U_1p1/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "calibration/U_1p1/N3/run_settings.json",
+      "bytes": 23843,
+      "crc32": "4ec223b5"
+    },
+    {
+      "path": "case_selection.json",
+      "bytes": 2372,
+      "crc32": "63795b6b"
+    },
+    {
+      "path": "config/parameters_curvature_052_health_confirmed.json",
+      "bytes": 22904,
+      "crc32": "5bf44aae"
+    },
+    {
+      "path": "config/parameters_curvature_052_old_U.json",
+      "bytes": 22520,
+      "crc32": "fb83f5ae"
+    },
+    {
+      "path": "config/parameters_v8_frozen.json",
+      "bytes": 16668,
+      "crc32": "4e2a2668"
+    },
+    {
+      "path": "config/parameters_v9_calibrated.json",
+      "bytes": 23188,
+      "crc32": "8ec04437"
+    },
+    {
+      "path": "convergence/B0_long/h_half/gap_2um/actual_config.json",
+      "bytes": 16667,
+      "crc32": "4ccc74d4"
+    },
+    {
+      "path": "convergence/B0_long/h_half/gap_2um/actual_solver_settings.json",
+      "bytes": 911,
+      "crc32": "b7b12dfa"
+    },
+    {
+      "path": "convergence/B0_long/h_half/gap_2um/bearing_diagnostics.json",
+      "bytes": 2557,
+      "crc32": "59ab64b0"
+    },
+    {
+      "path": "convergence/B0_long/h_half/gap_2um/domain.json",
+      "bytes": 3503,
+      "crc32": "0c772e9f"
+    },
+    {
+      "path": "convergence/B0_long/h_half/gap_2um/input_check.json",
+      "bytes": 300,
+      "crc32": "be999e15"
+    },
+    {
+      "path": "convergence/B0_long/h_half/gap_2um/metrics.json",
+      "bytes": 10221,
+      "crc32": "77c08b98"
+    },
+    {
+      "path": "convergence/B0_long/h_half/gap_2um/progress.json",
+      "bytes": 132237,
+      "crc32": "b695e873"
+    },
+    {
+      "path": "convergence/B0_long/h_half/gap_2um/sampling_convergence.json",
+      "bytes": 52136,
+      "crc32": "6d12d0b8"
+    },
+    {
+      "path": "convergence/B0_long/h_half/gap_2um/stationarity.json",
+      "bytes": 113061,
+      "crc32": "7e422b2b"
+    },
+    {
+      "path": "convergence/B0_long/h_half/gap_2um/turns.csv",
+      "bytes": 86847,
+      "crc32": "debf6022"
+    },
+    {
+      "path": "convergence/B0_long/h_half/gap_2um/warmup_history.json",
+      "bytes": 125839,
+      "crc32": "5525e3d3"
+    },
+    {
+      "path": "convergence/B0_long/h_half/gap_2um/wrench_diagnostics.json",
+      "bytes": 7796,
+      "crc32": "71bb80da"
+    },
+    {
+      "path": "convergence/B0_long/n1024/gap_2um/actual_config.json",
+      "bytes": 16669,
+      "crc32": "6b8dbb77"
+    },
+    {
+      "path": "convergence/B0_long/n1024/gap_2um/actual_solver_settings.json",
+      "bytes": 914,
+      "crc32": "36b21711"
+    },
+    {
+      "path": "convergence/B0_long/n1024/gap_2um/bearing_diagnostics.json",
+      "bytes": 2562,
+      "crc32": "1da19b85"
+    },
+    {
+      "path": "convergence/B0_long/n1024/gap_2um/domain.json",
+      "bytes": 3508,
+      "crc32": "433ba952"
+    },
+    {
+      "path": "convergence/B0_long/n1024/gap_2um/input_check.json",
+      "bytes": 300,
+      "crc32": "be999e15"
+    },
+    {
+      "path": "convergence/B0_long/n1024/gap_2um/metrics.json",
+      "bytes": 10229,
+      "crc32": "4382b72f"
+    },
+    {
+      "path": "convergence/B0_long/n1024/gap_2um/progress.json",
+      "bytes": 132165,
+      "crc32": "d0242d5e"
+    },
+    {
+      "path": "convergence/B0_long/n1024/gap_2um/sampling_convergence.json",
+      "bytes": 52233,
+      "crc32": "08b50e7c"
+    },
+    {
+      "path": "convergence/B0_long/n1024/gap_2um/stationarity.json",
+      "bytes": 112990,
+      "crc32": "e1c32a58"
+    },
+    {
+      "path": "convergence/B0_long/n1024/gap_2um/turns.csv",
+      "bytes": 86835,
+      "crc32": "9eb7ac59"
+    },
+    {
+      "path": "convergence/B0_long/n1024/gap_2um/warmup_history.json",
+      "bytes": 125768,
+      "crc32": "04d8fee6"
+    },
+    {
+      "path": "convergence/B0_long/n1024/gap_2um/wrench_diagnostics.json",
+      "bytes": 7795,
+      "crc32": "382061cb"
+    },
+    {
+      "path": "convergence/B0_middle_long/h_half/gap_5um/actual_command.json",
+      "bytes": 1260,
+      "crc32": "7ac1b031"
+    },
+    {
+      "path": "convergence/B0_middle_long/h_half/gap_5um/actual_config.json",
+      "bytes": 16667,
+      "crc32": "f4e7633b"
+    },
+    {
+      "path": "convergence/B0_middle_long/h_half/gap_5um/actual_solver_settings.json",
+      "bytes": 910,
+      "crc32": "bea7cf28"
+    },
+    {
+      "path": "convergence/B0_middle_long/h_half/gap_5um/bearing_diagnostics.json",
+      "bytes": 2554,
+      "crc32": "f77de4b7"
+    },
+    {
+      "path": "convergence/B0_middle_long/h_half/gap_5um/domain.json",
+      "bytes": 3500,
+      "crc32": "5e757773"
+    },
+    {
+      "path": "convergence/B0_middle_long/h_half/gap_5um/input_check.json",
+      "bytes": 300,
+      "crc32": "be999e15"
+    },
+    {
+      "path": "convergence/B0_middle_long/h_half/gap_5um/metrics.json",
+      "bytes": 10215,
+      "crc32": "9aa66ba2"
+    },
+    {
+      "path": "convergence/B0_middle_long/h_half/gap_5um/progress.json",
+      "bytes": 132088,
+      "crc32": "dd312bc0"
+    },
+    {
+      "path": "convergence/B0_middle_long/h_half/gap_5um/sampling_convergence.json",
+      "bytes": 52189,
+      "crc32": "b0ed1725"
+    },
+    {
+      "path": "convergence/B0_middle_long/h_half/gap_5um/stationarity.json",
+      "bytes": 112913,
+      "crc32": "a8602d22"
+    },
+    {
+      "path": "convergence/B0_middle_long/h_half/gap_5um/turns.csv",
+      "bytes": 87217,
+      "crc32": "401343f2"
+    },
+    {
+      "path": "convergence/B0_middle_long/h_half/gap_5um/warmup_history.json",
+      "bytes": 125691,
+      "crc32": "3125449c"
+    },
+    {
+      "path": "convergence/B0_middle_long/h_half/gap_5um/wrench_diagnostics.json",
+      "bytes": 7772,
+      "crc32": "aaf98d0d"
+    },
+    {
+      "path": "convergence/B0_middle_long/n1024/gap_5um/actual_command.json",
+      "bytes": 1260,
+      "crc32": "5e16f494"
+    },
+    {
+      "path": "convergence/B0_middle_long/n1024/gap_5um/actual_config.json",
+      "bytes": 16669,
+      "crc32": "18fb0c62"
+    },
+    {
+      "path": "convergence/B0_middle_long/n1024/gap_5um/actual_solver_settings.json",
+      "bytes": 915,
+      "crc32": "6b06cbbd"
+    },
+    {
+      "path": "convergence/B0_middle_long/n1024/gap_5um/bearing_diagnostics.json",
+      "bytes": 2550,
+      "crc32": "93597639"
+    },
+    {
+      "path": "convergence/B0_middle_long/n1024/gap_5um/domain.json",
+      "bytes": 3496,
+      "crc32": "568eae4b"
+    },
+    {
+      "path": "convergence/B0_middle_long/n1024/gap_5um/input_check.json",
+      "bytes": 300,
+      "crc32": "be999e15"
+    },
+    {
+      "path": "convergence/B0_middle_long/n1024/gap_5um/metrics.json",
+      "bytes": 10224,
+      "crc32": "238d037d"
+    },
+    {
+      "path": "convergence/B0_middle_long/n1024/gap_5um/progress.json",
+      "bytes": 132086,
+      "crc32": "8ac47122"
+    },
+    {
+      "path": "convergence/B0_middle_long/n1024/gap_5um/sampling_convergence.json",
+      "bytes": 52228,
+      "crc32": "7c214943"
+    },
+    {
+      "path": "convergence/B0_middle_long/n1024/gap_5um/stationarity.json",
+      "bytes": 112910,
+      "crc32": "e46c7ff3"
+    },
+    {
+      "path": "convergence/B0_middle_long/n1024/gap_5um/turns.csv",
+      "bytes": 87178,
+      "crc32": "2f6c6ca8"
+    },
+    {
+      "path": "convergence/B0_middle_long/n1024/gap_5um/warmup_history.json",
+      "bytes": 125688,
+      "crc32": "3a19647a"
+    },
+    {
+      "path": "convergence/B0_middle_long/n1024/gap_5um/wrench_diagnostics.json",
+      "bytes": 7801,
+      "crc32": "f1632fa3"
+    },
+    {
+      "path": "convergence/middle_old_U/h_half/N3/actual_command.json",
+      "bytes": 646,
+      "crc32": "e37ed9de"
+    },
+    {
+      "path": "convergence/middle_old_U/h_half/N3/gap_5um/actual_config.json",
+      "bytes": 22149,
+      "crc32": "d4805f5b"
+    },
+    {
+      "path": "convergence/middle_old_U/h_half/N3/gap_5um/actual_solver_settings.json",
+      "bytes": 911,
+      "crc32": "63f66e2c"
+    },
+    {
+      "path": "convergence/middle_old_U/h_half/N3/gap_5um/domain.json",
+      "bytes": 3603,
+      "crc32": "288c4583"
+    },
+    {
+      "path": "convergence/middle_old_U/h_half/N3/gap_5um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "convergence/middle_old_U/h_half/N3/gap_5um/metrics.json",
+      "bytes": 20633,
+      "crc32": "c4273e21"
+    },
+    {
+      "path": "convergence/middle_old_U/h_half/N3/gap_5um/per_ball_statistics.csv",
+      "bytes": 202633,
+      "crc32": "326d651f"
+    },
+    {
+      "path": "convergence/middle_old_U/h_half/N3/gap_5um/progress.json",
+      "bytes": 272,
+      "crc32": "41e99407"
+    },
+    {
+      "path": "convergence/middle_old_U/h_half/N3/gap_5um/sampling_convergence.json",
+      "bytes": 65678,
+      "crc32": "b66213ac"
+    },
+    {
+      "path": "convergence/middle_old_U/h_half/N3/gap_5um/stationarity.json",
+      "bytes": 182296,
+      "crc32": "5907dfdf"
+    },
+    {
+      "path": "convergence/middle_old_U/h_half/N3/gap_5um/turns.csv",
+      "bytes": 37072,
+      "crc32": "d9b25ff2"
+    },
+    {
+      "path": "convergence/middle_old_U/h_half/N3/gap_5um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "convergence/middle_old_U/h_half/N3/gap_5um/wrench_diagnostics.json",
+      "bytes": 67319,
+      "crc32": "4b7c57f1"
+    },
+    {
+      "path": "convergence/middle_old_U/h_half/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "convergence/middle_old_U/h_half/N3/run_settings.json",
+      "bytes": 23698,
+      "crc32": "fbb8958f"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/actual_command.json",
+      "bytes": 636,
+      "crc32": "cf5ebdfe"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/gap_5um/actual_config.json",
+      "bytes": 22151,
+      "crc32": "0d3efbde"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/gap_5um/actual_solver_settings.json",
+      "bytes": 915,
+      "crc32": "972235d1"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/gap_5um/domain.json",
+      "bytes": 3601,
+      "crc32": "227ec6cd"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/gap_5um/implementation_at_start.json",
+      "bytes": 975,
+      "crc32": "767be05f"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/gap_5um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/gap_5um/metrics.json",
+      "bytes": 20804,
+      "crc32": "0d3850f1"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/gap_5um/per_ball_statistics.csv",
+      "bytes": 202719,
+      "crc32": "e0d66f06"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/gap_5um/progress.json",
+      "bytes": 271,
+      "crc32": "bdac7fdc"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/gap_5um/sampling_convergence.json",
+      "bytes": 65479,
+      "crc32": "584b1896"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/gap_5um/stationarity.json",
+      "bytes": 182972,
+      "crc32": "ac3e4760"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/gap_5um/turns.csv",
+      "bytes": 37106,
+      "crc32": "5c255d93"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/gap_5um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/gap_5um/wrench_diagnostics.json",
+      "bytes": 68476,
+      "crc32": "a5ed2d63"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "convergence/middle_old_U/n1024/N3/run_settings.json",
+      "bytes": 23697,
+      "crc32": "c5de8b70"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/actual_command.json",
+      "bytes": 650,
+      "crc32": "8e8d0b21"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/gap_5um/actual_config.json",
+      "bytes": 22150,
+      "crc32": "eefcbe47"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/gap_5um/actual_solver_settings.json",
+      "bytes": 912,
+      "crc32": "0412a9bc"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/gap_5um/domain.json",
+      "bytes": 3609,
+      "crc32": "73053f5a"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/gap_5um/implementation_at_start.json",
+      "bytes": 975,
+      "crc32": "767be05f"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/gap_5um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/gap_5um/metrics.json",
+      "bytes": 20808,
+      "crc32": "21951695"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/gap_5um/per_ball_statistics.csv",
+      "bytes": 202286,
+      "crc32": "cf79cc8e"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/gap_5um/progress.json",
+      "bytes": 272,
+      "crc32": "72163e33"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/gap_5um/sampling_convergence.json",
+      "bytes": 65752,
+      "crc32": "826a76d2"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/gap_5um/stationarity.json",
+      "bytes": 182977,
+      "crc32": "031f64af"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/gap_5um/turns.csv",
+      "bytes": 37084,
+      "crc32": "71f5a99c"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/gap_5um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/gap_5um/wrench_diagnostics.json",
+      "bytes": 68481,
+      "crc32": "9e23b708"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "convergence/middle_old_U/root_tenth/N3/run_settings.json",
+      "bytes": 23702,
+      "crc32": "5baeae0e"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_10um/actual_config.json",
+      "bytes": 22152,
+      "crc32": "65931274"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_10um/actual_solver_settings.json",
+      "bytes": 911,
+      "crc32": "fe0749c3"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_10um/domain.json",
+      "bytes": 3603,
+      "crc32": "f9615536"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_10um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_10um/metrics.json",
+      "bytes": 20523,
+      "crc32": "425abb67"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_10um/per_ball_statistics.csv",
+      "bytes": 202605,
+      "crc32": "18aaad60"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_10um/progress.json",
+      "bytes": 272,
+      "crc32": "800bb508"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_10um/sampling_convergence.json",
+      "bytes": 65232,
+      "crc32": "721f9671"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_10um/stationarity.json",
+      "bytes": 181757,
+      "crc32": "41651f7f"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_10um/turns.csv",
+      "bytes": 37692,
+      "crc32": "4d3105cb"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_10um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_10um/wrench_diagnostics.json",
+      "bytes": 67323,
+      "crc32": "8930adcb"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_2um/actual_config.json",
+      "bytes": 22149,
+      "crc32": "f5903c07"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_2um/actual_solver_settings.json",
+      "bytes": 910,
+      "crc32": "cb385b0b"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_2um/domain.json",
+      "bytes": 3599,
+      "crc32": "20d6d8b9"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_2um/metrics.json",
+      "bytes": 20567,
+      "crc32": "00ed2b05"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_2um/per_ball_statistics.csv",
+      "bytes": 199982,
+      "crc32": "501e64ab"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_2um/progress.json",
+      "bytes": 273,
+      "crc32": "ee52e9a6"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_2um/sampling_convergence.json",
+      "bytes": 65390,
+      "crc32": "8ae3c7fc"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_2um/stationarity.json",
+      "bytes": 182266,
+      "crc32": "3d6750a3"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_2um/turns.csv",
+      "bytes": 9529,
+      "crc32": "0386a65b"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_2um/warmup_history.json",
+      "bytes": 197,
+      "crc32": "f84fcbcb"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/gap_2um/wrench_diagnostics.json",
+      "bytes": 67293,
+      "crc32": "313fd562"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "convergence/old_U/h_half/N3/run_settings.json",
+      "bytes": 23702,
+      "crc32": "552ae7a2"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_10um/actual_config.json",
+      "bytes": 22154,
+      "crc32": "dd6fcbfd"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_10um/actual_solver_settings.json",
+      "bytes": 915,
+      "crc32": "382c7afb"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_10um/domain.json",
+      "bytes": 3601,
+      "crc32": "83b559c8"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_10um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_10um/metrics.json",
+      "bytes": 20514,
+      "crc32": "a0945920"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_10um/per_ball_statistics.csv",
+      "bytes": 202678,
+      "crc32": "21a7ef78"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_10um/progress.json",
+      "bytes": 272,
+      "crc32": "a6b1bca2"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_10um/sampling_convergence.json",
+      "bytes": 65074,
+      "crc32": "b4911a78"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_10um/stationarity.json",
+      "bytes": 181790,
+      "crc32": "a8bbaa31"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_10um/turns.csv",
+      "bytes": 37678,
+      "crc32": "7e164721"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_10um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_10um/wrench_diagnostics.json",
+      "bytes": 67337,
+      "crc32": "99a3ebb5"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_2um/actual_config.json",
+      "bytes": 22151,
+      "crc32": "fe2c91ae"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_2um/actual_solver_settings.json",
+      "bytes": 913,
+      "crc32": "331b0016"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_2um/domain.json",
+      "bytes": 3605,
+      "crc32": "8df3758b"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_2um/metrics.json",
+      "bytes": 20574,
+      "crc32": "c9733c38"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_2um/per_ball_statistics.csv",
+      "bytes": 199931,
+      "crc32": "87782dcc"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_2um/progress.json",
+      "bytes": 272,
+      "crc32": "74f6a484"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_2um/sampling_convergence.json",
+      "bytes": 65364,
+      "crc32": "99b0833d"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_2um/stationarity.json",
+      "bytes": 182366,
+      "crc32": "53b2d933"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_2um/turns.csv",
+      "bytes": 9541,
+      "crc32": "e2d28b83"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_2um/warmup_history.json",
+      "bytes": 197,
+      "crc32": "f84fcbcb"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/gap_2um/wrench_diagnostics.json",
+      "bytes": 67304,
+      "crc32": "c1f02e2a"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "convergence/old_U/n1024/N3/run_settings.json",
+      "bytes": 23701,
+      "crc32": "66aa8ab0"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_10um/actual_config.json",
+      "bytes": 22153,
+      "crc32": "459c9053"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_10um/actual_solver_settings.json",
+      "bytes": 913,
+      "crc32": "110d568a"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_10um/domain.json",
+      "bytes": 3606,
+      "crc32": "228b35cb"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_10um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_10um/metrics.json",
+      "bytes": 20537,
+      "crc32": "73423495"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_10um/per_ball_statistics.csv",
+      "bytes": 202667,
+      "crc32": "ca8e27f5"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_10um/progress.json",
+      "bytes": 272,
+      "crc32": "ff22861d"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_10um/sampling_convergence.json",
+      "bytes": 65268,
+      "crc32": "0c1bdf71"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_10um/stationarity.json",
+      "bytes": 181856,
+      "crc32": "a01194ab"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_10um/turns.csv",
+      "bytes": 37667,
+      "crc32": "47aeafda"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_10um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_10um/wrench_diagnostics.json",
+      "bytes": 67381,
+      "crc32": "d806ffdf"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_2um/actual_config.json",
+      "bytes": 22150,
+      "crc32": "429034b8"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_2um/actual_solver_settings.json",
+      "bytes": 913,
+      "crc32": "3845ed73"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_2um/domain.json",
+      "bytes": 3605,
+      "crc32": "df22b8f9"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_2um/metrics.json",
+      "bytes": 20578,
+      "crc32": "8889b650"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_2um/per_ball_statistics.csv",
+      "bytes": 199539,
+      "crc32": "0173fc0a"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_2um/progress.json",
+      "bytes": 271,
+      "crc32": "46a2d196"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_2um/sampling_convergence.json",
+      "bytes": 65505,
+      "crc32": "adb1ede8"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_2um/stationarity.json",
+      "bytes": 182361,
+      "crc32": "9cf43478"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_2um/turns.csv",
+      "bytes": 9536,
+      "crc32": "fed180ea"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_2um/warmup_history.json",
+      "bytes": 197,
+      "crc32": "f84fcbcb"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/gap_2um/wrench_diagnostics.json",
+      "bytes": 67341,
+      "crc32": "da60b67b"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "convergence/old_U/root_tenth/N3/run_settings.json",
+      "bytes": 23706,
+      "crc32": "8b271d38"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/actual_command.json",
+      "bytes": 739,
+      "crc32": "2db2c05e"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/gap_2um/actual_config.json",
+      "bytes": 22149,
+      "crc32": "d74198c6"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/gap_2um/actual_solver_settings.json",
+      "bytes": 1818,
+      "crc32": "ae8abf69"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/gap_2um/continuation_provenance.json",
+      "bytes": 426,
+      "crc32": "16bb63b9"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/gap_2um/domain.json",
+      "bytes": 3603,
+      "crc32": "e67664d4"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/gap_2um/metrics.json",
+      "bytes": 20672,
+      "crc32": "dd1ad99f"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/gap_2um/per_ball_statistics.csv",
+      "bytes": 202171,
+      "crc32": "9d4a172c"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/gap_2um/progress.json",
+      "bytes": 270,
+      "crc32": "1c985eff"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/gap_2um/sampling_convergence.json",
+      "bytes": 65541,
+      "crc32": "641a6fcf"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/gap_2um/stationarity.json",
+      "bytes": 182244,
+      "crc32": "458ecab2"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/gap_2um/turns.csv",
+      "bytes": 37765,
+      "crc32": "a8b97fdf"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/gap_2um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/gap_2um/wrench_diagnostics.json",
+      "bytes": 67302,
+      "crc32": "603a80e5"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "convergence/old_U_long/h_half/N3/run_settings.json",
+      "bytes": 23695,
+      "crc32": "1a6a4b3b"
+    },
+    {
+      "path": "convergence/old_U_long/n1024/N3/gap_2um/actual_config.json",
+      "bytes": 22151,
+      "crc32": "dcfd356f"
+    },
+    {
+      "path": "convergence/old_U_long/n1024/N3/gap_2um/actual_solver_settings.json",
+      "bytes": 1824,
+      "crc32": "cfee4cee"
+    },
+    {
+      "path": "convergence/old_U_long/n1024/N3/gap_2um/continuation_provenance.json",
+      "bytes": 423,
+      "crc32": "c0638dc4"
+    },
+    {
+      "path": "convergence/old_U_long/n1024/N3/gap_2um/domain.json",
+      "bytes": 3605,
+      "crc32": "fbc87af4"
+    },
+    {
+      "path": "convergence/old_U_long/n1024/N3/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "convergence/old_U_long/n1024/N3/gap_2um/metrics.json",
+      "bytes": 20666,
+      "crc32": "e25fc450"
+    },
+    {
+      "path": "convergence/old_U_long/n1024/N3/gap_2um/per_ball_statistics.csv",
+      "bytes": 202137,
+      "crc32": "c9f5e19d"
+    },
+    {
+      "path": "convergence/old_U_long/n1024/N3/gap_2um/progress.json",
+      "bytes": 271,
+      "crc32": "f8233825"
+    },
+    {
+      "path": "convergence/old_U_long/n1024/N3/gap_2um/sampling_convergence.json",
+      "bytes": 65421,
+      "crc32": "635a9991"
+    },
+    {
+      "path": "convergence/old_U_long/n1024/N3/gap_2um/stationarity.json",
+      "bytes": 182419,
+      "crc32": "140a6e41"
+    },
+    {
+      "path": "convergence/old_U_long/n1024/N3/gap_2um/turns.csv",
+      "bytes": 37823,
+      "crc32": "611b1938"
+    },
+    {
+      "path": "convergence/old_U_long/n1024/N3/gap_2um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "convergence/old_U_long/n1024/N3/gap_2um/wrench_diagnostics.json",
+      "bytes": 67300,
+      "crc32": "3a012f4e"
+    },
+    {
+      "path": "convergence/old_U_long/n1024/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "convergence/old_U_long/n1024/N3/run_settings.json",
+      "bytes": 23696,
+      "crc32": "f6950997"
+    },
+    {
+      "path": "convergence/old_U_long/root_tenth/N3/gap_2um/actual_config.json",
+      "bytes": 22150,
+      "crc32": "60419079"
+    },
+    {
+      "path": "convergence/old_U_long/root_tenth/N3/gap_2um/actual_solver_settings.json",
+      "bytes": 1823,
+      "crc32": "3a9d3112"
+    },
+    {
+      "path": "convergence/old_U_long/root_tenth/N3/gap_2um/continuation_provenance.json",
+      "bytes": 427,
+      "crc32": "cb14ac8d"
+    },
+    {
+      "path": "convergence/old_U_long/root_tenth/N3/gap_2um/domain.json",
+      "bytes": 3610,
+      "crc32": "74151a04"
+    },
+    {
+      "path": "convergence/old_U_long/root_tenth/N3/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "convergence/old_U_long/root_tenth/N3/gap_2um/metrics.json",
+      "bytes": 20671,
+      "crc32": "ffcd1396"
+    },
+    {
+      "path": "convergence/old_U_long/root_tenth/N3/gap_2um/per_ball_statistics.csv",
+      "bytes": 201680,
+      "crc32": "c15d8594"
+    },
+    {
+      "path": "convergence/old_U_long/root_tenth/N3/gap_2um/progress.json",
+      "bytes": 271,
+      "crc32": "bfe24517"
+    },
+    {
+      "path": "convergence/old_U_long/root_tenth/N3/gap_2um/sampling_convergence.json",
+      "bytes": 65588,
+      "crc32": "267fc551"
+    },
+    {
+      "path": "convergence/old_U_long/root_tenth/N3/gap_2um/stationarity.json",
+      "bytes": 182305,
+      "crc32": "315b79e4"
+    },
+    {
+      "path": "convergence/old_U_long/root_tenth/N3/gap_2um/turns.csv",
+      "bytes": 37803,
+      "crc32": "552c2492"
+    },
+    {
+      "path": "convergence/old_U_long/root_tenth/N3/gap_2um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "convergence/old_U_long/root_tenth/N3/gap_2um/wrench_diagnostics.json",
+      "bytes": 67308,
+      "crc32": "e4e0826c"
+    },
+    {
+      "path": "convergence/old_U_long/root_tenth/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "convergence/old_U_long/root_tenth/N3/run_settings.json",
+      "bytes": 23700,
+      "crc32": "04fd4b05"
+    },
+    {
+      "path": "data_A/B0/gap_10um/actual_config.json",
+      "bytes": 16671,
+      "crc32": "5c4db53a"
+    },
+    {
+      "path": "data_A/B0/gap_10um/actual_solver_settings.json",
+      "bytes": 1821,
+      "crc32": "50560980"
+    },
+    {
+      "path": "data_A/B0/gap_10um/bearing_diagnostics.json",
+      "bytes": 2543,
+      "crc32": "fcc69aae"
+    },
+    {
+      "path": "data_A/B0/gap_10um/domain.json",
+      "bytes": 3488,
+      "crc32": "c6278253"
+    },
+    {
+      "path": "data_A/B0/gap_10um/input_check.json",
+      "bytes": 300,
+      "crc32": "be999e15"
+    },
+    {
+      "path": "data_A/B0/gap_10um/metrics.json",
+      "bytes": 10191,
+      "crc32": "4b6b993d"
+    },
+    {
+      "path": "data_A/B0/gap_10um/progress.json",
+      "bytes": 262915,
+      "crc32": "42913716"
+    },
+    {
+      "path": "data_A/B0/gap_10um/sampling_convergence.json",
+      "bytes": 51785,
+      "crc32": "29512f83"
+    },
+    {
+      "path": "data_A/B0/gap_10um/stationarity.json",
+      "bytes": 112332,
+      "crc32": "61c39b61"
+    },
+    {
+      "path": "data_A/B0/gap_10um/turns.csv",
+      "bytes": 64668,
+      "crc32": "68c772ba"
+    },
+    {
+      "path": "data_A/B0/gap_10um/warmup_history.json",
+      "bytes": 250180,
+      "crc32": "0540e22c"
+    },
+    {
+      "path": "data_A/B0/gap_10um/wrench_diagnostics.json",
+      "bytes": 7800,
+      "crc32": "62921e44"
+    },
+    {
+      "path": "data_A/B0/gap_2um/actual_config.json",
+      "bytes": 16668,
+      "crc32": "de358d9f"
+    },
+    {
+      "path": "data_A/B0/gap_2um/actual_solver_settings.json",
+      "bytes": 913,
+      "crc32": "cd78ebe4"
+    },
+    {
+      "path": "data_A/B0/gap_2um/bearing_diagnostics.json",
+      "bytes": 2563,
+      "crc32": "94da2d39"
+    },
+    {
+      "path": "data_A/B0/gap_2um/domain.json",
+      "bytes": 3509,
+      "crc32": "3fd32b17"
+    },
+    {
+      "path": "data_A/B0/gap_2um/input_check.json",
+      "bytes": 300,
+      "crc32": "be999e15"
+    },
+    {
+      "path": "data_A/B0/gap_2um/metrics.json",
+      "bytes": 10221,
+      "crc32": "41b24a82"
+    },
+    {
+      "path": "data_A/B0/gap_2um/progress.json",
+      "bytes": 132205,
+      "crc32": "3652a44e"
+    },
+    {
+      "path": "data_A/B0/gap_2um/sampling_convergence.json",
+      "bytes": 52159,
+      "crc32": "7066d6a9"
+    },
+    {
+      "path": "data_A/B0/gap_2um/stationarity.json",
+      "bytes": 113029,
+      "crc32": "ae3e51a0"
+    },
+    {
+      "path": "data_A/B0/gap_2um/turns.csv",
+      "bytes": 87015,
+      "crc32": "c3eae5fb"
+    },
+    {
+      "path": "data_A/B0/gap_2um/warmup_history.json",
+      "bytes": 125808,
+      "crc32": "d8eeda05"
+    },
+    {
+      "path": "data_A/B0/gap_2um/wrench_diagnostics.json",
+      "bytes": 7786,
+      "crc32": "cbbfcb2e"
+    },
+    {
+      "path": "data_A/B0/gap_5um/actual_config.json",
+      "bytes": 16422,
+      "crc32": "a63ff308"
+    },
+    {
+      "path": "data_A/B0/gap_5um/actual_solver_settings.json",
+      "bytes": 914,
+      "crc32": "2f81e5d8"
+    },
+    {
+      "path": "data_A/B0/gap_5um/bearing_diagnostics.json",
+      "bytes": 2554,
+      "crc32": "8af3ac06"
+    },
+    {
+      "path": "data_A/B0/gap_5um/domain.json",
+      "bytes": 3499,
+      "crc32": "57add7a6"
+    },
+    {
+      "path": "data_A/B0/gap_5um/input_check.json",
+      "bytes": 300,
+      "crc32": "be999e15"
+    },
+    {
+      "path": "data_A/B0/gap_5um/metrics.json",
+      "bytes": 10217,
+      "crc32": "26888c4c"
+    },
+    {
+      "path": "data_A/B0/gap_5um/progress.json",
+      "bytes": 132085,
+      "crc32": "36d4fc21"
+    },
+    {
+      "path": "data_A/B0/gap_5um/sampling_convergence.json",
+      "bytes": 52195,
+      "crc32": "92eae6d7"
+    },
+    {
+      "path": "data_A/B0/gap_5um/stationarity.json",
+      "bytes": 112909,
+      "crc32": "05a09274"
+    },
+    {
+      "path": "data_A/B0/gap_5um/turns.csv",
+      "bytes": 22011,
+      "crc32": "f07681e5"
+    },
+    {
+      "path": "data_A/B0/gap_5um/warmup_history.json",
+      "bytes": 125688,
+      "crc32": "7ecabf5a"
+    },
+    {
+      "path": "data_A/B0/gap_5um/wrench_diagnostics.json",
+      "bytes": 7795,
+      "crc32": "87aa6fbc"
+    },
+    {
+      "path": "data_A/B0d/gap_10um/actual_config.json",
+      "bytes": 22152,
+      "crc32": "ae5331d5"
+    },
+    {
+      "path": "data_A/B0d/gap_10um/actual_solver_settings.json",
+      "bytes": 913,
+      "crc32": "9355678f"
+    },
+    {
+      "path": "data_A/B0d/gap_10um/domain.json",
+      "bytes": 903,
+      "crc32": "d61453db"
+    },
+    {
+      "path": "data_A/B0d/gap_10um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_A/B0d/gap_10um/metrics.json",
+      "bytes": 15525,
+      "crc32": "e868e11d"
+    },
+    {
+      "path": "data_A/B0d/gap_10um/per_ball_statistics.csv",
+      "bytes": 53351,
+      "crc32": "39388946"
+    },
+    {
+      "path": "data_A/B0d/gap_10um/progress.json",
+      "bytes": 271,
+      "crc32": "cdce062c"
+    },
+    {
+      "path": "data_A/B0d/gap_10um/sampling_convergence.json",
+      "bytes": 63683,
+      "crc32": "a6958fc4"
+    },
+    {
+      "path": "data_A/B0d/gap_10um/stationarity.json",
+      "bytes": 155931,
+      "crc32": "375687a7"
+    },
+    {
+      "path": "data_A/B0d/gap_10um/turns.csv",
+      "bytes": 37672,
+      "crc32": "d37e9d35"
+    },
+    {
+      "path": "data_A/B0d/gap_10um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "data_A/B0d/gap_10um/wrench_diagnostics.json",
+      "bytes": 40288,
+      "crc32": "e1c0bcaa"
+    },
+    {
+      "path": "data_A/B0d/gap_2um/actual_config.json",
+      "bytes": 22149,
+      "crc32": "f0c098e5"
+    },
+    {
+      "path": "data_A/B0d/gap_2um/actual_solver_settings.json",
+      "bytes": 913,
+      "crc32": "cfc1c924"
+    },
+    {
+      "path": "data_A/B0d/gap_2um/domain.json",
+      "bytes": 903,
+      "crc32": "c43e41b4"
+    },
+    {
+      "path": "data_A/B0d/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_A/B0d/gap_2um/metrics.json",
+      "bytes": 15570,
+      "crc32": "75b85241"
+    },
+    {
+      "path": "data_A/B0d/gap_2um/per_ball_statistics.csv",
+      "bytes": 52883,
+      "crc32": "5d0f88ee"
+    },
+    {
+      "path": "data_A/B0d/gap_2um/progress.json",
+      "bytes": 273,
+      "crc32": "cca14ff4"
+    },
+    {
+      "path": "data_A/B0d/gap_2um/sampling_convergence.json",
+      "bytes": 63794,
+      "crc32": "f3f80067"
+    },
+    {
+      "path": "data_A/B0d/gap_2um/stationarity.json",
+      "bytes": 156457,
+      "crc32": "eb26720a"
+    },
+    {
+      "path": "data_A/B0d/gap_2um/turns.csv",
+      "bytes": 9498,
+      "crc32": "ba9d870c"
+    },
+    {
+      "path": "data_A/B0d/gap_2um/warmup_history.json",
+      "bytes": 197,
+      "crc32": "f84fcbcb"
+    },
+    {
+      "path": "data_A/B0d/gap_2um/wrench_diagnostics.json",
+      "bytes": 40205,
+      "crc32": "828ef76e"
+    },
+    {
+      "path": "data_A/B0d/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "data_A/B0d/run_settings.json",
+      "bytes": 23683,
+      "crc32": "cd279ff5"
+    },
+    {
+      "path": "data_A/N1/gap_10um/actual_config.json",
+      "bytes": 22153,
+      "crc32": "37151163"
+    },
+    {
+      "path": "data_A/N1/gap_10um/actual_solver_settings.json",
+      "bytes": 912,
+      "crc32": "506fc6a2"
+    },
+    {
+      "path": "data_A/N1/gap_10um/domain.json",
+      "bytes": 3129,
+      "crc32": "0fce6a3a"
+    },
+    {
+      "path": "data_A/N1/gap_10um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_A/N1/gap_10um/metrics.json",
+      "bytes": 20389,
+      "crc32": "1ca7f3c6"
+    },
+    {
+      "path": "data_A/N1/gap_10um/per_ball_statistics.csv",
+      "bytes": 193650,
+      "crc32": "b972ffee"
+    },
+    {
+      "path": "data_A/N1/gap_10um/progress.json",
+      "bytes": 271,
+      "crc32": "7a4b7c0e"
+    },
+    {
+      "path": "data_A/N1/gap_10um/sampling_convergence.json",
+      "bytes": 65258,
+      "crc32": "810f2241"
+    },
+    {
+      "path": "data_A/N1/gap_10um/stationarity.json",
+      "bytes": 181223,
+      "crc32": "fc12acbe"
+    },
+    {
+      "path": "data_A/N1/gap_10um/turns.csv",
+      "bytes": 37705,
+      "crc32": "1950e27c"
+    },
+    {
+      "path": "data_A/N1/gap_10um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "data_A/N1/gap_10um/wrench_diagnostics.json",
+      "bytes": 66652,
+      "crc32": "c4200e0b"
+    },
+    {
+      "path": "data_A/N1/gap_2um/actual_config.json",
+      "bytes": 22150,
+      "crc32": "3019b588"
+    },
+    {
+      "path": "data_A/N1/gap_2um/actual_solver_settings.json",
+      "bytes": 913,
+      "crc32": "cad56985"
+    },
+    {
+      "path": "data_A/N1/gap_2um/domain.json",
+      "bytes": 3133,
+      "crc32": "1e240bf9"
+    },
+    {
+      "path": "data_A/N1/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_A/N1/gap_2um/metrics.json",
+      "bytes": 20426,
+      "crc32": "10b34459"
+    },
+    {
+      "path": "data_A/N1/gap_2um/per_ball_statistics.csv",
+      "bytes": 191443,
+      "crc32": "cf897826"
+    },
+    {
+      "path": "data_A/N1/gap_2um/progress.json",
+      "bytes": 272,
+      "crc32": "f9d0287c"
+    },
+    {
+      "path": "data_A/N1/gap_2um/sampling_convergence.json",
+      "bytes": 65365,
+      "crc32": "20182ebd"
+    },
+    {
+      "path": "data_A/N1/gap_2um/stationarity.json",
+      "bytes": 181721,
+      "crc32": "1abe3f48"
+    },
+    {
+      "path": "data_A/N1/gap_2um/turns.csv",
+      "bytes": 9501,
+      "crc32": "5b507b2e"
+    },
+    {
+      "path": "data_A/N1/gap_2um/warmup_history.json",
+      "bytes": 197,
+      "crc32": "f84fcbcb"
+    },
+    {
+      "path": "data_A/N1/gap_2um/wrench_diagnostics.json",
+      "bytes": 66605,
+      "crc32": "e30c82d5"
+    },
+    {
+      "path": "data_A/N1/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "data_A/N1/run_settings.json",
+      "bytes": 23684,
+      "crc32": "832585ab"
+    },
+    {
+      "path": "data_A/N2/gap_10um/actual_config.json",
+      "bytes": 22160,
+      "crc32": "61500d8b"
+    },
+    {
+      "path": "data_A/N2/gap_10um/actual_solver_settings.json",
+      "bytes": 913,
+      "crc32": "d5c7e114"
+    },
+    {
+      "path": "data_A/N2/gap_10um/domain.json",
+      "bytes": 3134,
+      "crc32": "e5f30610"
+    },
+    {
+      "path": "data_A/N2/gap_10um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_A/N2/gap_10um/metrics.json",
+      "bytes": 20447,
+      "crc32": "3c9e4e68"
+    },
+    {
+      "path": "data_A/N2/gap_10um/per_ball_statistics.csv",
+      "bytes": 198848,
+      "crc32": "b85634da"
+    },
+    {
+      "path": "data_A/N2/gap_10um/progress.json",
+      "bytes": 272,
+      "crc32": "8744325a"
+    },
+    {
+      "path": "data_A/N2/gap_10um/sampling_convergence.json",
+      "bytes": 65311,
+      "crc32": "7e6dd809"
+    },
+    {
+      "path": "data_A/N2/gap_10um/stationarity.json",
+      "bytes": 181513,
+      "crc32": "41f921d8"
+    },
+    {
+      "path": "data_A/N2/gap_10um/turns.csv",
+      "bytes": 37708,
+      "crc32": "6afa9e92"
+    },
+    {
+      "path": "data_A/N2/gap_10um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "data_A/N2/gap_10um/wrench_diagnostics.json",
+      "bytes": 66964,
+      "crc32": "2326388e"
+    },
+    {
+      "path": "data_A/N2/gap_2um/actual_config.json",
+      "bytes": 22157,
+      "crc32": "cec52b7c"
+    },
+    {
+      "path": "data_A/N2/gap_2um/actual_solver_settings.json",
+      "bytes": 913,
+      "crc32": "c3af2e3f"
+    },
+    {
+      "path": "data_A/N2/gap_2um/domain.json",
+      "bytes": 3135,
+      "crc32": "5dd74062"
+    },
+    {
+      "path": "data_A/N2/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_A/N2/gap_2um/metrics.json",
+      "bytes": 20499,
+      "crc32": "1054889f"
+    },
+    {
+      "path": "data_A/N2/gap_2um/per_ball_statistics.csv",
+      "bytes": 196132,
+      "crc32": "d4367781"
+    },
+    {
+      "path": "data_A/N2/gap_2um/progress.json",
+      "bytes": 272,
+      "crc32": "55242ccd"
+    },
+    {
+      "path": "data_A/N2/gap_2um/sampling_convergence.json",
+      "bytes": 65547,
+      "crc32": "e4ed5f88"
+    },
+    {
+      "path": "data_A/N2/gap_2um/stationarity.json",
+      "bytes": 182145,
+      "crc32": "e1a189d5"
+    },
+    {
+      "path": "data_A/N2/gap_2um/turns.csv",
+      "bytes": 9531,
+      "crc32": "bf55774a"
+    },
+    {
+      "path": "data_A/N2/gap_2um/warmup_history.json",
+      "bytes": 197,
+      "crc32": "f84fcbcb"
+    },
+    {
+      "path": "data_A/N2/gap_2um/wrench_diagnostics.json",
+      "bytes": 66955,
+      "crc32": "a19d7fd0"
+    },
+    {
+      "path": "data_A/N2/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "data_A/N2/run_settings.json",
+      "bytes": 23691,
+      "crc32": "220c7cfe"
+    },
+    {
+      "path": "data_A/N3/gap_10um/actual_config.json",
+      "bytes": 22153,
+      "crc32": "84cb824b"
+    },
+    {
+      "path": "data_A/N3/gap_10um/actual_solver_settings.json",
+      "bytes": 914,
+      "crc32": "eecdf75e"
+    },
+    {
+      "path": "data_A/N3/gap_10um/domain.json",
+      "bytes": 3134,
+      "crc32": "c229aacf"
+    },
+    {
+      "path": "data_A/N3/gap_10um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_A/N3/gap_10um/metrics.json",
+      "bytes": 20526,
+      "crc32": "69e5edaf"
+    },
+    {
+      "path": "data_A/N3/gap_10um/per_ball_statistics.csv",
+      "bytes": 202653,
+      "crc32": "776e2eca"
+    },
+    {
+      "path": "data_A/N3/gap_10um/progress.json",
+      "bytes": 272,
+      "crc32": "12f95c16"
+    },
+    {
+      "path": "data_A/N3/gap_10um/sampling_convergence.json",
+      "bytes": 65263,
+      "crc32": "9b3a9ac1"
+    },
+    {
+      "path": "data_A/N3/gap_10um/stationarity.json",
+      "bytes": 181687,
+      "crc32": "e970f0c7"
+    },
+    {
+      "path": "data_A/N3/gap_10um/turns.csv",
+      "bytes": 37687,
+      "crc32": "33dd9a08"
+    },
+    {
+      "path": "data_A/N3/gap_10um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "data_A/N3/gap_10um/wrench_diagnostics.json",
+      "bytes": 67277,
+      "crc32": "908d213e"
+    },
+    {
+      "path": "data_A/N3/gap_2um/actual_config.json",
+      "bytes": 22150,
+      "crc32": "83c726a0"
+    },
+    {
+      "path": "data_A/N3/gap_2um/actual_solver_settings.json",
+      "bytes": 913,
+      "crc32": "2524aa63"
+    },
+    {
+      "path": "data_A/N3/gap_2um/domain.json",
+      "bytes": 3137,
+      "crc32": "da277e8b"
+    },
+    {
+      "path": "data_A/N3/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_A/N3/gap_2um/metrics.json",
+      "bytes": 20573,
+      "crc32": "c471173b"
+    },
+    {
+      "path": "data_A/N3/gap_2um/per_ball_statistics.csv",
+      "bytes": 200058,
+      "crc32": "8ad9fab5"
+    },
+    {
+      "path": "data_A/N3/gap_2um/progress.json",
+      "bytes": 272,
+      "crc32": "0307b7cb"
+    },
+    {
+      "path": "data_A/N3/gap_2um/sampling_convergence.json",
+      "bytes": 65514,
+      "crc32": "2a4f3825"
+    },
+    {
+      "path": "data_A/N3/gap_2um/stationarity.json",
+      "bytes": 182343,
+      "crc32": "b3b2cee4"
+    },
+    {
+      "path": "data_A/N3/gap_2um/turns.csv",
+      "bytes": 9529,
+      "crc32": "800da636"
+    },
+    {
+      "path": "data_A/N3/gap_2um/warmup_history.json",
+      "bytes": 197,
+      "crc32": "f84fcbcb"
+    },
+    {
+      "path": "data_A/N3/gap_2um/wrench_diagnostics.json",
+      "bytes": 67288,
+      "crc32": "fcf7a2b3"
+    },
+    {
+      "path": "data_A/N3/gap_5um/actual_config.json",
+      "bytes": 22150,
+      "crc32": "0d7a089e"
+    },
+    {
+      "path": "data_A/N3/gap_5um/actual_solver_settings.json",
+      "bytes": 914,
+      "crc32": "70e33869"
+    },
+    {
+      "path": "data_A/N3/gap_5um/domain.json",
+      "bytes": 3133,
+      "crc32": "f1d3b47c"
+    },
+    {
+      "path": "data_A/N3/gap_5um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_A/N3/gap_5um/metrics.json",
+      "bytes": 20546,
+      "crc32": "c7255799"
+    },
+    {
+      "path": "data_A/N3/gap_5um/per_ball_statistics.csv",
+      "bytes": 200491,
+      "crc32": "9c1bd7cc"
+    },
+    {
+      "path": "data_A/N3/gap_5um/progress.json",
+      "bytes": 272,
+      "crc32": "ba35c740"
+    },
+    {
+      "path": "data_A/N3/gap_5um/sampling_convergence.json",
+      "bytes": 65770,
+      "crc32": "a12c75f3"
+    },
+    {
+      "path": "data_A/N3/gap_5um/stationarity.json",
+      "bytes": 182241,
+      "crc32": "e99cd0ef"
+    },
+    {
+      "path": "data_A/N3/gap_5um/turns.csv",
+      "bytes": 9350,
+      "crc32": "2e8b29b8"
+    },
+    {
+      "path": "data_A/N3/gap_5um/warmup_history.json",
+      "bytes": 197,
+      "crc32": "f84fcbcb"
+    },
+    {
+      "path": "data_A/N3/gap_5um/wrench_diagnostics.json",
+      "bytes": 67290,
+      "crc32": "7c6403ea"
+    },
+    {
+      "path": "data_A/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "data_A/N3/run_settings.json",
+      "bytes": 23694,
+      "crc32": "459ee492"
+    },
+    {
+      "path": "data_A_long/B0/gap_2um/actual_config.json",
+      "bytes": 16668,
+      "crc32": "27c55df6"
+    },
+    {
+      "path": "data_A_long/B0/gap_2um/actual_solver_settings.json",
+      "bytes": 911,
+      "crc32": "22d17b64"
+    },
+    {
+      "path": "data_A_long/B0/gap_2um/bearing_diagnostics.json",
+      "bytes": 2565,
+      "crc32": "e6be2c04"
+    },
+    {
+      "path": "data_A_long/B0/gap_2um/domain.json",
+      "bytes": 3511,
+      "crc32": "e40c5a83"
+    },
+    {
+      "path": "data_A_long/B0/gap_2um/input_check.json",
+      "bytes": 300,
+      "crc32": "be999e15"
+    },
+    {
+      "path": "data_A_long/B0/gap_2um/metrics.json",
+      "bytes": 10241,
+      "crc32": "3780186c"
+    },
+    {
+      "path": "data_A_long/B0/gap_2um/progress.json",
+      "bytes": 132307,
+      "crc32": "4704b14e"
+    },
+    {
+      "path": "data_A_long/B0/gap_2um/sampling_convergence.json",
+      "bytes": 52231,
+      "crc32": "c416a729"
+    },
+    {
+      "path": "data_A_long/B0/gap_2um/stationarity.json",
+      "bytes": 113132,
+      "crc32": "331aa1c7"
+    },
+    {
+      "path": "data_A_long/B0/gap_2um/turns.csv",
+      "bytes": 86887,
+      "crc32": "af9142b9"
+    },
+    {
+      "path": "data_A_long/B0/gap_2um/warmup_history.json",
+      "bytes": 125910,
+      "crc32": "7110b6c9"
+    },
+    {
+      "path": "data_A_long/B0/gap_2um/wrench_diagnostics.json",
+      "bytes": 7791,
+      "crc32": "787ca763"
+    },
+    {
+      "path": "data_A_long/B0/gap_5um/actual_config.json",
+      "bytes": 16668,
+      "crc32": "17c88908"
+    },
+    {
+      "path": "data_A_long/B0/gap_5um/actual_solver_settings.json",
+      "bytes": 914,
+      "crc32": "405e0193"
+    },
+    {
+      "path": "data_A_long/B0/gap_5um/bearing_diagnostics.json",
+      "bytes": 2546,
+      "crc32": "5d9e7614"
+    },
+    {
+      "path": "data_A_long/B0/gap_5um/domain.json",
+      "bytes": 3491,
+      "crc32": "fa895f30"
+    },
+    {
+      "path": "data_A_long/B0/gap_5um/input_check.json",
+      "bytes": 300,
+      "crc32": "be999e15"
+    },
+    {
+      "path": "data_A_long/B0/gap_5um/metrics.json",
+      "bytes": 10216,
+      "crc32": "0b79b7fb"
+    },
+    {
+      "path": "data_A_long/B0/gap_5um/progress.json",
+      "bytes": 132097,
+      "crc32": "31adf52d"
+    },
+    {
+      "path": "data_A_long/B0/gap_5um/sampling_convergence.json",
+      "bytes": 52223,
+      "crc32": "9d031bbb"
+    },
+    {
+      "path": "data_A_long/B0/gap_5um/stationarity.json",
+      "bytes": 112921,
+      "crc32": "42198c21"
+    },
+    {
+      "path": "data_A_long/B0/gap_5um/turns.csv",
+      "bytes": 87162,
+      "crc32": "9f7a472a"
+    },
+    {
+      "path": "data_A_long/B0/gap_5um/warmup_history.json",
+      "bytes": 125699,
+      "crc32": "f62c4be4"
+    },
+    {
+      "path": "data_A_long/B0/gap_5um/wrench_diagnostics.json",
+      "bytes": 7797,
+      "crc32": "1f78c6fe"
+    },
+    {
+      "path": "data_A_long/B0d/gap_2um/actual_config.json",
+      "bytes": 22149,
+      "crc32": "1c81bb67"
+    },
+    {
+      "path": "data_A_long/B0d/gap_2um/actual_solver_settings.json",
+      "bytes": 1822,
+      "crc32": "713268de"
+    },
+    {
+      "path": "data_A_long/B0d/gap_2um/continuation_provenance.json",
+      "bytes": 406,
+      "crc32": "50c9165b"
+    },
+    {
+      "path": "data_A_long/B0d/gap_2um/domain.json",
+      "bytes": 903,
+      "crc32": "c43e41b4"
+    },
+    {
+      "path": "data_A_long/B0d/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_A_long/B0d/gap_2um/metrics.json",
+      "bytes": 15673,
+      "crc32": "4c08113e"
+    },
+    {
+      "path": "data_A_long/B0d/gap_2um/per_ball_statistics.csv",
+      "bytes": 53285,
+      "crc32": "c1dfc5fc"
+    },
+    {
+      "path": "data_A_long/B0d/gap_2um/progress.json",
+      "bytes": 272,
+      "crc32": "63612b27"
+    },
+    {
+      "path": "data_A_long/B0d/gap_2um/sampling_convergence.json",
+      "bytes": 63686,
+      "crc32": "0202cb92"
+    },
+    {
+      "path": "data_A_long/B0d/gap_2um/stationarity.json",
+      "bytes": 156388,
+      "crc32": "8dafea12"
+    },
+    {
+      "path": "data_A_long/B0d/gap_2um/turns.csv",
+      "bytes": 37682,
+      "crc32": "e13f49d3"
+    },
+    {
+      "path": "data_A_long/B0d/gap_2um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "data_A_long/B0d/gap_2um/wrench_diagnostics.json",
+      "bytes": 40019,
+      "crc32": "7ff75ee2"
+    },
+    {
+      "path": "data_A_long/B0d/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "data_A_long/B0d/run_settings.json",
+      "bytes": 23677,
+      "crc32": "9fc06388"
+    },
+    {
+      "path": "data_A_long/N1/gap_2um/actual_config.json",
+      "bytes": 22150,
+      "crc32": "12c81149"
+    },
+    {
+      "path": "data_A_long/N1/gap_2um/actual_solver_settings.json",
+      "bytes": 1822,
+      "crc32": "f440ca66"
+    },
+    {
+      "path": "data_A_long/N1/gap_2um/continuation_provenance.json",
+      "bytes": 405,
+      "crc32": "de456404"
+    },
+    {
+      "path": "data_A_long/N1/gap_2um/domain.json",
+      "bytes": 3600,
+      "crc32": "988e17e4"
+    },
+    {
+      "path": "data_A_long/N1/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_A_long/N1/gap_2um/metrics.json",
+      "bytes": 20538,
+      "crc32": "7b93c79e"
+    },
+    {
+      "path": "data_A_long/N1/gap_2um/per_ball_statistics.csv",
+      "bytes": 193687,
+      "crc32": "c1ff4cf3"
+    },
+    {
+      "path": "data_A_long/N1/gap_2um/progress.json",
+      "bytes": 272,
+      "crc32": "627281d2"
+    },
+    {
+      "path": "data_A_long/N1/gap_2um/sampling_convergence.json",
+      "bytes": 65661,
+      "crc32": "e3ac4546"
+    },
+    {
+      "path": "data_A_long/N1/gap_2um/stationarity.json",
+      "bytes": 181773,
+      "crc32": "40a95b71"
+    },
+    {
+      "path": "data_A_long/N1/gap_2um/turns.csv",
+      "bytes": 37682,
+      "crc32": "f540a751"
+    },
+    {
+      "path": "data_A_long/N1/gap_2um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "data_A_long/N1/gap_2um/wrench_diagnostics.json",
+      "bytes": 66624,
+      "crc32": "64d0434f"
+    },
+    {
+      "path": "data_A_long/N1/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "data_A_long/N1/run_settings.json",
+      "bytes": 23678,
+      "crc32": "c97afd56"
+    },
+    {
+      "path": "data_A_long/N2/gap_2um/actual_config.json",
+      "bytes": 22157,
+      "crc32": "ec148fbd"
+    },
+    {
+      "path": "data_A_long/N2/gap_2um/actual_solver_settings.json",
+      "bytes": 1822,
+      "crc32": "42eb5af1"
+    },
+    {
+      "path": "data_A_long/N2/gap_2um/continuation_provenance.json",
+      "bytes": 404,
+      "crc32": "d170dbe8"
+    },
+    {
+      "path": "data_A_long/N2/gap_2um/domain.json",
+      "bytes": 3600,
+      "crc32": "037de52d"
+    },
+    {
+      "path": "data_A_long/N2/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_A_long/N2/gap_2um/metrics.json",
+      "bytes": 20606,
+      "crc32": "7b828ac7"
+    },
+    {
+      "path": "data_A_long/N2/gap_2um/per_ball_statistics.csv",
+      "bytes": 198319,
+      "crc32": "bb8c19e8"
+    },
+    {
+      "path": "data_A_long/N2/gap_2um/progress.json",
+      "bytes": 271,
+      "crc32": "96d8e446"
+    },
+    {
+      "path": "data_A_long/N2/gap_2um/sampling_convergence.json",
+      "bytes": 65389,
+      "crc32": "67b438d2"
+    },
+    {
+      "path": "data_A_long/N2/gap_2um/stationarity.json",
+      "bytes": 182060,
+      "crc32": "59444240"
+    },
+    {
+      "path": "data_A_long/N2/gap_2um/turns.csv",
+      "bytes": 37782,
+      "crc32": "7290f14a"
+    },
+    {
+      "path": "data_A_long/N2/gap_2um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "data_A_long/N2/gap_2um/wrench_diagnostics.json",
+      "bytes": 67000,
+      "crc32": "e99571ae"
+    },
+    {
+      "path": "data_A_long/N2/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "data_A_long/N2/run_settings.json",
+      "bytes": 23685,
+      "crc32": "dfcd131c"
+    },
+    {
+      "path": "data_A_long/N3/gap_2um/actual_config.json",
+      "bytes": 22150,
+      "crc32": "a1168261"
+    },
+    {
+      "path": "data_A_long/N3/gap_2um/actual_solver_settings.json",
+      "bytes": 1823,
+      "crc32": "4b256fe4"
+    },
+    {
+      "path": "data_A_long/N3/gap_2um/continuation_provenance.json",
+      "bytes": 404,
+      "crc32": "3a4f3a39"
+    },
+    {
+      "path": "data_A_long/N3/gap_2um/domain.json",
+      "bytes": 3605,
+      "crc32": "84d6d959"
+    },
+    {
+      "path": "data_A_long/N3/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_A_long/N3/gap_2um/metrics.json",
+      "bytes": 20671,
+      "crc32": "8804d1ec"
+    },
+    {
+      "path": "data_A_long/N3/gap_2um/per_ball_statistics.csv",
+      "bytes": 202226,
+      "crc32": "de19f07c"
+    },
+    {
+      "path": "data_A_long/N3/gap_2um/progress.json",
+      "bytes": 271,
+      "crc32": "639e0319"
+    },
+    {
+      "path": "data_A_long/N3/gap_2um/sampling_convergence.json",
+      "bytes": 65557,
+      "crc32": "a3573174"
+    },
+    {
+      "path": "data_A_long/N3/gap_2um/stationarity.json",
+      "bytes": 182326,
+      "crc32": "b5d1b910"
+    },
+    {
+      "path": "data_A_long/N3/gap_2um/turns.csv",
+      "bytes": 37786,
+      "crc32": "69f5dd23"
+    },
+    {
+      "path": "data_A_long/N3/gap_2um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "data_A_long/N3/gap_2um/wrench_diagnostics.json",
+      "bytes": 67312,
+      "crc32": "eb338c48"
+    },
+    {
+      "path": "data_A_long/N3/gap_5um/actual_config.json",
+      "bytes": 22150,
+      "crc32": "2fabac5f"
+    },
+    {
+      "path": "data_A_long/N3/gap_5um/actual_solver_settings.json",
+      "bytes": 1825,
+      "crc32": "5ce18271"
+    },
+    {
+      "path": "data_A_long/N3/gap_5um/continuation_provenance.json",
+      "bytes": 404,
+      "crc32": "f485490b"
+    },
+    {
+      "path": "data_A_long/N3/gap_5um/domain.json",
+      "bytes": 3603,
+      "crc32": "a263128f"
+    },
+    {
+      "path": "data_A_long/N3/gap_5um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_A_long/N3/gap_5um/metrics.json",
+      "bytes": 20653,
+      "crc32": "29c37d18"
+    },
+    {
+      "path": "data_A_long/N3/gap_5um/per_ball_statistics.csv",
+      "bytes": 202655,
+      "crc32": "0e77b14b"
+    },
+    {
+      "path": "data_A_long/N3/gap_5um/progress.json",
+      "bytes": 271,
+      "crc32": "8dcdc088"
+    },
+    {
+      "path": "data_A_long/N3/gap_5um/sampling_convergence.json",
+      "bytes": 65518,
+      "crc32": "3b523499"
+    },
+    {
+      "path": "data_A_long/N3/gap_5um/stationarity.json",
+      "bytes": 182234,
+      "crc32": "da330c7a"
+    },
+    {
+      "path": "data_A_long/N3/gap_5um/turns.csv",
+      "bytes": 37058,
+      "crc32": "26a90b19"
+    },
+    {
+      "path": "data_A_long/N3/gap_5um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "data_A_long/N3/gap_5um/wrench_diagnostics.json",
+      "bytes": 67316,
+      "crc32": "bdcb3803"
+    },
+    {
+      "path": "data_A_long/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "data_A_long/N3/run_settings.json",
+      "bytes": 23678,
+      "crc32": "168404ef"
+    },
+    {
+      "path": "data_B/N3/actual_command.json",
+      "bytes": 603,
+      "crc32": "7078249b"
+    },
+    {
+      "path": "data_B/N3/gap_3um/actual_config.json",
+      "bytes": 23188,
+      "crc32": "095bc48c"
+    },
+    {
+      "path": "data_B/N3/gap_3um/actual_solver_settings.json",
+      "bytes": 910,
+      "crc32": "47f3cd24"
+    },
+    {
+      "path": "data_B/N3/gap_3um/domain.json",
+      "bytes": 3605,
+      "crc32": "76ae766b"
+    },
+    {
+      "path": "data_B/N3/gap_3um/implementation_at_start.json",
+      "bytes": 975,
+      "crc32": "767be05f"
+    },
+    {
+      "path": "data_B/N3/gap_3um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_B/N3/gap_3um/metrics.json",
+      "bytes": 20850,
+      "crc32": "930f6edb"
+    },
+    {
+      "path": "data_B/N3/gap_3um/per_ball_statistics.csv",
+      "bytes": 202223,
+      "crc32": "adee0c1d"
+    },
+    {
+      "path": "data_B/N3/gap_3um/progress.json",
+      "bytes": 272,
+      "crc32": "5b0cd9fd"
+    },
+    {
+      "path": "data_B/N3/gap_3um/sampling_convergence.json",
+      "bytes": 65528,
+      "crc32": "62490c5f"
+    },
+    {
+      "path": "data_B/N3/gap_3um/stationarity.json",
+      "bytes": 183405,
+      "crc32": "f6a2bb37"
+    },
+    {
+      "path": "data_B/N3/gap_3um/turns.csv",
+      "bytes": 37690,
+      "crc32": "b37f4b20"
+    },
+    {
+      "path": "data_B/N3/gap_3um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "data_B/N3/gap_3um/wrench_diagnostics.json",
+      "bytes": 68512,
+      "crc32": "ac88a122"
+    },
+    {
+      "path": "data_B/N3/gap_7.5um/actual_config.json",
+      "bytes": 23188,
+      "crc32": "fa68f21a"
+    },
+    {
+      "path": "data_B/N3/gap_7.5um/actual_solver_settings.json",
+      "bytes": 914,
+      "crc32": "7e9918c7"
+    },
+    {
+      "path": "data_B/N3/gap_7.5um/domain.json",
+      "bytes": 3600,
+      "crc32": "85887326"
+    },
+    {
+      "path": "data_B/N3/gap_7.5um/implementation_at_start.json",
+      "bytes": 975,
+      "crc32": "767be05f"
+    },
+    {
+      "path": "data_B/N3/gap_7.5um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "data_B/N3/gap_7.5um/metrics.json",
+      "bytes": 20787,
+      "crc32": "9709d4d1"
+    },
+    {
+      "path": "data_B/N3/gap_7.5um/per_ball_statistics.csv",
+      "bytes": 202589,
+      "crc32": "98e65cdd"
+    },
+    {
+      "path": "data_B/N3/gap_7.5um/progress.json",
+      "bytes": 272,
+      "crc32": "36688708"
+    },
+    {
+      "path": "data_B/N3/gap_7.5um/sampling_convergence.json",
+      "bytes": 65393,
+      "crc32": "aa820af6"
+    },
+    {
+      "path": "data_B/N3/gap_7.5um/stationarity.json",
+      "bytes": 182590,
+      "crc32": "abce4cc6"
+    },
+    {
+      "path": "data_B/N3/gap_7.5um/turns.csv",
+      "bytes": 37227,
+      "crc32": "3d947e03"
+    },
+    {
+      "path": "data_B/N3/gap_7.5um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "data_B/N3/gap_7.5um/wrench_diagnostics.json",
+      "bytes": 68499,
+      "crc32": "82c2ddd1"
+    },
+    {
+      "path": "data_B/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "data_B/N3/run_settings.json",
+      "bytes": 24747,
+      "crc32": "f05cff27"
+    },
+    {
+      "path": "data_B/README.md",
+      "bytes": 555,
+      "crc32": "9d1fd726"
+    },
+    {
+      "path": "data_B/reuse_manifest.json",
+      "bytes": 580,
+      "crc32": "7273a54d"
+    },
+    {
+      "path": "environment/actual_environment.json",
+      "bytes": 1096,
+      "crc32": "964e6307"
+    },
+    {
+      "path": "environment/hardware.json",
+      "bytes": 425,
+      "crc32": "d57cc9d5"
+    },
+    {
+      "path": "figures/01_A_same_U_E_gap.png",
+      "bytes": 158587,
+      "crc32": "9789a26d"
+    },
+    {
+      "path": "figures/01_A_same_U_E_gap.svg",
+      "bytes": 62114,
+      "crc32": "4a0e089e"
+    },
+    {
+      "path": "figures/01b_A_E_delta_vs_B0.png",
+      "bytes": 143573,
+      "crc32": "4dd4d964"
+    },
+    {
+      "path": "figures/01b_A_E_delta_vs_B0.svg",
+      "bytes": 61370,
+      "crc32": "dfb4c4c5"
+    },
+    {
+      "path": "figures/02_B_recalibrated_E_gap.png",
+      "bytes": 135054,
+      "crc32": "7fc8b390"
+    },
+    {
+      "path": "figures/02_B_recalibrated_E_gap.svg",
+      "bytes": 57128,
+      "crc32": "9f3ec64c"
+    },
+    {
+      "path": "figures/03_orbits_mean_and_centered.png",
+      "bytes": 395175,
+      "crc32": "24439805"
+    },
+    {
+      "path": "figures/03_orbits_mean_and_centered.svg",
+      "bytes": 1136626,
+      "crc32": "af56b05f"
+    },
+    {
+      "path": "figures/04_per_turn_error_and_tilt.png",
+      "bytes": 386975,
+      "crc32": "d9fdb862"
+    },
+    {
+      "path": "figures/04_per_turn_error_and_tilt.svg",
+      "bytes": 164389,
+      "crc32": "9af0957b"
+    },
+    {
+      "path": "figures/05_A_H_RMS_1x_residual_vs_gap.png",
+      "bytes": 343536,
+      "crc32": "d83f80dc"
+    },
+    {
+      "path": "figures/05_A_H_RMS_1x_residual_vs_gap.svg",
+      "bytes": 126412,
+      "crc32": "e12bc2da"
+    },
+    {
+      "path": "figures/05_B_H_RMS_1x_residual_vs_gap.png",
+      "bytes": 286483,
+      "crc32": "9cc7e7bd"
+    },
+    {
+      "path": "figures/05_B_H_RMS_1x_residual_vs_gap.svg",
+      "bytes": 99975,
+      "crc32": "82cf7720"
+    },
+    {
+      "path": "figures/06_H_time_spectrum_c10um.png",
+      "bytes": 1643371,
+      "crc32": "c157700b"
+    },
+    {
+      "path": "figures/06_H_time_spectrum_c10um.svg",
+      "bytes": 428706,
+      "crc32": "51facc73"
+    },
+    {
+      "path": "figures/06_H_time_spectrum_c2um.png",
+      "bytes": 1767300,
+      "crc32": "a3d2fdc0"
+    },
+    {
+      "path": "figures/06_H_time_spectrum_c2um.svg",
+      "bytes": 428509,
+      "crc32": "ad37ab8e"
+    },
+    {
+      "path": "figures/07_tai_ball_diagnostics.png",
+      "bytes": 1217249,
+      "crc32": "7b63c339"
+    },
+    {
+      "path": "figures/07_tai_ball_diagnostics.svg",
+      "bytes": 911766,
+      "crc32": "93dfc786"
+    },
+    {
+      "path": "figures/08_bearing_wrenches_and_constraints.png",
+      "bytes": 1751315,
+      "crc32": "981dde1e"
+    },
+    {
+      "path": "figures/08_bearing_wrenches_and_constraints.svg",
+      "bytes": 437081,
+      "crc32": "78032329"
+    },
+    {
+      "path": "figures/08_load_wrench_rms_by_case.png",
+      "bytes": 461456,
+      "crc32": "5735b6f3"
+    },
+    {
+      "path": "figures/08_load_wrench_rms_by_case.svg",
+      "bytes": 183445,
+      "crc32": "52ffcced"
+    },
+    {
+      "path": "figures/08_moment_wrench_rms_by_case.png",
+      "bytes": 548847,
+      "crc32": "90e1886b"
+    },
+    {
+      "path": "figures/08_moment_wrench_rms_by_case.svg",
+      "bytes": 186187,
+      "crc32": "a21a7093"
+    },
+    {
+      "path": "figures/09_frozen_tangent_poles.png",
+      "bytes": 135784,
+      "crc32": "51690615"
+    },
+    {
+      "path": "figures/09_frozen_tangent_poles.svg",
+      "bytes": 61916,
+      "crc32": "34eb814a"
+    },
+    {
+      "path": "figures/10_frozen_tangent_frequency_response.png",
+      "bytes": 337040,
+      "crc32": "82cd94f4"
+    },
+    {
+      "path": "figures/10_frozen_tangent_frequency_response.svg",
+      "bytes": 129653,
+      "crc32": "87d25f83"
+    },
+    {
+      "path": "figures/11_recorded_performance_costs.png",
+      "bytes": 322697,
+      "crc32": "976ecf6b"
+    },
+    {
+      "path": "figures/11_recorded_performance_costs.svg",
+      "bytes": 104250,
+      "crc32": "086dfded"
+    },
+    {
+      "path": "figures/A_E_difference_vs_B0.csv",
+      "bytes": 2396,
+      "crc32": "46f904c4"
+    },
+    {
+      "path": "figures/B_primary_five_point_summary.csv",
+      "bytes": 6918,
+      "crc32": "28c49baa"
+    },
+    {
+      "path": "figures/bearing_wrench_summary.csv",
+      "bytes": 35977,
+      "crc32": "af5f9630"
+    },
+    {
+      "path": "figures/figure_manifest.json",
+      "bytes": 4776,
+      "crc32": "674ae50a"
+    },
+    {
+      "path": "figures/performance.csv",
+      "bytes": 5447,
+      "crc32": "a3c95b30"
+    },
+    {
+      "path": "figures/primary_point_summary.csv",
+      "bytes": 20545,
+      "crc32": "b0852f8a"
+    },
+    {
+      "path": "figures/tangent_frf.csv",
+      "bytes": 165132,
+      "crc32": "8fe87595"
+    },
+    {
+      "path": "figures/tangent_poles.csv",
+      "bytes": 6218,
+      "crc32": "6787cf37"
+    },
+    {
+      "path": "figures/tangent_summary.csv",
+      "bytes": 983,
+      "crc32": "e2404022"
+    },
+    {
+      "path": "logs/A_B0d.stderr.log",
+      "bytes": 1240,
+      "crc32": "86a1ad50"
+    },
+    {
+      "path": "logs/A_B0d.stdout.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/A_B0d_run.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/A_B0d_run.stdout.log",
+      "bytes": 576,
+      "crc32": "808d3524"
+    },
+    {
+      "path": "logs/A_N1.stderr.log",
+      "bytes": 1239,
+      "crc32": "b38774e6"
+    },
+    {
+      "path": "logs/A_N1.stdout.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/A_N1_run.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/A_N1_run.stdout.log",
+      "bytes": 574,
+      "crc32": "c6a0560b"
+    },
+    {
+      "path": "logs/A_N2.stderr.log",
+      "bytes": 1239,
+      "crc32": "c5624ddb"
+    },
+    {
+      "path": "logs/A_N2.stdout.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/A_N2_run.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/A_N2_run.stdout.log",
+      "bytes": 573,
+      "crc32": "84ff1754"
+    },
+    {
+      "path": "logs/A_N3.stderr.log",
+      "bytes": 1239,
+      "crc32": "5e11a70f"
+    },
+    {
+      "path": "logs/A_N3.stdout.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/A_N3_run.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/A_N3_run.stdout.log",
+      "bytes": 859,
+      "crc32": "65212630"
+    },
+    {
+      "path": "logs/B0_baseline.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/B0_baseline.stdout.log",
+      "bytes": 879,
+      "crc32": "7655fa07"
+    },
+    {
+      "path": "logs/B0_hhalf_health480.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/B0_hhalf_health480.stdout.log",
+      "bytes": 387,
+      "crc32": "4793b14c"
+    },
+    {
+      "path": "logs/B0_n1024_health480.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/B0_n1024_health480.stdout.log",
+      "bytes": 383,
+      "crc32": "f359e47a"
+    },
+    {
+      "path": "logs/B0_same_window.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/B0_same_window.stdout.log",
+      "bytes": 720,
+      "crc32": "096745a7"
+    },
+    {
+      "path": "logs/C_curvature052.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/C_curvature052.stdout.log",
+      "bytes": 682,
+      "crc32": "0a9a9fa8"
+    },
+    {
+      "path": "logs/C_down_10_to_5.stderr.log",
+      "bytes": 48,
+      "crc32": "b1d75ff1"
+    },
+    {
+      "path": "logs/C_down_10_to_5.stdout.log",
+      "bytes": 281,
+      "crc32": "67779ba5"
+    },
+    {
+      "path": "logs/C_down_retry.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/C_down_retry.stdout.log",
+      "bytes": 376,
+      "crc32": "c397a2fb"
+    },
+    {
+      "path": "logs/C_up_5_to_10.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/C_up_5_to_10.stdout.log",
+      "bytes": 363,
+      "crc32": "91d7b988"
+    },
+    {
+      "path": "logs/calibration_0p9.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/calibration_0p9.stdout.log",
+      "bytes": 310,
+      "crc32": "aefe8e2c"
+    },
+    {
+      "path": "logs/calibration_1p1.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/calibration_1p1.stdout.log",
+      "bytes": 309,
+      "crc32": "6194e7f1"
+    },
+    {
+      "path": "logs/extend_B0d_2.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/extend_B0d_2.stdout.log",
+      "bytes": 298,
+      "crc32": "27d0eb1d"
+    },
+    {
+      "path": "logs/extend_curvature052_health.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/extend_curvature052_health.stdout.log",
+      "bytes": 350,
+      "crc32": "98b6e9c8"
+    },
+    {
+      "path": "logs/extend_hhalf_health.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/extend_hhalf_health.stdout.log",
+      "bytes": 336,
+      "crc32": "5d913859"
+    },
+    {
+      "path": "logs/extend_n1024_health.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/extend_n1024_health.stdout.log",
+      "bytes": 334,
+      "crc32": "65b54cf7"
+    },
+    {
+      "path": "logs/extend_N1_2.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/extend_N1_2.stdout.log",
+      "bytes": 296,
+      "crc32": "55eeffd8"
+    },
+    {
+      "path": "logs/extend_N2_2.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/extend_N2_2.stdout.log",
+      "bytes": 296,
+      "crc32": "f36fb19c"
+    },
+    {
+      "path": "logs/extend_N3_2.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/extend_N3_2.stdout.log",
+      "bytes": 295,
+      "crc32": "3623af45"
+    },
+    {
+      "path": "logs/extend_N3_5.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/extend_N3_5.stdout.log",
+      "bytes": 295,
+      "crc32": "15499890"
+    },
+    {
+      "path": "logs/extend_root_tenth_health.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/extend_root_tenth_health.stdout.log",
+      "bytes": 344,
+      "crc32": "666f4753"
+    },
+    {
+      "path": "logs/middle_hhalf.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/middle_hhalf.stdout.log",
+      "bytes": 338,
+      "crc32": "c2498de4"
+    },
+    {
+      "path": "logs/middle_n1024.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/middle_n1024.stdout.log",
+      "bytes": 337,
+      "crc32": "0c1856f1"
+    },
+    {
+      "path": "logs/middle_root.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/middle_root.stdout.log",
+      "bytes": 347,
+      "crc32": "ec60e1ae"
+    },
+    {
+      "path": "logs/refine_h_half.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/refine_h_half.stdout.log",
+      "bytes": 653,
+      "crc32": "092b9a63"
+    },
+    {
+      "path": "logs/refine_n1024.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/refine_n1024.stdout.log",
+      "bytes": 649,
+      "crc32": "f4645404"
+    },
+    {
+      "path": "logs/refine_root_tenth.stderr.log",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "path": "logs/refine_root_tenth.stdout.log",
+      "bytes": 670,
+      "crc32": "1cbc28e4"
+    },
+    {
+      "path": "parameter_delta.csv",
+      "bytes": 6196,
+      "crc32": "46e157c1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3947,
+      "crc32": "7c198a93"
+    },
+    {
+      "path": "references/portable_source_map.json",
+      "bytes": 5301,
+      "crc32": "08334534"
+    },
+    {
+      "path": "references/source_audit.csv",
+      "bytes": 4703,
+      "crc32": "8a63a7e4"
+    },
+    {
+      "path": "references/source_register.json",
+      "bytes": 4664,
+      "crc32": "893d6af2"
+    },
+    {
+      "path": "report.md",
+      "bytes": 17734,
+      "crc32": "ff013c3d"
+    },
+    {
+      "path": "reports/contact_loss_boundary.md",
+      "bytes": 3856,
+      "crc32": "ea94ee54"
+    },
+    {
+      "path": "reports/descending_seed_failure.md",
+      "bytes": 4390,
+      "crc32": "2d0e76a7"
+    },
+    {
+      "path": "reports/mechanism_note.md",
+      "bytes": 6073,
+      "crc32": "e13cd7c4"
+    },
+    {
+      "path": "reports/model_scope.md",
+      "bytes": 4651,
+      "crc32": "710fa5e4"
+    },
+    {
+      "path": "reports/report_insert_source_audit_P1.md",
+      "bytes": 3034,
+      "crc32": "f2952fc9"
+    },
+    {
+      "path": "reproducibility.md",
+      "bytes": 7596,
+      "crc32": "0017d83d"
+    },
+    {
+      "path": "run_inventory.json",
+      "bytes": 53948,
+      "crc32": "592483eb"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_10um/actual_config.json",
+      "bytes": 22397,
+      "crc32": "e2858790"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_10um/actual_solver_settings.json",
+      "bytes": 913,
+      "crc32": "59245cca"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_10um/domain.json",
+      "bytes": 3134,
+      "crc32": "b0bb44a1"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_10um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_10um/metrics.json",
+      "bytes": 20517,
+      "crc32": "0028f294"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_10um/per_ball_statistics.csv",
+      "bytes": 201868,
+      "crc32": "94308515"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_10um/progress.json",
+      "bytes": 272,
+      "crc32": "f6659d85"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_10um/sampling_convergence.json",
+      "bytes": 65062,
+      "crc32": "7239c650"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_10um/stationarity.json",
+      "bytes": 181717,
+      "crc32": "071be4ba"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_10um/turns.csv",
+      "bytes": 37700,
+      "crc32": "12957f68"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_10um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_10um/wrench_diagnostics.json",
+      "bytes": 67275,
+      "crc32": "250f4f2b"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_2um/actual_config.json",
+      "bytes": 22394,
+      "crc32": "c08d82a5"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_2um/actual_solver_settings.json",
+      "bytes": 912,
+      "crc32": "40519f4d"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_2um/domain.json",
+      "bytes": 3134,
+      "crc32": "4ff0e0db"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_2um/metrics.json",
+      "bytes": 20570,
+      "crc32": "0e9e7778"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_2um/per_ball_statistics.csv",
+      "bytes": 199735,
+      "crc32": "32624b6f"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_2um/progress.json",
+      "bytes": 272,
+      "crc32": "0d69116c"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_2um/sampling_convergence.json",
+      "bytes": 65465,
+      "crc32": "7803db32"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_2um/stationarity.json",
+      "bytes": 182308,
+      "crc32": "ceba1189"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_2um/turns.csv",
+      "bytes": 9532,
+      "crc32": "9c835389"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_2um/warmup_history.json",
+      "bytes": 197,
+      "crc32": "f84fcbcb"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/gap_2um/wrench_diagnostics.json",
+      "bytes": 67245,
+      "crc32": "aa607029"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U/N3/run_settings.json",
+      "bytes": 23958,
+      "crc32": "64d090ff"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/actual_command.json",
+      "bytes": 763,
+      "crc32": "9f48b52c"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/gap_2um/actual_config.json",
+      "bytes": 22394,
+      "crc32": "b24dddb5"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/gap_2um/actual_solver_settings.json",
+      "bytes": 1822,
+      "crc32": "643f95b5"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/gap_2um/continuation_provenance.json",
+      "bytes": 430,
+      "crc32": "4f520c6c"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/gap_2um/domain.json",
+      "bytes": 3604,
+      "crc32": "32bd6b9f"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/gap_2um/input_check.json",
+      "bytes": 449,
+      "crc32": "9aff8ad6"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/gap_2um/metrics.json",
+      "bytes": 20678,
+      "crc32": "58318c39"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/gap_2um/per_ball_statistics.csv",
+      "bytes": 201874,
+      "crc32": "b2ad69f7"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/gap_2um/progress.json",
+      "bytes": 271,
+      "crc32": "0062132b"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/gap_2um/sampling_convergence.json",
+      "bytes": 65416,
+      "crc32": "daa8c983"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/gap_2um/stationarity.json",
+      "bytes": 182294,
+      "crc32": "457f221a"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/gap_2um/turns.csv",
+      "bytes": 37797,
+      "crc32": "4922798a"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/gap_2um/warmup_history.json",
+      "bytes": 196,
+      "crc32": "fa304040"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/gap_2um/wrench_diagnostics.json",
+      "bytes": 67299,
+      "crc32": "331d8db0"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "sensitivity/curvature_052_same_U_long/N3/run_settings.json",
+      "bytes": 23952,
+      "crc32": "41843a34"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5/N3/actual_command.json",
+      "bytes": 698,
+      "crc32": "ea183ca4"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5/N3/gap_5um/actual_config.json",
+      "bytes": 22150,
+      "crc32": "2fabac5f"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5/N3/gap_5um/failed.json",
+      "bytes": 518,
+      "crc32": "48fe5042"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5/N3/run_failures.json",
+      "bytes": 302,
+      "crc32": "5461bb61"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5/N3/run_settings.json",
+      "bytes": 23705,
+      "crc32": "063d47f6"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/actual_command.json",
+      "bytes": 704,
+      "crc32": "ab00d038"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/gap_5um/actual_config.json",
+      "bytes": 22175,
+      "crc32": "04b7f651"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/gap_5um/actual_solver_settings.json",
+      "bytes": 914,
+      "crc32": "8b605d0d"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/gap_5um/domain.json",
+      "bytes": 3604,
+      "crc32": "95a47e8e"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/gap_5um/implementation_at_start.json",
+      "bytes": 975,
+      "crc32": "767be05f"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/gap_5um/input_check.json",
+      "bytes": 448,
+      "crc32": "fc8ad246"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/gap_5um/metrics.json",
+      "bytes": 20807,
+      "crc32": "61df7c80"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/gap_5um/per_ball_statistics.csv",
+      "bytes": 202630,
+      "crc32": "96cf22a7"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/gap_5um/progress.json",
+      "bytes": 287,
+      "crc32": "db23948f"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/gap_5um/sampling_convergence.json",
+      "bytes": 65421,
+      "crc32": "bc0e5eab"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/gap_5um/stationarity.json",
+      "bytes": 182923,
+      "crc32": "c957c218"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/gap_5um/turns.csv",
+      "bytes": 38240,
+      "crc32": "74d4bf7b"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/gap_5um/warmup_history.json",
+      "bytes": 211,
+      "crc32": "a9429dd0"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/gap_5um/wrench_diagnostics.json",
+      "bytes": 68451,
+      "crc32": "5983e9d9"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "sensitivity/initial_state_down_10_to_5_retry/N3/run_settings.json",
+      "bytes": 23711,
+      "crc32": "ae332a45"
+    },
+    {
+      "path": "sensitivity/initial_state_up_5_to_10/N3/actual_command.json",
+      "bytes": 701,
+      "crc32": "480b8873"
+    },
+    {
+      "path": "sensitivity/initial_state_up_5_to_10/N3/gap_10um/actual_config.json",
+      "bytes": 22178,
+      "crc32": "7b9d46b4"
+    },
+    {
+      "path": "sensitivity/initial_state_up_5_to_10/N3/gap_10um/actual_solver_settings.json",
+      "bytes": 914,
+      "crc32": "fb9a09ab"
+    },
+    {
+      "path": "sensitivity/initial_state_up_5_to_10/N3/gap_10um/domain.json",
+      "bytes": 3603,
+      "crc32": "2850beec"
+    },
+    {
+      "path": "sensitivity/initial_state_up_5_to_10/N3/gap_10um/input_check.json",
+      "bytes": 448,
+      "crc32": "fc8ad246"
+    },
+    {
+      "path": "sensitivity/initial_state_up_5_to_10/N3/gap_10um/metrics.json",
+      "bytes": 20620,
+      "crc32": "4eef56b1"
+    },
+    {
+      "path": "sensitivity/initial_state_up_5_to_10/N3/gap_10um/per_ball_statistics.csv",
+      "bytes": 202641,
+      "crc32": "2ac0e270"
+    },
+    {
+      "path": "sensitivity/initial_state_up_5_to_10/N3/gap_10um/progress.json",
+      "bytes": 286,
+      "crc32": "2f309292"
+    },
+    {
+      "path": "sensitivity/initial_state_up_5_to_10/N3/gap_10um/sampling_convergence.json",
+      "bytes": 65330,
+      "crc32": "71bb983b"
+    },
+    {
+      "path": "sensitivity/initial_state_up_5_to_10/N3/gap_10um/stationarity.json",
+      "bytes": 181835,
+      "crc32": "92828034"
+    },
+    {
+      "path": "sensitivity/initial_state_up_5_to_10/N3/gap_10um/turns.csv",
+      "bytes": 38874,
+      "crc32": "2174444a"
+    },
+    {
+      "path": "sensitivity/initial_state_up_5_to_10/N3/gap_10um/warmup_history.json",
+      "bytes": 211,
+      "crc32": "a9429dd0"
+    },
+    {
+      "path": "sensitivity/initial_state_up_5_to_10/N3/gap_10um/wrench_diagnostics.json",
+      "bytes": 67361,
+      "crc32": "d9e7ede9"
+    },
+    {
+      "path": "sensitivity/initial_state_up_5_to_10/N3/run_failures.json",
+      "bytes": 2,
+      "crc32": "0d4cbb29"
+    },
+    {
+      "path": "sensitivity/initial_state_up_5_to_10/N3/run_settings.json",
+      "bytes": 23704,
+      "crc32": "175639a9"
+    },
+    {
+      "path": "source_at_A/clearance_v9_analysis.py",
+      "bytes": 37317,
+      "crc32": "f7fd70f0"
+    },
+    {
+      "path": "source_at_A/clearance_v9_parameters.py",
+      "bytes": 6746,
+      "crc32": "de6effb1"
+    },
+    {
+      "path": "source_at_A/dynamics_model.py",
+      "bytes": 65342,
+      "crc32": "87d62963"
+    },
+    {
+      "path": "source_at_A/fast_rhs.py",
+      "bytes": 7284,
+      "crc32": "8988d9d1"
+    },
+    {
+      "path": "source_at_A/run_clearance_v9.py",
+      "bytes": 18830,
+      "crc32": "16559f44"
+    },
+    {
+      "path": "source_at_A/tai_bearing.py",
+      "bytes": 29411,
+      "crc32": "641e01bc"
+    },
+    {
+      "path": "source_at_A/tai_system.py",
+      "bytes": 14059,
+      "crc32": "d74c8587"
+    },
+    {
+      "path": "source_audit.md",
+      "bytes": 11454,
+      "crc32": "103b26f2"
+    },
+    {
+      "path": "summary.csv",
+      "bytes": 21097,
+      "crc32": "fbbf4e2d"
+    },
+    {
+      "path": "task_contract/00_先读这个.md",
+      "bytes": 2137,
+      "crc32": "06e190ee"
+    },
+    {
+      "path": "task_contract/01_改进执行计划.md",
+      "bytes": 8933,
+      "crc32": "63b485f7"
+    },
+    {
+      "path": "task_contract/02_关键公式与文献依据.md",
+      "bytes": 18977,
+      "crc32": "9a421f05"
+    },
+    {
+      "path": "task_contract/03_参数与代码修改合同.md",
+      "bytes": 5963,
+      "crc32": "e5a72bfd"
+    },
+    {
+      "path": "task_contract/04_实验矩阵与验收标准.md",
+      "bytes": 7899,
+      "crc32": "69eb5274"
+    },
+    {
+      "path": "task_contract/05_回传报告模板.md",
+      "bytes": 3305,
+      "crc32": "14ea9950"
+    },
+    {
+      "path": "task_contract/07_来源核对与未决问题.md",
+      "bytes": 4744,
+      "crc32": "2aace096"
+    },
+    {
+      "path": "task_contract/V9_完整实验计划书.md",
+      "bytes": 52477,
+      "crc32": "4e2f72d6"
+    },
+    {
+      "path": "validation/acceptance_module_smoke/acceptance.json",
+      "bytes": 33967,
+      "crc32": "871657e0"
+    },
+    {
+      "path": "validation/acceptance_module_smoke/case_selection.json",
+      "bytes": 858,
+      "crc32": "a82ca9b5"
+    },
+    {
+      "path": "validation/acceptance_module_smoke/convergence_comparisons.json",
+      "bytes": 4412,
+      "crc32": "c82a6557"
+    },
+    {
+      "path": "validation/acceptance_module_smoke/main_summary.csv",
+      "bytes": 2972,
+      "crc32": "a66e3e1f"
+    },
+    {
+      "path": "validation/acceptance_summary/acceptance.json",
+      "bytes": 302977,
+      "crc32": "6ba38344"
+    },
+    {
+      "path": "validation/acceptance_summary/convergence_comparisons.json",
+      "bytes": 1264222,
+      "crc32": "d189eea8"
+    },
+    {
+      "path": "validation/acceptance_summary/initial_state_sensitivity.csv",
+      "bytes": 401343,
+      "crc32": "393ab7a0"
+    },
+    {
+      "path": "validation/acceptance_summary/initial_state_sensitivity.json",
+      "bytes": 170358,
+      "crc32": "2bac4699"
+    },
+    {
+      "path": "validation/acceptance_summary/main_summary.csv",
+      "bytes": 9258,
+      "crc32": "008f1ce2"
+    },
+    {
+      "path": "validation/acceptance_summary/same_U_H_velocity_significance.csv",
+      "bytes": 16512,
+      "crc32": "cbe14107"
+    },
+    {
+      "path": "validation/acceptance_summary/same_U_H_velocity_significance.json",
+      "bytes": 43341,
+      "crc32": "92a2aa46"
+    },
+    {
+      "path": "validation/analysis_schema_probe.json",
+      "bytes": 3652,
+      "crc32": "37110136"
+    },
+    {
+      "path": "validation/B0_c2_common_A_window.json",
+      "bytes": 181619,
+      "crc32": "56800a0f"
+    },
+    {
+      "path": "validation/B0_gap5_reuse.json",
+      "bytes": 314,
+      "crc32": "ca3890c8"
+    },
+    {
+      "path": "validation/b0_native_offline_regression.json",
+      "bytes": 2878,
+      "crc32": "9618ac8c"
+    },
+    {
+      "path": "validation/baseline_freeze.json",
+      "bytes": 12065,
+      "crc32": "0a5a41f8"
+    },
+    {
+      "path": "validation/bearing_solver_numerics.json",
+      "bytes": 10932,
+      "crc32": "89852c89"
+    },
+    {
+      "path": "validation/cache_reset.json",
+      "bytes": 554,
+      "crc32": "64bf52e0"
+    },
+    {
+      "path": "validation/campaign_costs.csv",
+      "bytes": 2697,
+      "crc32": "52aaea3d"
+    },
+    {
+      "path": "validation/campaign_costs.json",
+      "bytes": 10549,
+      "crc32": "16ba8d76"
+    },
+    {
+      "path": "validation/contact_boundary.csv",
+      "bytes": 149371,
+      "crc32": "5c2f11dc"
+    },
+    {
+      "path": "validation/contact_boundary.json",
+      "bytes": 823991,
+      "crc32": "ec7f3ff4"
+    },
+    {
+      "path": "validation/costs_cli_check/campaign_costs.csv",
+      "bytes": 532,
+      "crc32": "0307ac9e"
+    },
+    {
+      "path": "validation/costs_cli_check/campaign_costs.json",
+      "bytes": 1524,
+      "crc32": "d69a98a3"
+    },
+    {
+      "path": "validation/default_cache_check/solver_retry_assembled_rhs.json",
+      "bytes": 1057,
+      "crc32": "d22b1987"
+    },
+    {
+      "path": "validation/descending_seed_failure_replay.json",
+      "bytes": 11519,
+      "crc32": "982a138d"
+    },
+    {
+      "path": "validation/frozen_input_audit.json",
+      "bytes": 1528,
+      "crc32": "775d9604"
+    },
+    {
+      "path": "validation/global_hybr_pre_fix_config.json",
+      "bytes": 22150,
+      "crc32": "269e8741"
+    },
+    {
+      "path": "validation/global_hybr_pre_fix_failure.json",
+      "bytes": 1779,
+      "crc32": "8fc1360d"
+    },
+    {
+      "path": "validation/intermediate_refinement_selection.json",
+      "bytes": 3194,
+      "crc32": "4468c00e"
+    },
+    {
+      "path": "validation/local_bearing_contract_snapshot.json",
+      "bytes": 4779,
+      "crc32": "30c34d26"
+    },
+    {
+      "path": "validation/local_bearing_validation.csv",
+      "bytes": 135894,
+      "crc32": "a3ecbd55"
+    },
+    {
+      "path": "validation/local_bearing_validation.json",
+      "bytes": 820421,
+      "crc32": "51cc32cc"
+    },
+    {
+      "path": "validation/local_spindle_config_snapshot.json",
+      "bytes": 22152,
+      "crc32": "8e1ccbf5"
+    },
+    {
+      "path": "validation/local_workpoints.csv",
+      "bytes": 7246,
+      "crc32": "078a57b5"
+    },
+    {
+      "path": "validation/local_workpoints.json",
+      "bytes": 17697,
+      "crc32": "7d2b913f"
+    },
+    {
+      "path": "validation/rhs_performance.json",
+      "bytes": 12396,
+      "crc32": "84776465"
+    },
+    {
+      "path": "validation/solver_retry_assembled_rhs.json",
+      "bytes": 1171,
+      "crc32": "719d4d35"
+    },
+    {
+      "path": "validation/solver_retry_before/tai_bearing.py",
+      "bytes": 29411,
+      "crc32": "641e01bc"
+    },
+    {
+      "path": "validation/solver_retry_local/local_bearing_contract_snapshot.json",
+      "bytes": 4779,
+      "crc32": "30c34d26"
+    },
+    {
+      "path": "validation/solver_retry_local/local_bearing_validation.csv",
+      "bytes": 135894,
+      "crc32": "a3ecbd55"
+    },
+    {
+      "path": "validation/solver_retry_local/local_bearing_validation.json",
+      "bytes": 822893,
+      "crc32": "25c670c4"
+    },
+    {
+      "path": "validation/solver_retry_local/local_spindle_config_snapshot.json",
+      "bytes": 22152,
+      "crc32": "8e1ccbf5"
+    },
+    {
+      "path": "validation/solver_retry_local/system_integration_validation.csv",
+      "bytes": 9833,
+      "crc32": "58e9a45e"
+    },
+    {
+      "path": "validation/solver_retry_local/system_integration_validation.json",
+      "bytes": 378957,
+      "crc32": "8658123e"
+    },
+    {
+      "path": "validation/solver_retry_local/system_short_trajectory.csv",
+      "bytes": 221976,
+      "crc32": "4fff5e9d"
+    },
+    {
+      "path": "validation/solver_retry_regression.json",
+      "bytes": 4316,
+      "crc32": "5649adde"
+    },
+    {
+      "path": "validation/system_integration_validation.csv",
+      "bytes": 9833,
+      "crc32": "58e9a45e"
+    },
+    {
+      "path": "validation/system_integration_validation.json",
+      "bytes": 378957,
+      "crc32": "8658123e"
+    },
+    {
+      "path": "validation/system_short_trajectory.csv",
+      "bytes": 221976,
+      "crc32": "4fff5e9d"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_10um/actual_config.json",
+      "bytes": 16670,
+      "crc32": "750f161e"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_10um/actual_solver_settings.json",
+      "bytes": 1818,
+      "crc32": "0228350c"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_10um/bearing_diagnostics.json",
+      "bytes": 2554,
+      "crc32": "7efbcb2a"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_10um/domain.json",
+      "bytes": 3500,
+      "crc32": "0f26c0af"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_10um/input_check.json",
+      "bytes": 300,
+      "crc32": "be999e15"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_10um/metrics.json",
+      "bytes": 10170,
+      "crc32": "7edbc053"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_10um/progress.json",
+      "bytes": 262854,
+      "crc32": "0c798a55"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_10um/sampling_convergence.json",
+      "bytes": 51755,
+      "crc32": "be67768f"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_10um/stationarity.json",
+      "bytes": 112271,
+      "crc32": "34e7c6ab"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_10um/turns.csv",
+      "bytes": 64628,
+      "crc32": "b02d667c"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_10um/warmup_history.json",
+      "bytes": 250119,
+      "crc32": "68c437dd"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_10um/wrench_diagnostics.json",
+      "bytes": 7806,
+      "crc32": "699a2fc5"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_2um/actual_config.json",
+      "bytes": 16578,
+      "crc32": "fbc299ce"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_2um/actual_solver_settings.json",
+      "bytes": 910,
+      "crc32": "7f83a8ac"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_2um/bearing_diagnostics.json",
+      "bytes": 2561,
+      "crc32": "1edb9f95"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_2um/domain.json",
+      "bytes": 3507,
+      "crc32": "89edd3f4"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_2um/input_check.json",
+      "bytes": 300,
+      "crc32": "be999e15"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_2um/metrics.json",
+      "bytes": 10236,
+      "crc32": "802a906b"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_2um/progress.json",
+      "bytes": 132318,
+      "crc32": "8fe063f1"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_2um/sampling_convergence.json",
+      "bytes": 52293,
+      "crc32": "9ef97250"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_2um/stationarity.json",
+      "bytes": 113141,
+      "crc32": "23be6c7d"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_2um/turns.csv",
+      "bytes": 21961,
+      "crc32": "3811bf86"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_2um/warmup_history.json",
+      "bytes": 125920,
+      "crc32": "de07d8f3"
+    },
+    {
+      "path": "validation/v8_inherited/h_half/gap_2um/wrench_diagnostics.json",
+      "bytes": 7796,
+      "crc32": "0cb20c00"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_10um/actual_config.json",
+      "bytes": 16672,
+      "crc32": "6274193e"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_10um/actual_solver_settings.json",
+      "bytes": 1825,
+      "crc32": "2e2834bc"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_10um/bearing_diagnostics.json",
+      "bytes": 2550,
+      "crc32": "8ed38ea4"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_10um/domain.json",
+      "bytes": 3495,
+      "crc32": "23ad75c4"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_10um/input_check.json",
+      "bytes": 300,
+      "crc32": "be999e15"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_10um/metrics.json",
+      "bytes": 10170,
+      "crc32": "4d685b4b"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_10um/progress.json",
+      "bytes": 262804,
+      "crc32": "3fb5119c"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_10um/sampling_convergence.json",
+      "bytes": 51858,
+      "crc32": "59f72f9c"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_10um/stationarity.json",
+      "bytes": 112279,
+      "crc32": "269c67b9"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_10um/turns.csv",
+      "bytes": 64635,
+      "crc32": "c31873e8"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_10um/warmup_history.json",
+      "bytes": 250068,
+      "crc32": "7c4c9c80"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_10um/wrench_diagnostics.json",
+      "bytes": 7805,
+      "crc32": "e471129b"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_2um/actual_config.json",
+      "bytes": 16580,
+      "crc32": "30a65b27"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_2um/actual_solver_settings.json",
+      "bytes": 915,
+      "crc32": "54b49622"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_2um/bearing_diagnostics.json",
+      "bytes": 2562,
+      "crc32": "0c8b4ced"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_2um/domain.json",
+      "bytes": 3508,
+      "crc32": "3e21c558"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_2um/input_check.json",
+      "bytes": 300,
+      "crc32": "be999e15"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_2um/metrics.json",
+      "bytes": 10229,
+      "crc32": "44e98524"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_2um/progress.json",
+      "bytes": 132310,
+      "crc32": "ecd854b2"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_2um/sampling_convergence.json",
+      "bytes": 52249,
+      "crc32": "ce9f277a"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_2um/stationarity.json",
+      "bytes": 113133,
+      "crc32": "556cd9d1"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_2um/turns.csv",
+      "bytes": 21929,
+      "crc32": "cdfc3a39"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_2um/warmup_history.json",
+      "bytes": 125912,
+      "crc32": "46f3c470"
+    },
+    {
+      "path": "validation/v8_inherited/n1024/gap_2um/wrench_diagnostics.json",
+      "bytes": 7793,
+      "crc32": "9c312180"
+    },
+    {
+      "path": "validation/v8_inherited/provenance.json",
+      "bytes": 1211,
+      "crc32": "6b89db1e"
+    }
+  ],
+  "frozen_v8_source": [
+    {
+      "path": "source_before/config/bearing_faults_ideal.json",
+      "bytes": 698,
+      "crc32": "bb23c719"
+    },
+    {
+      "path": "source_before/config/bearing_motion_250hz.json",
+      "bytes": 805,
+      "crc32": "dab85698"
+    },
+    {
+      "path": "source_before/config/clearance_config.json",
+      "bytes": 8095,
+      "crc32": "2ccc315d"
+    },
+    {
+      "path": "source_before/config/clearance_v3_config.json",
+      "bytes": 6068,
+      "crc32": "8549b45e"
+    },
+    {
+      "path": "source_before/config/clearance_v4_config.json",
+      "bytes": 7667,
+      "crc32": "0d362f35"
+    },
+    {
+      "path": "source_before/config/clearance_v5_config.json",
+      "bytes": 7953,
+      "crc32": "471b15e3"
+    },
+    {
+      "path": "source_before/config/clearance_v6_config.json",
+      "bytes": 12282,
+      "crc32": "8b4020f0"
+    },
+    {
+      "path": "source_before/config/clearance_v8_config.json",
+      "bytes": 16424,
+      "crc32": "69bea1b6"
+    },
+    {
+      "path": "source_before/config/outer_race_pitting.json",
+      "bytes": 804,
+      "crc32": "9f43b5cb"
+    },
+    {
+      "path": "source_before/config/platform_faults_20261022.json",
+      "bytes": 8658,
+      "crc32": "5c13be0d"
+    },
+    {
+      "path": "source_before/config/platform_faults_hsk40_a63k_sensitivity_20261023.json",
+      "bytes": 9813,
+      "crc32": "78914d86"
+    },
+    {
+      "path": "source_before/config/platform_faults_hsk40_nominal20_20261023.json",
+      "bytes": 9404,
+      "crc32": "5e74c3ca"
+    },
+    {
+      "path": "source_before/config/platform_healthy_background_20261023.json",
+      "bytes": 4827,
+      "crc32": "8b9ff3b3"
+    },
+    {
+      "path": "source_before/config/severity_sweep.json",
+      "bytes": 1127,
+      "crc32": "d4935fb6"
+    },
+    {
+      "path": "source_before/config/spindle_healthy_sources_20261023.json",
+      "bytes": 5298,
+      "crc32": "9c86c19c"
+    },
+    {
+      "path": "source_before/config/spindle_sources_20261022.json",
+      "bytes": 2438,
+      "crc32": "80737e8d"
+    },
+    {
+      "path": "source_before/config/spindle_sources_hsk40_nominal20_20261023.json",
+      "bytes": 2441,
+      "crc32": "27913384"
+    },
+    {
+      "path": "source_before/config/velocity_data_20261022.json",
+      "bytes": 1791,
+      "crc32": "2a32120b"
+    },
+    {
+      "path": "source_before/config/velocity_data_round2_20261022.json",
+      "bytes": 1860,
+      "crc32": "d15ecea4"
+    },
+    {
+      "path": "source_before/pyproject.toml",
+      "bytes": 442,
+      "crc32": "c3c139d1"
+    },
+    {
+      "path": "source_before/README.md",
+      "bytes": 9149,
+      "crc32": "d296620d"
+    },
+    {
+      "path": "source_before/requirements.txt",
+      "bytes": 41,
+      "crc32": "a26f3f92"
+    },
+    {
+      "path": "source_before/scripts/__init__.py",
+      "bytes": 56,
+      "crc32": "faf6d9f9"
+    },
+    {
+      "path": "source_before/scripts/analyze_outer_race_pitting.py",
+      "bytes": 16286,
+      "crc32": "69bded4e"
+    },
+    {
+      "path": "source_before/scripts/analyze_platform_faults.py",
+      "bytes": 30769,
+      "crc32": "14104611"
+    },
+    {
+      "path": "source_before/scripts/analyze_severity.py",
+      "bytes": 10793,
+      "crc32": "7750250d"
+    },
+    {
+      "path": "source_before/scripts/calibrate_clearance_v6.py",
+      "bytes": 3792,
+      "crc32": "b013f06c"
+    },
+    {
+      "path": "source_before/scripts/calibrate_clearance_v8.py",
+      "bytes": 5029,
+      "crc32": "ac083446"
+    },
+    {
+      "path": "source_before/scripts/certify_clearance_v6.py",
+      "bytes": 1497,
+      "crc32": "bbf8a764"
+    },
+    {
+      "path": "source_before/scripts/certify_clearance_v8.py",
+      "bytes": 3712,
+      "crc32": "ad6a17e4"
+    },
+    {
+      "path": "source_before/scripts/check_bearing_faults_ideal.py",
+      "bytes": 8949,
+      "crc32": "49937b33"
+    },
+    {
+      "path": "source_before/scripts/check_outer_race_pitting.py",
+      "bytes": 6438,
+      "crc32": "008033be"
+    },
+    {
+      "path": "source_before/scripts/check_runout_labels.py",
+      "bytes": 3299,
+      "crc32": "8f9eba1b"
+    },
+    {
+      "path": "source_before/scripts/check_spindle_sources.py",
+      "bytes": 9876,
+      "crc32": "af1ff027"
+    },
+    {
+      "path": "source_before/scripts/check_velocity_data.py",
+      "bytes": 6760,
+      "crc32": "4c703c2d"
+    },
+    {
+      "path": "source_before/scripts/compare_bearing_motion.py",
+      "bytes": 10662,
+      "crc32": "9a811034"
+    },
+    {
+      "path": "source_before/scripts/continue_clearance_v8.py",
+      "bytes": 12318,
+      "crc32": "f01d15ec"
+    },
+    {
+      "path": "source_before/scripts/enrich_clearance_v4.py",
+      "bytes": 5026,
+      "crc32": "a04c2ee7"
+    },
+    {
+      "path": "source_before/scripts/finalize_clearance_v3.py",
+      "bytes": 13416,
+      "crc32": "3669e558"
+    },
+    {
+      "path": "source_before/scripts/fit_platform_1x.py",
+      "bytes": 17190,
+      "crc32": "923e5689"
+    },
+    {
+      "path": "source_before/scripts/freeze_clearance_v6.py",
+      "bytes": 2229,
+      "crc32": "647ad7f9"
+    },
+    {
+      "path": "source_before/scripts/generate_bearing_faults_ideal.py",
+      "bytes": 10945,
+      "crc32": "b8a82303"
+    },
+    {
+      "path": "source_before/scripts/generate_outer_race_pitting.py",
+      "bytes": 7103,
+      "crc32": "6c320ead"
+    },
+    {
+      "path": "source_before/scripts/generate_platform_faults.py",
+      "bytes": 19859,
+      "crc32": "054bd488"
+    },
+    {
+      "path": "source_before/scripts/generate_severity.py",
+      "bytes": 5159,
+      "crc32": "8530c346"
+    },
+    {
+      "path": "source_before/scripts/generate_spindle_sources.py",
+      "bytes": 16559,
+      "crc32": "e4cdfe61"
+    },
+    {
+      "path": "source_before/scripts/package_clearance_v5.py",
+      "bytes": 13113,
+      "crc32": "0d447c7a"
+    },
+    {
+      "path": "source_before/scripts/package_clearance_v6.py",
+      "bytes": 18752,
+      "crc32": "da03aa4d"
+    },
+    {
+      "path": "source_before/scripts/package_clearance_v8.py",
+      "bytes": 28377,
+      "crc32": "00d8b54f"
+    },
+    {
+      "path": "source_before/scripts/plot_clearance_v4.py",
+      "bytes": 4944,
+      "crc32": "7152f8b5"
+    },
+    {
+      "path": "source_before/scripts/plot_clearance_v5.py",
+      "bytes": 9905,
+      "crc32": "800de266"
+    },
+    {
+      "path": "source_before/scripts/plot_clearance_v6.py",
+      "bytes": 11284,
+      "crc32": "0771e488"
+    },
+    {
+      "path": "source_before/scripts/plot_clearance_v8.py",
+      "bytes": 4142,
+      "crc32": "0319d714"
+    },
+    {
+      "path": "source_before/scripts/prepare_platform_references.py",
+      "bytes": 8184,
+      "crc32": "d4b78949"
+    },
+    {
+      "path": "source_before/scripts/prepare_velocity_data.py",
+      "bytes": 2933,
+      "crc32": "8fa0c4a1"
+    },
+    {
+      "path": "source_before/scripts/recompute_clearance_v4.py",
+      "bytes": 9092,
+      "crc32": "b887541e"
+    },
+    {
+      "path": "source_before/scripts/report_clearance_v6.py",
+      "bytes": 32436,
+      "crc32": "fef83b16"
+    },
+    {
+      "path": "source_before/scripts/report_clearance_v8.py",
+      "bytes": 43837,
+      "crc32": "f123f0dc"
+    },
+    {
+      "path": "source_before/scripts/review_v5_representatives.py",
+      "bytes": 2351,
+      "crc32": "0d11190b"
+    },
+    {
+      "path": "source_before/scripts/run_clearance_sweep.py",
+      "bytes": 24413,
+      "crc32": "64ab8af8"
+    },
+    {
+      "path": "source_before/scripts/run_clearance_v3.py",
+      "bytes": 8049,
+      "crc32": "7d1482bb"
+    },
+    {
+      "path": "source_before/scripts/run_clearance_v4.py",
+      "bytes": 7833,
+      "crc32": "fa6c3025"
+    },
+    {
+      "path": "source_before/scripts/run_clearance_v5.py",
+      "bytes": 5153,
+      "crc32": "1ac73f6a"
+    },
+    {
+      "path": "source_before/scripts/run_clearance_v6.py",
+      "bytes": 13869,
+      "crc32": "fa8f217c"
+    },
+    {
+      "path": "source_before/scripts/run_clearance_v6_sensitivity.py",
+      "bytes": 10184,
+      "crc32": "27dd0886"
+    },
+    {
+      "path": "source_before/scripts/run_clearance_v8.py",
+      "bytes": 3077,
+      "crc32": "d8957bb6"
+    },
+    {
+      "path": "source_before/scripts/run_prototype.py",
+      "bytes": 10519,
+      "crc32": "14cb4763"
+    },
+    {
+      "path": "source_before/scripts/validate_other_runs.py",
+      "bytes": 11833,
+      "crc32": "568ae1bb"
+    },
+    {
+      "path": "source_before/src/spindle/__init__.py",
+      "bytes": 32,
+      "crc32": "9743a8c3"
+    },
+    {
+      "path": "source_before/src/spindle/dynamics_model.py",
+      "bytes": 63143,
+      "crc32": "391ae7fd"
+    },
+    {
+      "path": "source_before/src/spindle/fast_rhs.py",
+      "bytes": 7039,
+      "crc32": "53aa2bd9"
+    },
+    {
+      "path": "source_before/utils/__init__.py",
+      "bytes": 130,
+      "crc32": "66a3de85"
+    },
+    {
+      "path": "source_before/utils/clearance_v3_acceptance.py",
+      "bytes": 18144,
+      "crc32": "c0842621"
+    },
+    {
+      "path": "source_before/utils/clearance_v3_analysis.py",
+      "bytes": 10071,
+      "crc32": "67d40a46"
+    },
+    {
+      "path": "source_before/utils/clearance_v3_plots.py",
+      "bytes": 11320,
+      "crc32": "7eea27e1"
+    },
+    {
+      "path": "source_before/utils/clearance_v3_validation.py",
+      "bytes": 23102,
+      "crc32": "3f763096"
+    },
+    {
+      "path": "source_before/utils/clearance_v4_analysis.py",
+      "bytes": 6037,
+      "crc32": "d72abeef"
+    },
+    {
+      "path": "source_before/utils/clearance_v4_validation.py",
+      "bytes": 12937,
+      "crc32": "5196af81"
+    },
+    {
+      "path": "source_before/utils/clearance_v5_analysis.py",
+      "bytes": 29372,
+      "crc32": "a389191f"
+    },
+    {
+      "path": "source_before/utils/clearance_v5_input_audit.py",
+      "bytes": 15731,
+      "crc32": "57ef073e"
+    },
+    {
+      "path": "source_before/utils/clearance_v6_analysis.py",
+      "bytes": 24216,
+      "crc32": "25fa415b"
+    },
+    {
+      "path": "source_before/utils/clearance_v6_force_audit.py",
+      "bytes": 13088,
+      "crc32": "3d04ef9b"
+    },
+    {
+      "path": "source_before/utils/clearance_v6_parameters.py",
+      "bytes": 6930,
+      "crc32": "acc729a1"
+    },
+    {
+      "path": "source_before/utils/clearance_v6_response.py",
+      "bytes": 5533,
+      "crc32": "5a53ec14"
+    },
+    {
+      "path": "source_before/utils/clearance_v6_sensitivity.py",
+      "bytes": 7856,
+      "crc32": "6678c00c"
+    },
+    {
+      "path": "source_before/utils/clearance_v6_validation.py",
+      "bytes": 15214,
+      "crc32": "cf60183b"
+    },
+    {
+      "path": "source_before/utils/clearance_v8_acceptance.py",
+      "bytes": 55495,
+      "crc32": "c17b40e1"
+    },
+    {
+      "path": "source_before/utils/clearance_v8_analysis.py",
+      "bytes": 6394,
+      "crc32": "13c12e1f"
+    },
+    {
+      "path": "source_before/utils/clearance_v8_branches.py",
+      "bytes": 22701,
+      "crc32": "2a9ab5be"
+    },
+    {
+      "path": "source_before/utils/clearance_v8_parameters.py",
+      "bytes": 9871,
+      "crc32": "9ffc2e5e"
+    },
+    {
+      "path": "source_before/utils/clearance_v8_validation.py",
+      "bytes": 47639,
+      "crc32": "bdf21984"
+    },
+    {
+      "path": "source_before/utils/clearance_validation.py",
+      "bytes": 8986,
+      "crc32": "5521e439"
+    },
+    {
+      "path": "source_before/utils/data_io.py",
+      "bytes": 5153,
+      "crc32": "1166136f"
+    },
+    {
+      "path": "source_before/utils/healthy_reference.py",
+      "bytes": 2260,
+      "crc32": "84afad30"
+    },
+    {
+      "path": "source_before/utils/metrics.py",
+      "bytes": 1281,
+      "crc32": "4963e7e3"
+    },
+    {
+      "path": "source_before/utils/pitting_analysis.py",
+      "bytes": 10489,
+      "crc32": "047173d0"
+    },
+    {
+      "path": "source_before/utils/plot_report.py",
+      "bytes": 13306,
+      "crc32": "9df117c6"
+    },
+    {
+      "path": "source_before/utils/runout_labels.py",
+      "bytes": 3611,
+      "crc32": "5933d96c"
+    },
+    {
+      "path": "source_before/utils/velocity_data.py",
+      "bytes": 16728,
+      "crc32": "95120192"
+    }
+  ],
+  "delivery_scope": "Code, configurations, figures and reported evidence only; raw trajectories, independent refinement arrays and PDFs excluded at user request; no package-native replay performed."
+}

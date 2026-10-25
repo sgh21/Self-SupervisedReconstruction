@@ -1,0 +1,30 @@
+[
+  {
+    "source": "experiments\\clearance_v8_tilt_contact\\convergence\\h_half\\gap_2um",
+    "target": "experiments\\clearance_v9_tai_bearing\\validation\\v8_inherited\\h_half\\gap_2um",
+    "same_V8_source_verified_by": "baseline_freeze.json",
+    "refinement": "h_half",
+    "gap_um": 2
+  },
+  {
+    "source": "experiments\\clearance_v8_tilt_contact\\convergence\\h_half\\gap_10um",
+    "target": "experiments\\clearance_v9_tai_bearing\\validation\\v8_inherited\\h_half\\gap_10um",
+    "same_V8_source_verified_by": "baseline_freeze.json",
+    "refinement": "h_half",
+    "gap_um": 10
+  },
+  {
+    "source": "experiments\\clearance_v8_tilt_contact\\convergence\\n1024\\gap_2um",
+    "target": "experiments\\clearance_v9_tai_bearing\\validation\\v8_inherited\\n1024\\gap_2um",
+    "same_V8_source_verified_by": "baseline_freeze.json",
+    "refinement": "n1024",
+    "gap_um": 2
+  },
+  {
+    "source": "experiments\\clearance_v8_tilt_contact\\convergence\\n1024\\gap_10um",
+    "target": "experiments\\clearance_v9_tai_bearing\\validation\\v8_inherited\\n1024\\gap_10um",
+    "same_V8_source_verified_by": "baseline_freeze.json",
+    "refinement": "n1024",
+    "gap_um": 10
+  }
+]

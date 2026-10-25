@@ -1,0 +1,78 @@
+{
+  "provisional_gap_um": 5,
+  "selection_rule": "Among intermediate gaps with measured 0 < fit contact fraction < 1, select the largest vector RMS of H non-1X residual in the common 10-900 Hz band; retain transition counts as an additional diagnostic. Verify this selection against all B results once available.",
+  "basis": "Completed V9 A c5 has intermittent front fit2 and H residual vector RMS about 0.244 mm/s; old V8 c3/c5/c7.5 provide ordering context only, not proof of new V9 ordering.",
+  "independent_refinements": "Old-U c5 h/2, local root/10, N1024; usable for B only if final U_new equals U_old.",
+  "status": "confirmed_from_all_five_completed_B_cases",
+  "selected_gap_um": 5.0,
+  "B_cases": [
+    {
+      "gap_um": 2.0,
+      "case": "data_A_long/N3/gap_2um",
+      "E_dir_um": 1.990036472849796,
+      "H_v_rms_x_mm_s": 0.6256934558184026,
+      "H_v_rms_y_mm_s": 0.5715762980714644,
+      "H_residual_vector_rms_mm_s": 0.059214336719252116,
+      "fit1_contact_fraction": 1.0,
+      "fit2_contact_fraction": 0.7862953609890408,
+      "sampling_pass": true,
+      "fit1_sampled_transitions": 0,
+      "fit2_sampled_transitions": 1920
+    },
+    {
+      "gap_um": 3.0,
+      "case": "data_B/N3/gap_3um",
+      "E_dir_um": 2.313137949176222,
+      "H_v_rms_x_mm_s": 0.6616033818519494,
+      "H_v_rms_y_mm_s": 0.579201192056356,
+      "H_residual_vector_rms_mm_s": 0.06485645718318654,
+      "fit1_contact_fraction": 1.0,
+      "fit2_contact_fraction": 0.4859701792399088,
+      "sampling_pass": true,
+      "fit1_sampled_transitions": 0,
+      "fit2_sampled_transitions": 960
+    },
+    {
+      "gap_um": 5.0,
+      "case": "data_A_long/N3/gap_5um",
+      "E_dir_um": 7.449489307406682,
+      "H_v_rms_x_mm_s": 0.7140407256355517,
+      "H_v_rms_y_mm_s": 0.5543126438344644,
+      "H_residual_vector_rms_mm_s": 0.2435813599973237,
+      "fit1_contact_fraction": 1.0,
+      "fit2_contact_fraction": 0.08671389685736765,
+      "sampling_pass": true,
+      "fit1_sampled_transitions": 0,
+      "fit2_sampled_transitions": 960
+    },
+    {
+      "gap_um": 7.5,
+      "case": "data_B/N3/gap_7.5um",
+      "E_dir_um": 8.287103227469228,
+      "H_v_rms_x_mm_s": 0.813194126143646,
+      "H_v_rms_y_mm_s": 0.5557124309508241,
+      "H_residual_vector_rms_mm_s": 0.13325388806863622,
+      "fit1_contact_fraction": 1.0,
+      "fit2_contact_fraction": 0.0,
+      "sampling_pass": true,
+      "fit1_sampled_transitions": 0,
+      "fit2_sampled_transitions": 0
+    },
+    {
+      "gap_um": 10.0,
+      "case": "data_A/N3/gap_10um",
+      "E_dir_um": 12.100948666693803,
+      "H_v_rms_x_mm_s": 0.9522901980934213,
+      "H_v_rms_y_mm_s": 0.5618297414556579,
+      "H_residual_vector_rms_mm_s": 0.13455027353942844,
+      "fit1_contact_fraction": 1.0,
+      "fit2_contact_fraction": 0.0,
+      "sampling_pass": true,
+      "fit1_sampled_transitions": 0,
+      "fit2_sampled_transitions": 0
+    }
+  ],
+  "transition_count_scope": "Sign changes of active_count>0 at native samples inside the full measurement window; not counts over unrecorded RHS stages.",
+  "U_new_equals_U_old": true,
+  "selection_pass": true
+}

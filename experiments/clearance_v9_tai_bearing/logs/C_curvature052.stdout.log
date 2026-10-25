@@ -1,0 +1,4 @@
+{"folder": "experiments\\clearance_v9_tai_bearing\\sensitivity\\curvature_052_same_U\\N3\\gap_2um", "warmup_s": 3.5, "signal_steady": true, "bearing_steady": true}
+{"folder": "experiments\\clearance_v9_tai_bearing\\sensitivity\\curvature_052_same_U\\N3\\gap_2um", "E_dir_um": 1.9995794344020545, "steady_pass": true, "domain_pass": true}
+{"folder": "experiments\\clearance_v9_tai_bearing\\sensitivity\\curvature_052_same_U\\N3\\gap_10um", "warmup_s": 3.5, "signal_steady": true, "bearing_steady": true}
+{"folder": "experiments\\clearance_v9_tai_bearing\\sensitivity\\curvature_052_same_U\\N3\\gap_10um", "E_dir_um": 11.961667442053457, "steady_pass": true, "domain_pass": true}

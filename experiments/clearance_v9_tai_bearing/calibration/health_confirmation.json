@@ -1,0 +1,93 @@
+{
+  "calibration": {
+    "status": "confirmed_unchanged_U_in_continuous_dual_contact_domain",
+    "frozen_utc": "2026-10-25T11:15:59.022299+00:00",
+    "target_E_dir_um": [
+      1.9,
+      2.1
+    ],
+    "healthy_clearance_um": 2.0,
+    "only_parameter": "excitation.U_kg_m",
+    "U_old_kg_m": 2.689135290615865e-05,
+    "U_new_kg_m": 2.689135290615865e-05,
+    "peak_force_N": 14.449937482999612,
+    "healthy_E_dir_um": 1.990036472849796,
+    "healthy_case": "data_A_long/N3/gap_2um",
+    "healthy_independent_convergence": "passed_h_half_root_tenth_N1024_sampling",
+    "neighbor_checks_pass": true,
+    "normalized_local_sensitivity": 1.0642144375360083,
+    "equivalent_eccentricity_internal_4kg_um": 6.722838226539662,
+    "equivalent_eccentricity_with_holder_4p604kg_um": 5.8408672689310706,
+    "measured_unbalance_claim_allowed": false,
+    "decision": "Initial old U already meets target; retain it after independent convergence and actual +/-10% neighbor simulations. No optimizer or forcing change used for the main gap curve.",
+    "physical_scope": "Only the checked continuous dual-contact domain; finite-speed inner-contact-loss continuity failed; real-machine validation not performed.",
+    "history": "calibration/history.csv"
+  },
+  "trials": [
+    {
+      "trial": "initial_pilot",
+      "U_factor": 1.0,
+      "case": "data_A/N3/gap_2um",
+      "U_kg_m": 2.689135290615865e-05,
+      "force_N": 14.449937482999612,
+      "healthy_clearance_um": 2.0,
+      "E_dir_um": 1.9900371405577528,
+      "complete_turns": 120,
+      "steady_pass": true,
+      "domain_pass": true,
+      "sampling_pass": true,
+      "local_root_pass": true,
+      "target_pass": true,
+      "final_eligible": false
+    },
+    {
+      "trial": "confirmed_old_U",
+      "U_factor": 1.0,
+      "case": "data_A_long/N3/gap_2um",
+      "U_kg_m": 2.689135290615865e-05,
+      "force_N": 14.449937482999612,
+      "healthy_clearance_um": 2.0,
+      "E_dir_um": 1.990036472849796,
+      "complete_turns": 480,
+      "steady_pass": true,
+      "domain_pass": true,
+      "sampling_pass": true,
+      "local_root_pass": true,
+      "target_pass": true,
+      "final_eligible": true
+    },
+    {
+      "trial": "lower_neighbor",
+      "U_factor": 0.9,
+      "case": "calibration/U_0p9/N3/gap_2um",
+      "U_kg_m": 2.4202217615542783e-05,
+      "force_N": 13.004943734699651,
+      "healthy_clearance_um": 2.0,
+      "E_dir_um": 1.7781365957774393,
+      "complete_turns": 480,
+      "steady_pass": true,
+      "domain_pass": true,
+      "sampling_pass": true,
+      "local_root_pass": true,
+      "target_pass": false,
+      "final_eligible": true
+    },
+    {
+      "trial": "upper_neighbor",
+      "U_factor": 1.1,
+      "case": "calibration/U_1p1/N3/gap_2um",
+      "U_kg_m": 2.9580488196774515e-05,
+      "force_N": 15.894931231299575,
+      "healthy_clearance_um": 2.0,
+      "E_dir_um": 2.201701704903437,
+      "complete_turns": 480,
+      "steady_pass": true,
+      "domain_pass": true,
+      "sampling_pass": true,
+      "local_root_pass": true,
+      "target_pass": false,
+      "final_eligible": true
+    }
+  ],
+  "trial_config_note": "configured_not_yet_run in each preserved trial input describes its creation time. Actual completed status is established by metrics.json and this history; input evidence is not rewritten."
+}

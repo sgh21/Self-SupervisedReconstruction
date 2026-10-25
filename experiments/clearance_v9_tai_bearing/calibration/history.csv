@@ -1,0 +1,5 @@
+﻿trial,U_factor,case,U_kg_m,force_N,healthy_clearance_um,E_dir_um,complete_turns,steady_pass,domain_pass,sampling_pass,local_root_pass,target_pass,final_eligible
+initial_pilot,1.0,data_A/N3/gap_2um,2.689135290615865e-05,14.449937482999612,2.0,1.9900371405577528,120,True,True,True,True,True,False
+confirmed_old_U,1.0,data_A_long/N3/gap_2um,2.689135290615865e-05,14.449937482999612,2.0,1.990036472849796,480,True,True,True,True,True,True
+lower_neighbor,0.9,calibration/U_0p9/N3/gap_2um,2.4202217615542783e-05,13.004943734699651,2.0,1.7781365957774393,480,True,True,True,True,False,True
+upper_neighbor,1.1,calibration/U_1p1/N3/gap_2um,2.9580488196774515e-05,15.894931231299575,2.0,2.201701704903437,480,True,True,True,True,False,True

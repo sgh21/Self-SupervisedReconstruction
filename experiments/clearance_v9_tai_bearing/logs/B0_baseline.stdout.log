@@ -1,0 +1,5 @@
+{"folder": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\data_A\\B0\\gap_10um", "warmup": 2.5, "E_um": 12.093762513773564, "steady": false}
+{"folder": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\data_A\\B0\\gap_2um", "warmup": 2.5, "E_um": 2.003550538972833, "steady": true}
+{"folder": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\data_A\\B0\\gap_10um", "warmup": 3.5, "E_um": 12.093407682302486, "steady": true}
+{"folder": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\data_A\\B0\\gap_2um", "E_um": 2.003550538972833, "steady": true, "domain": true}
+{"folder": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\data_A\\B0\\gap_10um", "E_um": 12.093407682302486, "steady": true, "domain": true}

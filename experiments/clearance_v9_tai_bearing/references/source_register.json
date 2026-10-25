@@ -1,0 +1,71 @@
+{
+  "audit_date": "2026-10-25",
+  "method": "Rendered and visually inspected cited PDF pages; extracted text used for navigation only. CRC32 values refer to exact local PDF bytes.",
+  "sources": [
+    {
+      "id": "R1",
+      "citation": "Tai & Altintas (2024), A Physics-Based Model-Data-Driven Method for Spindle Health Diagnosis, Part I: Modeling of Geometric Faults, Journal of Manufacturing Science and Engineering 146, 081004, DOI 10.1115/1.4065062",
+      "local_file": "GPTOrder/spindle_v9_tai_bearing_plan/references/R1_Tai2024_PartI_excerpt.pdf",
+      "crc32": "6B749C00",
+      "examined_original_pdf_pages": [3, 4, 5, 8],
+      "key_anchors": "p.3 Eqs.(2)-(5); pp.4-5 Eqs.(6)-(8); p.5 Eqs.(21)-(22); p.8 Eqs.(49)-(50)"
+    },
+    {
+      "id": "R2",
+      "citation": "Cao & Altintas (2004), A General Method for the Modeling of Spindle-Bearing Systems, Journal of Manufacturing Science and Engineering 126, 1089-1104, DOI 10.1115/1.1802311",
+      "local_file": "GPTOrder/spindle_v9_tai_bearing_plan/references/R2_CaoAltintas2004_excerpt.pdf",
+      "crc32": "BB65CC3D",
+      "examined_original_pdf_pages": [4, 5, 6],
+      "key_anchors": "p.4 Eqs.(24)-(27); p.5 Eqs.(28)-(34), Tables 1-2; p.6 Eqs.(35)-(43)"
+    },
+    {
+      "id": "R3",
+      "citation": "Cao, Holkup & Altintas (2011), A comparative study on the dynamics of high speed spindles with respect to different preload mechanisms, International Journal of Advanced Manufacturing Technology 57, 871-883, DOI 10.1007/s00170-011-3356-9",
+      "local_file": "GPTOrder/spindle_v9_tai_bearing_plan/references/R3_CaoHolkupAltintas2011_excerpt.pdf",
+      "crc32": "8653AE3F",
+      "examined_original_pdf_pages": [3, 4],
+      "key_anchors": "Eqs.(3)-(5): fixed-position and constant-force preload distinction"
+    },
+    {
+      "id": "R4",
+      "citation": "Cao (2006), Modeling of High-Speed Machine-Tool Spindle Systems, PhD thesis, University of British Columbia",
+      "local_file": "GPTOrder/spindle_v9_tai_bearing_plan/references/R4_Cao2006_thesis_excerpt.pdf",
+      "crc32": "4E529C6A",
+      "examined_original_pdf_pages": [48, 50, 53, 54],
+      "key_anchors": "printed p.30 Hertz Eqs.(3.25)-(3.28); printed p.32 outer contact-angle convention; printed pp.35-36 inner-contact-loss branch and ring wrench"
+    },
+    {
+      "id": "R5",
+      "citation": "Hamrock & Dowson (1981), Ball Bearing Mechanics, NASA TM-81691",
+      "official_landing_page": "https://ntrs.nasa.gov/citations/19810023007",
+      "official_pdf": "https://ntrs.nasa.gov/api/citations/19810023007/downloads/19810023007.pdf?attachment=true",
+      "local_file": "experiments/clearance_v9_tai_bearing/references/NASA_TM_81691.pdf",
+      "crc32": "89F30F1F",
+      "examined_anchors": "printed p.6 Eq.(3.6); printed pp.7-8 Eqs.(3.7)-(3.16); printed pp.11-12 Eqs.(3.28)-(3.32); PDF p.96 Table 3.1"
+    },
+    {
+      "id": "R6",
+      "citation": "GMN, High Precision Ball Bearings, catalog edition 4000 0815 EN; official Balls page",
+      "official_pdf": "https://d10pxnrbdm1abr.cloudfront.net/wp-content/uploads/ProdKatalog_Kugellager_IV_en.pdf",
+      "official_balls_page": "https://www.gmn.de/en/ball-bearings/design/balls/",
+      "official_engineering_page": "https://www.gmn.de/en/ball-bearings/engineering/design/",
+      "local_file": "experiments/clearance_v9_tai_bearing/references/GMN_ProdKatalog_Kugellager_IV_en.pdf",
+      "crc32": "45D26F7D",
+      "examined_anchors": "catalog PDF p.7, printed pp.12-13: generic Si3N4 and 100Cr6 density, E and nu"
+    },
+    {
+      "id": "R7",
+      "citation": "Cao et al. (2019), Model-based error motion prediction and fit clearance optimization for machine tool spindles, Mechanical Systems and Signal Processing 133, 106252, DOI 10.1016/j.ymssp.2019.106252",
+      "local_file": "GPTOrder/spindle_v9_tai_bearing_plan/references/R7_Cao2019_excerpt.pdf",
+      "crc32": "F5C06928",
+      "examined_original_pdf_pages": [4, 9],
+      "key_anchors": "p.4 Eq.(7) fit-clearance contact; p.9 Table 2 curvature factor is a different bearing, not GMN measurement"
+    },
+    {
+      "id": "V6",
+      "citation": "Repository contract: docs/reports/clearance_v6_parameter_contract.md",
+      "key_anchors": "GMN HY SM 6009/6007 rows: L preload 90/70 N; paired axial stiffness 48/39 N/micron; current contract uses 90/70 N as per-bearing Pa reference. Pair axial stiffness is not single-bearing radial stiffness."
+    }
+  ],
+  "scope_note": "Only NASA and GMN primary web sources were consulted externally. GMN catalog material data are generic room-temperature references, not proof of the specific installed bearing's raceway curvature or preload state."
+}

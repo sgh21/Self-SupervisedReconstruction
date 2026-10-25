@@ -1,0 +1,699 @@
+{
+  "schema_version": 9,
+  "scenario_id": "JD130_GMN_conditional_V6_health2um",
+  "parameters": {
+    "ms": 4.0,
+    "mt": 0.604,
+    "mh": 40.413,
+    "kh": 10912950.92679859,
+    "ch": 467.63119090668664,
+    "kbend": 17168343.034367695,
+    "kappa": 1090000000000.0,
+    "contact_diameter": 0.03,
+    "contact_length": 0.02,
+    "cl": 133.35494523216204,
+    "normal_overlap": 1.6897894969001967e-06,
+    "cb_total": 1218.473723870652,
+    "balls": 18,
+    "ball_diameter": 0.008731,
+    "pitch_diameter": 0.06,
+    "contact_angle": 0.2617993877991494,
+    "rpm": -7000.0,
+    "cage_phase": 0.0,
+    "radial_load_y": 0.0,
+    "t_section_from_face": 0.015,
+    "machine_model": "JD130S-24-HA40; GMN 6009 front pair / 6007 rear pair; 12 DOF",
+    "healthy_error_reported_um": 2.0,
+    "healthy_error_definition": "approximate user reference; direction unspecified; conditional E_dir calibration",
+    "parameter_status": "mixed A/B/C/D; approximate machine mass, catalogue reference and explicit assumptions",
+    "outer_pit_area_m2": 0.0,
+    "inner_pit_area_m2": 0.0,
+    "ball_deformation_amplitude_m": 0.0,
+    "mO": 0.1,
+    "fit_clearance_um": 2.0,
+    "Kf": 156325553.62545305,
+    "N": 512,
+    "Df": 158.1521058350868,
+    "fit_parameter_status": "Kf inherited; Df=2*.02*sqrt(.1*Kf); c_h=2um assumed, not measured",
+    "model_dof": 12,
+    "Jt": 0.03210992533527373,
+    "Jp": 0.004219850670547457,
+    "z_f": 0.12,
+    "z_T": 0.165,
+    "z_u": 0.1,
+    "z_m": 0.165,
+    "L_ref": 0.24,
+    "gravity_radial_m_s2": [
+      0.0,
+      -9.80665
+    ],
+    "probe_reference": "ground",
+    "measurement_kind": "rotor_section",
+    "model_status": "conditional_geometry_preload_control_phase_and_damping",
+    "mO2": 0.1,
+    "z_f2": 0.09,
+    "Kf2": 156325553.62545305,
+    "Df2": 158.1521058350868,
+    "front_group_clearance_um": 2.0,
+    "fit2_clearance_um": 2.0,
+    "rhs_backend": "numba",
+    "Keq": 8794777652.65391,
+    "preload_reference_N": 90,
+    "radial_tangent_reference_N_m": 144000000.0,
+    "designation": "HY-SM-6009-C-TXM-P4-D-UL T274/20-25%",
+    "nonlinear_bearings_v6": true,
+    "rear_bearing": {
+      "balls": 16,
+      "ball_diameter": 0.007938,
+      "pitch_diameter": 0.0485,
+      "contact_angle": 0.2617993877991494,
+      "normal_overlap": 1.6175762705369406e-06,
+      "Keq": 8216458685.504761,
+      "cb_total": 0.0,
+      "cage_phase": 0.0,
+      "preload_reference_N": 70,
+      "radial_tangent_reference_N_m": 117000000.0,
+      "designation": "HY-SM-6007-C-TXM-P4-D-UL T274/20-25%"
+    },
+    "rear_supports": [
+      {
+        "name": "R1",
+        "z_m": -0.127
+      },
+      {
+        "name": "R2",
+        "z_m": -0.113
+      }
+    ],
+    "rear_elastic_force_factor": 1.0,
+    "rear_outer_fit_model": "healthy_outer_to_H_fixed_assumption",
+    "bearing_contact_model": "quasistatic_tai_v9",
+    "calibration_status": "fixed_old_U_mechanism_comparison",
+    "bearing_layout_name": "DB_DB",
+    "bearing_layout_status": "assumed_not_machine_verified",
+    "bearing_layout_basis": "DB_DB_assumed_not_machine_verified",
+    "bearing_layout": [
+      {
+        "name": "F1",
+        "z_m": 0.12,
+        "orientation_sign": -1,
+        "rho_m": 0.03,
+        "outer_translation_source": "O1",
+        "outer_tilt_constraint": "fixed",
+        "axial_increment_constraint": "fixed",
+        "arrangement_basis": "DB_pair_DB_DB_assumed_not_machine_verified",
+        "material_parameters": "front"
+      },
+      {
+        "name": "F2",
+        "z_m": 0.09,
+        "orientation_sign": 1,
+        "rho_m": 0.03,
+        "outer_translation_source": "O2",
+        "outer_tilt_constraint": "fixed",
+        "axial_increment_constraint": "fixed",
+        "arrangement_basis": "DB_pair_DB_DB_assumed_not_machine_verified",
+        "material_parameters": "front"
+      },
+      {
+        "name": "R1",
+        "z_m": -0.127,
+        "orientation_sign": 1,
+        "rho_m": 0.02425,
+        "outer_translation_source": "H",
+        "outer_tilt_constraint": "fixed",
+        "axial_increment_constraint": "fixed",
+        "arrangement_basis": "DB_pair_DB_DB_assumed_not_machine_verified",
+        "material_parameters": "rear"
+      },
+      {
+        "name": "R2",
+        "z_m": -0.113,
+        "orientation_sign": -1,
+        "rho_m": 0.02425,
+        "outer_translation_source": "H",
+        "outer_tilt_constraint": "fixed",
+        "axial_increment_constraint": "fixed",
+        "arrangement_basis": "DB_pair_DB_DB_assumed_not_machine_verified",
+        "material_parameters": "rear"
+      }
+    ],
+    "bearing_position_basis": "geometric_center_assumed",
+    "front_pair_arrangement_assumption": "DB_assumed_not_machine_verified",
+    "rear_pair_arrangement_assumption": "DB_assumed_not_machine_verified",
+    "damping_policy": "common_structural_ring",
+    "tai_bearing": {
+      "ball_inertia_mode": "full",
+      "ring_control_policy": "conditional_outer_with_candidate_audit",
+      "control_branch": "outer",
+      "hertz_policy": "angle_dependent_geometry_hertz",
+      "preload_mode": "fixed_position_reference",
+      "phase_policy": "tai_uniform_phase",
+      "phase_speed_factor": {
+        "front": 1.0,
+        "rear": 1.0
+      },
+      "local_tolerance_scale": 1.0,
+      "materials": {
+        "ball_type": "Si3N4",
+        "ball_density_kg_m3": 3200.0,
+        "ball_E_Pa": 315000000000.0,
+        "ball_nu": 0.26,
+        "ring_E_Pa": 210000000000.0,
+        "ring_nu": 0.3,
+        "status": "GMN_generic_room_temperature_reference"
+      },
+      "families": {
+        "front": {
+          "name": "GMN_HY_SM_6009_C_TXM",
+          "balls": 18,
+          "D_m": 0.008731,
+          "Dm_m": 0.06,
+          "nominal_contact_angle_deg": 15.0,
+          "preload_reference_at_rest_N": 90.0,
+          "fi": 0.52,
+          "fo": 0.52,
+          "curvature_status": "borrowed_not_GMN_verified",
+          "a_pre_m": null,
+          "Ki_Ko_policy": "angle_dependent_geometry_hertz",
+          "cb_total_reference_N_s_m": 1218.473723870652,
+          "initialized_parameter_vector": [
+            0.008731,
+            0.06,
+            0.52,
+            0.52,
+            0.2617993877991494,
+            274223034734.91772,
+            0.001115168684404529,
+            8.500971138805231e-09,
+            5.0441382476842155e-06,
+            18.0,
+            90.0,
+            0.42972084675558453,
+            1.0
+          ],
+          "initialized_parameter_names": [
+            "D_m",
+            "Dm_m",
+            "fi",
+            "fo",
+            "alpha0_rad",
+            "Eprime_Pa",
+            "ball_mass_kg",
+            "ball_inertia_kg_m2",
+            "a_pre_m",
+            "balls",
+            "preload_reference_N",
+            "prescribed_cage_ratio",
+            "hertz_scale"
+          ],
+          "initialization": {
+            "D_m": 0.008731,
+            "Dm_m": 0.06,
+            "fi": 0.52,
+            "fo": 0.52,
+            "alpha0_rad": 0.2617993877991494,
+            "Eprime_Pa": 274223034734.91772,
+            "ball_mass_kg": 0.001115168684404529,
+            "ball_inertia_kg_m2": 8.500971138805231e-09,
+            "a_pre_m": 5.0441382476842155e-06,
+            "balls": 18.0,
+            "preload_reference_N": 90.0,
+            "prescribed_cage_ratio": 0.42972084675558453,
+            "hertz_scale": 1.0
+          },
+          "preload_initialization_status": "solved_at_rest_fixed_afterwards"
+        },
+        "rear": {
+          "name": "GMN_HY_SM_6007_C_TXM",
+          "balls": 16,
+          "D_m": 0.007938,
+          "Dm_m": 0.0485,
+          "nominal_contact_angle_deg": 15.0,
+          "preload_reference_at_rest_N": 70.0,
+          "fi": 0.52,
+          "fo": 0.52,
+          "curvature_status": "borrowed_not_GMN_verified",
+          "a_pre_m": null,
+          "Ki_Ko_policy": "angle_dependent_geometry_hertz",
+          "cb_total_reference_N_s_m": 0.0,
+          "initialized_parameter_vector": [
+            0.007938,
+            0.0485,
+            0.52,
+            0.52,
+            0.2617993877991494,
+            274223034734.91772,
+            0.0008380730675903985,
+            5.280852939560766e-09,
+            4.7539801078582905e-06,
+            16.0,
+            70.0,
+            0.42095341021564303,
+            1.0
+          ],
+          "initialized_parameter_names": [
+            "D_m",
+            "Dm_m",
+            "fi",
+            "fo",
+            "alpha0_rad",
+            "Eprime_Pa",
+            "ball_mass_kg",
+            "ball_inertia_kg_m2",
+            "a_pre_m",
+            "balls",
+            "preload_reference_N",
+            "prescribed_cage_ratio",
+            "hertz_scale"
+          ],
+          "initialization": {
+            "D_m": 0.007938,
+            "Dm_m": 0.0485,
+            "fi": 0.52,
+            "fo": 0.52,
+            "alpha0_rad": 0.2617993877991494,
+            "Eprime_Pa": 274223034734.91772,
+            "ball_mass_kg": 0.0008380730675903985,
+            "ball_inertia_kg_m2": 5.280852939560766e-09,
+            "a_pre_m": 4.7539801078582905e-06,
+            "balls": 16.0,
+            "preload_reference_N": 70.0,
+            "prescribed_cage_ratio": 0.42095341021564303,
+            "hertz_scale": 1.0
+          },
+          "preload_initialization_status": "solved_at_rest_fixed_afterwards"
+        }
+      },
+      "failed_local_solve": "stop_and_save_state_no_fallback"
+    }
+  },
+  "excitation": {
+    "U_kg_m": 2.689135290615865e-05,
+    "phase_rad": -0.3661687497264663,
+    "peak_force_N": 14.449937482999612,
+    "formula": "U*Omega**2*[cos(Omega*t+phase),sin(Omega*t+phase)]",
+    "source": "V8 verified calibrated U; frozen unchanged for V9 mechanism A"
+  },
+  "simulation": {
+    "method": "DOP853",
+    "rtol": 2e-07,
+    "atol_translation_m": 1e-12,
+    "atol_velocity_m_s": 1e-08,
+    "atol_angle_rad": 1e-11,
+    "atol_angle_rate_rad_s": 1e-07,
+    "fs_raw_hz": 65536,
+    "fs_out_hz": 8192,
+    "max_step_s": 1.1260832739219432e-05,
+    "warmup_s": 3.5,
+    "retained_turns": 120,
+    "subwindows": 4,
+    "guard_s": 0.28125,
+    "maximum_warmup_s": 20.0,
+    "extension_s": 1.0,
+    "workers": 2,
+    "dense_sampling_multiplier": 2
+  },
+  "clearances_um": [
+    2.0,
+    3.0,
+    5.0,
+    7.5,
+    10.0
+  ],
+  "parameter_provenance": {
+    "status": "mixed_machine_information_catalogue_conditional_derivations_and_assumptions",
+    "contract": "docs/reports/clearance_v6_parameter_contract.md",
+    "source_contract": "GPTOrder/spindle_v6_plan/config/parameter_contract_v6.json",
+    "inherited_config": "config/clearance_v5_config.json",
+    "mass_ledger": {
+      "ms_kg": 4.0,
+      "ms_status": "user_reports_manufacturer_approximate",
+      "mt_kg": 0.604,
+      "mt_status": "inherited_unverified",
+      "mO1_kg": 0.1,
+      "mO2_kg": 0.1,
+      "mO_status": "new_explicit_assumed_split_not_manufacturer",
+      "spindle_total_kg": 44.613,
+      "mh_kg": 40.413,
+      "mh_formula": "spindle_total-ms-mO1-mO2",
+      "rotating_total_with_holder_kg": 4.604,
+      "Jt_kg_m2": 0.03210992533527373,
+      "Jp_kg_m2": 0.004219850670547457,
+      "inertia_status": "old_radius_of_gyration_preserved_mass_scaled_not_CAD"
+    },
+    "materials_reference_only": {
+      "ball": {
+        "material": "Si3N4",
+        "rho_kg_m3": 3200,
+        "E_Pa": 315000000000.0,
+        "nu": 0.26
+      },
+      "ring": {
+        "material": "100Cr6",
+        "rho_kg_m3": 7800,
+        "E_Pa": 210000000000.0,
+        "nu": 0.3
+      },
+      "note": "Do not additionally fit these into Keq already equivalent-fitted; curvature unknown."
+    },
+    "bearing_references": {
+      "front": {
+        "preload_N": 90,
+        "radial_tangent_single_N_m": 144000000.0,
+        "balls": 18,
+        "pitch_diameter_m": 0.06,
+        "ball_diameter_m": 0.008731,
+        "contact_angle_rad": 0.2617993877991494,
+        "whole_bearing_mass_kg": 0.21,
+        "normal_overlap_m": 1.6897894969001967e-06,
+        "keq_N_m32": 8794777652.65391,
+        "legacy_equal_ki_ko_N_m32": 24875387668.877945,
+        "ball_nominal_load_N": 19.318516525781366,
+        "ball_mass_kg": 0.001115168684404529,
+        "ball_centrifugal_N_at_7000": 3.3196170127573024,
+        "centrifugal_to_nominal_contact_ratio": 0.1718360210695855,
+        "designation": "HY-SM-6009-C-TXM-P4-D-UL T274/20-25%",
+        "count": 2,
+        "d_m": 0.045,
+        "D_m": 0.075,
+        "width_m": 0.016,
+        "axial_pair_stiffness_N_m": 48000000.0,
+        "cb_total_N_s_m": 1218.473723870652
+      },
+      "rear": {
+        "preload_N": 70,
+        "radial_tangent_single_N_m": 117000000.0,
+        "balls": 16,
+        "pitch_diameter_m": 0.0485,
+        "ball_diameter_m": 0.007938,
+        "contact_angle_rad": 0.2617993877991494,
+        "whole_bearing_mass_kg": 0.13,
+        "normal_overlap_m": 1.6175762705369406e-06,
+        "keq_N_m32": 8216458685.504761,
+        "legacy_equal_ki_ko_N_m32": 23239654615.43809,
+        "ball_nominal_load_N": 16.903701960058697,
+        "ball_mass_kg": 0.0008380730675903985,
+        "ball_centrifugal_N_at_7000": 1.9351516633590895,
+        "centrifugal_to_nominal_contact_ratio": 0.11448093843180668,
+        "designation": "HY-SM-6007-C-TXM-P4-D-UL T274/20-25%",
+        "count_assumed": 2,
+        "d_m": 0.035,
+        "D_m": 0.062,
+        "width_m": 0.014,
+        "axial_pair_stiffness_N_m": 39000000.0,
+        "cb_total_N_s_m": 0.0,
+        "outer_fit_model": "fixed_healthy_outer_to_H_assumed"
+      }
+    },
+    "geometry_status": "inherited_or_explicit_assumed_not_CAD_internal_positions",
+    "observation": "z_m=.165m rotor section relative fixed ground/probe approximation; E_dir retains 1X",
+    "excitation_status": "conditional healthy calibration; not measured residual unbalance"
+  },
+  "numerical_thresholds": {
+    "position_um": 0.01,
+    "velocity_mm_s": 0.005,
+    "acceleration_m_s2": 0.0001,
+    "contact_peak_N": 0.0001,
+    "contact_impulse_N_s": 1e-07,
+    "contact_rate": 0.02,
+    "relative_main": 0.01,
+    "relative_residual_steady": 0.05,
+    "relative_contact_peak": 0.05,
+    "relative_contact_impulse": 0.05,
+    "residual_band_energy_floor_mm2_s2": 1e-10,
+    "relative_residual_convergence": 0.05
+  },
+  "accepted_gap_range_um": [
+    0.0,
+    10.0
+  ],
+  "physical_parameter_support": "conditional; see provenance levels",
+  "real_machine_validation": "not_validated",
+  "constitutive_domains": {
+    "maximum_tilt_rad": 0.001,
+    "status": "small-angle screen only; real contact pressure and high-speed preload validity not established",
+    "report_each_bearing": [
+      "delta_over_ball_diameter",
+      "delta_over_delta0",
+      "maximum_ball_force_N"
+    ],
+    "removed_legacy_limits": "F2/R1 1um linear tangent limits and 2delta0 strength proxy do not apply to new nonlinear branches"
+  },
+  "processing": {
+    "fs_hz": 8192,
+    "fir_taps": 4097,
+    "kaiser_beta": 8.6,
+    "passband_hz": [
+      10,
+      900
+    ],
+    "contribution_bands_hz": [
+      [
+        10,
+        900
+      ],
+      [
+        900,
+        2048
+      ]
+    ],
+    "method": "centered FIR convolution once on whole guarded signal after resample_poly; -6dB nominal cutoff",
+    "half_support_s": 0.25,
+    "resample_poly_half_support_s": 0.001220703125,
+    "required_guard_s": 0.251220703125,
+    "auxiliary_passband_hz": [
+      10,
+      2048
+    ]
+  },
+  "trial_design": {
+    "only_free_calibration_parameter": "U_kg_m",
+    "healthy_gap_um": 2.0,
+    "force_ceiling_N_at_7000": 30.0,
+    "calibration_force_candidates_N": [
+      0,
+      2,
+      5,
+      10,
+      20,
+      30
+    ],
+    "gap_sweep_free_parameter": "common_front_radial_clearance_um",
+    "sensitivity": {
+      "mO_kg": [
+        0.06,
+        0.14
+      ],
+      "Kf_factors": [
+        0.5,
+        2.0
+      ],
+      "cb_front_factors": [
+        0.5,
+        2.0
+      ],
+      "Jt_Jp_common_factors": [
+        0.75,
+        1.25
+      ],
+      "rear_span_m": [
+        0.014,
+        0.028
+      ],
+      "front_preload_factors": [
+        0.8,
+        1.2
+      ],
+      "rpm_holdout": [
+        6000,
+        8000
+      ],
+      "note": "One at a time; first screen then simulate most sensitive. Not a real-machine confidence interval.",
+      "rear_effective_elastic_force_factor": [
+        0.5,
+        1.0
+      ]
+    }
+  },
+  "deprecated_v5_parameters_not_active": {
+    "Kother": [
+      [
+        78164077.81917797,
+        -1.8470163138958127e-05
+      ],
+      [
+        -1.8470163138958127e-05,
+        78161475.81108733
+      ]
+    ],
+    "Cother": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "Kb2": [
+      [
+        52109674.33174642,
+        -1.6417922791027336e-05
+      ],
+      [
+        -1.6417922791027336e-05,
+        52107361.435665734
+      ]
+    ],
+    "Cb2": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "healthy_supports": [
+      {
+        "name": "healthy_rear_R1",
+        "z_m": -0.12,
+        "K": [
+          [
+            39082038.909588985,
+            -9.235081569479063e-06
+          ],
+          [
+            -9.235081569479063e-06,
+            39080737.90554366
+          ]
+        ],
+        "C": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "fit_state": "assumed_closed_linear",
+        "healthy_clearance_um": null,
+        "parameter_status": "assumed_demo",
+        "applicability_excursion_from_baseline_m": 1e-06,
+        "domain_basis": "Demo local tangent: excursion <=10% of inherited 9.98um normal overlap; not proof of actual healthy assembly contact",
+        "linear_origin": "P0=0 N, r0=0 m, fixed for all gaps"
+      }
+    ],
+    "ki": 10000000000.0,
+    "ko": 10000000000.0
+  },
+  "calibration": {
+    "status": "curvature_052_healthy_check_pending",
+    "target_E_dir_um": [
+      1.9,
+      2.1
+    ],
+    "healthy_clearance_um": 2.0,
+    "only_parameter": "excitation.U_kg_m",
+    "U_old_kg_m": 2.689135290615865e-05,
+    "U_new_kg_m": null
+  },
+  "ideal_control_gap_um": 0.0,
+  "legacy_calibration": {
+    "model_version": "v6",
+    "record": {
+      "rpm_signed": -7000.0,
+      "phase_rad": -0.3661687497264663,
+      "U_star_kg_m": 2.689135290615865e-05,
+      "F_star_N_at_7000": 14.449937482999612,
+      "target_error_um": 2.0,
+      "acceptance_range_um": [
+        1.9,
+        2.1
+      ],
+      "default_primary_metric": "max(mean(per_turn_pp_x),mean(per_turn_pp_y))_retains_1X",
+      "probe_reference": "ground_approximation",
+      "initial_test_force_N": [
+        0,
+        2,
+        5,
+        10,
+        20,
+        30
+      ],
+      "initial_force_ceiling_N": 30.0,
+      "max_calibration_candidates": 12,
+      "only_free_calibration_parameter": "U",
+      "after_calibration": "freeze_U_and_all_mechanics_for_gap_sweep",
+      "measured_unbalance_claim_allowed": false,
+      "status": "candidate_requires_independent_cold_start_and_h_N_certification"
+    },
+    "excitation": {
+      "U_kg_m": 2.689135290615865e-05,
+      "phase_rad": -0.3661687497264663,
+      "peak_force_N": 14.449937482999612,
+      "formula": "U*Omega**2*[cos(Omega*t+phase),sin(Omega*t+phase)]",
+      "source": "unset before healthy calibration; only U is fitted; force ceiling 30 N at 7000 rpm"
+    },
+    "health_result": {
+      "c_h_um": 2,
+      "U_star_kg_m": 2.689135290615865e-05,
+      "F_7000_N": 14.449937482999612,
+      "E_um": 1.9991157805187447,
+      "epsilon_E_um": 0.0001,
+      "calibration_pass": true,
+      "independent_validation_pass": false,
+      "independent_cold_restart_pass": true,
+      "neighbor_U_checks_pass": true,
+      "equivalent_eccentricity_internal_4kg_um": 6.722838226539662,
+      "equivalent_eccentricity_rotating_4p604kg_um": 5.8408672689310706,
+      "U_g_mm": 26.891352906158648,
+      "note": "等效偏心是U除以指定质量，不是动态轴心幅值；独立冷启动属于数值复核，不是独立实机验证。"
+    },
+    "health_result_source": "experiments/clearance_v6_GMN/acceptance_result.json",
+    "model_status": "conditionally_calibrated_candidate_not_independently_validated",
+    "note": "Conditional V6 health calibration retained as the experiment-A U source; not a measured residual unbalance."
+  },
+  "analysis_version": "v9",
+  "base_config_source": "config/parameters_v8_frozen.json",
+  "mechanism_variant": "N3",
+  "legacy_v8_calibration": {
+    "status": "numerically_confirmed_conditional_calibration",
+    "contact_model": "relative_tilt_v8",
+    "layout": "DB_DB",
+    "rpm_signed": -7000.0,
+    "phase_rad": -0.3661687497264663,
+    "target_error_um": 2.0,
+    "acceptance_range_um": [
+      1.9,
+      2.1
+    ],
+    "only_free_calibration_parameter": "excitation.U_kg_m",
+    "U_star_kg_m": 2.689135290615865e-05,
+    "F_star_N_at_7000": 14.449937482999612,
+    "measured_unbalance_claim_allowed": false,
+    "U_old_kg_m": 2.689135290615865e-05,
+    "healthy_E_um": 2.0035509100716458,
+    "epsilon_E_um": 0.00010622649795921646,
+    "real_machine_validation": "not_validated"
+  },
+  "v9_acceptance": {
+    "local_geometry_normalized": 1e-09,
+    "local_force_absolute_N": 1e-06,
+    "local_force_relative": 1e-07,
+    "residual_velocity_absolute_mm_s": 0.002,
+    "wrench_rms_relative": 0.02,
+    "wrench_peak_relative": 0.05,
+    "wrench_force_absolute_N": 1e-05,
+    "wrench_moment_absolute_Nm": 1e-07,
+    "phase_speed_warning_fraction": 0.02,
+    "source_traceability": "CRC32 and field comparison; no SHA256 per user rule"
+  },
+  "experiment_role": "planned_curvature_sensitivity_at_frozen_old_U",
+  "sensitivity_trigger": "Local 7000 rpm radial tangent changed +22.03% front and +20.03% rear versus fi=fo=.54; threshold declared at 5%."
+}

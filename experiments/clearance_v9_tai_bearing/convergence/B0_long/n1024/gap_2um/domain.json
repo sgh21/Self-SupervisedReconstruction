@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "checks": {
+    "finite_state": true,
+    "small_angle": true,
+    "four_bearings_reported": true,
+    "F1_no_tensile_contact": true,
+    "F1_finite_contact": true,
+    "F2_no_tensile_contact": true,
+    "F2_finite_contact": true,
+    "R1_no_tensile_contact": true,
+    "R1_finite_contact": true,
+    "R2_no_tensile_contact": true,
+    "R2_finite_contact": true
+  },
+  "values": {
+    "maximum_tilt_rad": 1.0702951256707878e-05,
+    "maximum_tilt_limit_rad": 0.001
+  },
+  "bearings": {
+    "F1": {
+      "delta_min_m": 1.4332617479862343e-06,
+      "delta_max_m": 1.9463172458141593e-06,
+      "Q_min_N": 15.089374296926946,
+      "Q_max_N": 23.881846278346174,
+      "delta_over_diameter_max": 0.0002229203121995372,
+      "delta_over_overlap_max": 1.1518104766212272,
+      "mean_reaction_N": [
+        0.011841328038094534,
+        -22.666465565044234
+      ],
+      "peak_reaction_N": 38.22730499117096,
+      "eta_tilt_max": 0.04917998891201952,
+      "eta_tilt_above_half": false,
+      "maximum_actual_tilt_compression_over_overlap": 0.049179861646574924,
+      "outer_tilt_constraint": "fixed; not removed on radial fit opening"
+    },
+    "F2": {
+      "delta_min_m": 1.625559954759118e-06,
+      "delta_max_m": 1.7540190390412753e-06,
+      "Q_min_N": 18.22664403137098,
+      "Q_max_N": 20.431291615440152,
+      "delta_over_diameter_max": 0.0002008955490827254,
+      "delta_over_overlap_max": 1.0380103807361232,
+      "mean_reaction_N": [
+        -0.0037951505548400244,
+        -1.889413031790363
+      ],
+      "peak_reaction_N": 9.583044356323015,
+      "eta_tilt_max": 0.04917998891201952,
+      "eta_tilt_above_half": false,
+      "maximum_actual_tilt_compression_over_overlap": 0.049179861646574924,
+      "outer_tilt_constraint": "fixed; not removed on radial fit opening"
+    },
+    "R1": {
+      "delta_min_m": 1.5199162493650007e-06,
+      "delta_max_m": 1.7152362917088805e-06,
+      "Q_min_N": 15.396221939975382,
+      "Q_max_N": 18.45740371234666,
+      "delta_over_diameter_max": 0.0002160791498751424,
+      "delta_over_overlap_max": 1.0603742914326522,
+      "mean_reaction_N": [
+        0.07630900403998292,
+        4.207768278686389
+      ],
+      "peak_reaction_N": 11.827960014851131,
+      "eta_tilt_max": 0.04152854867280577,
+      "eta_tilt_above_half": false,
+      "maximum_actual_tilt_compression_over_overlap": 0.04152830969409523,
+      "outer_tilt_constraint": "fixed; not removed on radial fit opening"
+    },
+    "R2": {
+      "delta_min_m": 1.3780332552404418e-06,
+      "delta_max_m": 1.8571192858334395e-06,
+      "Q_min_N": 13.291506966499997,
+      "Q_max_N": 20.794303385814718,
+      "delta_over_diameter_max": 0.00023395304684220702,
+      "delta_over_overlap_max": 1.1480876170475625,
+      "mean_reaction_N": [
+        -0.08434380497345119,
+        -24.801700359097463
+      ],
+      "peak_reaction_N": 28.99562985429986,
+      "eta_tilt_max": 0.04152854867280577,
+      "eta_tilt_above_half": false,
+      "maximum_actual_tilt_compression_over_overlap": 0.04152830969409523,
+      "outer_tilt_constraint": "fixed; not removed on radial fit opening"
+    }
+  },
+  "physical_applicability": "conditional_fixed_angle_equivalent_Hertz",
+  "contact_pressure_strength": "not_validated_missing_groove_curvature_and_running_preload",
+  "note": "No old 1um linear-support excursion or 2*overlap limit; delta/d and delta/overlap are diagnostics."
+}

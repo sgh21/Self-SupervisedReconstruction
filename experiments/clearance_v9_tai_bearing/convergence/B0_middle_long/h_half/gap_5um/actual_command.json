@@ -1,0 +1,43 @@
+{
+  "schema": "spindle_v8_actual_command_v1",
+  "python_executable": "D:/Softwares/miniconda3/envs/ZMSoftware/python.exe",
+  "argv": [
+    "-m",
+    "scripts.run_clearance_v8",
+    "--config",
+    "../config/parameters_v8_frozen.json",
+    "--output",
+    "../convergence/B0_middle_long",
+    "--group",
+    "h_half",
+    "--gaps",
+    "5",
+    "--directions",
+    "512",
+    "--step-factor",
+    "0.5",
+    "--warmup",
+    "3.5",
+    "--turns",
+    "480",
+    "--workers",
+    "1"
+  ],
+  "cwd": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\source_before",
+  "environment": {
+    "PYTHONPATH": "src",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "frozen_input_config": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\config\\parameters_v8_frozen.json",
+  "base_case": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\data_A_long\\B0\\gap_5um",
+  "refinement": {
+    "kind": "h_half",
+    "step_factor": 0.5,
+    "directions": 512,
+    "warmup_s": 3.5,
+    "retained_turns": 480,
+    "workers": 1
+  },
+  "execution_source": "source_before V8 runner; no V9 production modules on PYTHONPATH"
+}

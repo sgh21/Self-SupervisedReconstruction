@@ -1,0 +1,5 @@
+﻿group,variant,gap_um,U_kg_m,dof,M_relative_asymmetry,C_relative_asymmetry,K_relative_asymmetry,gyro_included_once,tangent_source,scope
+A,B0,2.0,2.689135290615865e-05,12,0.0,0.0015320025620678543,1.0441619586191699e-11,True,dynamics_model.linear_matrices; frozen equilibrium,local linear diagnostic only; no nonlinear time-domain stability claim
+A,B0,10.0,2.689135290615865e-05,12,0.0,0.0015406351417388798,2.5885151973263755e-11,True,dynamics_model.linear_matrices; frozen equilibrium,local linear diagnostic only; no nonlinear time-domain stability claim
+A,N3,2.0,2.689135290615865e-05,12,0.0,0.0015317747934487833,0.0002377075979336309,True,dynamics_model.linear_matrices; frozen equilibrium,local linear diagnostic only; no nonlinear time-domain stability claim
+A,N3,10.0,2.689135290615865e-05,12,0.0,0.0015406350886020986,0.0002643552759732976,True,dynamics_model.linear_matrices; frozen equilibrium,local linear diagnostic only; no nonlinear time-domain stability claim

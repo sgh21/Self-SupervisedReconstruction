@@ -1,0 +1,33 @@
+﻿parameter,old,new
+analysis_version,"""v8""","""v9"""
+base_config_source,"""experiments/clearance_v6_GMN/data/gap_2um/actual_config.json""","""config/parameters_v8_frozen.json"""
+calibration.F_star_N_at_7000,14.449937482999612,null
+calibration.U_star_kg_m,2.689135290615865e-05,null
+calibration.acceptance_range_um,"[1.9, 2.1]",null
+calibration.contact_model,"""relative_tilt_v8""",null
+calibration.epsilon_E_um,0.00010622649795921646,null
+calibration.healthy_E_um,2.0035509100716458,null
+calibration.healthy_clearance_um,null,2.0
+calibration.layout,"""DB_DB""",null
+calibration.measured_unbalance_claim_allowed,false,null
+calibration.only_free_calibration_parameter,"""excitation.U_kg_m""",null
+calibration.only_parameter,null,"""excitation.U_kg_m"""
+calibration.phase_rad,-0.3661687497264663,null
+calibration.real_machine_validation,"""not_validated""",null
+calibration.rpm_signed,-7000.0,null
+calibration.status,"""numerically_confirmed_conditional_calibration""","""not_run_v9"""
+calibration.target_E_dir_um,null,"[1.9, 2.1]"
+calibration.target_error_um,2.0,null
+excitation.source,"""legacy V6 conditional calibration retained for experiment A; V8 health recalibration not run""","""V8 verified calibrated U; frozen unchanged for V9 mechanism A"""
+legacy_v8_calibration,null,"{""status"": ""numerically_confirmed_conditional_calibration"", ""contact_model"": ""relative_tilt_v8"", ""layout"": ""DB_DB"", ""rpm_signed"": -7000.0, ""phase_rad"": -0.3661687497264663, ""target_error_um"": 2.0, ""acceptance_range_um"": [1.9, 2.1], ""only_free_calibration_parameter"": ""excitation.U_kg_m"", ""U_star_kg_m"": 2.689135290615865e-05, ""F_star_N_at_7000"": 14.449937482999612, ""measured_unbalance_claim_allowed"": false, ""U_old_kg_m"": 2.689135290615865e-05, ""healthy_E_um"": 2.0035509100716458, ""epsilon_E_um"": 0.00010622649795921646, ""real_machine_validation"": ""not_validated""}"
+mechanism_variant,null,"""N3"""
+numerical_thresholds.position_um,0.005,0.01
+numerical_thresholds.relative_contact_impulse,0.02,0.05
+numerical_thresholds.velocity_mm_s,0.0001,0.005
+parameters.bearing_contact_model,"""relative_tilt_v8""","""quasistatic_tai_v9"""
+parameters.calibration_status,"""not_run""","""fixed_old_U_mechanism_comparison"""
+parameters.damping_policy,null,"""common_structural_ring"""
+parameters.model_status,"""v8_not_yet_calibrated_or_independently_validated""","""conditional_geometry_preload_control_phase_and_damping"""
+parameters.tai_bearing,null,"{""ball_inertia_mode"": ""full"", ""ring_control_policy"": ""conditional_outer_with_candidate_audit"", ""control_branch"": ""outer"", ""hertz_policy"": ""angle_dependent_geometry_hertz"", ""preload_mode"": ""fixed_position_reference"", ""phase_policy"": ""tai_uniform_phase"", ""phase_speed_factor"": {""front"": 1.0, ""rear"": 1.0}, ""local_tolerance_scale"": 1.0, ""materials"": {""ball_type"": ""Si3N4"", ""ball_density_kg_m3"": 3200.0, ""ball_E_Pa"": 315000000000.0, ""ball_nu"": 0.26, ""ring_E_Pa"": 210000000000.0, ""ring_nu"": 0.3, ""status"": ""GMN_generic_room_temperature_reference""}, ""families"": {""front"": {""name"": ""GMN_HY_SM_6009_C_TXM"", ""balls"": 18, ""D_m"": 0.008731, ""Dm_m"": 0.06, ""nominal_contact_angle_deg"": 15.0, ""preload_reference_at_rest_N"": 90.0, ""fi"": 0.54, ""fo"": 0.54, ""curvature_status"": ""borrowed_not_GMN_verified"", ""a_pre_m"": null, ""Ki_Ko_policy"": ""angle_dependent_geometry_hertz"", ""cb_total_reference_N_s_m"": 1218.473723870652, ""initialized_parameter_vector"": [0.008731, 0.06, 0.54, 0.54, 0.2617993877991494, 274223034734.91772, 0.001115168684404529, 8.500971138805231e-09, 6.07311132470364e-06, 18.0, 90.0, 0.42972084675558453, 1.0], ""initialized_parameter_names"": [""D_m"", ""Dm_m"", ""fi"", ""fo"", ""alpha0_rad"", ""Eprime_Pa"", ""ball_mass_kg"", ""ball_inertia_kg_m2"", ""a_pre_m"", ""balls"", ""preload_reference_N"", ""prescribed_cage_ratio"", ""hertz_scale""], ""initialization"": {""D_m"": 0.008731, ""Dm_m"": 0.06, ""fi"": 0.54, ""fo"": 0.54, ""alpha0_rad"": 0.2617993877991494, ""Eprime_Pa"": 274223034734.91772, ""ball_mass_kg"": 0.001115168684404529, ""ball_inertia_kg_m2"": 8.500971138805231e-09, ""a_pre_m"": 6.07311132470364e-06, ""balls"": 18.0, ""preload_reference_N"": 90.0, ""prescribed_cage_ratio"": 0.42972084675558453, ""hertz_scale"": 1.0}, ""preload_initialization_status"": ""solved_at_rest_fixed_afterwards""}, ""rear"": {""name"": ""GMN_HY_SM_6007_C_TXM"", ""balls"": 16, ""D_m"": 0.007938, ""Dm_m"": 0.0485, ""nominal_contact_angle_deg"": 15.0, ""preload_reference_at_rest_N"": 70.0, ""fi"": 0.54, ""fo"": 0.54, ""curvature_status"": ""borrowed_not_GMN_verified"", ""a_pre_m"": null, ""Ki_Ko_policy"": ""angle_dependent_geometry_hertz"", ""cb_total_reference_N_s_m"": 0.0, ""initialized_parameter_vector"": [0.007938, 0.0485, 0.54, 0.54, 0.2617993877991494, 274223034734.91772, 0.0008380730675903985, 5.280852939560766e-09, 5.728514664620975e-06, 16.0, 70.0, 0.42095341021564303, 1.0], ""initialized_parameter_names"": [""D_m"", ""Dm_m"", ""fi"", ""fo"", ""alpha0_rad"", ""Eprime_Pa"", ""ball_mass_kg"", ""ball_inertia_kg_m2"", ""a_pre_m"", ""balls"", ""preload_reference_N"", ""prescribed_cage_ratio"", ""hertz_scale""], ""initialization"": {""D_m"": 0.007938, ""Dm_m"": 0.0485, ""fi"": 0.54, ""fo"": 0.54, ""alpha0_rad"": 0.2617993877991494, ""Eprime_Pa"": 274223034734.91772, ""ball_mass_kg"": 0.0008380730675903985, ""ball_inertia_kg_m2"": 5.280852939560766e-09, ""a_pre_m"": 5.728514664620975e-06, ""balls"": 16.0, ""preload_reference_N"": 70.0, ""prescribed_cage_ratio"": 0.42095341021564303, ""hertz_scale"": 1.0}, ""preload_initialization_status"": ""solved_at_rest_fixed_afterwards""}}, ""failed_local_solve"": ""stop_and_save_state_no_fallback""}"
+schema_version,8,9
+v9_acceptance,null,"{""local_geometry_normalized"": 1e-09, ""local_force_absolute_N"": 1e-06, ""local_force_relative"": 1e-07, ""residual_velocity_absolute_mm_s"": 0.002, ""wrench_rms_relative"": 0.02, ""wrench_peak_relative"": 0.05, ""wrench_force_absolute_N"": 1e-05, ""wrench_moment_absolute_Nm"": 1e-07, ""phase_speed_warning_fraction"": 0.02, ""source_traceability"": ""CRC32 and field comparison; no SHA256 per user rule""}"

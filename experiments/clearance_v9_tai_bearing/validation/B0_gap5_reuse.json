@@ -1,0 +1,9 @@
+{
+  "reused_from": "experiments\\clearance_v8_tilt_contact\\data_A_same_U\\new\\gap_5um",
+  "compared_to": "config/parameters_v8_frozen.json",
+  "physical_differences": {},
+  "E_recomputed_um": 7.4656643410790995,
+  "E_recorded_um": 7.4656643410790995,
+  "U_kg_m": 2.689135290615865e-05,
+  "passed": true
+}

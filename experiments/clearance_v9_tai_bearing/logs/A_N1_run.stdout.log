@@ -1,0 +1,4 @@
+{"folder": "experiments\\clearance_v9_tai_bearing\\data_A\\N1\\gap_2um", "warmup_s": 3.5, "signal_steady": true, "bearing_steady": true}
+{"folder": "experiments\\clearance_v9_tai_bearing\\data_A\\N1\\gap_2um", "E_dir_um": 2.0005240837746943, "steady_pass": true, "domain_pass": true}
+{"folder": "experiments\\clearance_v9_tai_bearing\\data_A\\N1\\gap_10um", "warmup_s": 3.5, "signal_steady": true, "bearing_steady": true}
+{"folder": "experiments\\clearance_v9_tai_bearing\\data_A\\N1\\gap_10um", "E_dir_um": 12.020506911255334, "steady_pass": true, "domain_pass": true}

@@ -1,0 +1,14 @@
+{
+  "U_new_equals_U_old": true,
+  "frozen_configuration": "config/parameters_v9_calibrated.json",
+  "reused_cases": {
+    "2": "data_A_long/N3/gap_2um",
+    "5": "data_A_long/N3/gap_5um",
+    "10": "data_A/N3/gap_10um"
+  },
+  "new_cases": {
+    "3": "data_B/N3/gap_3um",
+    "7.5": "data_B/N3/gap_7.5um"
+  },
+  "scope": "Same physical input and solver settings; A actual_config is preserved with its original pre-confirmation metadata. The frozen V9 calibration result is a separate evidence record. These references do not count as extra independent integrations."
+}

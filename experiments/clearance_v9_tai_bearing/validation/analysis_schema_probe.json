@@ -1,0 +1,162 @@
+{
+  "N3": {
+    "metric_count": 244,
+    "times": 702,
+    "ball_shapes": {
+      "F1_tai_32_fields": [
+        702,
+        18,
+        32
+      ],
+      "F2_tai_32_fields": [
+        702,
+        18,
+        32
+      ],
+      "R1_tai_32_fields": [
+        702,
+        16,
+        32
+      ],
+      "R2_tai_32_fields": [
+        702,
+        16,
+        32
+      ]
+    },
+    "root_max": {
+      "bearing_F1_max_force_residual_N": 9.97760940535386e-09,
+      "bearing_F1_max_force_residual_tolerance_ratio": 0.004877331557777866,
+      "bearing_R1_max_force_residual_tolerance_ratio": 3.068018310374763e-06,
+      "bearing_R2_max_force_residual_N": 9.998764038954278e-09,
+      "bearing_R2_max_geometry_residual_normalized": 3.281845761223184e-17,
+      "bearing_R2_max_force_residual_tolerance_ratio": 0.004783307593065157,
+      "bearing_F2_max_force_residual_N": 3.5135805376285134e-10,
+      "bearing_F2_max_geometry_residual_normalized": 5.4255325680080817e-17,
+      "bearing_R1_max_force_residual_N": 5.4785065373152975e-12,
+      "bearing_F1_max_geometry_residual_normalized": 5.4255325680080817e-17,
+      "bearing_R1_max_geometry_residual_normalized": 3.281845761223184e-17,
+      "bearing_F2_max_force_residual_tolerance_ratio": 0.00015803758987085125
+    }
+  },
+  "B0d": {
+    "metric_count": 144,
+    "times": 702,
+    "ball_shapes": {
+      "F1_legacy_delta_m": [
+        702,
+        18
+      ],
+      "F1_legacy_normal_force_N": [
+        702,
+        18
+      ],
+      "F1_legacy_elastic_force_N": [
+        702,
+        18
+      ],
+      "F1_legacy_normal_velocity_m_s": [
+        702,
+        18
+      ],
+      "F1_legacy_tilt_compression_m": [
+        702,
+        18
+      ],
+      "F1_legacy_delta_over_ball_diameter": [
+        702,
+        18
+      ],
+      "F1_legacy_delta_over_overlap": [
+        702,
+        18
+      ],
+      "F2_legacy_delta_m": [
+        702,
+        18
+      ],
+      "F2_legacy_normal_force_N": [
+        702,
+        18
+      ],
+      "F2_legacy_elastic_force_N": [
+        702,
+        18
+      ],
+      "F2_legacy_normal_velocity_m_s": [
+        702,
+        18
+      ],
+      "F2_legacy_tilt_compression_m": [
+        702,
+        18
+      ],
+      "F2_legacy_delta_over_ball_diameter": [
+        702,
+        18
+      ],
+      "F2_legacy_delta_over_overlap": [
+        702,
+        18
+      ],
+      "R1_legacy_delta_m": [
+        702,
+        16
+      ],
+      "R1_legacy_normal_force_N": [
+        702,
+        16
+      ],
+      "R1_legacy_elastic_force_N": [
+        702,
+        16
+      ],
+      "R1_legacy_normal_velocity_m_s": [
+        702,
+        16
+      ],
+      "R1_legacy_tilt_compression_m": [
+        702,
+        16
+      ],
+      "R1_legacy_delta_over_ball_diameter": [
+        702,
+        16
+      ],
+      "R1_legacy_delta_over_overlap": [
+        702,
+        16
+      ],
+      "R2_legacy_delta_m": [
+        702,
+        16
+      ],
+      "R2_legacy_normal_force_N": [
+        702,
+        16
+      ],
+      "R2_legacy_elastic_force_N": [
+        702,
+        16
+      ],
+      "R2_legacy_normal_velocity_m_s": [
+        702,
+        16
+      ],
+      "R2_legacy_tilt_compression_m": [
+        702,
+        16
+      ],
+      "R2_legacy_delta_over_ball_diameter": [
+        702,
+        16
+      ],
+      "R2_legacy_delta_over_overlap": [
+        702,
+        16
+      ]
+    },
+    "root_max": {}
+  },
+  "scope": "Diagnostic exporter exercised on saved V8 states, not a new V9 trajectory or convergence claim."
+}

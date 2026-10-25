@@ -1,0 +1,26 @@
+{
+  "A": {
+    "B0": {
+      "2": "experiments\\clearance_v9_tai_bearing\\data_A_long\\B0\\gap_2um"
+    },
+    "B0d": {
+      "2": "experiments\\clearance_v9_tai_bearing\\data_A_long\\B0d\\gap_2um"
+    },
+    "N1": {
+      "2": "experiments\\clearance_v9_tai_bearing\\data_A_long\\N1\\gap_2um"
+    },
+    "N3": {
+      "2": "experiments\\clearance_v9_tai_bearing\\data_A_long\\N3\\gap_2um"
+    }
+  },
+  "B": {
+    "2": "experiments\\clearance_v9_tai_bearing\\data_A_long\\B0d\\gap_2um"
+  },
+  "refinements": {
+    "2": {
+      "h_half": "experiments\\clearance_v9_tai_bearing\\convergence\\old_U\\h_half\\N3\\gap_2um",
+      "root_tenth": "experiments\\clearance_v9_tai_bearing\\convergence\\old_U\\root_tenth\\N3\\gap_2um",
+      "n1024": "experiments\\clearance_v9_tai_bearing\\convergence\\old_U\\n1024\\N3\\gap_2um"
+    }
+  }
+}

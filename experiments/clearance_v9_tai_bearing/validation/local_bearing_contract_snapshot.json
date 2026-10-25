@@ -1,0 +1,178 @@
+{
+  "schema": "spindle_v9_execution_contract_v1",
+  "document_status": "plan_not_executed",
+  "baseline_reference": "baseline_snapshot/parameters_v8_calibrated.json",
+  "global_dof": 12,
+  "nominal_layout": "DB_DB",
+  "single_degradation_variable": "front_group_clearance_um",
+  "do_not_modify": [
+    "mass_budget",
+    "rotor_inertia",
+    "support_positions",
+    "housing_model",
+    "housing_k_c",
+    "fit_Kf_Df",
+    "gravity",
+    "sensor_reference",
+    "holder_connection"
+  ],
+  "speed_rpm_signed": -7000.0,
+  "healthy_radial_clearance_um": 2.0,
+  "healthy_target_E_dir_um": [
+    1.9,
+    2.1
+  ],
+  "old_unbalance": {
+    "U_kg_m": 2.689135290615865e-05,
+    "phase_rad": -0.3661687497264663,
+    "peak_force_N": 14.449937482999612,
+    "formula": "U*Omega**2*[cos(Omega*t+phase),sin(Omega*t+phase)]",
+    "source": "legacy V6 conditional calibration retained for experiment A; V8 health recalibration not run"
+  },
+  "health_calibration_U_bounds_factor": [
+    0.0,
+    2.0
+  ],
+  "nominal_materials": {
+    "ball_type": "Si3N4",
+    "ball_density_kg_m3": 3200.0,
+    "ball_E_Pa": 315000000000.0,
+    "ball_nu": 0.26,
+    "ring_E_Pa": 210000000000.0,
+    "ring_nu": 0.3,
+    "status": "GMN_generic_room_temperature_reference"
+  },
+  "families": {
+    "front": {
+      "name": "GMN_HY_SM_6009_C_TXM",
+      "balls": 18,
+      "D_m": 0.008731,
+      "Dm_m": 0.06,
+      "nominal_contact_angle_deg": 15.0,
+      "preload_reference_at_rest_N": 90.0,
+      "fi": 0.54,
+      "fo": 0.54,
+      "curvature_status": "borrowed_not_GMN_verified",
+      "a_pre_m": null,
+      "Ki_Ko_policy": "angle_dependent_geometry_hertz",
+      "cb_total_reference_N_s_m": 1218.473723870652
+    },
+    "rear": {
+      "name": "GMN_HY_SM_6007_C_TXM",
+      "balls": 16,
+      "D_m": 0.007938,
+      "Dm_m": 0.0485,
+      "nominal_contact_angle_deg": 15.0,
+      "preload_reference_at_rest_N": 70.0,
+      "fi": 0.54,
+      "fo": 0.54,
+      "curvature_status": "borrowed_not_GMN_verified",
+      "a_pre_m": null,
+      "Ki_Ko_policy": "angle_dependent_geometry_hertz",
+      "cb_total_reference_N_s_m": 0.0
+    }
+  },
+  "layout": [
+    {
+      "id": "F1",
+      "s": -1,
+      "z_m": 0.12,
+      "outer": "O1"
+    },
+    {
+      "id": "F2",
+      "s": 1,
+      "z_m": 0.09,
+      "outer": "O2"
+    },
+    {
+      "id": "R1",
+      "s": 1,
+      "z_m": -0.127,
+      "outer": "H"
+    },
+    {
+      "id": "R2",
+      "s": -1,
+      "z_m": -0.113,
+      "outer": "H"
+    }
+  ],
+  "model_variants": {
+    "B0": "relative_tilt_v8_original",
+    "N1": "dual_contact_no_ball_inertia",
+    "N2": "dual_contact_centrifugal_only",
+    "N3": "dual_contact_centrifugal_and_gyroscopic"
+  },
+  "closure_policies": {
+    "preload": "fixed_position_reference",
+    "axial_increment": "constrained_zero_report_reactions",
+    "phase": "tai_uniform_phase_with_loaded_speed_deviation_diagnostic",
+    "ring_control": "solve_candidate_branches_and_check_R2_table2",
+    "damping": "common_structural_ring_damping_with_V8_bridge_F16",
+    "contact_loss": "active_set_inner_loss_R4",
+    "on_failed_local_solve": "stop_case_save_replay_not_fallback"
+  },
+  "experiment_sets": {
+    "A_same_U_gaps_um": [
+      2,
+      5,
+      10
+    ],
+    "A_ablation_gaps_um": [
+      2,
+      10
+    ],
+    "B_recalibrated_gaps_um": [
+      2,
+      3,
+      5,
+      7.5,
+      10
+    ],
+    "local_speed_magnitudes_rpm": [
+      0,
+      3000,
+      7000,
+      10000
+    ]
+  },
+  "numerics": {
+    "inherit_global_solver": true,
+    "baseline_simulation": {
+      "method": "DOP853",
+      "rtol": 2e-07,
+      "atol_translation_m": 1e-12,
+      "atol_velocity_m_s": 1e-08,
+      "atol_angle_rad": 1e-11,
+      "atol_angle_rate_rad_s": 1e-07,
+      "fs_raw_hz": 65536,
+      "fs_out_hz": 8192,
+      "max_step_s": 1.1260832739219432e-05,
+      "warmup_s": 2.5,
+      "retained_turns": 120,
+      "subwindows": 4,
+      "guard_s": 0.28125,
+      "maximum_warmup_s": 20.0,
+      "extension_s": 1.0,
+      "workers": 2,
+      "dense_sampling_multiplier": 2
+    },
+    "local_normalized_geometry_tolerance": 1e-09,
+    "local_force_relative_tolerance": 1e-07,
+    "local_force_absolute_tolerance_N": 1e-06,
+    "independent_convergence": [
+      "h_half",
+      "root_tolerance_divide_10",
+      "N_double",
+      "raw_fs_double"
+    ]
+  },
+  "certification": {
+    "full_gupta": false,
+    "full_Tai_spindle_FE": false,
+    "machine_validated": false,
+    "must_report_unknown_geometry_preload_and_damping": true
+  },
+  "warning": "This is an execution contract, not directly consumable by the V8 simulator; null a_pre must be solved first."
+}

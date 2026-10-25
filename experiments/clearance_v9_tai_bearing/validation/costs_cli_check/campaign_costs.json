@@ -1,0 +1,27 @@
+{
+  "rows": [
+    {
+      "case": "../../data_A/N3/gap_10um",
+      "roles": "A/N3/c10",
+      "variant": "N3",
+      "gap_um": 10.0,
+      "nfev": 10847606,
+      "wall_seconds": 1666.8461984000169,
+      "simulated_seconds": 7.9007568359375,
+      "seconds_per_simulated_second": 210.9729787807368,
+      "exported_ball_solves": 18335112,
+      "exported_iterations_total": 71559300,
+      "exported_evaluations_total": 89894412,
+      "exported_iterations_mean": 3.902855897471474,
+      "exported_iterations_max": 5.0,
+      "exported_retry_count": 0,
+      "max_force_residual_N": 9.999954642125886e-09,
+      "max_force_tolerance_ratio": 0.007844177824208862,
+      "max_geometry_normalized": 5.4255325680080817e-17
+    }
+  ],
+  "iteration_scope": "Exact sums over exported native-time ball solves, reconstructed from each ball mean times its finite sample count. These are postprocessing calls, not all integrator RHS calls.",
+  "all_rhs_local_iterations_total": null,
+  "all_rhs_iteration_status": "Not instrumented in this campaign; nfev is the actual integrator RHS count. Do not multiply sampled mean iterations into a claimed measured RHS total.",
+  "cost_scope": "Per-case wall time includes integration and analysis up to metric construction, excluding the final native/diagnostic compression and file writes. Resumed histories include inherited wall time. CPU contention differs across cases. The separate warmed identical-state RHS benchmark is the controlled V8 cost comparison."
+}

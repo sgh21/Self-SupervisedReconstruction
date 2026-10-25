@@ -1,0 +1,2 @@
+{"folder": "experiments\\clearance_v9_tai_bearing\\sensitivity\\initial_state_up_5_to_10\\N3\\gap_10um", "warmup_s": 11.4007568359375, "signal_steady": true, "bearing_steady": true}
+{"folder": "experiments\\clearance_v9_tai_bearing\\sensitivity\\initial_state_up_5_to_10\\N3\\gap_10um", "E_dir_um": 12.100940998079972, "steady_pass": true, "domain_pass": true}

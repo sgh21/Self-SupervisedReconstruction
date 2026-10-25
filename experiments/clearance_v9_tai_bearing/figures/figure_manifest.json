@@ -1,0 +1,187 @@
+{
+  "cases_found": 17,
+  "A_cases": 12,
+  "B_cases": 5,
+  "A_variants": [
+    "B0",
+    "B0d",
+    "N1",
+    "N2",
+    "N3"
+  ],
+  "A_gaps_um": [
+    2.0,
+    5.0,
+    10.0
+  ],
+  "A_same_U": true,
+  "B_gaps_um": [
+    2.0,
+    3.0,
+    5.0,
+    7.5,
+    10.0
+  ],
+  "B_same_U": true,
+  "figures": [
+    "01_A_same_U_E_gap.png",
+    "01_A_same_U_E_gap.svg",
+    "02_B_recalibrated_E_gap.png",
+    "02_B_recalibrated_E_gap.svg",
+    "01b_A_E_delta_vs_B0.png",
+    "01b_A_E_delta_vs_B0.svg",
+    "05_A_H_RMS_1x_residual_vs_gap.png",
+    "05_A_H_RMS_1x_residual_vs_gap.svg",
+    "05_B_H_RMS_1x_residual_vs_gap.png",
+    "05_B_H_RMS_1x_residual_vs_gap.svg",
+    "03_orbits_mean_and_centered.png",
+    "03_orbits_mean_and_centered.svg",
+    "04_per_turn_error_and_tilt.png",
+    "04_per_turn_error_and_tilt.svg",
+    "06_H_time_spectrum_c2um.png",
+    "06_H_time_spectrum_c2um.svg",
+    "06_H_time_spectrum_c10um.png",
+    "06_H_time_spectrum_c10um.svg",
+    "07_tai_ball_diagnostics.png",
+    "07_tai_ball_diagnostics.svg",
+    "08_bearing_wrenches_and_constraints.png",
+    "08_bearing_wrenches_and_constraints.svg",
+    "08_load_wrench_rms_by_case.png",
+    "08_load_wrench_rms_by_case.svg",
+    "08_moment_wrench_rms_by_case.png",
+    "08_moment_wrench_rms_by_case.svg",
+    "11_recorded_performance_costs.png",
+    "11_recorded_performance_costs.svg",
+    "09_frozen_tangent_poles.png",
+    "09_frozen_tangent_poles.svg",
+    "10_frozen_tangent_frequency_response.png",
+    "10_frozen_tangent_frequency_response.svg"
+  ],
+  "tangent_requested": false,
+  "gap_only": false,
+  "tangent_recomputed_this_run": false,
+  "tangent_outputs_retained": [
+    "09_frozen_tangent_poles.png",
+    "09_frozen_tangent_poles.svg",
+    "10_frozen_tangent_frequency_response.png",
+    "10_frozen_tangent_frequency_response.svg"
+  ],
+  "tables": [
+    "primary_point_summary.csv",
+    "B_primary_five_point_summary.csv",
+    "performance.csv",
+    "bearing_wrench_summary.csv",
+    "A_E_difference_vs_B0.csv",
+    "tangent_summary.csv",
+    "tangent_poles.csv",
+    "tangent_frf.csv"
+  ],
+  "selection_file": "case_selection.json",
+  "tangent_scope": "local frozen-equilibrium linearization; not global nonlinear stability",
+  "wrench_source_schemas": [
+    {
+      "group": "A",
+      "variant": "B0",
+      "gap_um": 2.0,
+      "schema": "legacy_v8_equal_opposite_reconstruction"
+    },
+    {
+      "group": "A",
+      "variant": "B0",
+      "gap_um": 5.0,
+      "schema": "legacy_v8_equal_opposite_reconstruction"
+    },
+    {
+      "group": "A",
+      "variant": "B0",
+      "gap_um": 10.0,
+      "schema": "legacy_v8_equal_opposite_reconstruction"
+    },
+    {
+      "group": "A",
+      "variant": "B0d",
+      "gap_um": 2.0,
+      "schema": "v9_independent_inner_outer_wrenches"
+    },
+    {
+      "group": "A",
+      "variant": "B0d",
+      "gap_um": 10.0,
+      "schema": "v9_independent_inner_outer_wrenches"
+    },
+    {
+      "group": "A",
+      "variant": "N1",
+      "gap_um": 2.0,
+      "schema": "v9_independent_inner_outer_wrenches"
+    },
+    {
+      "group": "A",
+      "variant": "N1",
+      "gap_um": 10.0,
+      "schema": "v9_independent_inner_outer_wrenches"
+    },
+    {
+      "group": "A",
+      "variant": "N2",
+      "gap_um": 2.0,
+      "schema": "v9_independent_inner_outer_wrenches"
+    },
+    {
+      "group": "A",
+      "variant": "N2",
+      "gap_um": 10.0,
+      "schema": "v9_independent_inner_outer_wrenches"
+    },
+    {
+      "group": "A",
+      "variant": "N3",
+      "gap_um": 2.0,
+      "schema": "v9_independent_inner_outer_wrenches"
+    },
+    {
+      "group": "A",
+      "variant": "N3",
+      "gap_um": 5.0,
+      "schema": "v9_independent_inner_outer_wrenches"
+    },
+    {
+      "group": "A",
+      "variant": "N3",
+      "gap_um": 10.0,
+      "schema": "v9_independent_inner_outer_wrenches"
+    },
+    {
+      "group": "B",
+      "variant": "B",
+      "gap_um": 2.0,
+      "schema": "v9_independent_inner_outer_wrenches"
+    },
+    {
+      "group": "B",
+      "variant": "B",
+      "gap_um": 3.0,
+      "schema": "v9_independent_inner_outer_wrenches"
+    },
+    {
+      "group": "B",
+      "variant": "B",
+      "gap_um": 5.0,
+      "schema": "v9_independent_inner_outer_wrenches"
+    },
+    {
+      "group": "B",
+      "variant": "B",
+      "gap_um": 7.5,
+      "schema": "v9_independent_inner_outer_wrenches"
+    },
+    {
+      "group": "B",
+      "variant": "B",
+      "gap_um": 10.0,
+      "schema": "v9_independent_inner_outer_wrenches"
+    }
+  ],
+  "missing_sections": [],
+  "note": "Curves include only completed cases with native.npz and metrics.json."
+}

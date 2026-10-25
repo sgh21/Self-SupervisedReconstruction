@@ -90,6 +90,9 @@ def rhs_12(t, state, stiffness, damping, directions, constants,
 
 def prepare_fast_rhs(p, unbalance):
     """Freeze constants from the same parameter dictionary as Python simulate."""
+    if p.get('bearing_contact_model') == 'quasistatic_tai_v9' or p.get('damping_policy') == 'common_structural_ring':
+        from .tai_system import prepare_fast_rhs as prepare_separate_rings
+        return prepare_separate_rings(p, unbalance)
     from .dynamics_model import (section_matrix, ROTOR, area_and_link,
                                  gyro_matrix, cage_speed, mass_and_gravity,
                                  bearing_keq, rear_bearing_parameters,

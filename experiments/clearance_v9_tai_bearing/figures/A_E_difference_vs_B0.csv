@@ -1,0 +1,13 @@
+﻿variant,gap_um,E_dir_um,B0_E_dir_um,delta_vs_B0_um,percent_vs_B0,independent_error_budget,case_epsilon_num_um,case_epsilon_budget_complete,B0_N3_S_E_vs_numeric_budget,B0_N3_numeric_comparison_status,error_budget_source
+B0,2.0,2.0035504453207373,2.0035504453207373,0.0,0.0,complete,8.41140516754102e-05,True,52.01953849149093,exceeds_numeric_error,validation/acceptance_summary/main_summary.csv
+B0,5.0,7.465663230325906,7.465663230325906,0.0,0.0,complete,8.65133683971564e-05,True,57.62230059544187,exceeds_numeric_error,validation/acceptance_summary/main_summary.csv
+B0,10.0,12.093407682302486,12.093407682302486,0.0,0.0,complete,5.546357457220097e-05,True,34.70335367188908,exceeds_numeric_error,validation/acceptance_summary/main_summary.csv
+B0d,2.0,2.0035498029342254,2.0035504453207373,-6.423865119842276e-07,-3.2062407686540254e-05,not available for this case,,,,,validation/acceptance_summary/main_summary.csv
+B0d,10.0,12.09343654996795,12.093407682302486,2.8867665465170944e-05,0.00023870579925471243,not available for this case,,,,,validation/acceptance_summary/main_summary.csv
+N1,2.0,2.0005251188866304,2.0035504453207373,-0.003025326434106912,-0.1509982661615792,not available for this case,,,,,validation/acceptance_summary/main_summary.csv
+N1,10.0,12.020506911255334,12.093407682302486,-0.07290077104715209,-0.6028141361167805,not available for this case,,,,,validation/acceptance_summary/main_summary.csv
+N2,2.0,1.9900265952188967,2.0035504453207373,-0.013523850101840651,-0.674994240021528,not available for this case,,,,,validation/acceptance_summary/main_summary.csv
+N2,10.0,12.100671951574663,12.093407682302486,0.0072642692721771596,0.060068009472695645,not available for this case,,,,,validation/acceptance_summary/main_summary.csv
+N3,2.0,1.990036472849796,2.0035504453207373,-0.013513972470941438,-0.6745012336726096,complete,7.567242207717761e-05,True,52.01953849149093,exceeds_numeric_error,validation/acceptance_summary/main_summary.csv
+N3,5.0,7.449489307406682,7.465663230325906,-0.016173922919223926,-0.21664415364363912,complete,9.417523223298474e-05,True,57.62230059544187,exceeds_numeric_error,validation/acceptance_summary/main_summary.csv
+N3,10.0,12.100948666693803,12.093407682302486,0.007540984391317451,0.06235615791199152,complete,6.183485896293917e-05,True,34.70335367188908,exceeds_numeric_error,validation/acceptance_summary/main_summary.csv

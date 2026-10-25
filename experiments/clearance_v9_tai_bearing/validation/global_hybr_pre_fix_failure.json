@@ -1,0 +1,37 @@
+{
+  "schema": "spindle_v9_pre_fix_global_hybr_failure_v1",
+  "config_snapshot": "global_hybr_pre_fix_config.json",
+  "recorded_before": "V9 trust-region equilibrium was integrated",
+  "scope": "failed exploratory global equilibrium evaluations; not a physical bearing state",
+  "successful_control": {
+    "clearance_um": 0.0,
+    "reported_equilibrium_residual_N": 4.761582876592246e-11,
+    "q_m_rad": [1.2745661293393086e-20, -4.078008271365775e-05, 2.0332757836459967e-20, -4.1225684848534896e-05, -1.1429553146483297e-21, -4.06310873764985e-05, -1.2992326267721949e-21, -4.073331035826162e-05, 5.921889656202736e-07, 4.5982403291192044e-20, -9.818950422116871e-22, -4.0721141078619346e-05]
+  },
+  "failed_attempts": [
+    {
+      "target_clearance_um": 2.0,
+      "method": "legacy_unconstrained_hybr_through_equilibrium_continuation",
+      "status": "LocalContactFailure",
+      "ball_index": 1,
+      "A_m": 0.0001868347019132409,
+      "B_m": 0.03795937680489119,
+      "omega_local_rad_s": 733.0382858376183,
+      "g3_N": 3.3138132238264006e-08,
+      "g4_N": 1.2815802022045353e-10,
+      "note": "Global trial jumped to B about 50 times the nominal bearing geometry; local residual is within the plan force gate but failed the earlier stricter internal target."
+    },
+    {
+      "target_clearance_um": 1.0,
+      "method": "legacy_unconstrained_hybr_from_zero_gap_equilibrium",
+      "status": "LocalContactFailure",
+      "ball_index": 6,
+      "A_m": 7.346459215916308e-05,
+      "B_m": -0.0004572141044109699,
+      "omega_local_rad_s": -733.0382858376183,
+      "g3_N": 6.951151908662313,
+      "g4_N": 4.415312122670496,
+      "note": "Exploratory state left the physical contact geometry; no local fallback or tolerance relaxation was applied."
+    }
+  ]
+}

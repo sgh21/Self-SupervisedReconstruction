@@ -1,0 +1,2118 @@
+{
+  "passed": true,
+  "same_window": true,
+  "metrics": {
+    "E_x_um": {
+      "base": 12.10088683183484,
+      "fine": 12.100936207761634,
+      "difference": 4.937592679432612e-05,
+      "tolerance": 0.12100936207761635,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "E_y_um": {
+      "base": 3.873776676215213,
+      "fine": 3.873823874849042,
+      "difference": 4.719863382884881e-05,
+      "tolerance": 0.03873823874849042,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "E_dir_um": {
+      "base": 12.10088683183484,
+      "fine": 12.100936207761634,
+      "difference": 4.937592679432612e-05,
+      "tolerance": 0.12100936207761635,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "mean_x_um": {
+      "base": -0.006349235979557944,
+      "fine": -0.006349235711274832,
+      "difference": 2.6828311187193643e-10,
+      "tolerance": 0.01,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "mean_y_um": {
+      "base": -51.603242429658074,
+      "fine": -51.603242431158556,
+      "difference": 1.500481516814034e-09,
+      "tolerance": 0.5160324243115856,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "OH_mean_x_um": {
+      "base": -0.005567254791006656,
+      "fine": -0.0055672543966030635,
+      "difference": 3.9440359225068056e-10,
+      "tolerance": 0.01,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "OH_mean_y_um": {
+      "base": -9.415548156503771,
+      "fine": -9.415548156307516,
+      "difference": 1.9625545633061847e-10,
+      "tolerance": 0.09415548156503771,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "fit_contact_fraction": {
+      "base": 1.0,
+      "fine": 1.0,
+      "difference": 0.0,
+      "tolerance": 0.02,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "fit_peak_N": {
+      "base": 43.25507537674928,
+      "fine": 43.25662308861765,
+      "difference": 0.001547711868369106,
+      "tolerance": 2.1628311544308825,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "fit_mean_N": {
+      "base": 23.622802953141537,
+      "fine": 23.622802875048745,
+      "difference": 7.809279267689817e-08,
+      "tolerance": 1.1811401476570769,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "fit_impulse_N_s": {
+      "base": 0.20248117397899185,
+      "fine": 0.20248117325699475,
+      "difference": 7.219971009941872e-10,
+      "tolerance": 0.010124058698949593,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_rms_x_mm_s": {
+      "base": 0.9522887350891481,
+      "fine": 0.952291353229101,
+      "difference": 2.6181399528368843e-06,
+      "tolerance": 0.009522913532291009,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_rms_y_mm_s": {
+      "base": 0.5618296684917364,
+      "fine": 0.5618313179816739,
+      "difference": 1.6494899374164262e-06,
+      "tolerance": 0.0056183131798167385,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_1x_x_mm_s": {
+      "base": 1.3408673063228018,
+      "fine": 1.340870919362393,
+      "difference": 3.613039591288114e-06,
+      "tolerance": 0.01340870919362393,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_1x_y_mm_s": {
+      "base": 0.7815831161970159,
+      "fine": 0.7815852222081648,
+      "difference": 2.106011148916842e-06,
+      "tolerance": 0.007815852222081648,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_residual_x_mm_s": {
+      "base": 0.08879864295160025,
+      "fine": 0.08879944144746249,
+      "difference": 7.984958622364591e-07,
+      "tolerance": 0.005,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_residual_y_mm_s": {
+      "base": 0.10108685893337609,
+      "fine": 0.10108788504384801,
+      "difference": 1.0261104719244685e-06,
+      "tolerance": 0.005054394252192401,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_rms_x_m_s2": {
+      "base": 0.7084381231714542,
+      "fine": 0.7084402108494001,
+      "difference": 2.0876779459610972e-06,
+      "tolerance": 0.007084402108494001,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_rms_y_m_s2": {
+      "base": 0.44103456615471476,
+      "fine": 0.4410363319059006,
+      "difference": 1.7657511858226727e-06,
+      "tolerance": 0.004410363319059006,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_1x_x_m_s2": {
+      "base": 0.9829075445634795,
+      "fine": 0.982910192490477,
+      "difference": 2.6479269974455377e-06,
+      "tolerance": 0.009829101924904769,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_1x_y_m_s2": {
+      "base": 0.5729311570933461,
+      "fine": 0.5729327009747937,
+      "difference": 1.5438814475743357e-06,
+      "tolerance": 0.005729327009747937,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_residual_x_m_s2": {
+      "base": 0.13723780511687597,
+      "fine": 0.1372390996967415,
+      "difference": 1.2945798655294993e-06,
+      "tolerance": 0.006861954984837076,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_residual_y_m_s2": {
+      "base": 0.17431387209922908,
+      "fine": 0.17431580243631986,
+      "difference": 1.930337090783052e-06,
+      "tolerance": 0.008715790121815994,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_2x_x_mm_s": {
+      "base": 0.12239747086172109,
+      "fine": 0.12239854242750163,
+      "difference": 1.0715657805387968e-06,
+      "tolerance": 0.006119927121375082,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_2x_y_mm_s": {
+      "base": 0.12073696200722103,
+      "fine": 0.12073801913582588,
+      "difference": 1.0571286048477457e-06,
+      "tolerance": 0.006036900956791294,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_3x_x_mm_s": {
+      "base": 0.01966057368568439,
+      "fine": 0.019660841880525304,
+      "difference": 2.6819484091542e-07,
+      "tolerance": 0.005,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_3x_y_mm_s": {
+      "base": 0.07481656699204665,
+      "fine": 0.07481758735522324,
+      "difference": 1.0203631765903776e-06,
+      "tolerance": 0.005,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_2x_x_m_s2": {
+      "base": 0.1794437225389674,
+      "fine": 0.1794452971879787,
+      "difference": 1.5746490112933387e-06,
+      "tolerance": 0.008972264859398935,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_2x_y_m_s2": {
+      "base": 0.17701154921771126,
+      "fine": 0.1770130945135338,
+      "difference": 1.5452958225525837e-06,
+      "tolerance": 0.00885065472567669,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_3x_x_m_s2": {
+      "base": 0.04323615691208328,
+      "fine": 0.043236744768259734,
+      "difference": 5.878561764524615e-07,
+      "tolerance": 0.0021618372384129866,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_3x_y_m_s2": {
+      "base": 0.16453118718338192,
+      "fine": 0.1645334258447712,
+      "difference": 2.2386613892921847e-06,
+      "tolerance": 0.008226671292238561,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_band_10_2048_rms_x_mm_s": {
+      "base": 0.9522888754744688,
+      "fine": 0.9522914936148038,
+      "difference": 2.6181403349756494e-06,
+      "tolerance": 0.009522914936148038,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_band_10_2048_rms_y_mm_s": {
+      "base": 0.5618297490941507,
+      "fine": 0.5618313985844936,
+      "difference": 1.6494903428698748e-06,
+      "tolerance": 0.005618313985844936,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_band_10_2048_1x_x_mm_s": {
+      "base": 1.3408675044914629,
+      "fine": 1.34087111753155,
+      "difference": 3.613040087113717e-06,
+      "tolerance": 0.0134087111753155,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_band_10_2048_1x_y_mm_s": {
+      "base": 0.781583229812485,
+      "fine": 0.7815853358241781,
+      "difference": 2.1060116931481687e-06,
+      "tolerance": 0.007815853358241781,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_band_10_2048_residual_x_mm_s": {
+      "base": 0.08879865227075277,
+      "fine": 0.08879945076691334,
+      "difference": 7.984961605672636e-07,
+      "tolerance": 0.005,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_band_10_2048_residual_y_mm_s": {
+      "base": 0.10108686768977898,
+      "fine": 0.10108789380041566,
+      "difference": 1.0261106366815653e-06,
+      "tolerance": 0.005054394690020784,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_band_10_2048_rms_x_m_s2": {
+      "base": 0.7084384024800393,
+      "fine": 0.7084404901609294,
+      "difference": 2.087680890050514e-06,
+      "tolerance": 0.007084404901609294,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_band_10_2048_rms_y_m_s2": {
+      "base": 0.44103508081888826,
+      "fine": 0.4410368465908001,
+      "difference": 1.7657719118546744e-06,
+      "tolerance": 0.004410368465908001,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_band_10_2048_1x_x_m_s2": {
+      "base": 0.9829076844671415,
+      "fine": 0.9829103323965981,
+      "difference": 2.6479294565895373e-06,
+      "tolerance": 0.009829103323965981,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_band_10_2048_1x_y_m_s2": {
+      "base": 0.5729312414353621,
+      "fine": 0.5729327853139611,
+      "difference": 1.543878598964099e-06,
+      "tolerance": 0.005729327853139611,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_band_10_2048_residual_x_m_s2": {
+      "base": 0.1372387459414851,
+      "fine": 0.13724004052179817,
+      "difference": 1.2945803130604006e-06,
+      "tolerance": 0.006862002026089909,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_band_10_2048_residual_y_m_s2": {
+      "base": 0.17431503564918305,
+      "fine": 0.17431696603534264,
+      "difference": 1.930386159587627e-06,
+      "tolerance": 0.008715848301767132,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_band_900_2048_rms_x_mm_s": {
+      "base": 7.649575249263166e-05,
+      "fine": 7.649647894949394e-05,
+      "difference": 7.264568622762473e-10,
+      "tolerance": 0.005,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_900_2048_rms_y_mm_s": {
+      "base": 9.034792973212266e-05,
+      "fine": 9.034908064796786e-05,
+      "difference": 1.1509158451982913e-09,
+      "tolerance": 0.005,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_900_2048_1x_x_mm_s": {
+      "base": 2.489766494618707e-07,
+      "fine": 2.4897728022157665e-07,
+      "difference": 6.307597059239552e-13,
+      "tolerance": 0.005,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_900_2048_1x_y_mm_s": {
+      "base": 1.4322841031538835e-07,
+      "fine": 1.432290350989812e-07,
+      "difference": 6.247835928665775e-13,
+      "tolerance": 0.005,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_900_2048_residual_x_mm_s": {
+      "base": 7.649554989625767e-05,
+      "fine": 7.649627635401875e-05,
+      "difference": 7.264577610798482e-10,
+      "tolerance": 0.005,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_900_2048_residual_y_mm_s": {
+      "base": 9.034787296281077e-05,
+      "fine": 9.034902387888513e-05,
+      "difference": 1.150916074357973e-09,
+      "tolerance": 0.005,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_band_900_2048_rms_x_m_s2": {
+      "base": 0.0005176061300292801,
+      "fine": 0.0005176086106089169,
+      "difference": 2.4805796367726243e-09,
+      "tolerance": 0.0001,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_band_900_2048_rms_y_m_s2": {
+      "base": 0.0006534161839585961,
+      "fine": 0.0006534249354787802,
+      "difference": 8.751520184100206e-09,
+      "tolerance": 0.0001,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_band_900_2048_1x_x_m_s2": {
+      "base": 1.7714456735628586e-07,
+      "fine": 1.7714711958682805e-07,
+      "difference": 2.5522305421912117e-12,
+      "tolerance": 0.0001,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_band_900_2048_1x_y_m_s2": {
+      "base": 1.0615052325911892e-07,
+      "fine": 1.0615138285986708e-07,
+      "difference": 8.596007481577861e-13,
+      "tolerance": 0.0001,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_band_900_2048_residual_x_m_s2": {
+      "base": 0.0005176061148661848,
+      "fine": 0.0005176085954454625,
+      "difference": 2.480579277684865e-09,
+      "tolerance": 0.0001,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_band_900_2048_residual_y_m_s2": {
+      "base": 0.000653416179643309,
+      "fine": 0.0006534249311633359,
+      "difference": 8.751520026890891e-09,
+      "tolerance": 0.0001,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_rms_xy_mm_s": {
+      "base": 1.1056701186950944,
+      "fine": 1.1056732118035315,
+      "difference": 3.09310843715771e-06,
+      "tolerance": 0.011056732118035316,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_rms_xy_m_s2": {
+      "base": 0.8345034828602993,
+      "fine": 0.8345061883589325,
+      "difference": 2.7054986332375464e-06,
+      "tolerance": 0.008345061883589326,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "fit2_contact_fraction": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 0.02,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "fit2_peak_N": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 0.0001,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "fit2_mean_N": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 0.0001,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "fit2_impulse_N_s": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_residual_energy_10_50_x_mm2_s2": {
+      "base": 6.741562038630309e-13,
+      "fine": 6.740975753735423e-13,
+      "difference": 5.862848948859193e-17,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_residual_energy_10_50_y_mm2_s2": {
+      "base": 1.8471992883531916e-12,
+      "fine": 1.8469703031495204e-12,
+      "difference": 2.2898520367120312e-16,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_residual_energy_50_100_x_mm2_s2": {
+      "base": 2.792049001368969e-12,
+      "fine": 2.7921124786280474e-12,
+      "difference": 6.34772590786078e-17,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_residual_energy_50_100_y_mm2_s2": {
+      "base": 4.023637137177073e-12,
+      "fine": 4.02311166550843e-12,
+      "difference": 5.254716686427821e-16,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_residual_energy_100_900_x_mm2_s2": {
+      "base": 0.007885174289903119,
+      "fine": 0.007885316105047816,
+      "difference": 1.418151446969107e-07,
+      "tolerance": 0.0003942658052523908,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_residual_energy_100_900_y_mm2_s2": {
+      "base": 0.010218491036196355,
+      "fine": 0.010218698483040536,
+      "difference": 2.0744684418178005e-07,
+      "tolerance": 0.0005109349241520268,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_residual_energy_900_2048_x_mm2_s2": {
+      "base": 1.6883274625063639e-19,
+      "fine": 1.54318826638176e-19,
+      "difference": 1.4513919612460394e-20,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_residual_energy_900_2048_y_mm2_s2": {
+      "base": 6.123075126956316e-19,
+      "fine": 6.056088999912098e-19,
+      "difference": 6.698612704421839e-21,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_residual_energy_10_50_x_m2_s4": {
+      "base": 6.746110868263183e-13,
+      "fine": 7.997375591937727e-14,
+      "difference": 5.94637330906941e-13,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_residual_energy_10_50_y_m2_s4": {
+      "base": 2.4804337073290475e-13,
+      "fine": 2.1297733727216003e-13,
+      "difference": 3.506603346074472e-14,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_residual_energy_50_100_x_m2_s4": {
+      "base": 9.105579577740578e-13,
+      "fine": 5.797228224553714e-13,
+      "difference": 3.308351353186864e-13,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_residual_energy_50_100_y_m2_s4": {
+      "base": 9.652506571619276e-13,
+      "fine": 9.176082595851377e-13,
+      "difference": 4.7642397576789904e-14,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_residual_energy_100_900_x_m2_s4": {
+      "base": 0.018834015065756663,
+      "fine": 0.01883436988216436,
+      "difference": 3.5481640769594036e-07,
+      "tolerance": 0.000941718494108218,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_residual_energy_100_900_y_m2_s4": {
+      "base": 0.030385118519860636,
+      "fine": 0.030385793676683197,
+      "difference": 6.751568225604743e-07,
+      "tolerance": 0.00151928968383416,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_residual_energy_900_2048_x_m2_s4": {
+      "base": 1.3961423004073652e-15,
+      "fine": 2.8681499767344205e-17,
+      "difference": 1.367460800640021e-15,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_residual_energy_900_2048_y_m2_s4": {
+      "base": 1.3353872127784043e-16,
+      "fine": 1.257329629367363e-16,
+      "difference": 7.805758341104128e-18,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_energy_10_900_x": {
+      "base": 0.9068473625217559,
+      "fine": 0.9068523490498055,
+      "difference": 4.986528049588657e-06,
+      "tolerance": 0.045342617452490276,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_energy_10_900_y": {
+      "base": 0.3156537393271403,
+      "fine": 0.3156555928236494,
+      "difference": 1.8534965091077105e-06,
+      "tolerance": 0.015782779641182472,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_energy_900_2048_x": {
+      "base": 1.688343465718942e-19,
+      "fine": 1.5432248871580951e-19,
+      "difference": 1.451185785608469e-20,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_energy_900_2048_y": {
+      "base": 6.123044311746722e-19,
+      "fine": 6.0560667238231775e-19,
+      "difference": 6.697758792354444e-21,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_energy_10_900_x": {
+      "base": 0.501887230128856,
+      "fine": 0.5018901887464857,
+      "difference": 2.958617629666982e-06,
+      "tolerance": 0.02509450943732429,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_energy_10_900_y": {
+      "base": 0.19451009571558478,
+      "fine": 0.19451165611479015,
+      "difference": 1.5603992053747628e-06,
+      "tolerance": 0.009725582805739508,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_energy_900_2048_x": {
+      "base": 1.3961422641863064e-15,
+      "fine": 2.8681487813138856e-17,
+      "difference": 1.3674607763731676e-15,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_energy_900_2048_y": {
+      "base": 1.3353879035150776e-16,
+      "fine": 1.2573304566499965e-16,
+      "difference": 7.805744686508106e-18,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "OH2_mean_x_um": {
+      "base": -0.004495389515920481,
+      "fine": -0.004495389082349234,
+      "difference": 4.3357124661358437e-10,
+      "tolerance": 0.01,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "OH2_mean_y_um": {
+      "base": -7.804103693405771,
+      "fine": -7.804103693224207,
+      "difference": 1.81563208911939e-10,
+      "tolerance": 0.07804103693405771,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "M_1x_x_um": {
+      "base": 5.765012832783214,
+      "fine": 5.7650128337006175,
+      "difference": 9.174030424219382e-10,
+      "tolerance": 0.057650128337006175,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "M_residual_x_um": {
+      "base": 0.8958065012054087,
+      "fine": 0.8958065011457629,
+      "difference": 5.964584381956684e-11,
+      "tolerance": 0.01,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "M_1x_y_um": {
+      "base": 1.189977980600122,
+      "fine": 1.189977976550635,
+      "difference": 4.049486967971916e-09,
+      "tolerance": 0.011899779806001222,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "M_residual_y_um": {
+      "base": 0.954618039633068,
+      "fine": 0.9546180403707831,
+      "difference": 7.377151112208935e-10,
+      "tolerance": 0.01,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_band_10_2048_residual_energy_10_50_x_mm2_s2": {
+      "base": 6.741560907772829e-13,
+      "fine": 6.740974622972144e-13,
+      "difference": 5.862848006850725e-17,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_10_2048_residual_energy_10_50_y_mm2_s2": {
+      "base": 1.8471989814560864e-12,
+      "fine": 1.846969996261177e-12,
+      "difference": 2.289851949094702e-16,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_10_2048_residual_energy_50_100_x_mm2_s2": {
+      "base": 2.792050242944083e-12,
+      "fine": 2.792113720055306e-12,
+      "difference": 6.347711122330448e-17,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_10_2048_residual_energy_50_100_y_mm2_s2": {
+      "base": 4.0236393904676975e-12,
+      "fine": 4.023113918546153e-12,
+      "difference": 5.254719215443687e-16,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_10_2048_residual_energy_100_900_x_mm2_s2": {
+      "base": 0.007885170250992479,
+      "fine": 0.007885312066063412,
+      "difference": 1.4181507093299905e-07,
+      "tolerance": 0.00039426560330317064,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_band_10_2048_residual_energy_100_900_y_mm2_s2": {
+      "base": 0.0102184845031588,
+      "fine": 0.010218691949860224,
+      "difference": 2.0744670142444632e-07,
+      "tolerance": 0.0005109345974930112,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_band_10_2048_residual_energy_900_2048_x_mm2_s2": {
+      "base": 5.851443605481262e-09,
+      "fine": 5.851545908991015e-09,
+      "difference": 1.0230350975250474e-13,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_10_2048_residual_energy_900_2048_y_mm2_s2": {
+      "base": 8.163706846346844e-09,
+      "fine": 8.16389941945899e-09,
+      "difference": 1.9257311214530273e-13,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_band_10_2048_residual_energy_10_50_x_m2_s4": {
+      "base": 6.746108175688157e-13,
+      "fine": 7.997374433281472e-14,
+      "difference": 5.94637073236001e-13,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_band_10_2048_residual_energy_10_50_y_m2_s4": {
+      "base": 2.4804332247347287e-13,
+      "fine": 2.12977302147374e-13,
+      "difference": 3.506602032609887e-14,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_band_10_2048_residual_energy_50_100_x_m2_s4": {
+      "base": 9.10557901282569e-13,
+      "fine": 5.79723031707144e-13,
+      "difference": 3.3083486957542507e-13,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_band_10_2048_residual_energy_50_100_y_m2_s4": {
+      "base": 9.652511194128096e-13,
+      "fine": 9.176087203909505e-13,
+      "difference": 4.7642399021859086e-14,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_band_10_2048_residual_energy_100_900_x_m2_s4": {
+      "base": 0.01883400527556915,
+      "fine": 0.018834360091786028,
+      "difference": 3.54816216876358e-07,
+      "tolerance": 0.0009417180045893014,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_band_10_2048_residual_energy_100_900_y_m2_s4": {
+      "base": 0.03038509653360747,
+      "fine": 0.030385771689904164,
+      "difference": 6.751562966929303e-07,
+      "tolerance": 0.0015192885844952082,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_band_10_2048_residual_energy_900_2048_x_m2_s4": {
+      "base": 2.6790637893882115e-07,
+      "fine": 2.6790966490427185e-07,
+      "difference": 3.2859654506992954e-12,
+      "tolerance": 1.3395483245213593e-08,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_band_10_2048_residual_energy_900_2048_y_m2_s4": {
+      "base": 4.269948980642822e-07,
+      "fine": 4.2700387349130915e-07,
+      "difference": 8.975427026947665e-12,
+      "tolerance": 2.135019367456546e-08,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_v_band_900_2048_residual_energy_10_50_x_mm2_s2": {
+      "base": 2.2614166798467367e-26,
+      "fine": 2.261394194129814e-26,
+      "difference": 2.24857169226901e-31,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_900_2048_residual_energy_10_50_y_mm2_s2": {
+      "base": 6.163960974465964e-26,
+      "fine": 6.16444551328375e-26,
+      "difference": 4.845388177858725e-30,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_900_2048_residual_energy_50_100_x_mm2_s2": {
+      "base": 3.1188705279183117e-25,
+      "fine": 3.1190851805858223e-25,
+      "difference": 2.146526675106178e-29,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_900_2048_residual_energy_50_100_y_mm2_s2": {
+      "base": 4.810133524816362e-25,
+      "fine": 4.809466183013331e-25,
+      "difference": 6.673418030308519e-29,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_900_2048_residual_energy_100_900_x_mm2_s2": {
+      "base": 3.964012185470564e-16,
+      "fine": 3.96403307960259e-16,
+      "difference": 2.089413202629048e-21,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_900_2048_residual_energy_100_900_y_mm2_s2": {
+      "base": 9.52489057863328e-16,
+      "fine": 9.525177441322159e-16,
+      "difference": 2.8686268887856756e-20,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_900_2048_residual_energy_900_2048_x_mm2_s2": {
+      "base": 5.851449970637381e-09,
+      "fine": 5.851552274699641e-09,
+      "difference": 1.0230406225952309e-13,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_v_band_900_2048_residual_energy_900_2048_y_mm2_s2": {
+      "base": 8.163699155588472e-09,
+      "fine": 8.163891728866277e-09,
+      "difference": 1.92573277804764e-13,
+      "tolerance": 2.5e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_band_900_2048_residual_energy_10_50_x_m2_s4": {
+      "base": 2.2531148695993284e-26,
+      "fine": 2.7782767373542096e-27,
+      "difference": 1.9752871958639073e-26,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_band_900_2048_residual_energy_10_50_y_m2_s4": {
+      "base": 9.880607526825358e-27,
+      "fine": 8.933330371007898e-27,
+      "difference": 9.472771558174594e-28,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_band_900_2048_residual_energy_50_100_x_m2_s4": {
+      "base": 1.0667591533613938e-25,
+      "fine": 6.075510158460503e-26,
+      "difference": 4.592081375153436e-26,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_band_900_2048_residual_energy_50_100_y_m2_s4": {
+      "base": 1.0743201137930043e-25,
+      "fine": 1.0080701070949454e-25,
+      "difference": 6.625000669805892e-27,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_band_900_2048_residual_energy_100_900_x_m2_s4": {
+      "base": 1.118348264026855e-15,
+      "fine": 1.117922692067986e-15,
+      "difference": 4.2557195886892805e-19,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_band_900_2048_residual_energy_100_900_y_m2_s4": {
+      "base": 3.96798151623134e-15,
+      "fine": 3.974058711058718e-15,
+      "difference": 6.0771948273783056e-18,
+      "tolerance": 1e-08,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "H_a_band_900_2048_residual_energy_900_2048_x_m2_s4": {
+      "base": 2.679065943163392e-07,
+      "fine": 2.679099161780872e-07,
+      "difference": 3.321861747950878e-12,
+      "tolerance": 1.3395495808904359e-08,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "H_a_band_900_2048_residual_energy_900_2048_y_m2_s4": {
+      "base": 4.2699453290040986e-07,
+      "fine": 4.270035085912046e-07,
+      "difference": 8.975690794754445e-12,
+      "tolerance": 2.135017542956023e-08,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_contact_fraction": {
+      "base": 1.0,
+      "fine": 1.0,
+      "difference": 0.0,
+      "tolerance": 0.02,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_damping_Fx_peak_N": {
+      "base": 0.2553998946003142,
+      "fine": 0.2553998946003142,
+      "difference": 0.0,
+      "tolerance": 0.01276999473001571,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_damping_Fx_rms_N": {
+      "base": 0.09267083738338845,
+      "fine": 0.09267083298535986,
+      "difference": 4.39802859408811e-09,
+      "tolerance": 0.0018534167476677692,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_damping_Fy_peak_N": {
+      "base": 0.24526542860871922,
+      "fine": 0.24526542860871922,
+      "difference": 0.0,
+      "tolerance": 0.012263271430435962,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_damping_Fy_rms_N": {
+      "base": 0.11231665607615274,
+      "fine": 0.11231664114871333,
+      "difference": 1.4927439409562204e-08,
+      "tolerance": 0.0022463331215230547,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_damping_Mx_peak_Nm": {
+      "base": 0.0019715602058093845,
+      "fine": 0.0019715602058093845,
+      "difference": 0.0,
+      "tolerance": 9.857801029046923e-05,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_damping_Mx_rms_Nm": {
+      "base": 0.0009028547187650783,
+      "fine": 0.0009028545987712183,
+      "difference": 1.1999386000886153e-10,
+      "tolerance": 1.8057094375301567e-05,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_damping_My_peak_Nm": {
+      "base": 0.002053025865154441,
+      "fine": 0.002053025865154441,
+      "difference": 0.0,
+      "tolerance": 0.00010265129325772206,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_damping_My_rms_Nm": {
+      "base": 0.0007449322811638448,
+      "fine": 0.0007449322458103986,
+      "difference": 3.535344619051001e-11,
+      "tolerance": 1.4898645623276897e-05,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_dual_contact_fraction": {
+      "base": 1.0,
+      "fine": 1.0,
+      "difference": 0.0,
+      "tolerance": 0.02,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_inner_Fx_peak_N": {
+      "base": 15.313185106193012,
+      "fine": 15.313185106193012,
+      "difference": 0.0,
+      "tolerance": 0.7656592553096506,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_inner_Fx_rms_N": {
+      "base": 10.522552923009052,
+      "fine": 10.522552942825714,
+      "difference": 1.981666208905608e-08,
+      "tolerance": 0.21045105885651427,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_inner_Fy_peak_N": {
+      "base": 41.89260149570698,
+      "fine": 41.89260149570698,
+      "difference": 0.0,
+      "tolerance": 2.094630074785349,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_inner_Fy_rms_N": {
+      "base": 22.123112269501807,
+      "fine": 22.123112232798963,
+      "difference": 3.6702843431157817e-08,
+      "tolerance": 0.44246224539003615,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_inner_Fz_peak_N": {
+      "base": 100.98060779525952,
+      "fine": 100.98060779525952,
+      "difference": 0.0,
+      "tolerance": 5.049030389762976,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_inner_Fz_rms_N": {
+      "base": 100.201468474861,
+      "fine": 100.20146847451414,
+      "difference": 3.468585418886505e-10,
+      "tolerance": 2.00402936949722,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_inner_Mx_peak_Nm": {
+      "base": 0.36456592026098666,
+      "fine": 0.36456592026098666,
+      "difference": 0.0,
+      "tolerance": 0.018228296013049334,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_inner_Mx_rms_Nm": {
+      "base": 0.1956665567869274,
+      "fine": 0.1956665564888173,
+      "difference": 2.981100921672919e-10,
+      "tolerance": 0.003913331135738548,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_inner_My_peak_Nm": {
+      "base": 0.13499813332773045,
+      "fine": 0.13499813332773045,
+      "difference": 0.0,
+      "tolerance": 0.006749906666386522,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_inner_My_rms_Nm": {
+      "base": 0.09355848886283802,
+      "fine": 0.09355848902767824,
+      "difference": 1.6484022480334204e-10,
+      "tolerance": 0.001871169780553565,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_inner_Mz_peak_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_F1_inner_Mz_rms_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_F1_inner_loss_fraction": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 0.02,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_F1_outer_Fx_peak_N": {
+      "base": 15.307131692732122,
+      "fine": 15.307131692732122,
+      "difference": 0.0,
+      "tolerance": 0.7653565846366062,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_outer_Fx_rms_N": {
+      "base": 10.518859677451141,
+      "fine": 10.518859697262767,
+      "difference": 1.981162611741638e-08,
+      "tolerance": 0.21037719394525536,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_outer_Fy_peak_N": {
+      "base": 41.87324457957159,
+      "fine": 41.87324457957159,
+      "difference": 0.0,
+      "tolerance": 2.09366222897858,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_outer_Fy_rms_N": {
+      "base": 22.11470464978039,
+      "fine": 22.114704613089486,
+      "difference": 3.669090276048337e-08,
+      "tolerance": 0.4422940929956078,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_outer_Fz_peak_N": {
+      "base": 100.98060779271533,
+      "fine": 100.98060779271533,
+      "difference": 0.0,
+      "tolerance": 5.049030389635767,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_outer_Fz_rms_N": {
+      "base": 100.20146846435094,
+      "fine": 100.20146846400337,
+      "difference": 3.475690846244106e-10,
+      "tolerance": 2.004029369287019,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_outer_Mx_peak_Nm": {
+      "base": 0.35611988584436427,
+      "fine": 0.35611988584436427,
+      "difference": 0.0,
+      "tolerance": 0.017805994292218214,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_outer_Mx_rms_Nm": {
+      "base": 0.1911082704000154,
+      "fine": 0.19110827010494924,
+      "difference": 2.950661659451015e-10,
+      "tolerance": 0.003822165408000308,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_outer_My_peak_Nm": {
+      "base": 0.13185508149688407,
+      "fine": 0.13185508149688407,
+      "difference": 0.0,
+      "tolerance": 0.006592754074844204,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_outer_My_rms_Nm": {
+      "base": 0.09137534048329521,
+      "fine": 0.09137534064629277,
+      "difference": 1.6299755989379605e-10,
+      "tolerance": 0.0018275068129258553,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F1_outer_Mz_peak_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_F1_outer_Mz_rms_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_F2_contact_fraction": {
+      "base": 1.0,
+      "fine": 1.0,
+      "difference": 0.0,
+      "tolerance": 0.02,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_damping_Fx_peak_N": {
+      "base": 0.008308618031650361,
+      "fine": 0.008308618031650361,
+      "difference": 0.0,
+      "tolerance": 0.0004154309015825181,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_damping_Fx_rms_N": {
+      "base": 0.0057979191173847386,
+      "fine": 0.005797919120088563,
+      "difference": 2.7038241437460364e-12,
+      "tolerance": 0.00011595838240177126,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_damping_Fy_peak_N": {
+      "base": 0.0030565652476050417,
+      "fine": 0.0030565652476050417,
+      "difference": 0.0,
+      "tolerance": 0.0001528282623802521,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_damping_Fy_rms_N": {
+      "base": 0.001576592322186209,
+      "fine": 0.0015765925087686818,
+      "difference": 1.8658247277932027e-10,
+      "tolerance": 3.153185017537364e-05,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_damping_Mx_peak_Nm": {
+      "base": 2.4570125691264163e-05,
+      "fine": 2.4570125691264163e-05,
+      "difference": 0.0,
+      "tolerance": 1.2285062845632082e-06,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_damping_Mx_rms_Nm": {
+      "base": 1.2673399185687093e-05,
+      "fine": 1.2673400685525782e-05,
+      "difference": 1.4998386884399525e-12,
+      "tolerance": 2.5346801371051564e-07,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_damping_My_peak_Nm": {
+      "base": 6.678862475398135e-05,
+      "fine": 6.678862475398135e-05,
+      "difference": 0.0,
+      "tolerance": 3.3394312376990676e-06,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_damping_My_rms_Nm": {
+      "base": 4.660643235852625e-05,
+      "fine": 4.6606432380260875e-05,
+      "difference": 2.1734628257320115e-14,
+      "tolerance": 9.321286476052175e-07,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_dual_contact_fraction": {
+      "base": 1.0,
+      "fine": 1.0,
+      "difference": 0.0,
+      "tolerance": 0.02,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_inner_Fx_peak_N": {
+      "base": 0.37213492545746396,
+      "fine": 0.3721428399283462,
+      "difference": 7.91447088221986e-06,
+      "tolerance": 0.01860714199641731,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_inner_Fx_rms_N": {
+      "base": 0.19449383364789385,
+      "fine": 0.19449383390095998,
+      "difference": 2.5306612361220004e-10,
+      "tolerance": 0.0038898766780192,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_inner_Fy_peak_N": {
+      "base": 1.3132766271037328,
+      "fine": 1.3132766271037328,
+      "difference": 0.0,
+      "tolerance": 0.06566383135518665,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_inner_Fy_rms_N": {
+      "base": 0.9938806737345672,
+      "fine": 0.9938806747845604,
+      "difference": 1.0499932034946369e-09,
+      "tolerance": 0.01987761349569121,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_inner_Fz_peak_N": {
+      "base": 99.79139329003107,
+      "fine": 99.79139349380358,
+      "difference": 2.0377251530590001e-07,
+      "tolerance": 4.98956967469018,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_inner_Fz_rms_N": {
+      "base": 99.78670463290352,
+      "fine": 99.78670463290689,
+      "difference": 3.367972567502875e-12,
+      "tolerance": 1.995734092658138,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_inner_Mx_peak_Nm": {
+      "base": 0.022890421278383484,
+      "fine": 0.02289065147685546,
+      "difference": 2.3019847197533472e-07,
+      "tolerance": 0.001144532573842773,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_inner_Mx_rms_Nm": {
+      "base": 0.018518248853694255,
+      "fine": 0.018518248862548124,
+      "difference": 8.853869026825834e-12,
+      "tolerance": 0.0003703649772509625,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_inner_My_peak_Nm": {
+      "base": 0.009350724956429707,
+      "fine": 0.00935080657696293,
+      "difference": 8.162053322276208e-08,
+      "tolerance": 0.00046754032884814653,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_inner_My_rms_Nm": {
+      "base": 0.006452969047546472,
+      "fine": 0.006452969050879293,
+      "difference": 3.332820998347419e-12,
+      "tolerance": 0.00012905938101758586,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_inner_Mz_peak_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_F2_inner_Mz_rms_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_F2_inner_loss_fraction": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 0.02,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_F2_outer_Fx_peak_N": {
+      "base": 0.3749201093044472,
+      "fine": 0.37494719735499915,
+      "difference": 2.7088050551959952e-05,
+      "tolerance": 0.018747359867749957,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_outer_Fx_rms_N": {
+      "base": 0.19662127630095746,
+      "fine": 0.19662127655583472,
+      "difference": 2.548772581878467e-10,
+      "tolerance": 0.003932425531116695,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_outer_Fy_peak_N": {
+      "base": 1.319056739808666,
+      "fine": 1.319056739808666,
+      "difference": 0.0,
+      "tolerance": 0.06595283699043329,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_outer_Fy_rms_N": {
+      "base": 0.9989001839322158,
+      "fine": 0.9989001849819223,
+      "difference": 1.0497065439096787e-09,
+      "tolerance": 0.01997800369963845,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_outer_Fz_peak_N": {
+      "base": 99.79139328900534,
+      "fine": 99.79139349277975,
+      "difference": 2.0377440534957714e-07,
+      "tolerance": 4.989569674638988,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_outer_Fz_rms_N": {
+      "base": 99.7867046318758,
+      "fine": 99.78670463187919,
+      "difference": 3.382183422218077e-12,
+      "tolerance": 1.9957340926375837,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_outer_Mx_peak_Nm": {
+      "base": 0.022270377570225285,
+      "fine": 0.022270592049504993,
+      "difference": 2.1447927970805192e-07,
+      "tolerance": 0.0011135296024752496,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_outer_Mx_rms_Nm": {
+      "base": 0.018011854858487695,
+      "fine": 0.018011854867170652,
+      "difference": 8.682957131078695e-12,
+      "tolerance": 0.000360237097343413,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_outer_My_peak_Nm": {
+      "base": 0.00908020390079467,
+      "fine": 0.009080395339982747,
+      "difference": 1.9143918807661142e-07,
+      "tolerance": 0.00045401976699913733,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_outer_My_rms_Nm": {
+      "base": 0.006264601732661248,
+      "fine": 0.00626460173593155,
+      "difference": 3.2703015642732147e-12,
+      "tolerance": 0.000125292034718631,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_F2_outer_Mz_peak_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_F2_outer_Mz_rms_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R1_contact_fraction": {
+      "base": 1.0,
+      "fine": 1.0,
+      "difference": 0.0,
+      "tolerance": 0.02,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_damping_Fx_peak_N": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R1_damping_Fx_rms_N": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R1_damping_Fy_peak_N": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R1_damping_Fy_rms_N": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R1_damping_Mx_peak_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R1_damping_Mx_rms_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R1_damping_My_peak_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R1_damping_My_rms_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R1_dual_contact_fraction": {
+      "base": 1.0,
+      "fine": 1.0,
+      "difference": 0.0,
+      "tolerance": 0.02,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_inner_Fx_peak_N": {
+      "base": 37.8530808666592,
+      "fine": 37.8530808666592,
+      "difference": 0.0,
+      "tolerance": 1.89265404333296,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_inner_Fx_rms_N": {
+      "base": 26.3275265435991,
+      "fine": 26.327526548466963,
+      "difference": 4.867864333846228e-09,
+      "tolerance": 0.5265505309693392,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_inner_Fy_peak_N": {
+      "base": 51.35423920822319,
+      "fine": 51.35423920822319,
+      "difference": 0.0,
+      "tolerance": 2.5677119604111596,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_inner_Fy_rms_N": {
+      "base": 43.8377634878387,
+      "fine": 43.83776348598372,
+      "difference": 1.8549783931121056e-09,
+      "tolerance": 0.876755269756774,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_inner_Fz_peak_N": {
+      "base": 75.21815686308354,
+      "fine": 75.21815686308354,
+      "difference": 0.0,
+      "tolerance": 3.760907843154177,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_inner_Fz_rms_N": {
+      "base": 75.12088827206644,
+      "fine": 75.1208882721333,
+      "difference": 6.686207143502543e-11,
+      "tolerance": 1.502417765442666,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_inner_Mx_peak_Nm": {
+      "base": 0.35614332751807976,
+      "fine": 0.35614332751807976,
+      "difference": 0.0,
+      "tolerance": 0.017807166375903988,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_inner_Mx_rms_Nm": {
+      "base": 0.3040497891338252,
+      "fine": 0.3040497891210719,
+      "difference": 1.2753298417322867e-11,
+      "tolerance": 0.006080995782676504,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_inner_My_peak_Nm": {
+      "base": 0.2617448703779828,
+      "fine": 0.2617448703779828,
+      "difference": 0.0,
+      "tolerance": 0.013087243518899139,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_inner_My_rms_Nm": {
+      "base": 0.18205061240224252,
+      "fine": 0.18205061243583107,
+      "difference": 3.358854860913141e-11,
+      "tolerance": 0.0036410122487166214,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_inner_Mz_peak_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R1_inner_Mz_rms_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R1_inner_loss_fraction": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 0.02,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R1_outer_Fx_peak_N": {
+      "base": 37.84324966243366,
+      "fine": 37.84324966243366,
+      "difference": 0.0,
+      "tolerance": 1.892162483121683,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_outer_Fx_rms_N": {
+      "base": 26.320701473077538,
+      "fine": 26.32070147794429,
+      "difference": 4.866752334464763e-09,
+      "tolerance": 0.5264140295588858,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_outer_Fy_peak_N": {
+      "base": 51.34148509995093,
+      "fine": 51.34148509995093,
+      "difference": 0.0,
+      "tolerance": 2.5670742549975465,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_outer_Fy_rms_N": {
+      "base": 43.82690863227341,
+      "fine": 43.82690863041922,
+      "difference": 1.8541896906754118e-09,
+      "tolerance": 0.8765381726454682,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_outer_Fz_peak_N": {
+      "base": 75.21815684849099,
+      "fine": 75.21815684849099,
+      "difference": 0.0,
+      "tolerance": 3.7609078424245497,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_outer_Fz_rms_N": {
+      "base": 75.12088825863685,
+      "fine": 75.12088825870366,
+      "difference": 6.680522801616462e-11,
+      "tolerance": 1.502417765174073,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_outer_Mx_peak_Nm": {
+      "base": 0.3470662580280238,
+      "fine": 0.3470662580280238,
+      "difference": 0.0,
+      "tolerance": 0.017353312901401192,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_outer_Mx_rms_Nm": {
+      "base": 0.2963002228195804,
+      "fine": 0.2963002228071459,
+      "difference": 1.2434497875801753e-11,
+      "tolerance": 0.005926004456391608,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_outer_My_peak_Nm": {
+      "base": 0.2550785609472805,
+      "fine": 0.2550785609472805,
+      "difference": 0.0,
+      "tolerance": 0.012753928047364025,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_outer_My_rms_Nm": {
+      "base": 0.17741404675551053,
+      "fine": 0.1774140467882406,
+      "difference": 3.2730068655340006e-11,
+      "tolerance": 0.003548280935764812,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R1_outer_Mz_peak_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R1_outer_Mz_rms_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R2_contact_fraction": {
+      "base": 1.0,
+      "fine": 1.0,
+      "difference": 0.0,
+      "tolerance": 0.02,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_damping_Fx_peak_N": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R2_damping_Fx_rms_N": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R2_damping_Fy_peak_N": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R2_damping_Fy_rms_N": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-05,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R2_damping_Mx_peak_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R2_damping_Mx_rms_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R2_damping_My_peak_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R2_damping_My_rms_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R2_dual_contact_fraction": {
+      "base": 1.0,
+      "fine": 1.0,
+      "difference": 0.0,
+      "tolerance": 0.02,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_inner_Fx_peak_N": {
+      "base": 43.63027061015351,
+      "fine": 43.63069336831732,
+      "difference": 0.0004227581638076572,
+      "tolerance": 2.181534668415866,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_inner_Fx_rms_N": {
+      "base": 30.401625840872075,
+      "fine": 30.401625844777275,
+      "difference": 3.9051997191563714e-09,
+      "tolerance": 0.6080325168955455,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_inner_Fy_peak_N": {
+      "base": 80.6173840535015,
+      "fine": 80.6173840535015,
+      "difference": 0.0,
+      "tolerance": 4.030869202675075,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_inner_Fy_rms_N": {
+      "base": 69.84105876837724,
+      "fine": 69.84105876765713,
+      "difference": 7.201066409834311e-10,
+      "tolerance": 1.3968211753675448,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_inner_Fz_peak_N": {
+      "base": 77.89746100067731,
+      "fine": 77.89746100067731,
+      "difference": 0.0,
+      "tolerance": 3.8948730500338655,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_inner_Fz_rms_N": {
+      "base": 77.38708191713302,
+      "fine": 77.38708191723414,
+      "difference": 1.0112444215337746e-10,
+      "tolerance": 1.547741638344683,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_inner_Mx_peak_Nm": {
+      "base": 0.5557117820355068,
+      "fine": 0.5557117820355068,
+      "difference": 0.0,
+      "tolerance": 0.027785589101775338,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_inner_Mx_rms_Nm": {
+      "base": 0.48134537868199273,
+      "fine": 0.4813453786769701,
+      "difference": 5.022648963404208e-12,
+      "tolerance": 0.009626907573639855,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_inner_My_peak_Nm": {
+      "base": 0.3011956038991836,
+      "fine": 0.30119835271636647,
+      "difference": 2.748817182873786e-06,
+      "tolerance": 0.015059917635818324,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_inner_My_rms_Nm": {
+      "base": 0.20987577611910976,
+      "fine": 0.20987577614614372,
+      "difference": 2.7033958405198177e-11,
+      "tolerance": 0.004197515522922875,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_inner_Mz_peak_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R2_inner_Mz_rms_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R2_inner_loss_fraction": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 0.02,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R2_outer_Fx_peak_N": {
+      "base": 43.6177848410681,
+      "fine": 43.6182073688461,
+      "difference": 0.0004225277779994485,
+      "tolerance": 2.180910368442305,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_outer_Fx_rms_N": {
+      "base": 30.392892833475088,
+      "fine": 30.392892837378657,
+      "difference": 3.903569023577802e-09,
+      "tolerance": 0.6078578567475732,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_outer_Fy_peak_N": {
+      "base": 80.59336823312213,
+      "fine": 80.59336823312213,
+      "difference": 0.0,
+      "tolerance": 4.029668411656107,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_outer_Fy_rms_N": {
+      "base": 69.82053853590196,
+      "fine": 69.820538535182,
+      "difference": 7.199645324362791e-10,
+      "tolerance": 1.3964107707180393,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_outer_Fz_peak_N": {
+      "base": 77.89746099260465,
+      "fine": 77.89746099260465,
+      "difference": 0.0,
+      "tolerance": 3.894873049630233,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_outer_Fz_rms_N": {
+      "base": 77.3870819108666,
+      "fine": 77.38708191096744,
+      "difference": 1.0084022505907342e-10,
+      "tolerance": 1.5477416382193487,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_outer_Mx_peak_Nm": {
+      "base": 0.5415622019669724,
+      "fine": 0.5415622019669724,
+      "difference": 0.0,
+      "tolerance": 0.02707811009834862,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_outer_Mx_rms_Nm": {
+      "base": 0.46909085988802024,
+      "fine": 0.4690908598831254,
+      "difference": 4.894862293269853e-12,
+      "tolerance": 0.009381817197760404,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_outer_My_peak_Nm": {
+      "base": 0.2935245800194811,
+      "fine": 0.29352725985366585,
+      "difference": 2.679834184726726e-06,
+      "tolerance": 0.014676362992683293,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_outer_My_rms_Nm": {
+      "base": 0.20453041473506212,
+      "fine": 0.20453041476141615,
+      "difference": 2.6354030069342116e-11,
+      "tolerance": 0.004090608295228323,
+      "passed": true,
+      "above_absolute_floor": true
+    },
+    "bearing_R2_outer_Mz_peak_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    },
+    "bearing_R2_outer_Mz_rms_Nm": {
+      "base": 0.0,
+      "fine": 0.0,
+      "difference": 0.0,
+      "tolerance": 1e-07,
+      "passed": true,
+      "above_absolute_floor": false
+    }
+  },
+  "main_metric_pass": true,
+  "contact_pass": true,
+  "feature_pass": true,
+  "bearing_wrench_pass": true,
+  "base_fs_hz": 65536,
+  "dense_fs_hz": 131072,
+  "same_dense_solution": true,
+  "independent_refinement_applied": false
+}

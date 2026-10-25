@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "base_config": "config/platform_healthy_background_20261023.json",
+  "simulation": {
+    "native_fs_hz": 65536,
+    "duration_s": 2.0,
+    "warmup_s": 1.0,
+    "max_step_s": 0.0001220703125,
+    "pit_steps_per_passage": 4
+  },
+  "variability": {
+    "support_parameters": [
+      "kh",
+      "ch",
+      "platform_ky",
+      "platform_cy"
+    ],
+    "support_multiplier_range": [
+      0.98,
+      1.02
+    ],
+    "fundamental_multiplier_range": [
+      0.8,
+      1.2
+    ],
+    "additional_frequency_ranges_hz": [
+      [
+        160,
+        350
+      ],
+      [
+        360,
+        650
+      ],
+      [
+        680,
+        1000
+      ],
+      [
+        1050,
+        1300
+      ],
+      [
+        1350,
+        1650
+      ],
+      [
+        1700,
+        1950
+      ]
+    ],
+    "additional_peak_fraction_range": [
+      0.015,
+      0.04
+    ],
+    "interpretation": "Independent engineering scenario variability, not measured uncertainty. One noninteger frequency per disjoint band; common forcing and support values for all fault levels within a group."
+  },
+  "groups": [
+    {
+      "id": "bgtr00",
+      "seed": 2026103000,
+      "split": "train"
+    },
+    {
+      "id": "bgtr01",
+      "seed": 2026103001,
+      "split": "train"
+    },
+    {
+      "id": "bgtr02",
+      "seed": 2026103002,
+      "split": "train"
+    },
+    {
+      "id": "bgtr03",
+      "seed": 2026103003,
+      "split": "train"
+    },
+    {
+      "id": "bgtr04",
+      "seed": 2026103004,
+      "split": "train"
+    },
+    {
+      "id": "bgtr05",
+      "seed": 2026103005,
+      "split": "train"
+    },
+    {
+      "id": "bgtr06",
+      "seed": 2026103006,
+      "split": "train"
+    },
+    {
+      "id": "bgtr07",
+      "seed": 2026103007,
+      "split": "train"
+    },
+    {
+      "id": "bgtr08",
+      "seed": 2026103008,
+      "split": "train"
+    },
+    {
+      "id": "bgtr09",
+      "seed": 2026103009,
+      "split": "train"
+    },
+    {
+      "id": "bgtr10",
+      "seed": 2026103010,
+      "split": "train"
+    },
+    {
+      "id": "bgtr11",
+      "seed": 2026103011,
+      "split": "train"
+    },
+    {
+      "id": "bgtr12",
+      "seed": 2026103012,
+      "split": "train"
+    },
+    {
+      "id": "bgtr13",
+      "seed": 2026103013,
+      "split": "train"
+    },
+    {
+      "id": "bgtr14",
+      "seed": 2026103014,
+      "split": "train"
+    },
+    {
+      "id": "bgtr15",
+      "seed": 2026103015,
+      "split": "train"
+    },
+    {
+      "id": "bgtr16",
+      "seed": 2026103016,
+      "split": "train"
+    },
+    {
+      "id": "bgtr17",
+      "seed": 2026103017,
+      "split": "train"
+    },
+    {
+      "id": "bgtr18",
+      "seed": 2026103018,
+      "split": "train"
+    },
+    {
+      "id": "bgtr19",
+      "seed": 2026103019,
+      "split": "train"
+    },
+    {
+      "id": "bgtr20",
+      "seed": 2026103020,
+      "split": "train"
+    },
+    {
+      "id": "bgtr21",
+      "seed": 2026103021,
+      "split": "train"
+    },
+    {
+      "id": "bgtr22",
+      "seed": 2026103022,
+      "split": "train"
+    },
+    {
+      "id": "bgtr23",
+      "seed": 2026103023,
+      "split": "train"
+    },
+    {
+      "id": "bgtr24",
+      "seed": 2026103024,
+      "split": "train"
+    },
+    {
+      "id": "bgtr25",
+      "seed": 2026103025,
+      "split": "train"
+    },
+    {
+      "id": "bgtr26",
+      "seed": 2026103026,
+      "split": "train"
+    },
+    {
+      "id": "bgtr27",
+      "seed": 2026103027,
+      "split": "train"
+    },
+    {
+      "id": "bgtr28",
+      "seed": 2026103028,
+      "split": "train"
+    },
+    {
+      "id": "bgtr29",
+      "seed": 2026103029,
+      "split": "train"
+    },
+    {
+      "id": "bgtr30",
+      "seed": 2026103030,
+      "split": "train"
+    },
+    {
+      "id": "bgtr31",
+      "seed": 2026103031,
+      "split": "train"
+    }
+  ],
+  "limitations": [
+    "T labels are simulated absolute lumped tool-node motion, with no validated 15 mm section mapping or real geometric probe runout.",
+    "Shaft XY labels are separately retained; neither shaft nor tool labels come from integrating housing velocity.",
+    "Position labels use unbandpassed native displacement states; only velocity inputs use the common 10–2048 Hz FIR.",
+    "Severity is a mechanical parameter; peak-to-peak motion is not forced to vary monotonically with severity.",
+    "Support and force variation are engineering sampling priors, not identified distributions of this spindle.",
+    "The base model is calibrated only to 1X amplitudes and has known platform phase mismatch.",
+    "32additional independent healthy-only groups, same prior ranges and mechanical equations; not measured parameter uncertainty.",
+    "All new groups are training-only. Original fault, validation, test records and thresholds are retained.",
+    "Native source processing, original healthy parameters and excitation distributions are unchanged; no fault amplitude rescaling."
+  ],
+  "purpose": "Expand healthy simulation excitation/phase coverage for background training without altering old fault source amplitudes or reading held-out data."
+}

@@ -1,0 +1,24 @@
+{
+  "executable": "D:\\Softwares\\miniconda3\\envs\\ZMSoftware\\python.exe",
+  "argv": [
+    "D:\\WorkSpace\\ZMProject\\DataGeneration\\scripts\\run_clearance_v9.py",
+    "--config",
+    "experiments/clearance_v9_tai_bearing/sensitivity/curvature_052_same_U/N3/gap_2um/actual_config.json",
+    "--output",
+    "experiments/clearance_v9_tai_bearing",
+    "--group",
+    "sensitivity/curvature_052_same_U_long",
+    "--variant",
+    "N3",
+    "--gaps",
+    "2",
+    "--turns",
+    "480",
+    "--resume",
+    "experiments/clearance_v9_tai_bearing/sensitivity/curvature_052_same_U/N3/gap_2um",
+    "--workers",
+    "1"
+  ],
+  "working_directory": "D:\\WorkSpace\\ZMProject\\DataGeneration",
+  "started_utc": "2026-10-25T10:16:49.026440+00:00"
+}

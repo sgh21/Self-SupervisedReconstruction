@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": {
+    "finite_state": true,
+    "small_angle": true,
+    "local_root_residuals": true
+  },
+  "values": {
+    "maximum_tilt_rad": 1.0702960013566494e-05,
+    "maximum_tilt_limit_rad": 0.001,
+    "max_local_force_residual_N": null,
+    "max_local_force_residual_tolerance_ratio": null,
+    "max_local_geometry_residual_normalized": null,
+    "max_relative_phase_speed_difference": 0.0,
+    "phase_speed_warning_fraction": 0.02
+  },
+  "local_contact_checks": {},
+  "ring_control_checks": {},
+  "phase_speed_warnings": {},
+  "physical_closure_status": "within_declared_screens",
+  "branch_comparison_required": false,
+  "phase_speed_warning_exceeded": false,
+  "contact_pressure_strength": "not_validated_missing_running_groove_curvature_limit",
+  "scope": "Conditional Tai local-contact and fixed-ring screen; no unsupported Hertz pressure cutoff."
+}

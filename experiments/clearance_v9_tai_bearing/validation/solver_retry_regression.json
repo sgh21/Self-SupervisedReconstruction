@@ -1,0 +1,144 @@
+{
+  "old_source": "experiments\\clearance_v9_tai_bearing\\validation\\solver_retry_before\\tai_bearing.py",
+  "new_source": "src/spindle/tai_bearing.py",
+  "scope": "Local-only numerical solver audit; no spindle trajectory.",
+  "random_regression": {
+    "generator": "numpy.default_rng(902), continuous stream front then rear",
+    "A_offset_uniform_m": [
+      -5e-06,
+      5e-06
+    ],
+    "B_offset_uniform_m": [
+      -1e-05,
+      1e-05
+    ],
+    "rpm_cycle": [
+      3000,
+      7000,
+      10000
+    ],
+    "mode": "1+i%2",
+    "control": "i%2",
+    "families": {
+      "front": {
+        "state_count": 2500,
+        "diagnostics_modes": [
+          true,
+          false
+        ],
+        "old_failures": [],
+        "recovered": [],
+        "changed_original_successes": [],
+        "max_absolute_change_by_field": {
+          "U_m": 0.0,
+          "V_m": 0.0,
+          "delta_i_m": 0.0,
+          "delta_o_m": 0.0,
+          "alpha_i_rad": 0.0,
+          "alpha_o_rad": 0.0,
+          "Qi_N": 0.0,
+          "Qo_N": 0.0,
+          "Fc_N": 0.0,
+          "Mg_N_m": 0.0,
+          "omega_E_rad_s": 0.0,
+          "omega_B_rad_s": 0.0,
+          "beta_rad": 0.0,
+          "Ki_N_m32": 0.0,
+          "Ko_N_m32": 0.0,
+          "g1_m2": 0.0,
+          "g2_m2": 0.0,
+          "g3_N": 0.0,
+          "g4_N": 0.0,
+          "iterations": 0.0,
+          "active_code": 0.0,
+          "status_code": 0.0,
+          "control_code": 0.0,
+          "outer_control_margin": 0.0,
+          "inner_control_margin": 0.0,
+          "cage_speed_relative_difference": 0.0,
+          "ellipse_ai_m": 0.0,
+          "ellipse_ao_m": 0.0,
+          "p0_i_Pa": 0.0,
+          "p0_o_Pa": 0.0,
+          "force_residual_scaled": 0.0,
+          "evaluations": 0.0
+        },
+        "bitwise_unchanged": true
+      },
+      "rear": {
+        "state_count": 2500,
+        "diagnostics_modes": [
+          true,
+          false
+        ],
+        "old_failures": [],
+        "recovered": [],
+        "changed_original_successes": [],
+        "max_absolute_change_by_field": {
+          "U_m": 0.0,
+          "V_m": 0.0,
+          "delta_i_m": 0.0,
+          "delta_o_m": 0.0,
+          "alpha_i_rad": 0.0,
+          "alpha_o_rad": 0.0,
+          "Qi_N": 0.0,
+          "Qo_N": 0.0,
+          "Fc_N": 0.0,
+          "Mg_N_m": 0.0,
+          "omega_E_rad_s": 0.0,
+          "omega_B_rad_s": 0.0,
+          "beta_rad": 0.0,
+          "Ki_N_m32": 0.0,
+          "Ko_N_m32": 0.0,
+          "g1_m2": 0.0,
+          "g2_m2": 0.0,
+          "g3_N": 0.0,
+          "g4_N": 0.0,
+          "iterations": 0.0,
+          "active_code": 0.0,
+          "status_code": 0.0,
+          "control_code": 0.0,
+          "outer_control_margin": 0.0,
+          "inner_control_margin": 0.0,
+          "cage_speed_relative_difference": 0.0,
+          "ellipse_ai_m": 0.0,
+          "ellipse_ao_m": 0.0,
+          "p0_i_Pa": 0.0,
+          "p0_o_Pa": 0.0,
+          "force_residual_scaled": 0.0,
+          "evaluations": 0.0
+        },
+        "bitwise_unchanged": true
+      }
+    },
+    "passed": true
+  },
+  "saved_boundary_samples": {
+    "sample_count": 300,
+    "original_failures": 87,
+    "new_failures": 87,
+    "recovered_samples": 0,
+    "original_successes_changed": 0,
+    "note": "Local sampling only. Deterministic reseeding does not alter the inconsistent F07/F10 limiting closures or claim general boundary continuity."
+  },
+  "passed": true,
+  "formal_existing_checks": {
+    "path": "experiments\\clearance_v9_tai_bearing\\validation\\solver_retry_local\\local_bearing_validation.json",
+    "status": "numerical_pass",
+    "summary": {
+      "checks_total": 281,
+      "passed": 281,
+      "conditional": 0,
+      "failed": 0,
+      "machine_validated": false,
+      "full_spindle_integrated": false,
+      "short_system_integration_status": "numerical_pass",
+      "system_checks": 10
+    }
+  },
+  "complete_assembled_rhs": {
+    "path": "experiments\\clearance_v9_tai_bearing\\validation\\solver_retry_assembled_rhs.json",
+    "passed": true,
+    "numba_cache_dir": "D:/WorkSpace/ZMProject/DataGeneration/experiments/clearance_v9_tai_bearing/validation/solver_retry_cache/__pycache__"
+  }
+}

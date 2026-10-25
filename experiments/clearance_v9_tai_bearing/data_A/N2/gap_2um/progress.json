@@ -1,0 +1,13 @@
+{
+  "history": [
+    {
+      "warmup_s": 3.5,
+      "start_s": 3.505214763715502,
+      "end_s": 4.5337861922869305,
+      "signal_steady_pass": true,
+      "bearing_steady_pass": true,
+      "steady_pass": true
+    }
+  ],
+  "wall_seconds": 625.6303432999994
+}

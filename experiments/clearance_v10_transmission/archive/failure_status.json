@@ -1,0 +1,36 @@
+{
+  "archive_date": "2026-10-25",
+  "experiment": "V9 GMN quasi-static dual-contact bearing model",
+  "overall_status": "completed_with_partial_acceptance",
+  "implementation": "implemented; selected main runs passed their stated numerical checks",
+  "contact_loss_boundary": {
+    "acceptance_item": "T06 finite-speed contact-loss transition continuity",
+    "status": "failed",
+    "zero_speed_groups": 4,
+    "zero_speed_groups_passed": 4,
+    "finite_speed_groups": 12,
+    "finite_speed_groups_failed": 12,
+    "local_root_failure_samples": 87,
+    "local_root_failure_samples_are_full_system_runs": false,
+    "main_retained_480_turn_windows_remained_double_contact": true,
+    "evidence": [
+      "experiments/clearance_v9_tai_bearing/reports/contact_loss_boundary.md",
+      "experiments/clearance_v9_tai_bearing/validation/contact_boundary.json",
+      "experiments/clearance_v9_tai_bearing/validation/contact_boundary.csv"
+    ]
+  },
+  "runout_coverage": {
+    "status": "upper_target_not_met",
+    "max_certified_mean_E_dir_um": 12.10094867,
+    "max_gap_um": 10.0,
+    "target_upper_um": 20.0,
+    "shortfall_um": 7.89905133,
+    "continuous_coverage_proven": false
+  },
+  "real_machine_quantitative_validation": "not_validated",
+  "evidence": [
+    "experiments/clearance_v9_tai_bearing/report.md",
+    "experiments/clearance_v9_tai_bearing/acceptance.json",
+    "experiments/clearance_v9_tai_bearing/manifest_crc32.json"
+  ]
+}

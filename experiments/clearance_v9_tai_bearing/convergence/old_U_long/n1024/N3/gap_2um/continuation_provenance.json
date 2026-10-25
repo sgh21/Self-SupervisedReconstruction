@@ -1,0 +1,9 @@
+{
+  "source": "experiments\\clearance_v9_tai_bearing\\convergence\\old_U\\n1024\\N3\\gap_2um",
+  "original_export_start_s": 3.505214763715502,
+  "original_export_end_s": 4.5337861922869305,
+  "inherited_nfev": 6440252,
+  "inherited_wall_seconds": 961.3987296000123,
+  "physical_and_numerical_parameters_identical": true,
+  "operation": "Extend the original cold-start trajectory from its exact saved final state."
+}

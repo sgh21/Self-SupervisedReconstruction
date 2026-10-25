@@ -1,0 +1,70 @@
+{
+  "F1": {
+    "delta_min_m": 1.2864529847402606e-06,
+    "delta_max_m": 2.0931260090601327e-06,
+    "Q_min_N": 12.831228824558162,
+    "Q_max_N": 26.63398325994981,
+    "delta_over_diameter_max": 0.00023973496839538804,
+    "delta_over_overlap_max": 1.238690388891533,
+    "mean_reaction_N": [
+      0.002113389916868627,
+      -23.032112156679837
+    ],
+    "peak_reaction_N": 60.03213109215809,
+    "eta_tilt_max": 0.11448950946032087,
+    "eta_tilt_above_half": false,
+    "maximum_actual_tilt_compression_over_overlap": 0.11448944587240305,
+    "outer_tilt_constraint": "fixed; not removed on radial fit opening"
+  },
+  "F2": {
+    "delta_min_m": 1.6749155129089515e-06,
+    "delta_max_m": 1.7046634808914419e-06,
+    "Q_min_N": 19.062959351484757,
+    "Q_max_N": 19.575187450845235,
+    "delta_over_diameter_max": 0.0001952426389750821,
+    "delta_over_overlap_max": 1.008802270352923,
+    "mean_reaction_N": [
+      0.01793292025209035,
+      0.8108235670305485
+    ],
+    "peak_reaction_N": 2.2265009922513253,
+    "eta_tilt_max": 0.11448950946032087,
+    "eta_tilt_above_half": false,
+    "maximum_actual_tilt_compression_over_overlap": 0.11448944587240305,
+    "outer_tilt_constraint": "fixed; not removed on radial fit opening"
+  },
+  "R1": {
+    "delta_min_m": 1.3834401726334909e-06,
+    "delta_max_m": 1.8517123684403904e-06,
+    "Q_min_N": 13.369810441607033,
+    "Q_max_N": 20.703557030030872,
+    "delta_over_diameter_max": 0.00023327190330566772,
+    "delta_over_overlap_max": 1.1447450127502985,
+    "mean_reaction_N": [
+      0.143459018830151,
+      19.882252405425966
+    ],
+    "peak_reaction_N": 28.34187893145302,
+    "eta_tilt_max": 0.09667719068937361,
+    "eta_tilt_above_half": false,
+    "maximum_actual_tilt_compression_over_overlap": 0.09667711743242212,
+    "outer_tilt_constraint": "fixed; not removed on radial fit opening"
+  },
+  "R2": {
+    "delta_min_m": 1.1829716112794217e-06,
+    "delta_max_m": 2.052180929794459e-06,
+    "Q_min_N": 10.571732361260258,
+    "Q_max_N": 24.15506147790922,
+    "delta_over_diameter_max": 0.00025852619422958665,
+    "delta_over_overlap_max": 1.2686764557403252,
+    "mean_reaction_N": [
+      -0.1634932378091057,
+      -42.81079146529662
+    ],
+    "peak_reaction_N": 52.52277128608216,
+    "eta_tilt_max": 0.09667719068937361,
+    "eta_tilt_above_half": false,
+    "maximum_actual_tilt_compression_over_overlap": 0.09667711743242212,
+    "outer_tilt_constraint": "fixed; not removed on radial fit opening"
+  }
+}

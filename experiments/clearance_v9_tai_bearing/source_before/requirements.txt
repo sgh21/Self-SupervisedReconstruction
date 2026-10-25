@@ -1,0 +1,6 @@
+numpy
+scipy
+h5py
+matplotlib
+numba>=0.68
+

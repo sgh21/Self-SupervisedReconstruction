@@ -6,6 +6,9 @@
 
 | 文件或目录 | 作用 |
 |---|---|
+| `src/spindle/tai_bearing.py`、`tai_system.py` | V9准静态双接触局部求根、两侧套圈力/矩和12自由度装配 |
+| `scripts/run_clearance_v9.py` | V9同激励机制对照、冻结U扫描及独立数值加密；保存真实失败状态 |
+| `config/clearance_v9_config.json` | V9条件参数与旧U起始配置；实际验收另见V9试验目录 |
 | `src/spindle/dynamics_model.py` | 6/7/8/10/12自由度分支；V8四轴承倾角接触力与局部矩、平衡点和时域积分 |
 | `scripts/run_clearance_v8.py` | V8旧U机制对照、布局对照与冻结U扫描；实际认证另用`certify_clearance_v8` |
 | `config/clearance_v8_config.json` | GMN 12自由度V8起始配置；正式冻结配置保存在V8试验目录 |
@@ -28,6 +31,18 @@
 | `docs/references/` | 文献原文、阅读笔记与核对证据 |
 
 ## 安装与运行
+
+V9 保留12自由度和前后背靠背安装，分别求内外圈接触角、载荷、球离心力和陀螺力矩。壳体仍只有平动，轴向和外圈倾角约束反力单独保存。滚道曲率、固定位置预紧和结构阻尼是明确的条件假设；运行完成不等于数值验收或实机验证。V9证据保存在 `experiments/clearance_v9_tai_bearing/`，不会覆盖V8。
+
+当前有限转速下的内圈失接触切换连续性未通过，原因是受载与脱离分支采用的球公转速度闭合不相容。已验收的整机结果限于始终保持内外双接触的条件域；失败状态和局部边界证据分别保留，不能把数值求根成功当作完整物理验证。
+
+```powershell
+$env:PYTHONPATH="$PWD/src"
+python -B -m scripts.run_clearance_v9 --config config/clearance_v9_config.json --output experiments/clearance_v9_replay --group data_A --variant N3 --gaps 2 5 10 --turns 480 --warmup 3.5 --workers 2
+python -B -m utils.clearance_v9_analysis --root experiments/clearance_v9_replay --group data_A --replay
+```
+
+上述命令固定旧U，不能替代健康标定、全部间隙扫描和独立加密。加密分别使用 `--step-factor 0.5`、`--root-factor 0.1` 或 `--N 1024`，每次写入新的 `--group`。采样加密由同一积分的65536/131072 Hz输出对照完成。原生数据、报告和文献受 `.gitignore` 排除，独立复核需另取数据包。
 
 V8 在原12自由度上加入四只轴承的相对倾角接触，同一逐球接触关系同时输出径向力和局部力矩；外圈转动、轴向约束反力独立保存。入口为 `scripts.run_clearance_v8`，实际配置和证据在 `experiments/clearance_v8_tilt_contact/`。名义前后DB配对属于假设，另保留DF敏感性结果。模型边界见[参数合同](docs/reports/clearance_v8_parameter_contract.md)。
 

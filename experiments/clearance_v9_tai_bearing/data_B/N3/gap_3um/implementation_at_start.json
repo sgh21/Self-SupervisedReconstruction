@@ -1,0 +1,31 @@
+{
+  "algorithm": "CRC32",
+  "files": [
+    {
+      "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\scripts\\run_clearance_v9.py",
+      "bytes": 22243,
+      "crc32": "d59c77f5"
+    },
+    {
+      "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\src\\spindle\\dynamics_model.py",
+      "bytes": 65342,
+      "crc32": "87d62963"
+    },
+    {
+      "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\utils\\clearance_v9_analysis.py",
+      "bytes": 38007,
+      "crc32": "56498ea4"
+    },
+    {
+      "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\src\\spindle\\tai_bearing.py",
+      "bytes": 32664,
+      "crc32": "d1e84d20"
+    },
+    {
+      "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\src\\spindle\\tai_system.py",
+      "bytes": 14059,
+      "crc32": "d74c8587"
+    }
+  ],
+  "note": "Source identities recorded at case start; no SHA256. Earlier campaign cases use source_at_A and the recorded later numerical-solver patch."
+}

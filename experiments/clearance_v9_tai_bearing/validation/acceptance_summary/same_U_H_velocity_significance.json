@@ -1,0 +1,916 @@
+{
+  "schema": "spindle_v9_same_U_H_velocity_significance_v1",
+  "epsilon_floor_mm_s": 0.0001,
+  "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+  "epsilon_floor_interpretation": "Engineering error floor only; not a statistical confidence interval or measured detectability.",
+  "metrics": [
+    "H_v_rms_x_mm_s",
+    "H_v_rms_y_mm_s",
+    "H_v_1x_x_mm_s",
+    "H_v_1x_y_mm_s",
+    "H_v_residual_x_mm_s",
+    "H_v_residual_y_mm_s"
+  ],
+  "comparisons": [
+    {
+      "gap_um": 10.0,
+      "metric": "H_v_rms_x_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.10",
+      "new_case": "A.N3.10",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.9515985069516977,
+      "new_value_mm_s": 0.9522901980934213,
+      "absolute_difference_mm_s": 0.0006916911417236271,
+      "relative_change_percent": 0.07268728740856849,
+      "epsilon_old_mm_s": 3.0764925782467145e-06,
+      "epsilon_new_mm_s": 2.618162786460765e-06,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 2.616947176958817e-06,
+        "h_half": 6.83009577562288e-07,
+        "n1024": 3.0764925782467145e-06
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 2.618162786460765e-06,
+        "h_half": 3.446825136421694e-08,
+        "root_tenth": 6.844005029371658e-09,
+        "n1024": 1.4630042731722526e-06
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 6.544239529774651,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 10.0,
+      "metric": "H_v_rms_y_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.10",
+      "new_case": "A.N3.10",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.5609809554607462,
+      "new_value_mm_s": 0.5618297414556579,
+      "absolute_difference_mm_s": 0.0008487859949116716,
+      "relative_change_percent": 0.15130388770765751,
+      "epsilon_old_mm_s": 1.6455200947396165e-06,
+      "epsilon_new_mm_s": 1.6495102852509547e-06,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 1.6455200947396165e-06,
+        "h_half": 7.206984098395708e-08,
+        "n1024": 1.1709135294690753e-07
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 1.6495102852509547e-06,
+        "h_half": 2.3049676167730127e-08,
+        "root_tenth": 1.4304055717673236e-09,
+        "n1024": 7.296392146027841e-08
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 8.217103879918033,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 10.0,
+      "metric": "H_v_1x_x_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.10",
+      "new_case": "A.N3.10",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 1.3398095280174522,
+      "new_value_mm_s": 1.3408694454075254,
+      "absolute_difference_mm_s": 0.0010599173900731618,
+      "relative_change_percent": 0.07910955758327429,
+      "epsilon_old_mm_s": 4.4968550885204905e-06,
+      "epsilon_new_mm_s": 3.613071838604043e-06,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 3.6102950038419124e-06,
+        "h_half": 9.188186738118276e-07,
+        "n1024": 4.4968550885204905e-06
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 3.613071838604043e-06,
+        "h_half": 6.168955613006233e-08,
+        "root_tenth": 1.009052996714388e-08,
+        "n1024": 2.1390847235736032e-06
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 9.804070913743546,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 10.0,
+      "metric": "H_v_1x_y_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.10",
+      "new_case": "A.N3.10",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.7805567120896817,
+      "new_value_mm_s": 0.7815830855834609,
+      "absolute_difference_mm_s": 0.001026373493779209,
+      "relative_change_percent": 0.13149249476459365,
+      "epsilon_old_mm_s": 2.1032143382448965e-06,
+      "epsilon_new_mm_s": 2.1060660856386804e-06,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 2.1032143382448965e-06,
+        "h_half": 2.265397425205151e-09,
+        "n1024": 1.4163016137658246e-07
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 2.1060660856386804e-06,
+        "h_half": 2.8645670391291844e-08,
+        "root_tenth": 1.4149665883422813e-09,
+        "n1024": 3.061355502431695e-08
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 9.84915632853728,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 10.0,
+      "metric": "H_v_residual_x_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.10",
+      "new_case": "A.N3.10",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.08938032771809955,
+      "new_value_mm_s": 0.08879818211507125,
+      "absolute_difference_mm_s": 0.0005821456030283001,
+      "relative_change_percent": -0.6513128983643405,
+      "epsilon_old_mm_s": 9.498560357146246e-07,
+      "epsilon_new_mm_s": 7.98500935997315e-07,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 8.023313275290489e-07,
+        "h_half": 3.851566172385912e-07,
+        "n1024": 9.498560357146246e-07
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 7.98500935997315e-07,
+        "h_half": 9.612508981848844e-08,
+        "root_tenth": 2.7885561360019295e-09,
+        "n1024": 4.608365290065253e-07
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 5.721425095740348,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 10.0,
+      "metric": "H_v_residual_y_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.10",
+      "new_case": "A.N3.10",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.10033597674044102,
+      "new_value_mm_s": 0.10108738280613293,
+      "absolute_difference_mm_s": 0.0007514060656919064,
+      "relative_change_percent": 0.748889969582613,
+      "epsilon_old_mm_s": 1.2055637675228992e-06,
+      "epsilon_new_mm_s": 1.026007355603431e-06,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 1.0192923810131704e-06,
+        "h_half": 4.117575446577204e-07,
+        "n1024": 1.2055637675228992e-06
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 1.026007355603431e-06,
+        "h_half": 1.7366864960011164e-08,
+        "root_tenth": 2.4799047676493657e-09,
+        "n1024": 5.238727568412926e-07
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 7.350039302310272,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 2.0,
+      "metric": "H_v_rms_x_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.2",
+      "new_case": "A.N3.2",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.6252856247888988,
+      "new_value_mm_s": 0.6256934558184026,
+      "absolute_difference_mm_s": 0.00040783102950381345,
+      "relative_change_percent": 0.06522315775954393,
+      "epsilon_old_mm_s": 1.7226155201166549e-06,
+      "epsilon_new_mm_s": 1.7201725949211877e-06,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 1.7226155201166549e-06,
+        "h_half": 6.7252299285058825e-09,
+        "n1024": 7.501769805351444e-08
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 1.7201725949211877e-06,
+        "h_half": 3.807595683191778e-09,
+        "root_tenth": 1.828537321557633e-12,
+        "n1024": 9.222597019409307e-08
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 3.942575765168549,
+      "significance_threshold": 5,
+      "status": "within_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 2.0,
+      "metric": "H_v_rms_y_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.2",
+      "new_case": "A.N3.2",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.5710057115796799,
+      "new_value_mm_s": 0.5715762980714644,
+      "absolute_difference_mm_s": 0.0005705864917844305,
+      "relative_change_percent": 0.09992658220631635,
+      "epsilon_old_mm_s": 1.5453400165066355e-06,
+      "epsilon_new_mm_s": 1.546529475704439e-06,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 1.5453400165066355e-06,
+        "h_half": 9.481301077585158e-09,
+        "n1024": 5.0920735628068314e-08
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 1.546529475704439e-06,
+        "h_half": 1.5026654920369253e-08,
+        "root_tenth": 1.0543887984937328e-10,
+        "n1024": 4.596558700331599e-08
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 5.5347380408844,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 2.0,
+      "metric": "H_v_1x_x_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.2",
+      "new_case": "A.N3.2",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.8815832418678706,
+      "new_value_mm_s": 0.8823570009900149,
+      "absolute_difference_mm_s": 0.0007737591221442797,
+      "relative_change_percent": 0.08776926391033289,
+      "epsilon_old_mm_s": 2.375501096829602e-06,
+      "epsilon_new_mm_s": 2.3775661537328574e-06,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 2.375501096829602e-06,
+        "h_half": 1.6386870305140633e-08,
+        "n1024": 2.964431189411698e-08
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 2.3775661537328574e-06,
+        "h_half": 2.96565306756591e-08,
+        "root_tenth": 4.018452237630754e-12,
+        "n1024": 8.008345309118425e-08
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 7.3865056408658525,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 2.0,
+      "metric": "H_v_1x_y_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.2",
+      "new_case": "A.N3.2",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.8060199214644519,
+      "new_value_mm_s": 0.8067317490027914,
+      "absolute_difference_mm_s": 0.0007118275383395378,
+      "relative_change_percent": 0.08831388894783437,
+      "epsilon_old_mm_s": 2.171892383828755e-06,
+      "epsilon_new_mm_s": 2.1737910073094113e-06,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 2.171892383828755e-06,
+        "h_half": 1.9901869485750012e-08,
+        "n1024": 5.7107644835241445e-08
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 2.1737910073094113e-06,
+        "h_half": 4.838107259264035e-08,
+        "root_tenth": 1.4850021212708953e-10,
+        "n1024": 1.6561344406973433e-08
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 6.821820656167092,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 2.0,
+      "metric": "H_v_residual_x_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.2",
+      "new_case": "A.N3.2",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.048836286316435204,
+      "new_value_mm_s": 0.04703970386901808,
+      "absolute_difference_mm_s": 0.0017965824474171221,
+      "relative_change_percent": -3.6787859661894604,
+      "epsilon_old_mm_s": 6.929291537921545e-07,
+      "epsilon_new_mm_s": 5.816890295759491e-07,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 6.146772711032589e-07,
+        "h_half": 2.3401681916584982e-07,
+        "n1024": 6.929291537921545e-07
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 5.816890295759491e-07,
+        "h_half": 2.2750177579300424e-07,
+        "root_tenth": 1.3341210081119215e-11,
+        "n1024": 4.7563321813742787e-07
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 17.73971089344642,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 2.0,
+      "metric": "H_v_residual_y_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.2",
+      "new_case": "A.N3.2",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.03486629580942553,
+      "new_value_mm_s": 0.03596670589609305,
+      "absolute_difference_mm_s": 0.0011004100866675165,
+      "relative_change_percent": 3.1560854433238608,
+      "epsilon_old_mm_s": 3.8531562045196477e-07,
+      "epsilon_new_mm_s": 7.813978592646764e-07,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 2.0391078859455236e-07,
+        "h_half": 3.8531562045196477e-07,
+        "n1024": 1.7384433808470545e-07
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 1.9830553401462003e-07,
+        "h_half": 7.813978592646764e-07,
+        "root_tenth": 1.0254387616814853e-11,
+        "n1024": 5.447454489299064e-07
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 10.877195164476134,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 5.0,
+      "metric": "H_v_rms_x_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.5",
+      "new_case": "A.N3.5",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.7138226288290235,
+      "new_value_mm_s": 0.7140407256355517,
+      "absolute_difference_mm_s": 0.00021809680652817853,
+      "relative_change_percent": 0.030553361258097298,
+      "epsilon_old_mm_s": 2.3054308947445534e-06,
+      "epsilon_new_mm_s": 2.290452392306186e-06,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 2.3054308947445534e-06,
+        "h_half": 1.4136924242347249e-07,
+        "n1024": 1.25917976712131e-07
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 2.290452392306186e-06,
+        "h_half": 7.351289910140224e-09,
+        "root_tenth": 2.9495420550418316e-09,
+        "n1024": 1.2068183086189066e-07
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 2.0851375759181483,
+      "significance_threshold": 5,
+      "status": "within_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 5.0,
+      "metric": "H_v_rms_y_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.5",
+      "new_case": "A.N3.5",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.5535290241055837,
+      "new_value_mm_s": 0.5543126438344644,
+      "absolute_difference_mm_s": 0.0007836197288807467,
+      "relative_change_percent": 0.14156795664815475,
+      "epsilon_old_mm_s": 1.8083528382506486e-06,
+      "epsilon_new_mm_s": 1.804373679581417e-06,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 1.8083528382506486e-06,
+        "h_half": 4.878081660830702e-08,
+        "n1024": 4.523607088913195e-08
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 1.804373679581417e-06,
+        "h_half": 7.833549586777622e-09,
+        "root_tenth": 1.3862472281189753e-09,
+        "n1024": 1.463224612585634e-07
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 7.562967940486378,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 5.0,
+      "metric": "H_v_1x_x_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.5",
+      "new_case": "A.N3.5",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.9636932858968341,
+      "new_value_mm_s": 0.9659121161318234,
+      "absolute_difference_mm_s": 0.0022188302349892552,
+      "relative_change_percent": 0.23024236730303285,
+      "epsilon_old_mm_s": 2.5968473577053786e-06,
+      "epsilon_new_mm_s": 2.602663233708391e-06,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 2.5968473577053786e-06,
+        "h_half": 1.3205662419135678e-07,
+        "n1024": 1.265890836599226e-09
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 2.602663233708391e-06,
+        "h_half": 6.291585608053651e-08,
+        "root_tenth": 4.211090587347144e-09,
+        "n1024": 2.565885245386923e-07
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 21.091640279649294,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 5.0,
+      "metric": "H_v_1x_y_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.5",
+      "new_case": "A.N3.5",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.7617806628779626,
+      "new_value_mm_s": 0.7632699305021452,
+      "absolute_difference_mm_s": 0.0014892676241825553,
+      "relative_change_percent": 0.1954982184184342,
+      "epsilon_old_mm_s": 2.0527718771479186e-06,
+      "epsilon_new_mm_s": 2.056543675355016e-06,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 2.0527718771479186e-06,
+        "h_half": 1.903213774356871e-07,
+        "n1024": 6.35642259938507e-08
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 2.056543675355016e-06,
+        "h_half": 1.137450857946476e-07,
+        "root_tenth": 1.2096541546213757e-09,
+        "n1024": 9.10168662660027e-08
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 14.304845020631308,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 5.0,
+      "metric": "H_v_residual_x_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.5",
+      "new_case": "A.N3.5",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.21257288968816293,
+      "new_value_mm_s": 0.20822559357730727,
+      "absolute_difference_mm_s": 0.0043472961108556585,
+      "relative_change_percent": -2.045084919922287,
+      "epsilon_old_mm_s": 1.8552570779928335e-06,
+      "epsilon_new_mm_s": 1.8177164951838076e-06,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 1.8552570779928335e-06,
+        "h_half": 1.7538321087084974e-07,
+        "n1024": 4.2570496613936193e-07
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 1.8177164951838076e-06,
+        "h_half": 1.7113866856988125e-07,
+        "root_tenth": 3.4724154107657057e-10,
+        "n1024": 1.008968786242459e-06
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 41.932781138829384,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    },
+    {
+      "gap_um": 5.0,
+      "metric": "H_v_residual_y_mm_s",
+      "unit": "mm/s",
+      "old_case": "A.B0.5",
+      "new_case": "A.N3.5",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "old_value_mm_s": 0.12744195136766187,
+      "new_value_mm_s": 0.12638821589659321,
+      "absolute_difference_mm_s": 0.0010537354710686564,
+      "relative_change_percent": -0.8268356375277848,
+      "epsilon_old_mm_s": 1.7192078778649478e-06,
+      "epsilon_new_mm_s": 1.7038185838869069e-06,
+      "epsilon_old_complete": true,
+      "epsilon_new_complete": true,
+      "epsilon_old_components_mm_s": {
+        "output_sampling": 1.7192078778649478e-06,
+        "h_half": 3.56941031232072e-07,
+        "n1024": 3.8645294306305367e-07
+      },
+      "epsilon_new_components_mm_s": {
+        "output_sampling": 1.7038185838869069e-06,
+        "h_half": 3.0909836878922903e-07,
+        "root_tenth": 2.4272416854209666e-09,
+        "n1024": 9.165642176345301e-07
+      },
+      "epsilon_old_required_components": [
+        "output_sampling",
+        "h_half",
+        "n1024"
+      ],
+      "epsilon_new_required_components": [
+        "output_sampling",
+        "h_half",
+        "root_tenth",
+        "n1024"
+      ],
+      "error_budgets_complete": true,
+      "epsilon_floor_mm_s": 0.0001,
+      "epsilon_floor_source": "Inherited V8 engineering floor: config/clearance_v8_config.json numerical_thresholds.velocity_mm_s=1e-4 mm/s; utils/clearance_v6_analysis.py error_budget uses clearance_v5_analysis.absolute_floor for non-position metrics.",
+      "epsilon_num_definition": "epsilon_num is the maximum measured independent same-window difference across output sampling and the applicable h/N/root refinements; it excludes the floor and all acceptance tolerances.",
+      "epsilon_floor_interpretation": "Fixed engineering error floor inherited from V8; it is not a statistical confidence interval or measured detectability.",
+      "significance_definition": "S_y=|y_N3-y_B0|/(epsilon_num_B0+epsilon_num_N3+0.0001 mm/s), reported only for matching-U cases with complete same-window independent budgets.",
+      "S_y": 10.188596361162872,
+      "significance_threshold": 5,
+      "status": "exceeds_numeric_error",
+      "convergence_budgets_passed": true
+    }
+  ]
+}

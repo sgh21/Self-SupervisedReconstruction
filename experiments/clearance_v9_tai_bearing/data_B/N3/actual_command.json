@@ -1,0 +1,25 @@
+{
+  "executable": "D:\\Softwares\\miniconda3\\envs\\ZMSoftware\\python.exe",
+  "argv": [
+    "D:\\WorkSpace\\ZMProject\\DataGeneration\\scripts\\run_clearance_v9.py",
+    "--config",
+    "config/clearance_v9_calibrated.json",
+    "--output",
+    "experiments/clearance_v9_tai_bearing",
+    "--group",
+    "data_B",
+    "--variant",
+    "N3",
+    "--gaps",
+    "3",
+    "7.5",
+    "--turns",
+    "480",
+    "--warmup",
+    "3.5",
+    "--workers",
+    "2"
+  ],
+  "working_directory": "D:\\WorkSpace\\ZMProject\\DataGeneration",
+  "started_utc": "2026-10-25T11:16:01.380664+00:00"
+}

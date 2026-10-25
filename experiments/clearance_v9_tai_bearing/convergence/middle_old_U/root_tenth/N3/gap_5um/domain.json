@@ -1,0 +1,120 @@
+{
+  "passed": true,
+  "checks": {
+    "finite_state": true,
+    "small_angle": true,
+    "local_root_residuals": true
+  },
+  "values": {
+    "maximum_tilt_rad": 2.5138425478690212e-05,
+    "maximum_tilt_limit_rad": 0.001,
+    "max_local_force_residual_N": 1.0000045236324695e-09,
+    "max_local_force_residual_tolerance_ratio": 0.0007398917009251586,
+    "max_local_geometry_residual_normalized": 5.4255325680080817e-17,
+    "max_relative_phase_speed_difference": 0.0024990330335817484,
+    "phase_speed_warning_fraction": 0.02
+  },
+  "local_contact_checks": {
+    "bearing_R1_max_force_residual_tolerance_ratio": {
+      "value": 7.359723997802863e-06,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    "bearing_R2_max_force_residual_tolerance_ratio": {
+      "value": 0.0007398917009251586,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    "bearing_R1_max_geometry_residual_normalized": {
+      "value": 3.281845761223184e-17,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    "bearing_R1_status_failed_count": {
+      "value": 0.0,
+      "tolerance": 0.0,
+      "passed": true
+    },
+    "bearing_F2_max_force_residual_tolerance_ratio": {
+      "value": 7.497933192008304e-05,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    "bearing_F1_status_failed_count": {
+      "value": 0.0,
+      "tolerance": 0.0,
+      "passed": true
+    },
+    "bearing_F1_max_geometry_residual_normalized": {
+      "value": 5.4255325680080817e-17,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    "bearing_F1_max_force_residual_tolerance_ratio": {
+      "value": 0.00046295908628917533,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    "bearing_R2_status_failed_count": {
+      "value": 0.0,
+      "tolerance": 0.0,
+      "passed": true
+    },
+    "bearing_R2_max_geometry_residual_normalized": {
+      "value": 3.281845761223184e-17,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    "bearing_F2_max_geometry_residual_normalized": {
+      "value": 5.4255325680080817e-17,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    "bearing_F2_status_failed_count": {
+      "value": 0.0,
+      "tolerance": 0.0,
+      "passed": true
+    }
+  },
+  "ring_control_checks": {
+    "bearing_F2_outer_control_self_consistent_fraction": {
+      "value": 1.0,
+      "passed": true
+    },
+    "bearing_R2_outer_control_self_consistent_fraction": {
+      "value": 1.0,
+      "passed": true
+    },
+    "bearing_R1_outer_control_self_consistent_fraction": {
+      "value": 1.0,
+      "passed": true
+    },
+    "bearing_F1_outer_control_self_consistent_fraction": {
+      "value": 1.0,
+      "passed": true
+    }
+  },
+  "phase_speed_warnings": {
+    "bearing_F2_max_phase_speed_relative_difference": {
+      "value": 0.0018724247170345111,
+      "warning": false
+    },
+    "bearing_R1_max_phase_speed_relative_difference": {
+      "value": 0.0016981350511898665,
+      "warning": false
+    },
+    "bearing_F1_max_phase_speed_relative_difference": {
+      "value": 0.0024990330335817484,
+      "warning": false
+    },
+    "bearing_R2_max_phase_speed_relative_difference": {
+      "value": 0.002079103507618277,
+      "warning": false
+    }
+  },
+  "physical_closure_status": "within_declared_screens",
+  "branch_comparison_required": false,
+  "phase_speed_warning_exceeded": false,
+  "contact_pressure_strength": "not_validated_missing_running_groove_curvature_limit",
+  "scope": "Conditional Tai local-contact and fixed-ring screen; no unsupported Hertz pressure cutoff."
+}

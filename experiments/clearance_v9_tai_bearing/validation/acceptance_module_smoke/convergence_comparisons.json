@@ -1,0 +1,99 @@
+{
+  "schema": "spindle_v9_convergence_comparisons_v2",
+  "comparisons": [
+    {
+      "target_case": "A.N3.2",
+      "target_path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\data_A_long\\N3\\gap_2um",
+      "gap_um": 2.0,
+      "refinements": {
+        "h_half": {
+          "status": "pending",
+          "reason": "independent comparison requires matching 480-turn final windows",
+          "base_turns": 480,
+          "fine_turns": 120,
+          "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\convergence\\old_U\\h_half\\N3\\gap_2um",
+          "failure": null,
+          "comparison_tolerance_profile": "V9"
+        },
+        "root_tenth": {
+          "status": "pending",
+          "reason": "independent comparison requires matching 480-turn final windows",
+          "base_turns": 480,
+          "fine_turns": 120,
+          "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\convergence\\old_U\\root_tenth\\N3\\gap_2um",
+          "failure": null,
+          "comparison_tolerance_profile": "V9"
+        },
+        "n1024": {
+          "status": "pending",
+          "reason": "independent comparison requires matching 480-turn final windows",
+          "base_turns": 480,
+          "fine_turns": 120,
+          "path": "D:\\WorkSpace\\ZMProject\\DataGeneration\\experiments\\clearance_v9_tai_bearing\\convergence\\old_U\\n1024\\N3\\gap_2um",
+          "failure": null,
+          "comparison_tolerance_profile": "V9"
+        }
+      },
+      "expected_variant": null,
+      "output_sampling": {
+        "status": "available",
+        "E_dir_difference_um": 7.567242207717761e-05,
+        "same_window": true,
+        "passed": true,
+        "base_fs_hz": 65536,
+        "fine_fs_hz": null
+      },
+      "epsilon_E": {
+        "definition": "Maximum absolute independent E_dir difference across output-sampling and the listed refinement kinds; engineering error estimate, not a confidence interval.",
+        "components_um": {
+          "output_sampling": 7.567242207717761e-05,
+          "h_half": null,
+          "root_tenth": null,
+          "n1024": null
+        },
+        "available_components_um": {
+          "output_sampling": 7.567242207717761e-05
+        },
+        "epsilon_num_um": 7.567242207717761e-05,
+        "comparison_tolerance_profile": "V9",
+        "convergence_tolerance_absolute_um": 0.01,
+        "convergence_tolerance_relative_fraction": 0.01,
+        "convergence_tolerance_definition": "V9 E_dir comparison pass threshold max(0.01 um, 1% of reference); this is separate from epsilon_num and the S_E denominator floor.",
+        "required_components": [
+          "output_sampling",
+          "h_half",
+          "root_tenth",
+          "n1024"
+        ],
+        "complete": false,
+        "convergence_comparisons_passed": false
+      }
+    }
+  ],
+  "old_refinements": [],
+  "old_new_significance": [
+    {
+      "gap_um": 2.0,
+      "old_case": "A.B0.2",
+      "new_case": "A.N3.2",
+      "same_U": true,
+      "old_U_kg_m": 2.689135290615865e-05,
+      "new_U_kg_m": 2.689135290615865e-05,
+      "E_old_um": 2.0035504453207373,
+      "E_new_um": 1.990036472849796,
+      "absolute_difference_um": 0.013513972470941438,
+      "relative_change_percent": -0.6745012336726096,
+      "epsilon_old_um": null,
+      "epsilon_new_um": 7.567242207717761e-05,
+      "epsilon_floor_um": 0.0001,
+      "epsilon_floor_source": "Inherited predeclared V8 precision floor: config/clearance_v8_config.json health_result.epsilon_E_um=0.0001 um; same value is retained in GPTOrder/spindle_v9_tai_bearing_plan/baseline_snapshot/parameters_v8_calibrated.json. This is not the V9 E_dir convergence acceptance tolerance.",
+      "epsilon_num_definition": "Each epsilon_num is only the maximum measured independent E_dir difference for that case; no acceptance threshold is inserted into epsilon_num.",
+      "epsilon_definition": "S_E=|E_new-E_old|/(epsilon_num_old+epsilon_num_new+0.0001 um). The fixed 0.0001 um floor is predeclared from the inherited V8 precision baseline.",
+      "error_budgets_complete": false,
+      "S_E": null,
+      "S_E_conservative_floor_0p01um": null,
+      "conservative_floor_um": 0.01,
+      "status": "pending_error_budget"
+    }
+  ]
+}

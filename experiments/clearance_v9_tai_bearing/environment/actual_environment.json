@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-25T11:50:30.807893+00:00",
+  "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:16:45) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "D:\\Softwares\\miniconda3\\envs\\ZMSoftware\\python.exe",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "numba": "0.68.0",
+  "git_base_commit": "8b4cc4bb7edcd0c495f42958d9a711d322cf5de9",
+  "git_status": " M README.md\n M src/spindle/dynamics_model.py\n M src/spindle/fast_rhs.py\n?? config/clearance_v9_calibrated.json\n?? config/clearance_v9_config.json\n?? scripts/run_clearance_v9.py\n?? src/spindle/tai_bearing.py\n?? src/spindle/tai_system.py\n?? utils/clearance_v9_acceptance.py\n?? utils/clearance_v9_analysis.py\n?? utils/clearance_v9_contact_boundary.py\n?? utils/clearance_v9_delivery.py\n?? utils/clearance_v9_figures.py\n?? utils/clearance_v9_parameters.py\n?? utils/clearance_v9_performance.py\n?? utils/clearance_v9_solver_retry_validation.py\n?? utils/clearance_v9_validation.py\n"
+}

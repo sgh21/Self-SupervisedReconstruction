@@ -117,6 +117,10 @@ def rear_bearing_parameters(p):
 
 def rear_bearing_forces(t, q, v, p):
     """R1/R2 forces transmitted to H, shape (..., 2 supports, 2 directions)."""
+    if p.get('bearing_contact_model') == 'quasistatic_tai_v9' or p.get('damping_policy') == 'common_structural_ring':
+        from .tai_system import bearing_wrenches as separate_wrenches
+        wr = separate_wrenches(t, q, v, p)
+        return np.stack([-wr[name]['outer_restoring_6'][..., :2] for name in ('R1','R2')], axis=-2)
     if p.get('bearing_contact_model') == 'relative_tilt_v8':
         values = [bearing_wrench_at(t, q, v, p, name)['force_N'] for name in ('R1', 'R2')]
         return np.stack(values, axis=-2)
@@ -141,8 +145,8 @@ def bearing_contact_model(p):
     model = p.get('bearing_contact_model')
     if model is None:
         return 'radial_only_v6' if is_front_group(p) and p.get('nonlinear_bearings_v6', False) else None
-    if model not in ('radial_only_v6', 'relative_tilt_v8'):
-        raise ValueError('bearing_contact_model must be radial_only_v6 or relative_tilt_v8')
+    if model not in ('radial_only_v6', 'relative_tilt_v8', 'quasistatic_tai_v9'):
+        raise ValueError('Unknown explicit bearing contact model')
     if not is_front_group(p) or not p.get('nonlinear_bearings_v6', False):
         raise ValueError('Explicit bearing contact models require the nonlinear 12-DOF bearing branch')
     return model
@@ -327,7 +331,7 @@ def front2_forces(q, v, p, summary=False, t=0.0, wrench_set=None):
     a, k, c, fit_p = _front2_constants(p)
     relative = np.asarray(q)[..., ROTOR]@a.T-q[..., O2]
     velocity = np.asarray(v)[..., ROTOR]@a.T-v[..., O2]
-    if bearing_contact_model(p) == 'relative_tilt_v8':
+    if bearing_contact_model(p) in ('relative_tilt_v8','quasistatic_tai_v9'):
         b = (wrench_set['F2']['force_N'] if wrench_set is not None
              else bearing_wrench_at(t, q, v, p, 'F2')['force_N'])
     elif p.get('nonlinear_bearings_v6', False):
@@ -346,6 +350,9 @@ def force_components(t, q, v, p):
     returned constraint moment balances their and the fit force's moments
     about the S axial plane. No local housing rotation is integrated.
     """
+    if p.get('bearing_contact_model') == 'quasistatic_tai_v9' or p.get('damping_policy') == 'common_structural_ring':
+        from .tai_system import force_components as separate_components
+        return separate_components(t,q,v,p)
     bearing, link, healthy, fit, wrench_set = _tilt_forces(t, q, v, p, _tilt_constants(p))
     contact_model = bearing_contact_model(p)
     explicit_contact_model = 'bearing_contact_model' in p
@@ -721,6 +728,9 @@ def _bearing_wrench_from_context(t, q, v, name, context, model):
 
 def bearing_wrench_at(t, q, v, p, name):
     """Evaluate one named bearing, suitable for chunked native contact export."""
+    if p.get('bearing_contact_model') == 'quasistatic_tai_v9' or p.get('damping_policy') == 'common_structural_ring':
+        from .tai_system import bearing_wrenches as separate_wrenches
+        return separate_wrenches(t,q,v,p)[name]
     model = bearing_contact_model(p)
     context = _bearing_context(p)
     if name not in context:
@@ -730,6 +740,9 @@ def bearing_wrench_at(t, q, v, p, name):
 
 def bearing_wrenches(t, q, v, p):
     """Evaluate F1/F2/R1/R2, returning named radial force, local moment and state."""
+    if p.get('bearing_contact_model') == 'quasistatic_tai_v9' or p.get('damping_policy') == 'common_structural_ring':
+        from .tai_system import bearing_wrenches as separate_wrenches
+        return separate_wrenches(t,q,v,p)
     model = bearing_contact_model(p)
     context = _bearing_context(p)
     return {name: _bearing_wrench_from_context(t, q, v, name, context, model)
@@ -808,6 +821,11 @@ def mass_and_gravity(p):
 
 def internal_force(t, q, v, p, lost_area):
     """Restoring force; positive sign on left of Mq''+R=F."""
+    if p.get('bearing_contact_model') == 'quasistatic_tai_v9' or p.get('damping_policy') == 'common_structural_ring':
+        if lost_area != 0:
+            raise ValueError('V9 currently varies fit clearance only')
+        from .tai_system import internal_force as separate_internal
+        return separate_internal(t,q,v,p)
     if is_tilt_model(p):
         if lost_area != 0 or any(p.get(key, 0) != 0 for key in
                 ('outer_pit_area_m2', 'inner_pit_area_m2', 'ball_deformation_amplitude_m')):
@@ -858,6 +876,11 @@ def equilibrium(p, lost_area, initial_q=None):
     """Frozen t=0 equilibrium; positive gaps default to zero-gap continuation."""
     if 'mO' in p and p['fit_clearance_um'] > 0 and initial_q is None:
         return equilibrium_continuation(p, lost_area)
+    if p.get('bearing_contact_model') == 'quasistatic_tai_v9' or p.get('damping_policy') == 'common_structural_ring':
+        if lost_area != 0:
+            raise ValueError('V9 static solve requires the unchanged holder contact')
+        from .tai_system import equilibrium as separate_equilibrium
+        return separate_equilibrium(p,initial_q)
     masses, gravity = mass_and_gravity(p)
     n = len(masses)
     # Scale unknowns/residuals to avoid treating micron translations as O(1).
@@ -1171,10 +1194,16 @@ def simulate(p, lost_area, frequencies, coefficients, duration=0.5, warmup=0.1,
                       O_center_m=q[:,O], O_velocity_m_s=v[:,O],
                       fit_force_N=fit, fit_active_count=diagnostics['active_count'])
     if is_front_group(p):
-        b2, fit2, diag2 = front2_forces(q, v, p, summary=True, t=t)
-        result.update(bearing2_force_N=b2, fit2_force_N=fit2,
-                      fit2_active_count=diag2['active_count'])
-        if p.get('nonlinear_bearings_v6', False):
+        separate = p.get('bearing_contact_model') == 'quasistatic_tai_v9' or p.get('damping_policy') == 'common_structural_ring'
+        if separate:
+            fit2,diag2 = fit_contact_summary(q[:,O2]-q[:,H],v[:,O2]-v[:,H],_front2_constants(p)[3])
+            result.update(fit2_force_N=fit2,fit2_active_count=diag2['active_count'],
+                          bearing_diagnostics='separate ring diagnostics exported by V9 runner')
+        else:
+            b2, fit2, diag2 = front2_forces(q, v, p, summary=True, t=t)
+            result.update(bearing2_force_N=b2, fit2_force_N=fit2,
+                          fit2_active_count=diag2['active_count'])
+        if p.get('nonlinear_bearings_v6', False) and not separate:
             result['rear_bearing_forces_N'] = rear_bearing_forces(t, q, v, p)
     if is_tilt_model(p):
         section = q[:, T] if p['measurement_kind'] == 'holder' else rotor_section(q, p['z_m'])

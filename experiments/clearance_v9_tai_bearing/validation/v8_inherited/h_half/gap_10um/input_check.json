@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "generalized_rotor_indices": [
+    0,
+    1,
+    8,
+    9
+  ],
+  "generalized_rotor_units": [
+    "N",
+    "N",
+    "N m",
+    "N m"
+  ],
+  "force_N": 14.449937482999612,
+  "U_kg_m": 2.689135290615865e-05,
+  "force_norm_error_N": 1.7763568394002505e-15
+}

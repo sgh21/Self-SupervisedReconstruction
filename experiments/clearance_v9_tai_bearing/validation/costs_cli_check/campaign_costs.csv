@@ -1,0 +1,2 @@
+﻿case,roles,variant,gap_um,nfev,wall_seconds,simulated_seconds,seconds_per_simulated_second,exported_ball_solves,exported_iterations_total,exported_evaluations_total,exported_iterations_mean,exported_iterations_max,exported_retry_count,max_force_residual_N,max_force_tolerance_ratio,max_geometry_normalized
+../../data_A/N3/gap_10um,A/N3/c10,N3,10.0,10847606,1666.8461984000169,7.9007568359375,210.9729787807368,18335112,71559300,89894412,3.902855897471474,5.0,0,9.999954642125886e-09,0.007844177824208862,5.4255325680080817e-17

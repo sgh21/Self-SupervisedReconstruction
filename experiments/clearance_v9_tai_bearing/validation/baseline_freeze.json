@@ -1,0 +1,523 @@
+{
+  "utc": "2026-10-25T09:07:31.844236+00:00",
+  "git_commit": "8b4cc4bb7edcd0c495f42958d9a711d322cf5de9",
+  "source_files": [
+    {
+      "path": ".gitignore",
+      "bytes": 892,
+      "crc32": "92af9b22"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9149,
+      "crc32": "d296620d"
+    },
+    {
+      "path": "config/bearing_faults_ideal.json",
+      "bytes": 698,
+      "crc32": "bb23c719"
+    },
+    {
+      "path": "config/bearing_motion_250hz.json",
+      "bytes": 805,
+      "crc32": "dab85698"
+    },
+    {
+      "path": "config/clearance_config.json",
+      "bytes": 8095,
+      "crc32": "2ccc315d"
+    },
+    {
+      "path": "config/clearance_v3_config.json",
+      "bytes": 6068,
+      "crc32": "8549b45e"
+    },
+    {
+      "path": "config/clearance_v4_config.json",
+      "bytes": 7667,
+      "crc32": "0d362f35"
+    },
+    {
+      "path": "config/clearance_v5_config.json",
+      "bytes": 7953,
+      "crc32": "471b15e3"
+    },
+    {
+      "path": "config/clearance_v6_config.json",
+      "bytes": 12282,
+      "crc32": "8b4020f0"
+    },
+    {
+      "path": "config/clearance_v8_config.json",
+      "bytes": 16424,
+      "crc32": "69bea1b6"
+    },
+    {
+      "path": "config/outer_race_pitting.json",
+      "bytes": 804,
+      "crc32": "9f43b5cb"
+    },
+    {
+      "path": "config/platform_faults_20261022.json",
+      "bytes": 8658,
+      "crc32": "5c13be0d"
+    },
+    {
+      "path": "config/platform_faults_hsk40_a63k_sensitivity_20261023.json",
+      "bytes": 9813,
+      "crc32": "78914d86"
+    },
+    {
+      "path": "config/platform_faults_hsk40_nominal20_20261023.json",
+      "bytes": 9404,
+      "crc32": "5e74c3ca"
+    },
+    {
+      "path": "config/platform_healthy_background_20261023.json",
+      "bytes": 4827,
+      "crc32": "8b9ff3b3"
+    },
+    {
+      "path": "config/severity_sweep.json",
+      "bytes": 1127,
+      "crc32": "d4935fb6"
+    },
+    {
+      "path": "config/spindle_healthy_sources_20261023.json",
+      "bytes": 5298,
+      "crc32": "9c86c19c"
+    },
+    {
+      "path": "config/spindle_sources_20261022.json",
+      "bytes": 2438,
+      "crc32": "80737e8d"
+    },
+    {
+      "path": "config/spindle_sources_hsk40_nominal20_20261023.json",
+      "bytes": 2441,
+      "crc32": "27913384"
+    },
+    {
+      "path": "config/velocity_data_20261022.json",
+      "bytes": 1791,
+      "crc32": "2a32120b"
+    },
+    {
+      "path": "config/velocity_data_round2_20261022.json",
+      "bytes": 1860,
+      "crc32": "d15ecea4"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 442,
+      "crc32": "c3c139d1"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 41,
+      "crc32": "a26f3f92"
+    },
+    {
+      "path": "scripts/__init__.py",
+      "bytes": 56,
+      "crc32": "faf6d9f9"
+    },
+    {
+      "path": "scripts/analyze_outer_race_pitting.py",
+      "bytes": 16286,
+      "crc32": "69bded4e"
+    },
+    {
+      "path": "scripts/analyze_platform_faults.py",
+      "bytes": 30769,
+      "crc32": "14104611"
+    },
+    {
+      "path": "scripts/analyze_severity.py",
+      "bytes": 10793,
+      "crc32": "7750250d"
+    },
+    {
+      "path": "scripts/calibrate_clearance_v6.py",
+      "bytes": 3792,
+      "crc32": "b013f06c"
+    },
+    {
+      "path": "scripts/calibrate_clearance_v8.py",
+      "bytes": 5029,
+      "crc32": "ac083446"
+    },
+    {
+      "path": "scripts/certify_clearance_v6.py",
+      "bytes": 1497,
+      "crc32": "bbf8a764"
+    },
+    {
+      "path": "scripts/certify_clearance_v8.py",
+      "bytes": 3712,
+      "crc32": "ad6a17e4"
+    },
+    {
+      "path": "scripts/check_bearing_faults_ideal.py",
+      "bytes": 8949,
+      "crc32": "49937b33"
+    },
+    {
+      "path": "scripts/check_outer_race_pitting.py",
+      "bytes": 6438,
+      "crc32": "008033be"
+    },
+    {
+      "path": "scripts/check_runout_labels.py",
+      "bytes": 3299,
+      "crc32": "8f9eba1b"
+    },
+    {
+      "path": "scripts/check_spindle_sources.py",
+      "bytes": 9876,
+      "crc32": "af1ff027"
+    },
+    {
+      "path": "scripts/check_velocity_data.py",
+      "bytes": 6760,
+      "crc32": "4c703c2d"
+    },
+    {
+      "path": "scripts/compare_bearing_motion.py",
+      "bytes": 10662,
+      "crc32": "9a811034"
+    },
+    {
+      "path": "scripts/continue_clearance_v8.py",
+      "bytes": 12318,
+      "crc32": "f01d15ec"
+    },
+    {
+      "path": "scripts/enrich_clearance_v4.py",
+      "bytes": 5026,
+      "crc32": "a04c2ee7"
+    },
+    {
+      "path": "scripts/finalize_clearance_v3.py",
+      "bytes": 13416,
+      "crc32": "3669e558"
+    },
+    {
+      "path": "scripts/fit_platform_1x.py",
+      "bytes": 17190,
+      "crc32": "923e5689"
+    },
+    {
+      "path": "scripts/freeze_clearance_v6.py",
+      "bytes": 2229,
+      "crc32": "647ad7f9"
+    },
+    {
+      "path": "scripts/generate_bearing_faults_ideal.py",
+      "bytes": 10945,
+      "crc32": "b8a82303"
+    },
+    {
+      "path": "scripts/generate_outer_race_pitting.py",
+      "bytes": 7103,
+      "crc32": "6c320ead"
+    },
+    {
+      "path": "scripts/generate_platform_faults.py",
+      "bytes": 19859,
+      "crc32": "054bd488"
+    },
+    {
+      "path": "scripts/generate_severity.py",
+      "bytes": 5159,
+      "crc32": "8530c346"
+    },
+    {
+      "path": "scripts/generate_spindle_sources.py",
+      "bytes": 16559,
+      "crc32": "e4cdfe61"
+    },
+    {
+      "path": "scripts/package_clearance_v5.py",
+      "bytes": 13113,
+      "crc32": "0d447c7a"
+    },
+    {
+      "path": "scripts/package_clearance_v6.py",
+      "bytes": 18752,
+      "crc32": "da03aa4d"
+    },
+    {
+      "path": "scripts/package_clearance_v8.py",
+      "bytes": 28377,
+      "crc32": "00d8b54f"
+    },
+    {
+      "path": "scripts/plot_clearance_v4.py",
+      "bytes": 4944,
+      "crc32": "7152f8b5"
+    },
+    {
+      "path": "scripts/plot_clearance_v5.py",
+      "bytes": 9905,
+      "crc32": "800de266"
+    },
+    {
+      "path": "scripts/plot_clearance_v6.py",
+      "bytes": 11284,
+      "crc32": "0771e488"
+    },
+    {
+      "path": "scripts/plot_clearance_v8.py",
+      "bytes": 4142,
+      "crc32": "0319d714"
+    },
+    {
+      "path": "scripts/prepare_platform_references.py",
+      "bytes": 8184,
+      "crc32": "d4b78949"
+    },
+    {
+      "path": "scripts/prepare_velocity_data.py",
+      "bytes": 2933,
+      "crc32": "8fa0c4a1"
+    },
+    {
+      "path": "scripts/recompute_clearance_v4.py",
+      "bytes": 9092,
+      "crc32": "b887541e"
+    },
+    {
+      "path": "scripts/report_clearance_v6.py",
+      "bytes": 32436,
+      "crc32": "fef83b16"
+    },
+    {
+      "path": "scripts/report_clearance_v8.py",
+      "bytes": 43837,
+      "crc32": "f123f0dc"
+    },
+    {
+      "path": "scripts/review_v5_representatives.py",
+      "bytes": 2351,
+      "crc32": "0d11190b"
+    },
+    {
+      "path": "scripts/run_clearance_sweep.py",
+      "bytes": 24413,
+      "crc32": "64ab8af8"
+    },
+    {
+      "path": "scripts/run_clearance_v3.py",
+      "bytes": 8049,
+      "crc32": "7d1482bb"
+    },
+    {
+      "path": "scripts/run_clearance_v4.py",
+      "bytes": 7833,
+      "crc32": "fa6c3025"
+    },
+    {
+      "path": "scripts/run_clearance_v5.py",
+      "bytes": 5153,
+      "crc32": "1ac73f6a"
+    },
+    {
+      "path": "scripts/run_clearance_v6.py",
+      "bytes": 13869,
+      "crc32": "fa8f217c"
+    },
+    {
+      "path": "scripts/run_clearance_v6_sensitivity.py",
+      "bytes": 10184,
+      "crc32": "27dd0886"
+    },
+    {
+      "path": "scripts/run_clearance_v8.py",
+      "bytes": 3077,
+      "crc32": "d8957bb6"
+    },
+    {
+      "path": "scripts/run_prototype.py",
+      "bytes": 10519,
+      "crc32": "14cb4763"
+    },
+    {
+      "path": "scripts/validate_other_runs.py",
+      "bytes": 11833,
+      "crc32": "568ae1bb"
+    },
+    {
+      "path": "src/spindle/__init__.py",
+      "bytes": 32,
+      "crc32": "9743a8c3"
+    },
+    {
+      "path": "src/spindle/dynamics_model.py",
+      "bytes": 63143,
+      "crc32": "391ae7fd"
+    },
+    {
+      "path": "src/spindle/fast_rhs.py",
+      "bytes": 7039,
+      "crc32": "53aa2bd9"
+    },
+    {
+      "path": "utils/__init__.py",
+      "bytes": 130,
+      "crc32": "66a3de85"
+    },
+    {
+      "path": "utils/clearance_v3_acceptance.py",
+      "bytes": 18144,
+      "crc32": "c0842621"
+    },
+    {
+      "path": "utils/clearance_v3_analysis.py",
+      "bytes": 10071,
+      "crc32": "67d40a46"
+    },
+    {
+      "path": "utils/clearance_v3_plots.py",
+      "bytes": 11320,
+      "crc32": "7eea27e1"
+    },
+    {
+      "path": "utils/clearance_v3_validation.py",
+      "bytes": 23102,
+      "crc32": "3f763096"
+    },
+    {
+      "path": "utils/clearance_v4_analysis.py",
+      "bytes": 6037,
+      "crc32": "d72abeef"
+    },
+    {
+      "path": "utils/clearance_v4_validation.py",
+      "bytes": 12937,
+      "crc32": "5196af81"
+    },
+    {
+      "path": "utils/clearance_v5_analysis.py",
+      "bytes": 29372,
+      "crc32": "a389191f"
+    },
+    {
+      "path": "utils/clearance_v5_input_audit.py",
+      "bytes": 15731,
+      "crc32": "57ef073e"
+    },
+    {
+      "path": "utils/clearance_v6_analysis.py",
+      "bytes": 24216,
+      "crc32": "25fa415b"
+    },
+    {
+      "path": "utils/clearance_v6_force_audit.py",
+      "bytes": 13088,
+      "crc32": "3d04ef9b"
+    },
+    {
+      "path": "utils/clearance_v6_parameters.py",
+      "bytes": 6930,
+      "crc32": "acc729a1"
+    },
+    {
+      "path": "utils/clearance_v6_response.py",
+      "bytes": 5533,
+      "crc32": "5a53ec14"
+    },
+    {
+      "path": "utils/clearance_v6_sensitivity.py",
+      "bytes": 7856,
+      "crc32": "6678c00c"
+    },
+    {
+      "path": "utils/clearance_v6_validation.py",
+      "bytes": 15214,
+      "crc32": "cf60183b"
+    },
+    {
+      "path": "utils/clearance_v8_acceptance.py",
+      "bytes": 55495,
+      "crc32": "c17b40e1"
+    },
+    {
+      "path": "utils/clearance_v8_analysis.py",
+      "bytes": 6394,
+      "crc32": "13c12e1f"
+    },
+    {
+      "path": "utils/clearance_v8_branches.py",
+      "bytes": 22701,
+      "crc32": "2a9ab5be"
+    },
+    {
+      "path": "utils/clearance_v8_parameters.py",
+      "bytes": 9871,
+      "crc32": "9ffc2e5e"
+    },
+    {
+      "path": "utils/clearance_v8_validation.py",
+      "bytes": 47639,
+      "crc32": "bdf21984"
+    },
+    {
+      "path": "utils/clearance_validation.py",
+      "bytes": 8986,
+      "crc32": "5521e439"
+    },
+    {
+      "path": "utils/data_io.py",
+      "bytes": 5153,
+      "crc32": "1166136f"
+    },
+    {
+      "path": "utils/healthy_reference.py",
+      "bytes": 2260,
+      "crc32": "84afad30"
+    },
+    {
+      "path": "utils/metrics.py",
+      "bytes": 1281,
+      "crc32": "4963e7e3"
+    },
+    {
+      "path": "utils/pitting_analysis.py",
+      "bytes": 10489,
+      "crc32": "047173d0"
+    },
+    {
+      "path": "utils/plot_report.py",
+      "bytes": 13306,
+      "crc32": "9df117c6"
+    },
+    {
+      "path": "utils/runout_labels.py",
+      "bytes": 3611,
+      "crc32": "5933d96c"
+    },
+    {
+      "path": "utils/velocity_data.py",
+      "bytes": 16728,
+      "crc32": "95120192"
+    }
+  ],
+  "package_comparison": [
+    {
+      "current": "src/spindle/dynamics_model.py",
+      "package_snapshot": "dynamics_model_v8.py",
+      "byte_equal": true,
+      "text_equal": true
+    },
+    {
+      "current": "src/spindle/fast_rhs.py",
+      "package_snapshot": "fast_rhs_v8.py",
+      "byte_equal": true,
+      "text_equal": true
+    }
+  ],
+  "hash_policy": "CRC32; user instruction excludes SHA256",
+  "package_state": "already unpacked directory; no archive found inside task package",
+  "v8_physical_configuration_unchanged": true
+}

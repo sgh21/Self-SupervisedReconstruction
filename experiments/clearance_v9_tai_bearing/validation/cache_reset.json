@@ -1,0 +1,14 @@
+{
+  "status": "completed_after_original_workers_finished",
+  "directory": "src/spindle/__pycache__",
+  "removed_patterns": [
+    "tai_bearing.*.nbi",
+    "tai_bearing.*.nbc",
+    "tai_system.*.nbi",
+    "tai_system.*.nbc"
+  ],
+  "removed_files": 136,
+  "reason": "Invalidate stale Numba transitive callers after deterministic reseed patch. Corrected runs use the separately initialized solver_retry_cache. No physical data or source removed.",
+  "default_cache_rhs_replay_passed": true,
+  "default_and_isolated_derivatives_identical": true
+}

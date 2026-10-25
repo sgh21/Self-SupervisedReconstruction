@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "U_kg_m": 2.4202217615542783e-05,
+  "force_N": 13.004943734699651,
+  "rpm_signed": -7000.0,
+  "phase_rad": -0.3661687497264663,
+  "force_norm_error_N": 1.7763568394002505e-15,
+  "generalized_rotor_indices": [
+    0,
+    1,
+    8,
+    9
+  ],
+  "generalized_rotor_units": [
+    "N",
+    "N",
+    "Nm",
+    "Nm"
+  ],
+  "generalized_force": "analytic circular unbalance at z_u; same signed phase as RHS"
+}
