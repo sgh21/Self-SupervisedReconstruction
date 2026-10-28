@@ -1,0 +1,624 @@
+{
+  "structural_dof": 20,
+  "base_mechanical_dof": 16,
+  "base_v8": {
+    "parameters": {
+      "ms": 4.0,
+      "mt": 0.604,
+      "mh": 40.28919047619047,
+      "kh": 10912950.92679859,
+      "ch": 467.63119090668664,
+      "kbend": 17168343.034367695,
+      "kappa": 1090000000000.0,
+      "contact_diameter": 0.03,
+      "contact_length": 0.02,
+      "cl": 133.35494523216204,
+      "normal_overlap": 1.6897894969001967e-06,
+      "cb_total": 1218.473723870652,
+      "balls": 18,
+      "ball_diameter": 0.008731,
+      "pitch_diameter": 0.06,
+      "contact_angle": 0.2617993877991494,
+      "rpm": -7000.0,
+      "cage_phase": 0.0,
+      "radial_load_y": 0.0,
+      "t_section_from_face": 0.015,
+      "machine_model": "JD130S-24-HA40; GMN front/rear pairs; 16 mechanical DOF plus 4 installation DOF",
+      "healthy_error_reported_um": 2.0,
+      "healthy_error_definition": "approximate user reference; direction unspecified; conditional E_dir calibration",
+      "parameter_status": "mixed A/B/C/D; approximate machine mass, catalogue reference and explicit assumptions",
+      "outer_pit_area_m2": 0.0,
+      "inner_pit_area_m2": 0.0,
+      "ball_deformation_amplitude_m": 0.0,
+      "mO": 0.1,
+      "fit_clearance_um": 3.5,
+      "Kf": 156325553.62545305,
+      "N": 512,
+      "Df": 158.1521058350868,
+      "fit_parameter_status": "Kf inherited; Df=2*.02*sqrt(.1*Kf); c_h=2um assumed, not measured",
+      "model_dof": 16,
+      "Jt": 0.03210992533527373,
+      "Jp": 0.004219850670547457,
+      "z_f": 0.12,
+      "z_T": 0.165,
+      "z_u": 0.1,
+      "z_m": 0.165,
+      "L_ref": 0.24,
+      "gravity_radial_m_s2": [
+        0.0,
+        -9.80665
+      ],
+      "probe_reference": "platform",
+      "measurement_kind": "rotor_section",
+      "model_status": "v8_conditional_calibration_recorded; see inherited calibration evidence",
+      "mO2": 0.1,
+      "z_f2": 0.09,
+      "Kf2": 156325553.62545305,
+      "Df2": 158.1521058350868,
+      "front_group_clearance_um": 3.5,
+      "fit2_clearance_um": 3.5,
+      "rhs_backend": "numba",
+      "Keq": 8794777652.65391,
+      "preload_reference_N": 90,
+      "radial_tangent_reference_N_m": 144000000.0,
+      "designation": "HY-SM-6009-C-TXM-P4-D-UL T274/20-25%",
+      "nonlinear_bearings_v6": true,
+      "rear_bearing": {
+        "balls": 16,
+        "ball_diameter": 0.007938,
+        "pitch_diameter": 0.0485,
+        "contact_angle": 0.2617993877991494,
+        "normal_overlap": 1.6175762705369406e-06,
+        "Keq": 8216458685.504761,
+        "cb_total": 0.0,
+        "cage_phase": 0.0,
+        "preload_reference_N": 70,
+        "radial_tangent_reference_N_m": 117000000.0,
+        "designation": "HY-SM-6007-C-TXM-P4-D-UL T274/20-25%"
+      },
+      "rear_supports": [
+        {
+          "name": "R1",
+          "z_m": -0.127
+        },
+        {
+          "name": "R2",
+          "z_m": -0.113
+        }
+      ],
+      "rear_elastic_force_factor": 1.0,
+      "rear_outer_fit_model": "independent_xy",
+      "bearing_contact_model": "relative_tilt_v8",
+      "calibration_status": "numerically_confirmed_conditional_calibration",
+      "bearing_layout_name": "DB_DB",
+      "bearing_layout_status": "assumed_not_machine_verified",
+      "bearing_layout_basis": "DB_DB_assumed_not_machine_verified",
+      "bearing_layout": [
+        {
+          "name": "F1",
+          "z_m": 0.12,
+          "orientation_sign": -1,
+          "rho_m": 0.03,
+          "outer_translation_source": "O1",
+          "outer_tilt_constraint": "fixed",
+          "axial_increment_constraint": "fixed",
+          "arrangement_basis": "DB_pair_DB_DB_assumed_not_machine_verified",
+          "material_parameters": "front"
+        },
+        {
+          "name": "F2",
+          "z_m": 0.09,
+          "orientation_sign": 1,
+          "rho_m": 0.03,
+          "outer_translation_source": "O2",
+          "outer_tilt_constraint": "fixed",
+          "axial_increment_constraint": "fixed",
+          "arrangement_basis": "DB_pair_DB_DB_assumed_not_machine_verified",
+          "material_parameters": "front"
+        },
+        {
+          "name": "R1",
+          "z_m": -0.127,
+          "orientation_sign": 1,
+          "rho_m": 0.02425,
+          "outer_translation_source": "OR1",
+          "outer_tilt_constraint": "fixed",
+          "axial_increment_constraint": "fixed",
+          "arrangement_basis": "DB_pair_DB_DB_assumed_not_machine_verified",
+          "material_parameters": "rear"
+        },
+        {
+          "name": "R2",
+          "z_m": -0.113,
+          "orientation_sign": -1,
+          "rho_m": 0.02425,
+          "outer_translation_source": "OR2",
+          "outer_tilt_constraint": "fixed",
+          "axial_increment_constraint": "fixed",
+          "arrangement_basis": "DB_pair_DB_DB_assumed_not_machine_verified",
+          "material_parameters": "rear"
+        }
+      ],
+      "bearing_position_basis": "geometric_center_assumed",
+      "front_pair_arrangement_assumption": "DB_assumed_not_machine_verified",
+      "rear_pair_arrangement_assumption": "DB_assumed_not_machine_verified",
+      "rear_outer_rings": {
+        "R1": {
+          "state_name": "OR1",
+          "clearance_um": 3.5,
+          "mass_kg": 0.061904761904761914,
+          "fit_stiffness_N_m": 156325553.62545305,
+          "fit_damping_N_s_m": 124.43341144122837,
+          "fit_direction_count": 512,
+          "parameter_status": "assumed_conditional"
+        },
+        "R2": {
+          "state_name": "OR2",
+          "clearance_um": 3.5,
+          "mass_kg": 0.061904761904761914,
+          "fit_stiffness_N_m": 156325553.62545305,
+          "fit_damping_N_s_m": 124.43341144122837,
+          "fit_direction_count": 512,
+          "parameter_status": "assumed_conditional"
+        }
+      }
+    },
+    "parameter_provenance": {
+      "status": "mixed_machine_information_catalogue_conditional_derivations_and_assumptions",
+      "contract": "docs/reports/clearance_v6_parameter_contract.md",
+      "source_contract": "GPTOrder/spindle_v6_plan/config/parameter_contract_v6.json",
+      "inherited_config": "config/clearance_v5_config.json",
+      "mass_ledger": {
+        "ms_kg": 4.0,
+        "ms_status": "user_reports_manufacturer_approximate",
+        "mt_kg": 0.604,
+        "mt_status": "inherited_unverified",
+        "mO1_kg": 0.1,
+        "mO2_kg": 0.1,
+        "mO_status": "new_explicit_assumed_split_not_manufacturer",
+        "spindle_total_kg": 44.613,
+        "mh_kg": 40.28919047619047,
+        "mh_formula": "old mh minus mOR1 minus mOR2, each physical part counted once",
+        "rotating_total_with_holder_kg": 4.604,
+        "Jt_kg_m2": 0.03210992533527373,
+        "Jp_kg_m2": 0.004219850670547457,
+        "inertia_status": "old_radius_of_gyration_preserved_mass_scaled_not_CAD",
+        "mOR1_kg": 0.061904761904761914,
+        "mOR2_kg": 0.061904761904761914,
+        "rear_outer_mass_status": "assumed equal outer-ring/whole-bearing mass fraction"
+      },
+      "materials_reference_only": {
+        "ball": {
+          "material": "Si3N4",
+          "rho_kg_m3": 3200,
+          "E_Pa": 315000000000.0,
+          "nu": 0.26
+        },
+        "ring": {
+          "material": "100Cr6",
+          "rho_kg_m3": 7800,
+          "E_Pa": 210000000000.0,
+          "nu": 0.3
+        },
+        "note": "Do not additionally fit these into Keq already equivalent-fitted; curvature unknown."
+      },
+      "bearing_references": {
+        "front": {
+          "preload_N": 90,
+          "radial_tangent_single_N_m": 144000000.0,
+          "balls": 18,
+          "pitch_diameter_m": 0.06,
+          "ball_diameter_m": 0.008731,
+          "contact_angle_rad": 0.2617993877991494,
+          "whole_bearing_mass_kg": 0.21,
+          "normal_overlap_m": 1.6897894969001967e-06,
+          "keq_N_m32": 8794777652.65391,
+          "legacy_equal_ki_ko_N_m32": 24875387668.877945,
+          "ball_nominal_load_N": 19.318516525781366,
+          "ball_mass_kg": 0.001115168684404529,
+          "ball_centrifugal_N_at_7000": 3.3196170127573024,
+          "centrifugal_to_nominal_contact_ratio": 0.1718360210695855,
+          "designation": "HY-SM-6009-C-TXM-P4-D-UL T274/20-25%",
+          "count": 2,
+          "d_m": 0.045,
+          "D_m": 0.075,
+          "width_m": 0.016,
+          "axial_pair_stiffness_N_m": 48000000.0,
+          "cb_total_N_s_m": 1218.473723870652
+        },
+        "rear": {
+          "preload_N": 70,
+          "radial_tangent_single_N_m": 117000000.0,
+          "balls": 16,
+          "pitch_diameter_m": 0.0485,
+          "ball_diameter_m": 0.007938,
+          "contact_angle_rad": 0.2617993877991494,
+          "whole_bearing_mass_kg": 0.13,
+          "normal_overlap_m": 1.6175762705369406e-06,
+          "keq_N_m32": 8216458685.504761,
+          "legacy_equal_ki_ko_N_m32": 23239654615.43809,
+          "ball_nominal_load_N": 16.903701960058697,
+          "ball_mass_kg": 0.0008380730675903985,
+          "ball_centrifugal_N_at_7000": 1.9351516633590895,
+          "centrifugal_to_nominal_contact_ratio": 0.11448093843180668,
+          "designation": "HY-SM-6007-C-TXM-P4-D-UL T274/20-25%",
+          "count_assumed": 2,
+          "d_m": 0.035,
+          "D_m": 0.062,
+          "width_m": 0.014,
+          "axial_pair_stiffness_N_m": 39000000.0,
+          "cb_total_N_s_m": 0.0,
+          "outer_fit_model": "independent_xy_conditional"
+        }
+      },
+      "geometry_status": "inherited_or_explicit_assumed_not_CAD_internal_positions",
+      "observation": "z_m=.165 m rotor section M relative platform P",
+      "excitation_status": "conditional healthy calibration; not measured residual unbalance",
+      "inherited_mass_ledger_before_rear_split": {
+        "ms_kg": 4.0,
+        "ms_status": "user_reports_manufacturer_approximate",
+        "mt_kg": 0.604,
+        "mt_status": "inherited_unverified",
+        "mO1_kg": 0.1,
+        "mO2_kg": 0.1,
+        "mO_status": "new_explicit_assumed_split_not_manufacturer",
+        "spindle_total_kg": 44.613,
+        "mh_kg": 40.413,
+        "mh_formula": "spindle_total-ms-mO1-mO2",
+        "rotating_total_with_holder_kg": 4.604,
+        "Jt_kg_m2": 0.03210992533527373,
+        "Jp_kg_m2": 0.004219850670547457,
+        "inertia_status": "old_radius_of_gyration_preserved_mass_scaled_not_CAD"
+      }
+    },
+    "constitutive_domains": {
+      "maximum_tilt_rad": 0.001,
+      "status": "small-angle screen only; real contact pressure and high-speed preload validity not established",
+      "report_each_bearing": [
+        "delta_over_ball_diameter",
+        "delta_over_delta0",
+        "maximum_ball_force_N"
+      ],
+      "removed_legacy_limits": "F2/R1 1um linear tangent limits and 2delta0 strength proxy do not apply to new nonlinear branches"
+    }
+  },
+  "excitation": {
+    "U_kg_m": 2.689135290615865e-05,
+    "phase_rad": -0.3661687497264663,
+    "peak_force_N": 14.449937482999612,
+    "formula": "U*Omega**2*[cos(Omega*t+phase),sin(Omega*t+phase)]",
+    "source": "frozen V8 conditional health calibration; not measured residual unbalance"
+  },
+  "simulation": {
+    "method": "DOP853",
+    "rtol": 2e-07,
+    "atol_translation_m": 1e-12,
+    "atol_velocity_m_s": 1e-08,
+    "atol_angle_rad": 1e-11,
+    "atol_angle_rate_rad_s": 1e-07,
+    "fs_raw_hz": 65536,
+    "fs_out_hz": 8192,
+    "max_step_s": 1.1260832739219432e-05,
+    "warmup_s": 3.5,
+    "retained_turns": 480,
+    "subwindows": 4,
+    "guard_s": 0.55,
+    "maximum_warmup_s": 20.0,
+    "extension_s": 1.0,
+    "workers": 2,
+    "dense_sampling_multiplier": 2,
+    "maximum_formal_attempts": 2,
+    "nonsteady_followup": "Record NOT_STEADY after two attempts; separately check 960-turn statistics and branches"
+  },
+  "installation": {
+    "mC_kg": 24.161,
+    "mP_kg": 405.008,
+    "parameters": {
+      "kHC_N_m": 611534938.9924995,
+      "kCP_N_m": 294805425.36063904,
+      "kPGx_N_m": 9545939.924435006,
+      "kPGy_N_m": 41563237.926728934,
+      "zeta_link": 0.007268095650312355,
+      "zeta_foot": 0.04980040823734344
+    },
+    "bounds": {
+      "kHC_N_m": [
+        10000000.0,
+        1000000000.0
+      ],
+      "kCP_N_m": [
+        100000000.0,
+        10000000000.0
+      ],
+      "kPGx_N_m": [
+        2000000.0,
+        200000000.0
+      ],
+      "kPGy_N_m": [
+        2000000.0,
+        200000000.0
+      ],
+      "zeta_link": [
+        0.005,
+        0.08
+      ],
+      "zeta_foot": [
+        0.02,
+        0.25
+      ]
+    },
+    "prior_status": "project_weak_prior_not_manufacturer",
+    "topology": "H-C-P-G; original H-ground removed",
+    "actual_link_stiffness_N_m": [
+      [
+        611534938.9924995,
+        611534938.9924995
+      ],
+      [
+        294805425.36063904,
+        294805425.36063904
+      ],
+      [
+        9545939.924435006,
+        41563237.926728934
+      ]
+    ],
+    "actual_link_damping_N_s_m": [
+      [
+        4961.112447286993,
+        4961.112447286993
+      ],
+      [
+        16294.797812761086,
+        16294.797812761086
+      ],
+      [
+        5384.536188538006,
+        30036.072322374548
+      ]
+    ],
+    "actual_matrix_policy": "eight independently scaled actual K/C values; not recomputed from historical zeta",
+    "nominal_zeta_status": "historical metadata only; explicit actual matrices take precedence",
+    "actual_independent_parameters": {
+      "K_HC": 611534938.9924995,
+      "K_CP": 294805425.36063904,
+      "K_PGx": 9545939.924435006,
+      "K_PGy": 41563237.926728934,
+      "C_HC": 4961.112447286993,
+      "C_CP": 16294.797812761086,
+      "C_PGx": 5384.536188538006,
+      "C_PGy": 30036.072322374548
+    },
+    "equivalent_damping_ratios": [
+      [
+        0.025810642590017977,
+        0.025810642590017977
+      ],
+      [
+        0.09937477608820801,
+        0.09937477608820801
+      ],
+      [
+        0.04000764833732421,
+        0.10695289072625543
+      ]
+    ]
+  },
+  "probe_reference": "platform",
+  "probe_reference_status": "user_confirmed_table_mount",
+  "probe_geometry_status": "inherited_z_m_and_pure_center_motion_conditional",
+  "parameter_id": "sync20_joint_rms_stability_20261028_c07",
+  "model_mode": "independent_xy",
+  "processing_contract": {
+    "id": "inherited_two_stage_FIR_8192_10_2048_then_900",
+    "band_hz": [
+      10,
+      900
+    ],
+    "implementation": "utils.processing.process_velocity",
+    "fir_taps_each": 4097,
+    "kaiser_beta": 8.6,
+    "guard_s": 0.55,
+    "note": "Same processing as the old c1um arrays; two centered FIR stages, no gain normalization"
+  },
+  "comparison_identity": {
+    "c_F1_um": 3.5,
+    "c_F2_um": 3.5,
+    "c_R1_um": 3.5,
+    "c_R2_um": 3.5,
+    "rear_mass_factor": 1.0,
+    "rear_K_factor": 1.0,
+    "rear_D_factor": 1.0
+  },
+  "calibration": {
+    "status": "JOINT_SEARCH_CANDIDATE",
+    "objective_mode": "H_plus_S",
+    "beta_used": false,
+    "runout_in_objective": false,
+    "one_x_in_objective": false,
+    "production_ready": false,
+    "numerical_status": "H_N_AND_DURATION_NOT_REVIEWED"
+  },
+  "acceptance": {
+    "stationarity_relative_limits": {
+      "band_rms_mm_s": 0.05
+    }
+  },
+  "schema_version": "spindle_minimal_v1",
+  "case_id": "model20_F_3.5um_R1_3.5um_R2_3.5um",
+  "group_id": "model20",
+  "clearances_um": [
+    0.0,
+    0.2631578947368421,
+    0.5263157894736842,
+    0.7894736842105263,
+    1.0526315789473684,
+    1.3157894736842104,
+    1.5789473684210527,
+    1.8421052631578947,
+    2.1052631578947367,
+    2.3684210526315788,
+    2.631578947368421,
+    2.894736842105263,
+    3.1578947368421053,
+    3.4210526315789473,
+    3.6842105263157894,
+    3.9473684210526314,
+    4.2105263157894735,
+    4.473684210526316,
+    4.7368421052631575,
+    5.0
+  ],
+  "joint_search": {
+    "candidate_id": "c07",
+    "stage": "coverage",
+    "factors_from_original_base": {
+      "K_HC": 0.9020173651769324,
+      "K_CP": 1.075471887543277,
+      "K_PGx": 1.1967068438991904,
+      "K_PGy": 1.1842622448902107,
+      "C_HC": 0.8683257137724207,
+      "C_CP": 1.1700531210307143,
+      "C_PGx": 0.8764461653580473,
+      "C_PGy": 1.0097130799622809
+    },
+    "actual_values": {
+      "K_HC": 611534938.9924995,
+      "K_CP": 294805425.36063904,
+      "K_PGx": 9545939.924435006,
+      "K_PGy": 41563237.926728934,
+      "C_HC": 4961.112447286993,
+      "C_CP": 16294.797812761086,
+      "C_PGx": 5384.536188538006,
+      "C_PGy": 30036.072322374548
+    },
+    "bound_factors": [
+      0.8,
+      1.2
+    ]
+  },
+  "selection": {
+    "scope": "budgeted search only; no global-optimality or convergence claim",
+    "selected_at_utc": "2026-10-28T04:51:46.296110+00:00",
+    "rule": "FEASIBLE_MIN_H",
+    "candidate_id": "c07",
+    "objective": {
+      "H": 0.05257240911030065,
+      "S": 0.0,
+      "J": 0.05257240911030065
+    },
+    "fit_ratios": [
+      1.2442655028697411,
+      1.0291561731337417,
+      0.7186742522945824
+    ],
+    "healthy_range_pass": true,
+    "stability_pass": true,
+    "boundary_hits": [],
+    "worst_comparison": {
+      "pair": "2_vs_3",
+      "channel": "ACC1_Hy",
+      "relative_percent": 3.084125408361751,
+      "z": 0.6168250816723501,
+      "excess": 0,
+      "passed": true,
+      "original": 0.17939967853670188,
+      "compared": 0.18510866180861996,
+      "absolute_limit": 0.009255433090430998,
+      "gap_um": 4.5
+    },
+    "fixed_point_results": [
+      {
+        "gap_um": 3.5,
+        "rms_stationarity_pass": true,
+        "rms_pairwise_max_relative_percent": [
+          0.6665948798959691,
+          0.4132579311512349,
+          0.3831292625038501
+        ],
+        "worst_comparison": {
+          "pair": "1_vs_2",
+          "channel": "ACC2_Hx",
+          "relative_percent": 0.6665948798959691,
+          "z": 0.13331897597919384,
+          "excess": 0,
+          "passed": true,
+          "original": 0.25265701825682746,
+          "compared": 0.2509728195094296,
+          "absolute_limit": 0.012632850912841373
+        },
+        "physical_pass": true,
+        "failed_physical_metrics": []
+      },
+      {
+        "gap_um": 4.0,
+        "rms_stationarity_pass": true,
+        "rms_pairwise_max_relative_percent": [
+          0.0683743922002419,
+          0.05928796359332448,
+          0.03439090066674332
+        ],
+        "worst_comparison": {
+          "pair": "1_vs_2",
+          "channel": "ACC2_Hx",
+          "relative_percent": 0.0683743922002419,
+          "z": 0.013674878440048378,
+          "excess": 0,
+          "passed": true,
+          "original": 0.20316131160231574,
+          "compared": 0.2033003169583772,
+          "absolute_limit": 0.01016501584791886
+        },
+        "physical_pass": true,
+        "failed_physical_metrics": []
+      },
+      {
+        "gap_um": 4.5,
+        "rms_stationarity_pass": true,
+        "rms_pairwise_max_relative_percent": [
+          2.203831803035961,
+          3.084125408361751,
+          0.8615641186895762
+        ],
+        "worst_comparison": {
+          "pair": "2_vs_3",
+          "channel": "ACC1_Hy",
+          "relative_percent": 3.084125408361751,
+          "z": 0.6168250816723501,
+          "excess": 0,
+          "passed": true,
+          "original": 0.17939967853670188,
+          "compared": 0.18510866180861996,
+          "absolute_limit": 0.009255433090430998
+        },
+        "physical_pass": true,
+        "failed_physical_metrics": []
+      },
+      {
+        "gap_um": 5.0,
+        "rms_stationarity_pass": true,
+        "rms_pairwise_max_relative_percent": [
+          1.0538005524573184,
+          0.5113248825826341,
+          0.24027801707240926
+        ],
+        "worst_comparison": {
+          "pair": "2_vs_3",
+          "channel": "ACC2_Hx",
+          "relative_percent": 1.0538005524573184,
+          "z": 0.21076011049146368,
+          "excess": 0,
+          "passed": true,
+          "original": 0.26481547626125007,
+          "compared": 0.2676358240537017,
+          "absolute_limit": 0.013381791202685085
+        },
+        "physical_pass": false,
+        "failed_physical_metrics": [
+          "noninteger_band_rms_mm_s",
+          "rolling_impulse_N_s"
+        ]
+      }
+    ]
+  }
+}

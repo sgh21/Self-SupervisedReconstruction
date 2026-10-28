@@ -1,0 +1,32 @@
+{
+  "targets": {
+    "fit": {
+      "band_rms_mm_s": [
+        0.028390357629537816,
+        0.033176511335663954,
+        0.057684978507234634
+      ]
+    },
+    "val": {
+      "band_rms_mm_s": [
+        0.022903310051853074,
+        0.03190076463449669,
+        0.03111053130427599
+      ]
+    }
+  },
+  "channel_order": [
+    "ACC2_Hx",
+    "ACC1_Hy",
+    "ACC3_Py"
+  ],
+  "band_hz": [
+    10,
+    900
+  ],
+  "units": "mm/s",
+  "aggregation": "parent -> run median -> split median",
+  "H_test_used": false,
+  "source": "20261027 historical health target values; no new health data collection",
+  "beta_used": false
+}

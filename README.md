@@ -1,96 +1,68 @@
-# 主轴动力学建模与故障仿真
+# 16/20自由度主轴最小项目
 
-本项目保留主轴动力学模型、故障仿真、实测速度转换、同步位移和逐圈跳动计算。网络训练实现、模型和相关报告已移出工作目录，见[清理清单](docs/reports/cleanup_20261023.md)。
+仅保留动力学、RMS参数标定、物理数据生成及完整参数配置，无绘图、报告生成或临时测试依赖。
 
-## 主要文件
+## 目录
 
-| 文件或目录 | 作用 |
-|---|---|
-| `src/spindle/dynamics_model.py` | 6/7/8/10/12自由度分支；V8四轴承倾角接触力与局部矩、平衡点和时域积分 |
-| `scripts/run_clearance_v8.py` | V8旧U机制对照、布局对照与冻结U扫描；实际认证另用`certify_clearance_v8` |
-| `config/clearance_v8_config.json` | GMN 12自由度V8起始配置；正式冻结配置保存在V8试验目录 |
-| `scripts/run_clearance_v3.py` | V3固定单只前轴承间隙；导出H速度/加速度、指定截面相对探头参考的逐转轨迹 |
-| `config/clearance_v3_config.json` | V3统一物理与数值配置；明确标记assumed_demo |
-| `scripts/run_clearance_sweep.py` | 固定前支承 S/T/H/O 八自由度配合间隙扫描、力学验证与联合收敛检查 |
-| `config/clearance_config.json` | 配合间隙演示模型的一次分配、冻结参数及参数来源 |
-| `config/platform_faults_20261022.json` | 当前平台模型的冻结参数与故障场景 |
-| `scripts/generate_platform_faults.py` | 生成平台及各类故障响应，并检查数值精度 |
-| `scripts/generate_spindle_sources.py` | 按独立参数组生成速度、原生轴/刀柄位移和逐圈标签 |
-| `utils/runout_labels.py` | 从同步原生位移按完整转次计算X/Y最大值减最小值，单位µm |
-| `scripts/prepare_velocity_data.py` | 原始加速度转为10–2048 Hz、8192 Hz采样的速度，单位mm/s |
-| `data/runs/` | 原始采集数据，只读使用 |
-| `data/derived_data/` | 已转换的实测速度及来源索引 |
-| `experiments/spindle_sources_20261022/` | 已完成的156条原始仿真、312个速度窗及逐圈标签 |
-| `experiments/spindle_healthy_sources_20261023/` | 另外32组健康物理仿真与检查 |
-| `experiments/interface_sensitivity_20261023/` | HSK接口参数情景、敏感性和物理仿真历史结果 |
-| `experiments/severity_sweep_20261021/` | 历史锥面面积损失扫描，保留原来的10–900 Hz处理版本 |
-| `docs/reports/` | 模型审计、参数核对、故障响应及信号转换报告 |
-| `docs/references/` | 文献原文、阅读笔记与核对证据 |
+```text
+src/main.py                 主线入口
+src/generation.py           物理数据生成与导出
+src/calibration.py          六个安装参数的RMS-only标定
+src/spindle/                仅机械方程、安装链、Numba后端
+utils/                      配置、读取、信号处理、评价
+config/model16.json         后外圈绑定H的16自由度完整参数
+config/model20.json         四外圈独立的20自由度RMS冻结完整参数
+config/calibration_targets.json  真实健康fit/val参考RMS
+tmp/                        全部任务临时脚本，不提交
+docs/                       交接、计划、整理记录
+data/                       原始和上游数据，只读、未清理
+```
 
 ## 安装与运行
 
-V8 在原12自由度上加入四只轴承的相对倾角接触，同一逐球接触关系同时输出径向力和局部力矩；外圈转动、轴向约束反力独立保存。入口为 `scripts.run_clearance_v8`，实际配置和证据在 `experiments/clearance_v8_tilt_contact/`。名义前后DB配对属于假设，另保留DF敏感性结果。模型边界见[参数合同](docs/reports/clearance_v8_parameter_contract.md)。
+Python ≥3.10。现有环境：`D:/Softwares/miniconda3/envs/ZMSoftware/python.exe`。
 
 ```powershell
-$env:PYTHONPATH="$PWD/src"
-python -B -m scripts.run_clearance_v8 --config experiments/clearance_v8_tilt_contact/parameters_v8_calibrated.json --output experiments/clearance_v8_replay --group data_B_recalibrated --gaps 2 3 5 7.5 10 --workers 3
-# 已有原生数据的独立复算，不重新积分：
-python -B -m utils.clearance_v6_analysis --root experiments/clearance_v8_tilt_contact --base-group data_B_recalibrated --integration-group convergence/h_half --angular-group convergence/n1024 --replay
+python -m pip install -e .
+python -B -m main generate --config config/model16.json --output ../DataGeneration_work/model16_c1
+python -B -m main generate --config config/model20.json --output ../DataGeneration_work/model20_c1
 ```
 
-实际运行命令（含高间隙480转、独立步长/接触离散细化和续接）见试验目录的 `运行命令.md`；上面第一条仅为基本扫描入口。最终数值状态须以分项验收为准。
+不安装时，从仓库根设置 `$env:PYTHONPATH='src;.'`，再运行同样命令。
 
-V6 基线采用内部旋转质量约4 kg、两只前 GMN 6009 非线性接触和两个后 GMN 6007 健康作用点，仍为12自由度。先在共同前径向间隙2 μm下仅标定不平衡量U，使固定截面相对探头参考的逐转指标约2 μm；旋转力峰值限制为30 N。后续间隙扫描固定U，旧V3/V4/V5代码入口及结果保留。
+默认480完整转、65536 Hz原生状态，导出8192 Hz三通道10–900 Hz速度。主要产物：`native.npz`（q/v/acc、接触力、测量位移和状态映射）、`signal.npz`（三通道、有效段掩码）、`per_revolution.csv/.npz`（逐圈标签）、实际配置、指标和稳态JSON。保留物理幅值，不施加β。
 
 ```powershell
-python -B -m utils.clearance_v6_parameters
-python -B -m utils.clearance_v6_validation
-python -B -m scripts.calibrate_clearance_v6 --output experiments/clearance_v6_replay
-# 健康冷启动、步长/周向认证通过后，使用实际冻结配置扫描。
-python -B -m scripts.run_clearance_v6 --config experiments/clearance_v6_GMN/parameters_v6_calibrated.json --output experiments/clearance_v6_gap_replay --gaps 0 2 3 5 7.5 10 --workers 3
+# 20自由度改变前间隙时，必须显式指定两只后间隙：
+python -B -m main generate --config config/model20.json --gaps 1 4 10 --rear-gaps 2 2 --output ../DataGeneration_work/rear_fixed_control
 ```
 
-参数来源见[合同](docs/reports/clearance_v6_parameter_contract.md)。实际标定历史、原生状态、独立数值细化及分项验收保存在`experiments/clearance_v6_GMN/`。健康目标属于条件标定，不能作为实机独立验证；主壳体振动频带10–900 Hz，辅助10–2048 Hz和900–2048 Hz，轴心指标来自未滤波原生位移。
+无`--gaps`时使用配置里的实际间隙，包括独立后间隙。配置的`clearances_um`列出1–10 μm等距25点，**不会自动启动扫描**。可用`--turns`/`--warmup`短时检查；短时可运行不等于稳态。退出码0表示求解完成且来源分窗RMS通过，2表示导出但RMS超差；求解异常保存失败信息并非零退出。
 
-从仓库根目录执行。现有环境为 `D:/Softwares/miniconda3/envs/ZMSoftware/python.exe`；依赖为NumPy、SciPy、h5py、Matplotlib。
+生成入口依次处理全部指定工况，逐级保存验收结果；稳态超差或未知状态不自动终止后续工况。全部处理后，存在未通过项时退出码为2，汇总状态为`COMPLETED_WITH_FAILURES`。每级独立静平衡、零初速冷启动；单次生成默认只做一次尝试。通用入口不执行逐级h/N认证，生成验证时是否继续由使用者决定。
+
+按用户最新要求，唯一验收项是来源三通道10–900 Hz速度RMS的四窗六对比较；20自由度配置为5%，16自由度默认2%，绝对底限均为1e−4 mm/s。其他指标不设置通过/失败门槛，融合波形不做RMS稳态验收。原始位移、接触量及阶次幅值仍可保存。求解失败另存`partial_native.npz`（`PARTIAL_NOT_FORMAL`）、`failure.json`（求解诊断、源码CRC32、异常堆栈）；RHS抛异常只能保存最后确认的checkpoint。完整输出保留接受步长及绝对时刻。
+
+## 配置与标定
+
+两份模型配置保留全部机械质量、惯量、轴承几何/本构、配合间隙/刚阻尼、安装链、激励、求解容差、采样和测量参考，不依赖旧实验目录。`base_v8.parameters.model_dof`是基础机械12/16自由度，`structural_dof`才是完整16/20自由度。
+
+实际安装矩阵以`installation.actual_link_stiffness_N_m`与`actual_link_damping_N_s_m`为准。冻结运行严格保留；标定入口改安装参数时同步重算实际K/C，避免参数改了而矩阵仍锁在旧值。
+
+当前生产参数已经用户冻结；下面命令仅用于将来明确要求的新标定：
 
 ```powershell
-python -B -m pip install -e . --no-deps --no-build-isolation
-python -B -m scripts.generate_spindle_sources --help
-
-# 新仿真使用新的输出目录，不覆盖历史结果。
-python -B -m scripts.generate_spindle_sources --config config/spindle_sources_20261022.json --output experiments/spindle_sources_replay --workers 4
-python -B -m scripts.check_spindle_sources --sources experiments/spindle_sources_replay --output experiments/spindle_sources_replay_checks --plots
-
-# 原始加速度转换；输出不得指向data/runs。
-python -B -m scripts.prepare_velocity_data --raw-root data/runs --config config/velocity_data_20261022.json --all-runs --all-conditions --output data/derived_data/velocity_replay --workers 4
+python -B -m main calibrate --config config/model20.json --targets config/calibration_targets.json --output ../DataGeneration_work/new_calibration --max-evaluations 30
 ```
 
-其余入口和作用见[完整清理清单](docs/reports/cleanup_20261023.md)。历史 `generate_severity` 和 `generate_outer_race_pitting` 入口还使用外部重建项目的旧2048 Hz健康参考，路径在 `config/severity_sweep.json`；新三通道生成入口不依赖该旧数据接口。
+只拟合β前三通道10–900 Hz RMS，fit选参，val比值只报告，不设[0.5,2]等额外合格线。默认低精度搜索，再恢复配置中的正式数值设置确认选定候选；候选、失败和停止原因全部保留。求解完成且来源分窗RMS通过时输出`frozen_config.json`；预算耗尽不等于优化收敛。
 
-固定前支承配合间隙模型使用八自由度 `[Sx,Sy,Tx,Ty,Hx,Hy,Ox,Oy]`，与平台分支互斥。仅改变外圈与壳体的单侧径向间隙；输出 H 相对基座速度，以及 S 相对 H 的逐转 X/Y 位移峰峰值，保留1×。默认四个间隙为0、2、5、10 µm，0是理想对照，不是实测健康值。全部质量、支承与激励由配置冻结，扫描不重新拟合。
+标定参考是已有真实健康父片段→run中位数→split中位数；不含H_test。本最小项目不保留原始采集转换/筛选脚本，换数据时在`tmp/`完成准备，另保存来源和run划分，不能把测试数据混入目标。
 
-```powershell
-# 复现主扫描、力学/圆轨迹检查、稳态与代表工况联合收敛检查，保存数据及图表。
-python -B -m scripts.run_clearance_sweep --config config/clearance_config.json --output experiments/clearance_sweep_replay --validate
-# 只运行一个间隙；不加--validate时numerical_pass保留为未完整验收。
-python -B -m scripts.run_clearance_sweep --config config/clearance_config.json --output experiments/clearance_single_replay --clearance-um 5
-```
+## 交接
 
-参数来源及模型局限见[原文核对](docs/reports/clearance_sources_20261023.md)，实际数据和验收见[本轮报告](docs/reports/clearance_sweep_20261023.md)。每个NPZ同时保存高采样率原生状态、8192 Hz抗混叠后H速度、完整转次、接触诊断及参数元数据；两种采样率分别保存时间轴，不对幅值作归一化。
+先读[AGENTS.md](AGENTS.md)。[交接文档](docs/HANDOVER.md)、[下一步实验计划](docs/EXPERIMENT_PLAN.md)、[整理及回归记录](docs/CLEANUP.md)。旧版内外圈点蚀模型可在 Git 历史提交 `8b4cc4b` 中查看；原始数据不随仓库提交。
 
-## V3 配合间隙模型
+2026-10-27新一轮模型校核、25级同步扫描、单背景合成和TCN结果见[实验报告索引](docs/EXPERIMENT_REPORT_20261027.md)。25级已导出，其中14级稳态、11级未稳态；条件合成与完整数值认证分开记录。
 
-最新任务依据为 `GPTOrder/spindle_v3/`。V3保留S/T/H/O平动，新增两个转子倾角；目标前F1配合间隙是唯一扫描参数。健康前F2与后R1各承担原Kother的一半，位置、惯量、健康持续接触与固定探头支架均有明确演示假设。主观测为z=0.165 m刚转子截面相对固定探头支架，H固定方向速度/加速度由同次状态产生。旧8自由度代码和结果保留，主指标的参考不同，不能直接把V1和V3数值当同一量比较。
-
-```powershell
-python -B -m scripts.run_clearance_v3 --config config/clearance_v3_config.json --output experiments/clearance_v3_replay --gaps 0 0.79 1 --workers 3
-```
-
-[实际运行报告](experiments/clearance_v3_20261023/report.md)、[参数合同](docs/reports/clearance_v3_parameter_contract.md)、[力学说明](docs/reports/clearance_v3_mechanics.md)、[可行性预检](docs/reports/clearance_v3_feasibility.md)、[完整命令](experiments/clearance_v3_20261023/commands.md)。整个导出窗验稳，积分步长、周向方向数与原生采样分别核验；验收JSON分别判断数值、双输出和20 μm覆盖。运行成功不代表实机验证通过。
-
-## 信号和模型边界
-
-新仿真速度为三通道 `[N,3,8192]`、每窗1秒、mm/s；顺序为ACC2外壳X、ACC1外壳Y、ACC3平台Y。公共滤波截止频率为10和2048 Hz，两端约为−6 dB。原生位移另存，逐圈标签不由外壳速度积分得到。
-
-机械方程未因本次清理改变。HSK-A40接口已由用户确认，但接触参数仍未标定；刀柄T是集中节点，没有完成15 mm测量截面的几何映射。借用的轴承参数、高速简化、平台传递差异仍需保留说明，见[模型逐式审计](docs/reports/spindle_model_formula_audit_20261022.md)。
+最新20级实验的[参数、主要结果、图和动画](docs/results/sync20_20261028/README.md)保存在仓库中；原始波形、逐窗数据、TCN权重和临时脚本未提交。完整本地数据位于 `../DataGeneration_work/`。

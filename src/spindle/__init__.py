@@ -1,2 +1,1 @@
 """Spindle dynamics models."""
-

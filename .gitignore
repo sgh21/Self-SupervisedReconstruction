@@ -1,44 +1,42 @@
-# GitHub 只提交代码、配置、项目说明和依赖；新增根目录需明确放行。
-# data、experiments（含 legacy_prototype）、deliverables、docs、GPTOrder、tmp、
-# AGENTS.md、交接文档和执行计划全部留在本地，不进入提交。
+# Mainline allowlist. Temporary task scripts always live in tmp/ and are not committed.
 /*
 !/.gitignore
+!/AGENTS.md
 !/README.md
 !/pyproject.toml
 !/requirements.txt
 !/src/
-!/scripts/
 !/utils/
 !/config/
-
-# 代码目录只接收 Python 源码，防止输出的数据、报告或图表混入。
+!/docs/
 /src/**
 !/src/**/
 !/src/**/*.py
-/scripts/**
-!/scripts/**/
-!/scripts/**/*.py
 /utils/**
 !/utils/**/
 !/utils/**/*.py
-
-# 配置目录只接收 JSON 参数文件。
 /config/**
-!/config/**/
-!/config/**/*.json
-
-# 即使位于上述放行目录内，运行环境、缓存和构建产物也不提交。
+!/config/*.json
+/docs/**
+!/docs/*.md
+!/docs/results/
+!/docs/results/sync20_20261028/
+!/docs/results/sync20_20261028/*.md
+!/docs/results/sync20_20261028/shared_beta.json
+!/docs/results/sync20_20261028/figures/
+!/docs/results/sync20_20261028/figures/*.png
+!/docs/results/sync20_20261028/media/
+!/docs/results/sync20_20261028/media/*.gif
+!/docs/results/sync20_20261028/media/*.mp4
+/tmp/
+/data/
 __pycache__/
 *.py[cod]
 *.nb[ci]
-.venv/
-venv/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.ipynb_checkpoints/
 *.egg-info/
+.ruff_cache/
+.pytest_cache/
+.venv/
 build/
 dist/
 .env
-.env.*
